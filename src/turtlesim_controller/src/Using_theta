@@ -1,0 +1,92 @@
+//using theta coming from any direction and reducing speed to avoid overshoot when its close to the traget angle
+
+// --- INSIDE THE CENTER CHECK ---
+    if (!_move_done_) {
+        
+        // 1. Initialize start angle (Same as before)
+        if (first_tick_of_rotation_) {
+             previous_theta_ = theta_; 
+             total_rotation_ = 0.0;
+             first_tick_of_rotation_ = false;
+        }
+
+        // 2. Calculate Delta (Same as before)
+        double delta_theta = theta_ - previous_theta_;
+
+        // 3. Fix Wrap Around (Same as before)
+        if (delta_theta < -M_PI) delta_theta += 2 * M_PI;
+        else if (delta_theta > M_PI) delta_theta -= 2 * M_PI;
+
+        total_rotation_ += delta_theta;
+        previous_theta_ = theta_;
+
+        // 4. CALCULATE REMAINING DISTANCE
+        // We want to turn 90 degrees (1.57 radians) total.
+        double target = 1.57;
+        double remaining = target - std::fabs(total_rotation_);
+
+        // 5. CHECK FOR COMPLETION
+        if (remaining <= 0.01) { // If we are passed the target or very close
+            _move_done_ = true;
+            first_tick_of_rotation_ = true;
+            
+            // HARD STOP
+            message.linear.x = 0.0;
+            message.angular.z = 0.0;
+            publisher_->publish(message);
+            return;
+        }
+
+        // 6. ADAPTIVE SPEED (The Fix for Overshoot)
+        // If we have less than 0.5 radians (approx 30 degrees) left, SLOW DOWN.
+        double current_speed;
+        
+        if (remaining < 0.5) {
+            // We are close! Slow down to 0.2 rad/s
+            current_speed = 0.2; 
+        } else {
+            // We are far away. Go fast.
+            current_speed = 1.57; 
+        }
+
+        // Apply the calculated speed
+        message.linear.x = 0.0;
+        message.angular.z = current_speed; 
+        publisher_->publish(message);
+        return; 
+    }
+
+    //moving in one direction
+
+    if (!_move_done_){
+     // A. FIRST TICK ONLY: Capture the starting angle
+        if (initializing_turn_) {
+            start_theta_ = theta_; // Capture where we are NOW
+            initializing_turn_ = false; // Don't do this again
+        }
+
+        // B. Calculate how much we have turned so far
+        // We use 'fabs' (absolute value) to handle positive/negative angles
+        double angle_turned = std::fabs(theta_ - start_theta_);
+        
+        // C. Check if we reached 90 degrees (1.57 radians)
+        if (angle_turned >= 1.57) {
+            _move_done_ = true;
+            initializing_turn_ = true; // Reset for next time
+            
+            // STOP rotation immediately so we don't drift
+            message.linear.x = 0.0;
+            message.angular.z = 0.0;
+            publisher_->publish(message);
+            return;
+        }
+
+        // D. If not there yet, KEEP TURNING
+        message.linear.x = 0.0;
+        message.angular.z = 1.0; // Speed of rotation
+        publisher_->publish(message);
+        return;   
+        
+    }
+            message.linear.x = 1.0;
+        message.angular.z = 0.0;
