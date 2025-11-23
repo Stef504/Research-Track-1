@@ -23,7 +23,7 @@
             if (turtle_choice==1){
                 RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
                 selected_turtle_=1;
-                valid_choise = true;
+                valid_choice = true;
             }
             else if (turtle_choice==2){
                 RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
@@ -37,26 +37,27 @@
         std::cout << "Enter the desired velocity: ";
         std::cin >> turtle_velocity;
 
-      subscription_1 =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TwoTurtles::topic_callback, this, _1,1));
-      subscription_2 =this-> create_subscription<turtlesim::msg::Pose>("turtle2/pose",10,std::bind(&TwoTurtles::topic_callback, this, _1,2));
+      subscription_1 =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TwoTurtles::turtle1_callback, this, _1));
+      subscription_2 =this-> create_subscription<turtlesim::msg::Pose>("turtle2/pose",10,std::bind(&TwoTurtles::turtle2_callback, this, _1));
       publisher_1 = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
       publisher_2 = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
       timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
     } 
 
   private:
- void topic_callback(const turtlesim::msg::Pose::SharedPtr msg, int turtle_id)
- { 
-   if (turtle_id ==1){
-    RCLCPP_INFO(this->get_logger(), "The position of Turtle 1 is (x,y): '%f, %f'", msg->x, msg->y);
-    t1_x= msg->x;
-    t1_y= msg->y;
-   }else if (turtle_id==2){
-    RCLCPP_INFO(this->get_logger(), "The position of Turtle 2 is (x,y): '%f, %f'", msg->x, msg->y);
-    t2_x= msg->x;
-    t2_y= msg->y;
-   }
- } 
+    void turtle1_callback(const turtlesim::msg::Pose::SharedPtr msg)
+    {
+        RCLCPP_INFO(this->get_logger(), "The position of Turtle 1 is (x,y): '%f, %f'", msg->x, msg->y);
+        t1_x= msg->x;
+        t1_y= msg->y;
+    }
+
+    void turtle2_callback(const turtlesim::msg::Pose::SharedPtr msg)
+    {
+        RCLCPP_INFO(this->get_logger(), "The position of Turtle 2 is (x,y): '%f, %f'", msg->x, msg->y);
+        t2_x= msg->x;
+        t2_y= msg->y;
+    }
 
     void timer_callback()
 { 
@@ -70,9 +71,9 @@
                 publisher_1->publish(message);
             }else {
                 message.linear.x = 0.0;
-            message.angular.z = 0.0;
-            publisher_1->publish(message);
-            running_ = true;
+                message.angular.z = 0.0;
+                publisher_1->publish(message);
+                running_ = true;
             }
             
        }
@@ -85,9 +86,9 @@
                 publisher_2->publish(message);
             }else {
                 message.linear.x= 0.0;
-            message.angular.z = 0.0;
-            publisher_2->publish(message);
-            running_ = true;
+                message.angular.z = 0.0;
+                publisher_2->publish(message);
+                running_ = true;
             }
             
         }
@@ -101,7 +102,7 @@
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_2;
     geometry_msgs::msg::Twist message;
     double x_ = 0.0, y_ = 0.0;
-    int selected_turtle_;
+    int selected_turtle_=0;
     double turtle_velocity=0.0;
     int tick_count_ = 0;
     double htz_=0.2;
