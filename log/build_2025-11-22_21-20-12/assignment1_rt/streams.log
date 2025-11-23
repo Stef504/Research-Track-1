@@ -1,0 +1,10 @@
+[0.037s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.267s] [ 50%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[2.692s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In constructor ‘[01m[KTwoTurtles::[01;32m[KTwoTurtles[m[K()[m[K’:
+[2.692s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:17:95:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_callback[m[K’ is not a member of ‘[01m[KTwoTurtles[m[K’
+[2.692s]    17 |       timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::[01;31m[Ktimer_callback[m[K, this));
+[2.692s]       |                                                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.853s] gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1
+[4.854s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtles.dir/all] Error 2
+[4.854s] gmake: *** [Makefile:146: all] Error 2
+[4.857s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16

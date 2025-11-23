@@ -1,0 +1,32 @@
+[0.287s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.433s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[3.055s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktopic_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.055s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:26:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMIN_X[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.056s]    26 |     const double [01;35m[KMIN_X[m[K = 1.0;
+[3.056s]       |                  [01;35m[K^~~~~[m[K
+[3.056s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_X[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.056s]    27 |     const double [01;35m[KMAX_X[m[K = 11.0;
+[3.056s]       |                  [01;35m[K^~~~~[m[K
+[3.056s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:28:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMIN_Y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.056s]    28 |     const double [01;35m[KMIN_Y[m[K = 1.0;
+[3.056s]       |                  [01;35m[K^~~~~[m[K
+[3.056s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:29:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_Y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.056s]    29 |     const double [01;35m[KMAX_Y[m[K = 11.0;
+[3.056s]       |                  [01;35m[K^~~~~[m[K
+[3.062s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[3.062s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:52:13:[m[K [01;31m[Kerror: [m[K‘[01m[KMIN_X[m[K’ was not declared in this scope
+[3.062s]    52 |   if (x_ >= [01;31m[KMIN_X[m[K && x_ <= MAX_X && y_ >= MIN_Y && y_ <= MAX_Y) {
+[3.062s]       |             [01;31m[K^~~~~[m[K
+[3.067s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:52:28:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_X[m[K’ was not declared in this scope
+[3.067s]    52 |   if (x_ >= MIN_X && x_ <= [01;31m[KMAX_X[m[K && y_ >= MIN_Y && y_ <= MAX_Y) {
+[3.067s]       |                            [01;31m[K^~~~~[m[K
+[3.072s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:52:43:[m[K [01;31m[Kerror: [m[K‘[01m[KMIN_Y[m[K’ was not declared in this scope
+[3.072s]    52 |   if (x_ >= MIN_X && x_ <= MAX_X && y_ >= [01;31m[KMIN_Y[m[K && y_ <= MAX_Y) {
+[3.072s]       |                                           [01;31m[K^~~~~[m[K
+[3.077s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:52:58:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_Y[m[K’ was not declared in this scope
+[3.078s]    52 |   if (x_ >= MIN_X && x_ <= MAX_X && y_ >= MIN_Y && y_ <= [01;31m[KMAX_Y[m[K) {
+[3.078s]       |                                                          [01;31m[K^~~~~[m[K
+[5.522s] gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+[5.523s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+[5.523s] gmake: *** [Makefile:146: all] Error 2
+[5.527s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

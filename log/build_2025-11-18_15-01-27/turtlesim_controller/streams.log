@@ -1,0 +1,16 @@
+[0.258s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.369s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[2.909s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.909s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:41:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_complete_[m[K’ was not declared in this scope
+[2.909s]    41 |       [01;31m[Kturn_complete_[m[K = false;
+[2.909s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.916s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:47:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_complete_[m[K’ was not declared in this scope
+[2.917s]    47 |       if (![01;31m[Kturn_complete_[m[K) {
+[2.917s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.924s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:69:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_complete_[m[K’ was not declared in this scope
+[2.924s]    69 |       if (![01;31m[Kturn_complete_[m[K) {
+[2.924s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.402s] gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+[5.402s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+[5.403s] gmake: *** [Makefile:146: all] Error 2
+[5.406s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

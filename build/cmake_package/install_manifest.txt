@@ -1,0 +1,15 @@
+/home/ubuntu/ros_workspace/install/cmake_package/share/ament_index/resource_index/package_run_dependencies/cmake_package
+/home/ubuntu/ros_workspace/install/cmake_package/share/ament_index/resource_index/parent_prefix_path/cmake_package
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/environment/ament_prefix_path.sh
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/environment/ament_prefix_path.dsv
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/environment/path.sh
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/environment/path.dsv
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/local_setup.bash
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/local_setup.sh
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/local_setup.zsh
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/local_setup.dsv
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/package.dsv
+/home/ubuntu/ros_workspace/install/cmake_package/share/ament_index/resource_index/packages/cmake_package
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/cmake/cmake_packageConfig.cmake
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/cmake/cmake_packageConfig-version.cmake
+/home/ubuntu/ros_workspace/install/cmake_package/share/cmake_package/package.xml

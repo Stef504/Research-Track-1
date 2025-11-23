@@ -20,6 +20,7 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+#replaces what setup.py does in a python package
 install(PROGRAMS
   src/turtle_spawn.py   # The actual file name in your folder
   DESTINATION lib/${PROJECT_NAME}

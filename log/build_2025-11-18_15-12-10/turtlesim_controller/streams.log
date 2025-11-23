@@ -1,0 +1,128 @@
+[0.265s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.375s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[2.796s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:145:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.796s]   145 |   }
+[2.796s]       |    [01;31m[K^[m[K
+[2.796s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:10:2:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.796s]    10 |  [01;36m[K{[m[K
+[2.797s]       |  [01;36m[K^[m[K
+[2.805s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In constructor ‘[01m[KTurtlesimController::[01;32m[KTurtlesimController[m[K()[m[K’:
+[2.805s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope
+[2.805s]    14 |       [01;31m[Ksubscription[m[K =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TurtlesimController::topic_callback, this, _1));
+[2.805s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[2.843s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:15:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.843s]    15 |       [01;31m[Kpublisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
+[2.843s]       |       [01;31m[K^~~~~~~~~~[m[K
+[2.843s]       |       [32m[Krmw_publisher_t[m[K
+[2.851s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:16:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[2.851s]    16 |       [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TurtlesimController::timer_callback, this));
+[2.851s]       |       [01;31m[K^~~~~~[m[K
+[2.851s]       |       [32m[Ktimer_t[m[K
+[2.865s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktopic_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.865s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:23:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_[m[K’ was not declared in this scope
+[2.865s]    23 |    [01;31m[Kx_[m[K= msg->x;
+[2.865s]       |    [01;31m[K^~[m[K
+[2.869s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:24:4:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[2.869s]    24 |    [01;31m[Ky_[m[K= msg->y;
+[2.869s]       |    [01;31m[K^~[m[K
+[2.869s]       |    [32m[Kyn[m[K
+[2.874s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:25:4:[m[K [01;31m[Kerror: [m[K‘[01m[Ktheta_[m[K’ was not declared in this scope
+[2.874s]    25 |    [01;31m[Ktheta_[m[K= msg->theta;
+[2.874s]       |    [01;31m[K^~~~~~[m[K
+[2.878s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.878s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_[m[K’ was not declared in this scope
+[2.878s]    33 | if ([01;31m[Kx_[m[K >= MIN_X && x_ <= MAX_X && y_ >= MIN_Y && y_ <= MAX_Y) {
+[2.878s]       |     [01;31m[K^~[m[K
+[2.883s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:11:[m[K [01;31m[Kerror: [m[K‘[01m[KMIN_X[m[K’ was not declared in this scope
+[2.883s]    33 | if (x_ >= [01;31m[KMIN_X[m[K && x_ <= MAX_X && y_ >= MIN_Y && y_ <= MAX_Y) {
+[2.883s]       |           [01;31m[K^~~~~[m[K
+[2.887s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_X[m[K’ was not declared in this scope
+[2.887s]    33 | if (x_ >= MIN_X && x_ <= [01;31m[KMAX_X[m[K && y_ >= MIN_Y && y_ <= MAX_Y) {
+[2.887s]       |                          [01;31m[K^~~~~[m[K
+[2.891s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[2.891s]    33 | if (x_ >= MIN_X && x_ <= MAX_X && [01;31m[Ky_[m[K >= MIN_Y && y_ <= MAX_Y) {
+[2.892s]       |                                   [01;31m[K^~[m[K
+[2.892s]       |                                   [32m[Kyn[m[K
+[2.897s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:41:[m[K [01;31m[Kerror: [m[K‘[01m[KMIN_Y[m[K’ was not declared in this scope
+[2.897s]    33 | if (x_ >= MIN_X && x_ <= MAX_X && y_ >= [01;31m[KMIN_Y[m[K && y_ <= MAX_Y) {
+[2.897s]       |                                         [01;31m[K^~~~~[m[K
+[2.902s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:33:56:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_Y[m[K’ was not declared in this scope
+[2.902s]    33 | if (x_ >= MIN_X && x_ <= MAX_X && y_ >= MIN_Y && y_ <= [01;31m[KMAX_Y[m[K) {
+[2.902s]       |                                                        [01;31m[K^~~~~[m[K
+[2.907s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:37:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.907s]    37 |       [01;31m[Kmessage[m[K.linear.x = 1.0;
+[2.907s]       |       [01;31m[K^~~~~~~[m[K
+[2.908s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:41:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+[2.908s]    41 |   [01;31m[Kelse[m[K if (x_ > 9.0) {
+[2.908s]       |   [01;31m[K^~~~[m[K
+[2.908s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:36:31:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.908s]    36 |   if (x_ <= 9.0 && x_ >= 3.0) [01;36m[K{[m[K
+[2.908s]       |                               [01;36m[K^[m[K
+[2.914s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:43:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_complete_[m[K’ was not declared in this scope
+[2.914s]    43 |       if (![01;31m[Kturn_complete_[m[K) {
+[2.915s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.920s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:44:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.920s]    44 |           ++[01;31m[Ktick_count_[m[K;
+[2.920s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.925s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:46:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.925s]    46 |           [01;31m[Kmessage[m[K.linear.x = INITIAL_FORWARD_SPEED;
+[2.925s]       |           [01;31m[K^~~~~~~[m[K
+[2.933s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:46:30:[m[K [01;31m[Kerror: [m[K‘[01m[KINITIAL_FORWARD_SPEED[m[K’ was not declared in this scope
+[2.934s]    46 |           message.linear.x = [01;31m[KINITIAL_FORWARD_SPEED[m[K;
+[2.934s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.940s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:47:31:[m[K [01;31m[Kerror: [m[K‘[01m[KCIRCULAR_SPEED[m[K’ was not declared in this scope
+[2.940s]    47 |           message.angular.z = [01;31m[KCIRCULAR_SPEED[m[K;
+[2.940s]       |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.946s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:48:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.946s]    48 |           [01;31m[Kpublisher_[m[K->publish(message);
+[2.946s]       |           [01;31m[K^~~~~~~~~~[m[K
+[2.947s]       |           [32m[Krmw_publisher_t[m[K
+[2.954s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:50:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kticks_in_circle[m[K’ was not declared in this scope
+[2.954s]    50 |           if (tick_count_ >= [01;31m[Kticks_in_circle[m[K) {
+[2.954s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.959s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:58:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.959s]    58 |       [01;31m[Kmessage[m[K.linear.x = 1.0;
+[2.959s]       |       [01;31m[K^~~~~~~[m[K
+[2.966s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:65:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_complete_[m[K’ was not declared in this scope
+[2.966s]    65 |       if (![01;31m[Kturn_complete_[m[K) {
+[2.966s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.971s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:66:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.971s]    66 |           ++[01;31m[Ktick_count_[m[K;
+[2.972s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.976s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:68:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.976s]    68 |           [01;31m[Kmessage[m[K.linear.x = INITIAL_FORWARD_SPEED;
+[2.976s]       |           [01;31m[K^~~~~~~[m[K
+[2.984s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:68:30:[m[K [01;31m[Kerror: [m[K‘[01m[KINITIAL_FORWARD_SPEED[m[K’ was not declared in this scope
+[2.985s]    68 |           message.linear.x = [01;31m[KINITIAL_FORWARD_SPEED[m[K;
+[2.985s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.992s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:69:32:[m[K [01;31m[Kerror: [m[K‘[01m[KCIRCULAR_SPEED[m[K’ was not declared in this scope
+[2.992s]    69 |           message.angular.z = -[01;31m[KCIRCULAR_SPEED[m[K;
+[2.992s]       |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.998s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:70:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.999s]    70 |           [01;31m[Kpublisher_[m[K->publish(message);
+[2.999s]       |           [01;31m[K^~~~~~~~~~[m[K
+[2.999s]       |           [32m[Krmw_publisher_t[m[K
+[3.006s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:72:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kticks_in_circle[m[K’ was not declared in this scope
+[3.006s]    72 |           if (tick_count_ >= [01;31m[Kticks_in_circle[m[K) {
+[3.006s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.012s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:80:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.012s]    80 |       [01;31m[Kmessage[m[K.linear.x = 1.0;
+[3.012s]       |       [01;31m[K^~~~~~~[m[K
+[3.017s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.017s]    86 |     [01;31m[Kmessage[m[K.linear.x = 0.0;
+[3.017s]       |     [01;31m[K^~~~~~~[m[K
+[3.024s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:91:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.024s]    91 |   [01;31m[Kpublisher_[m[K->publish(message);
+[3.024s]       |   [01;31m[K^~~~~~~~~~[m[K
+[3.024s]       |   [32m[Krmw_publisher_t[m[K
+[3.030s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:91:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.030s]    91 |   publisher_->publish([01;31m[Kmessage[m[K);
+[3.030s]       |                       [01;31m[K^~~~~~~[m[K
+[3.032s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K At global scope:
+[3.032s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:145:4:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[3.032s]   145 |   }
+[3.033s]       |    [01;31m[K^[m[K
+[5.413s] gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+[5.414s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+[5.414s] gmake: *** [Makefile:146: all] Error 2
+[5.418s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

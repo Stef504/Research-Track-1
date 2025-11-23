@@ -1,0 +1,10 @@
+[0.261s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.375s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[2.810s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:136:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.810s]   136 | }
+[2.810s]       |  [01;31m[K^[m[K
+[2.810s]       |  [32m[K;[m[K
+[5.354s] gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+[5.355s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+[5.355s] gmake: *** [Makefile:146: all] Error 2
+[5.359s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

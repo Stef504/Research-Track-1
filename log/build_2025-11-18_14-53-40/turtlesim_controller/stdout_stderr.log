@@ -1,0 +1,10 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:112:31:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kconst double TurtlesimController::TARGET_ANGLE[m[K’
+  112 |   const double TARGET_ANGLE = [01;31m[K3.14[m[K; // 90 degrees
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:105:16:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kconst double TurtlesimController::TARGET_ANGLE[m[K’
+  105 |   const double [01;36m[KTARGET_ANGLE[m[K = 1.57; // 90 degrees in radians
+      |                [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

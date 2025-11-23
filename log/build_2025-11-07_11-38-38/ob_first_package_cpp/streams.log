@@ -1,0 +1,51 @@
+[0.035s] Invoking command in '/home/ubuntu/ros_workspace/build/ob_first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/ob_first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/ob_first_package_cpp
+[0.338s] -- The C compiler identification is GNU 13.3.0
+[0.500s] -- The CXX compiler identification is GNU 13.3.0
+[0.538s] -- Detecting C compiler ABI info
+[0.694s] -- Detecting C compiler ABI info - done
+[0.702s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.703s] -- Detecting C compile features
+[0.703s] -- Detecting C compile features - done
+[0.719s] -- Detecting CXX compiler ABI info
+[0.876s] -- Detecting CXX compiler ABI info - done
+[0.885s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.885s] -- Detecting CXX compile features
+[0.886s] -- Detecting CXX compile features - done
+[0.921s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.118s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.350s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.476s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.516s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.569s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.615s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.787s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.799s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.004s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.034s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.060s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.199s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.226s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.397s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.397s] -- Configured cppcheck include dirs: 
+[2.397s] -- Configured cppcheck exclude dirs and/or files: 
+[2.399s] -- Added test 'lint_cmake' to check CMake code style
+[2.403s] -- Added test 'uncrustify' to check C / C++ code style
+[2.403s] -- Configured uncrustify additional arguments: 
+[2.405s] -- Added test 'xmllint' to check XML markup files
+[2.409s] -- Configuring done (2.3s)
+[2.415s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[2.415s]   Cannot find source file:
+[2.415s] 
+[2.415s]     src/pub.cpp
+[2.415s] 
+[2.415s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[2.415s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[2.416s]   .f95 .f03 .hip .ispc
+[2.416s] 
+[2.416s] [0m
+[2.418s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[2.418s]   No SOURCES given to target: talker
+[2.418s] 
+[2.418s] [0m
+[2.418s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[2.431s] Invoked command in '/home/ubuntu/ros_workspace/build/ob_first_package_cpp' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/ob_first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/ob_first_package_cpp

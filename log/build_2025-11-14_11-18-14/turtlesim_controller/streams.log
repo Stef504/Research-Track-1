@@ -1,0 +1,49 @@
+[0.251s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.292s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.525s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.554s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.562s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.572s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.644s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.646s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.720s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.783s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[0.843s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.898s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.994s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.995s] -- Configured cppcheck include dirs: 
+[0.995s] -- Configured cppcheck exclude dirs and/or files: 
+[0.996s] -- Added test 'lint_cmake' to check CMake code style
+[0.997s] -- Added test 'uncrustify' to check C / C++ code style
+[0.997s] -- Configured uncrustify additional arguments: 
+[0.997s] -- Added test 'xmllint' to check XML markup files
+[0.999s] -- Configuring done (0.7s)
+[1.016s] -- Generating done (0.0s)
+[1.024s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/turtlesim_controller
+[1.088s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[3.504s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In constructor ‘[01m[KTurtlesimController::[01;32m[KTurtlesimController[m[K()[m[K’:
+[3.504s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:11:98:[m[K [01;31m[Kerror: [m[K‘[01m[KT[m[K’ was not declared in this scope
+[3.505s]    11 |       subscription =this-> create_subscription<turtlesim::msg::Pose>("turtle/pose",10,std::bind(&[01;31m[KT[m[K))
+[3.505s]       |                                                                                                  [01;31m[K^[m[K
+[3.510s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+[3.510s]    14 |       [01;31m[Kcount_[m[K = 0;
+[3.510s]       |       [01;31m[K^~~~~~[m[K
+[3.518s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.518s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[3.518s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[3.518s]                  from [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:1[m[K:
+[3.518s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktopic_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.519s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:20:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmsg[m[K’?
+[3.519s]    20 |    RCLCPP_INFO(this->get_logger(), "The position of the turtle is (x,y): '%f, %f'", [01;31m[Kmsg_[m[K>x, msg_->y);
+[3.519s]       |                                                                                     [01;31m[K^~~~[m[K
+[3.523s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:20:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+[3.523s]    20 |    RCLCPP_INFO(this->get_logger(), "The position of the turtle is (x,y): '%f, %f'", msg_>[01;31m[Kx[m[K, msg_->y);
+[3.523s]       |                                                                                          [01;31m[K^[m[K
+[3.524s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:18:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.524s]    18 |  void topic_callback([01;35m[Kconst turtlesim::msg::Pose::SharedPtr msg[m[K)
+[3.524s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[4.169s] gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+[4.170s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_controller.dir/all] Error 2
+[4.170s] gmake: *** [Makefile:146: all] Error 2
+[4.174s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

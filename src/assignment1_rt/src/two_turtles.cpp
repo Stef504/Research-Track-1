@@ -13,23 +13,103 @@
     TwoTurtles(): Node("UI_turtlesim")
      
     { 
-      subscription =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TwoTurtles::topic_callback, this, _1));
-      //timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::timer_callback, this));
+        int turtle_choice = 0;
+        bool valid_choice = false;
+
+        while (!valid_choice) {
+            std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
+            std::cin >> turtle_choice; //arrows here are for input
+
+            if (turtle_choice==1){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
+                selected_turtle_=1;
+                valid_choise = true;
+            }
+            else if (turtle_choice==2){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
+                selected_turtle_=2;
+                valid_choice = true;
+            }else {
+            RCLCPP_WARN(this->get_logger(), "Invalid choice '%d'. Please enter 1 or 2.", turtle_choice);
+            }
+        }
+
+        std::cout << "Enter the desired velocity: ";
+        std::cin >> turtle_velocity;
+
+      subscription_1 =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TwoTurtles::topic_callback, this, _1,1));
+      subscription_2 =this-> create_subscription<turtlesim::msg::Pose>("turtle2/pose",10,std::bind(&TwoTurtles::topic_callback, this, _1,2));
+      publisher_1 = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
+      publisher_2 = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
+      timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
     } 
 
   private:
- void topic_callback(const turtlesim::msg::Pose::SharedPtr msg)
+ void topic_callback(const turtlesim::msg::Pose::SharedPtr msg, int turtle_id)
  { 
-   RCLCPP_INFO(this->get_logger(), "The position of the turtle 2 is (x,y).: '%f, %f'", msg->x, msg->y);
-    x_= msg->x;
-    y_= msg->y;
-
+   if (turtle_id ==1){
+    RCLCPP_INFO(this->get_logger(), "The position of Turtle 1 is (x,y): '%f, %f'", msg->x, msg->y);
+    t1_x= msg->x;
+    t1_y= msg->y;
+   }else if (turtle_id==2){
+    RCLCPP_INFO(this->get_logger(), "The position of Turtle 2 is (x,y): '%f, %f'", msg->x, msg->y);
+    t2_x= msg->x;
+    t2_y= msg->y;
+   }
  } 
 
+    void timer_callback()
+{ 
     
-    rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription;
+    if (selected_turtle_ == 1) {
+       if (!running_){
+            tick_count_++;
+            if (tick_count_ < max_ticks_){
+                message.linear.x = turtle_velocity;
+                message.angular.z = 0.0;
+                publisher_1->publish(message);
+            }else {
+                message.linear.x = 0.0;
+            message.angular.z = 0.0;
+            publisher_1->publish(message);
+            running_ = true;
+            }
+            
+       }
+    }else if (selected_turtle_ == 2) {
+        if (!running_){
+            tick_count_++;
+            if (tick_count_ < max_ticks_){
+                message.linear.x= turtle_velocity;
+                message.angular.z = 0.0;
+                publisher_2->publish(message);
+            }else {
+                message.linear.x= 0.0;
+            message.angular.z = 0.0;
+            publisher_2->publish(message);
+            running_ = true;
+            }
+            
+        }
+    }
+
+}
+    rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_1;
+    rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_2;
     rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_1;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_2;
+    geometry_msgs::msg::Twist message;
     double x_ = 0.0, y_ = 0.0;
+    int selected_turtle_;
+    double turtle_velocity=0.0;
+    int tick_count_ = 0;
+    double htz_=0.2;
+    int desired_seconds_=1;
+    int max_ticks_ = desired_seconds_/htz_;
+    bool running_= false;
+    double t1_x, t1_y;
+    double t2_x, t2_y;
     
  };
 

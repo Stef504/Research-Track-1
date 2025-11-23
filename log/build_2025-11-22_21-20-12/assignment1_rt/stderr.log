@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In constructor ‘[01m[KTwoTurtles::[01;32m[KTwoTurtles[m[K()[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:17:95:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_callback[m[K’ is not a member of ‘[01m[KTwoTurtles[m[K’
+   17 |       timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::[01;31m[Ktimer_callback[m[K, this));
+      |                                                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtles.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

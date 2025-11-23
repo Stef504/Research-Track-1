@@ -1,0 +1,25 @@
+[0.268s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.374s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[8.422s] [100%] [32m[1mLinking CXX executable turtlesim_controller[0m
+[8.871s] [100%] Built target turtlesim_controller
+[8.891s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[8.892s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/turtlesim_controller
+[8.906s] -- Install configuration: ""
+[8.907s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_controller/lib/turtlesim_controller/turtlesim_controller
+[8.916s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_controller/lib/turtlesim_controller/turtlesim_controller" to ""
+[8.916s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/package_run_dependencies/turtlesim_controller
+[8.916s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/parent_prefix_path/turtlesim_controller
+[8.917s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/ament_prefix_path.sh
+[8.917s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/ament_prefix_path.dsv
+[8.917s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/path.sh
+[8.917s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/path.dsv
+[8.917s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.bash
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.sh
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.zsh
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.dsv
+[8.918s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/package.dsv
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/packages/turtlesim_controller
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/cmake/turtlesim_controllerConfig.cmake
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/cmake/turtlesim_controllerConfig-version.cmake
+[8.918s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/package.xml
+[8.922s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/turtlesim_controller

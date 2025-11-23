@@ -1,0 +1,50 @@
+[0.063s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/assignment1_rt -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/assignment1_rt
+[0.385s] -- The C compiler identification is GNU 13.3.0
+[0.554s] -- The CXX compiler identification is GNU 13.3.0
+[0.592s] -- Detecting C compiler ABI info
+[0.750s] -- Detecting C compiler ABI info - done
+[0.759s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.759s] -- Detecting C compile features
+[0.760s] -- Detecting C compile features - done
+[0.777s] -- Detecting CXX compiler ABI info
+[0.959s] -- Detecting CXX compiler ABI info - done
+[0.970s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.970s] -- Detecting CXX compile features
+[0.970s] -- Detecting CXX compile features - done
+[1.016s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.395s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.670s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.863s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.863s] -- Configured cppcheck include dirs: 
+[1.863s] -- Configured cppcheck exclude dirs and/or files: 
+[1.866s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.866s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.869s] -- Added test 'lint_cmake' to check CMake code style
+[1.871s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.874s] -- Added test 'uncrustify' to check C / C++ code style
+[1.874s] -- Configured uncrustify additional arguments: 
+[1.876s] -- Added test 'xmllint' to check XML markup files
+[1.882s] -- Configuring done (1.7s)
+[1.895s] -- Generating done (0.0s)
+[1.899s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/assignment1_rt
+[1.905s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/assignment1_rt -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/assignment1_rt
+[1.906s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[1.977s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[1.978s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt
+[1.991s] -- Install configuration: ""
+[1.994s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+[1.995s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+[1.997s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+[1.997s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+[1.997s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+[1.998s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+[1.998s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+[1.999s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+[1.999s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+[1.999s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+[2.000s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.dsv
+[2.001s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+[2.002s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+[2.002s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+[2.002s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.xml
+[2.006s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt

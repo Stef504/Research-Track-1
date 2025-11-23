@@ -1,0 +1,4 @@
+source;share/ob_first_package_cpp/local_setup.bash
+source;share/ob_first_package_cpp/local_setup.dsv
+source;share/ob_first_package_cpp/local_setup.sh
+source;share/ob_first_package_cpp/local_setup.zsh

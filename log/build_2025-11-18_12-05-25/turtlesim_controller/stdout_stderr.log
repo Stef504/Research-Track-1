@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable turtlesim_controller[0m
+[100%] Built target turtlesim_controller
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros_workspace/install/turtlesim_controller/lib/turtlesim_controller/turtlesim_controller
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_controller/lib/turtlesim_controller/turtlesim_controller" to ""
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/package_run_dependencies/turtlesim_controller
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/parent_prefix_path/turtlesim_controller
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/path.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/environment/path.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.bash
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.zsh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/local_setup.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/package.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/ament_index/resource_index/packages/turtlesim_controller
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/cmake/turtlesim_controllerConfig.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/cmake/turtlesim_controllerConfig-version.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_controller/share/turtlesim_controller/package.xml
