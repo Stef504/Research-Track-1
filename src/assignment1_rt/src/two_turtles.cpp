@@ -13,29 +13,6 @@
     TwoTurtles(): Node("UI_turtlesim")
      
     { 
-        int turtle_choice = 0;
-        bool valid_choice = false;
-
-        while (!valid_choice) {
-            std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
-            std::cin >> turtle_choice; //arrows here are for input
-
-            if (turtle_choice==1){
-                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
-                selected_turtle_=1;
-                valid_choice = true;
-            }
-            else if (turtle_choice==2){
-                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
-                selected_turtle_=2;
-                valid_choice = true;
-            }else {
-            RCLCPP_WARN(this->get_logger(), "Invalid choice '%d'. Please enter 1 or 2.", turtle_choice);
-            }
-        }
-
-        std::cout << "Enter the desired velocity: ";
-        std::cin >> turtle_velocity;
 
       subscription_1 =this-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10,std::bind(&TwoTurtles::turtle1_callback, this, _1));
       subscription_2 =this-> create_subscription<turtlesim::msg::Pose>("turtle2/pose",10,std::bind(&TwoTurtles::turtle2_callback, this, _1));
@@ -61,38 +38,58 @@
 
     void timer_callback()
 { 
-    
-    if (selected_turtle_ == 1) {
-       if (!running_){
-            tick_count_++;
-            if (tick_count_ < max_ticks_){
-                message.linear.x = turtle_velocity;
-                message.angular.z = 0.0;
-                publisher_1->publish(message);
-            }else {
-                message.linear.x = 0.0;
-                message.angular.z = 0.0;
-                publisher_1->publish(message);
-                running_ = true;
-            }
+    while (!valid_choice) {
             
-       }
-    }else if (selected_turtle_ == 2) {
-        if (!running_){
-            tick_count_++;
-            if (tick_count_ < max_ticks_){
-                message.linear.x= turtle_velocity;
-                message.angular.z = 0.0;
-                publisher_2->publish(message);
-            }else {
-                message.linear.x= 0.0;
-                message.angular.z = 0.0;
-                publisher_2->publish(message);
-                running_ = true;
+            turtle_choice=0;
+            running_ = false;
+
+            std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
+            std::cin >> turtle_choice; //arrows here are for input
+        
+            if (turtle_choice==1){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
+                
+                std::cout << "Enter the desired velocity: ";
+                std::cin >> turtle_velocity;
+                
+                if (!running_){
+                    tick_count_++;
+                    if (tick_count_ < max_ticks_){
+                        message.linear.x = turtle_velocity;
+                        message.angular.z = 0.0;
+                        publisher_1->publish(message);
+                    }else {
+                        message.linear.x = 0.0;
+                        message.angular.z = 0.0;
+                        publisher_1->publish(message);
+                        running_ = true;
+                    }
+                }    
             }
-            
+            else if (turtle_choice==2){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
+                
+                std::cout << "Enter the desired velocity: ";
+                std::cin >> turtle_velocity;
+                
+                if (!running_){
+                    tick_count_++;
+                    if (tick_count_ < max_ticks_){
+                        message.linear.x= turtle_velocity;
+                        message.angular.z = 0.0;
+                        publisher_2->publish(message);
+                    }else {
+                        message.linear.x= 0.0;
+                        message.angular.z = 0.0;
+                        publisher_2->publish(message);
+                        running_ = true;
+                    }  
+                }
+            }else {
+            RCLCPP_WARN(this->get_logger(), "Invalid choice '%d'. Please enter 1 or 2.", turtle_choice);
+            }
         }
-    }
+
 
 }
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_1;
@@ -104,14 +101,19 @@
     double x_ = 0.0, y_ = 0.0;
     int selected_turtle_=0;
     double turtle_velocity=0.0;
+    int turtle_choice = 0;
+    //calculation for ticks
     int tick_count_ = 0;
     double htz_=0.2;
     int desired_seconds_=1;
     int max_ticks_ = desired_seconds_/htz_;
-    bool running_= false;
+    //defining turtle positions
     double t1_x, t1_y;
     double t2_x, t2_y;
-    
+    //defining the loops
+    bool running_= false;
+    bool selected_ = false;
+    bool valid_choice = false;
  };
 
  int main(int argc, char * argv[])
