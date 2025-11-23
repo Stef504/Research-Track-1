@@ -210,6 +210,19 @@ talker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
 .PHONY : talker/fast
 
+#=============================================================================
+# Target rules for targets named subscriber
+
+# Build rule for target.
+subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber
+.PHONY : subscriber
+
+# fast build rule for target.
+subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/build
+.PHONY : subscriber/fast
+
 src/ob_first_package.o: src/ob_first_package.cpp.o
 .PHONY : src/ob_first_package.o
 
@@ -234,6 +247,30 @@ src/ob_first_package.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/ob_first_package.cpp.s
 .PHONY : src/ob_first_package.cpp.s
 
+src/ob_sub.o: src/ob_sub.cpp.o
+.PHONY : src/ob_sub.o
+
+# target to build an object file
+src/ob_sub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/src/ob_sub.cpp.o
+.PHONY : src/ob_sub.cpp.o
+
+src/ob_sub.i: src/ob_sub.cpp.i
+.PHONY : src/ob_sub.i
+
+# target to preprocess a source file
+src/ob_sub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/src/ob_sub.cpp.i
+.PHONY : src/ob_sub.cpp.i
+
+src/ob_sub.s: src/ob_sub.cpp.s
+.PHONY : src/ob_sub.s
+
+# target to generate assembly for a file
+src/ob_sub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/src/ob_sub.cpp.s
+.PHONY : src/ob_sub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +286,14 @@ help:
 	@echo "... test"
 	@echo "... ob_first_package_cpp_uninstall"
 	@echo "... uninstall"
+	@echo "... subscriber"
 	@echo "... talker"
 	@echo "... src/ob_first_package.o"
 	@echo "... src/ob_first_package.i"
 	@echo "... src/ob_first_package.s"
+	@echo "... src/ob_sub.o"
+	@echo "... src/ob_sub.i"
+	@echo "... src/ob_sub.s"
 .PHONY : help
 
 

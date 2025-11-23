@@ -14,9 +14,17 @@ find_package(geometry_msgs REQUIRED)
 add_executable(turtles src/two_turtles.cpp)  #turtle is chosen as executable name
 ament_target_dependencies(turtles rclcpp turtlesim geometry_msgs)
 
+add_executable(distance src/distance_calc.cpp)  #distance is chosen as executable name
+ament_target_dependencies(distance rclcpp turtlesim geometry_msgs)
+
 
 install(TARGETS 
   turtles
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS 
+  distance
   DESTINATION lib/${PROJECT_NAME}
 )
 

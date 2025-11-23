@@ -1,6 +1,7 @@
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/uninstall.dir
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/ob_first_package_cpp_uninstall.dir
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/talker.dir
+/home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/subscriber.dir
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/test.dir
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/edit_cache.dir
 /home/ubuntu/ros_workspace/build/ob_first_package_cpp/CMakeFiles/rebuild_cache.dir

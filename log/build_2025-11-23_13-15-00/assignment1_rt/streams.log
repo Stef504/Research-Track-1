@@ -1,0 +1,17 @@
+[0.028s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.180s] [ 25%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[0.191s] [ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[3.233s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:[m[K In member function ‘[01m[Kvoid Distance::[01;32m[Ktimer_callback[m[K()[m[K’:
+[3.234s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:55:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.234s]    55 |         publisher_->publish([01;31m[Kmessage[m[K);
+[3.234s]       |                             [01;31m[K^~~~~~~[m[K
+[3.242s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.242s]    65 |         publisher_->publish([01;31m[Kmessage[m[K);
+[3.242s]       |                             [01;31m[K^~~~~~~[m[K
+[5.882s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1
+[5.883s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[5.883s] gmake[1]: *** Waiting for unfinished jobs....
+[8.739s] [ 75%] [32m[1mLinking CXX executable turtles[0m
+[9.173s] [ 75%] Built target turtles
+[9.175s] gmake: *** [Makefile:146: all] Error 2
+[9.179s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16

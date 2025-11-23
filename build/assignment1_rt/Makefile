@@ -210,6 +210,43 @@ turtles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtles.dir/build.make CMakeFiles/turtles.dir/build
 .PHONY : turtles/fast
 
+#=============================================================================
+# Target rules for targets named distance
+
+# Build rule for target.
+distance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 distance
+.PHONY : distance
+
+# fast build rule for target.
+distance/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/build
+.PHONY : distance/fast
+
+src/distance_calc.o: src/distance_calc.cpp.o
+.PHONY : src/distance_calc.o
+
+# target to build an object file
+src/distance_calc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_calc.cpp.o
+.PHONY : src/distance_calc.cpp.o
+
+src/distance_calc.i: src/distance_calc.cpp.i
+.PHONY : src/distance_calc.i
+
+# target to preprocess a source file
+src/distance_calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_calc.cpp.i
+.PHONY : src/distance_calc.cpp.i
+
+src/distance_calc.s: src/distance_calc.cpp.s
+.PHONY : src/distance_calc.s
+
+# target to generate assembly for a file
+src/distance_calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_calc.cpp.s
+.PHONY : src/distance_calc.cpp.s
+
 src/two_turtles.o: src/two_turtles.cpp.o
 .PHONY : src/two_turtles.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... assignment1_rt_uninstall"
 	@echo "... uninstall"
+	@echo "... distance"
 	@echo "... turtles"
+	@echo "... src/distance_calc.o"
+	@echo "... src/distance_calc.i"
+	@echo "... src/distance_calc.s"
 	@echo "... src/two_turtles.o"
 	@echo "... src/two_turtles.i"
 	@echo "... src/two_turtles.s"

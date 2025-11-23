@@ -15,7 +15,10 @@ find_package(std_msgs REQUIRED)
 add_executable(talker src/ob_first_package.cpp) 
 ament_target_dependencies(talker rclcpp std_msgs)
 install(TARGETS talker DESTINATION lib/${PROJECT_NAME})
- 
+
+add_executable(subscriber src/ob_sub.cpp)
+ament_target_dependencies(subscriber rclcpp std_msgs)
+install(TARGETS subscriber DESTINATION lib/${PROJECT_NAME}) 
 
 
 if(BUILD_TESTING)

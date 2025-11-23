@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000452] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000515] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000559] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000802] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000869] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000913] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.000958] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.012494] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.013236] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.013833] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment1_rt', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu/ros_workspace/install', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-e33b703e-2d24-47fd-9178-33af9580668a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros_workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-60b17708-fec3-489c-b81c-a706e1ce0113.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/python_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy'}), 'shell': False}
+[0.099641] (-) TimerEvent: {}
+[0.113086] (assignment1_rt) StdoutLine: {'line': b'[ 50%] Built target turtles\n'}
+[0.120906] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o\x1b[0m\n'}
+[0.200114] (-) TimerEvent: {}
+[0.300529] (-) TimerEvent: {}
+[0.401090] (-) TimerEvent: {}
+[0.501509] (-) TimerEvent: {}
+[0.601987] (-) TimerEvent: {}
+[0.702406] (-) TimerEvent: {}
+[0.802816] (-) TimerEvent: {}
+[0.903169] (-) TimerEvent: {}
+[1.003580] (-) TimerEvent: {}
+[1.104096] (-) TimerEvent: {}
+[1.204688] (-) TimerEvent: {}
+[1.305232] (-) TimerEvent: {}
+[1.406200] (-) TimerEvent: {}
+[1.507180] (-) TimerEvent: {}
+[1.607783] (-) TimerEvent: {}
+[1.708478] (-) TimerEvent: {}
+[1.809095] (-) TimerEvent: {}
+[1.909607] (-) TimerEvent: {}
+[2.010288] (-) TimerEvent: {}
+[2.110820] (-) TimerEvent: {}
+[2.211291] (-) TimerEvent: {}
+[2.311791] (-) TimerEvent: {}
+[2.412414] (-) TimerEvent: {}
+[2.475823] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:60:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.476097] (assignment1_rt) StderrLine: {'line': b'   60 |     \x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String message;\n'}
+[2.476208] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.505445] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.505787] (assignment1_rt) StderrLine: {'line': b'   64 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr publisher_;\n'}
+[2.505856] (assignment1_rt) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.505916] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.505973] (assignment1_rt) StderrLine: {'line': b'   64 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_;\n'}
+[2.506032] (assignment1_rt) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.506083] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.506135] (assignment1_rt) StderrLine: {'line': b'   64 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K publisher_;\n'}
+[2.506186] (assignment1_rt) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.506236] (assignment1_rt) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.507314] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.507510] (assignment1_rt) StderrLine: {'line': b'   64 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K;\n'}
+[2.507605] (assignment1_rt) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.507684] (assignment1_rt) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.512560] (-) TimerEvent: {}
+[2.525595] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDistance::\x1b[01;32m\x1b[KDistance\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.525839] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.525929] (assignment1_rt) StderrLine: {'line': b'   18 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K =this->create_publisher<std_msgs::msg::String>("distance_topic",10);\n'}
+[2.525990] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.526045] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpublisher_1\x1b[m\x1b[K\n'}
+[2.531128] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.531744] (assignment1_rt) StderrLine: {'line': b'   18 |         publisher_ =this->create_publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>("distance_topic",10);\n'}
+[2.532036] (assignment1_rt) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.532100] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.532157] (assignment1_rt) StderrLine: {'line': b'   18 |         publisher_ =this->\x1b[01;31m\x1b[Kcreate_publisher<std_msgs::msg::String>\x1b[m\x1b[K("distance_topic",10);\n'}
+[2.532210] (assignment1_rt) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.532264] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KDistance::create_publisher<<expression error> >(const char [15], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.532326] (assignment1_rt) StderrLine: {'line': b'   18 |         publisher_ =\x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("distance_topic",10)\x1b[m\x1b[K;\n'}
+[2.532413] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.532473] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.532524] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.532574] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[2.532624] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:1\x1b[m\x1b[K:\n'}
+[2.532673] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_publisher\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.532743] (assignment1_rt) StderrLine: {'line': b'  197 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.532795] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.532849] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.532919] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.532979] (assignment1_rt) StderrLine: {'line': b'   18 |         publisher_ =\x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("distance_topic",10)\x1b[m\x1b[K;\n'}
+[2.533030] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.547470] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.547767] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:41:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpower\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.547929] (assignment1_rt) StderrLine: {'line': b'   41 |     raduis_=sqrt(\x1b[01;31m\x1b[Kpower\x1b[m\x1b[K(abs(t1_x - t2_x),2) + power(abs(t1_y - t2_y),2));\n'}
+[2.548118] (assignment1_rt) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.548355] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:44:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.548648] (assignment1_rt) StderrLine: {'line': b'   44 |         message.\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K= "The turtles are too close! There distance is:" + std:: to_string(raduis_);\n'}
+[2.548747] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.548880] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.548980] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[2.549042] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K:\n'}
+[2.549097] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:45:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.549166] (assignment1_rt) StderrLine: {'line': b'   45 |         RCLCPP_INFO(this->get_logger(), "Publishing distance: \'%s\'", message.\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K.c_str());\n'}
+[2.549219] (assignment1_rt) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.553076] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:46:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.553335] (assignment1_rt) StderrLine: {'line': b'   46 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(message);\n'}
+[2.553435] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.553771] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpublisher_1\x1b[m\x1b[K\n'}
+[2.553888] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:54:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.554174] (assignment1_rt) StderrLine: {'line': b'   54 |         message.\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K="The turtles are currently at a safe distance. Their distance is: " + std:: to_string(raduis_);\n'}
+[2.554251] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.554310] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:55:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.554370] (assignment1_rt) StderrLine: {'line': b'   55 |         RCLCPP_INFO(this->get_logger(), "Publishing distance: \'%s\'", message.\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K.c_str());\n'}
+[2.554434] (assignment1_rt) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.558829] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:56:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.558999] (assignment1_rt) StderrLine: {'line': b'   56 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(message);\n'}
+[2.559086] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.559164] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpublisher_1\x1b[m\x1b[K\n'}
+[2.612878] (-) TimerEvent: {}
+[2.713319] (-) TimerEvent: {}
+[2.813732] (-) TimerEvent: {}
+[2.914276] (-) TimerEvent: {}
+[3.014901] (-) TimerEvent: {}
+[3.115544] (-) TimerEvent: {}
+[3.215969] (-) TimerEvent: {}
+[3.316489] (-) TimerEvent: {}
+[3.416845] (-) TimerEvent: {}
+[3.517352] (-) TimerEvent: {}
+[3.617835] (-) TimerEvent: {}
+[3.718300] (-) TimerEvent: {}
+[3.818730] (-) TimerEvent: {}
+[3.919153] (-) TimerEvent: {}
+[4.019866] (-) TimerEvent: {}
+[4.120510] (-) TimerEvent: {}
+[4.220939] (-) TimerEvent: {}
+[4.321604] (-) TimerEvent: {}
+[4.422205] (-) TimerEvent: {}
+[4.522880] (-) TimerEvent: {}
+[4.623516] (-) TimerEvent: {}
+[4.724230] (-) TimerEvent: {}
+[4.824968] (-) TimerEvent: {}
+[4.925381] (-) TimerEvent: {}
+[4.927183] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1\n'}
+[4.927919] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[4.928211] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.931356] (assignment1_rt) CommandEnded: {'returncode': 2}
+[4.945258] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[4.946874] (-) EventReactorShutdown: {}

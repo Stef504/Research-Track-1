@@ -1,0 +1,76 @@
+[0.056s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.305s] [ 50%] Built target turtles
+[0.307s] [ 75%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[2.625s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+[2.625s]    60 |     [01;31m[Kstd_msgs[m[K::msg::String message;
+[2.625s]       |     [01;31m[K^~~~~~~~[m[K
+[2.656s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[2.656s]    64 |     rclcpp::Publisher<[01;31m[Kstd_msgs[m[K::msg::String>::SharedPtr publisher_;
+[2.656s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.656s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.656s]    64 |     rclcpp::Publisher<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr publisher_;
+[2.656s]       |                                            [01;31m[K^[m[K
+[2.656s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.656s]    64 |     rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K publisher_;
+[2.656s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[2.656s]       |                                                        [32m[K;[m[K
+[2.657s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:64:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.657s]    64 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;31m[Kpublisher_[m[K;
+[2.657s]       |                                                         [01;31m[K^~~~~~~~~~[m[K
+[2.657s]       |                                                         [32m[Krmw_publisher_t[m[K
+[2.675s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:[m[K In constructor ‘[01m[KDistance::[01;32m[KDistance[m[K()[m[K’:
+[2.675s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_1[m[K’?
+[2.675s]    18 |         [01;31m[Kpublisher_[m[K =this->create_publisher<std_msgs::msg::String>("distance_topic",10);
+[2.675s]       |         [01;31m[K^~~~~~~~~~[m[K
+[2.676s]       |         [32m[Kpublisher_1[m[K
+[2.681s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[2.681s]    18 |         publisher_ =this->create_publisher<[01;31m[Kstd_msgs[m[K::msg::String>("distance_topic",10);
+[2.681s]       |                                            [01;31m[K^~~~~~~~[m[K
+[2.681s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.681s]    18 |         publisher_ =this->[01;31m[Kcreate_publisher<std_msgs::msg::String>[m[K("distance_topic",10);
+[2.682s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.682s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDistance::create_publisher<<expression error> >(const char [15], int)[m[K’
+[2.682s]    18 |         publisher_ =[01;31m[Kthis->create_publisher<std_msgs::msg::String>("distance_topic",10)[m[K;
+[2.682s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.682s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.682s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.682s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[2.682s]                  from [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:1[m[K:
+[2.682s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.682s]   197 |   [01;36m[Kcreate_publisher[m[K(
+[2.682s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.682s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.682s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:18:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.682s]    18 |         publisher_ =[01;31m[Kthis->create_publisher<std_msgs::msg::String>("distance_topic",10)[m[K;
+[2.682s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.698s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:[m[K In member function ‘[01m[Kvoid Distance::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.698s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:41:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kpower[m[K’ was not declared in this scope
+[2.698s]    41 |     raduis_=sqrt([01;31m[Kpower[m[K(abs(t1_x - t2_x),2) + power(abs(t1_y - t2_y),2));
+[2.698s]       |                  [01;31m[K^~~~~[m[K
+[2.698s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:44:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.698s]    44 |         message.[01;31m[Kdata[m[K= "The turtles are too close! There distance is:" + std::to_string(raduis_);
+[2.699s]       |                 [01;31m[K^~~~[m[K
+[2.699s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.699s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.699s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[2.699s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:45:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.699s]    45 |         RCLCPP_INFO(this->get_logger(), "Publishing distance: '%s'", message.[01;31m[Kdata[m[K.c_str());
+[2.699s]       |                                                                              [01;31m[K^~~~[m[K
+[2.703s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_1[m[K’?
+[2.704s]    46 |         [01;31m[Kpublisher_[m[K->publish(message);
+[2.704s]       |         [01;31m[K^~~~~~~~~~[m[K
+[2.704s]       |         [32m[Kpublisher_1[m[K
+[2.704s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:54:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.704s]    54 |         message.[01;31m[Kdata[m[K="The turtles are currently at a safe distance. Their distance is: " + std:: to_string(raduis_);
+[2.704s]       |                 [01;31m[K^~~~[m[K
+[2.705s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:55:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.705s]    55 |         RCLCPP_INFO(this->get_logger(), "Publishing distance: '%s'", message.[01;31m[Kdata[m[K.c_str());
+[2.705s]       |                                                                              [01;31m[K^~~~[m[K
+[2.710s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:56:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_1[m[K’?
+[2.710s]    56 |         [01;31m[Kpublisher_[m[K->publish(message);
+[2.710s]       |         [01;31m[K^~~~~~~~~~[m[K
+[2.710s]       |         [32m[Kpublisher_1[m[K
+[5.267s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1
+[5.268s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[5.268s] gmake: *** [Makefile:146: all] Error 2
+[5.271s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16

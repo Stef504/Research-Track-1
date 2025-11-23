@@ -667,4 +667,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/ob_first_package_cpp_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/talker.dir/DependInfo.cmake"
+  "CMakeFiles/subscriber.dir/DependInfo.cmake"
   )

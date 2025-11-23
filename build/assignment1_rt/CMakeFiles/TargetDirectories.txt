@@ -1,6 +1,7 @@
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/uninstall.dir
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/assignment1_rt_uninstall.dir
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/turtles.dir
+/home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/distance.dir
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/test.dir
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/edit_cache.dir
 /home/ubuntu/ros_workspace/build/assignment1_rt/CMakeFiles/rebuild_cache.dir

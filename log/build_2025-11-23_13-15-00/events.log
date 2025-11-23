@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000355] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000409] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000452] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000494] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000536] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000579] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.000893] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.025149] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.026613] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.027163] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment1_rt', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu/ros_workspace/install', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-e33b703e-2d24-47fd-9178-33af9580668a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros_workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-60b17708-fec3-489c-b81c-a706e1ce0113.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/python_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy'}), 'shell': False}
+[0.100111] (-) TimerEvent: {}
+[0.180254] (assignment1_rt) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o\x1b[0m\n'}
+[0.191669] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o\x1b[0m\n'}
+[0.200269] (-) TimerEvent: {}
+[0.301030] (-) TimerEvent: {}
+[0.401955] (-) TimerEvent: {}
+[0.502474] (-) TimerEvent: {}
+[0.603067] (-) TimerEvent: {}
+[0.703611] (-) TimerEvent: {}
+[0.804233] (-) TimerEvent: {}
+[0.904714] (-) TimerEvent: {}
+[1.005623] (-) TimerEvent: {}
+[1.106179] (-) TimerEvent: {}
+[1.206608] (-) TimerEvent: {}
+[1.307514] (-) TimerEvent: {}
+[1.408211] (-) TimerEvent: {}
+[1.508850] (-) TimerEvent: {}
+[1.609392] (-) TimerEvent: {}
+[1.710422] (-) TimerEvent: {}
+[1.811258] (-) TimerEvent: {}
+[1.912100] (-) TimerEvent: {}
+[2.012944] (-) TimerEvent: {}
+[2.113874] (-) TimerEvent: {}
+[2.214350] (-) TimerEvent: {}
+[2.314827] (-) TimerEvent: {}
+[2.415513] (-) TimerEvent: {}
+[2.516304] (-) TimerEvent: {}
+[2.617025] (-) TimerEvent: {}
+[2.717721] (-) TimerEvent: {}
+[2.818588] (-) TimerEvent: {}
+[2.919470] (-) TimerEvent: {}
+[3.020434] (-) TimerEvent: {}
+[3.121340] (-) TimerEvent: {}
+[3.221763] (-) TimerEvent: {}
+[3.234145] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.234431] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:55:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.234507] (assignment1_rt) StderrLine: {'line': b'   55 |         publisher_->publish(\x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K);\n'}
+[3.234567] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.242323] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.242581] (assignment1_rt) StderrLine: {'line': b'   65 |         publisher_->publish(\x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K);\n'}
+[3.242654] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.321906] (-) TimerEvent: {}
+[3.422275] (-) TimerEvent: {}
+[3.522681] (-) TimerEvent: {}
+[3.623227] (-) TimerEvent: {}
+[3.723670] (-) TimerEvent: {}
+[3.824315] (-) TimerEvent: {}
+[3.925036] (-) TimerEvent: {}
+[4.026017] (-) TimerEvent: {}
+[4.126632] (-) TimerEvent: {}
+[4.227251] (-) TimerEvent: {}
+[4.327947] (-) TimerEvent: {}
+[4.428428] (-) TimerEvent: {}
+[4.529112] (-) TimerEvent: {}
+[4.630072] (-) TimerEvent: {}
+[4.730996] (-) TimerEvent: {}
+[4.831387] (-) TimerEvent: {}
+[4.931788] (-) TimerEvent: {}
+[5.032215] (-) TimerEvent: {}
+[5.132580] (-) TimerEvent: {}
+[5.232893] (-) TimerEvent: {}
+[5.333281] (-) TimerEvent: {}
+[5.433668] (-) TimerEvent: {}
+[5.534054] (-) TimerEvent: {}
+[5.634452] (-) TimerEvent: {}
+[5.734828] (-) TimerEvent: {}
+[5.835199] (-) TimerEvent: {}
+[5.882984] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1\n'}
+[5.883445] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[5.883633] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.935323] (-) TimerEvent: {}
+[6.035947] (-) TimerEvent: {}
+[6.136332] (-) TimerEvent: {}
+[6.236676] (-) TimerEvent: {}
+[6.337077] (-) TimerEvent: {}
+[6.437521] (-) TimerEvent: {}
+[6.537937] (-) TimerEvent: {}
+[6.638303] (-) TimerEvent: {}
+[6.738666] (-) TimerEvent: {}
+[6.839058] (-) TimerEvent: {}
+[6.939459] (-) TimerEvent: {}
+[7.039874] (-) TimerEvent: {}
+[7.140279] (-) TimerEvent: {}
+[7.240727] (-) TimerEvent: {}
+[7.341147] (-) TimerEvent: {}
+[7.441578] (-) TimerEvent: {}
+[7.541983] (-) TimerEvent: {}
+[7.642411] (-) TimerEvent: {}
+[7.742770] (-) TimerEvent: {}
+[7.843137] (-) TimerEvent: {}
+[7.943493] (-) TimerEvent: {}
+[8.043907] (-) TimerEvent: {}
+[8.144303] (-) TimerEvent: {}
+[8.244642] (-) TimerEvent: {}
+[8.345112] (-) TimerEvent: {}
+[8.445536] (-) TimerEvent: {}
+[8.545955] (-) TimerEvent: {}
+[8.646344] (-) TimerEvent: {}
+[8.740189] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable turtles\x1b[0m\n'}
+[8.746436] (-) TimerEvent: {}
+[8.846752] (-) TimerEvent: {}
+[8.947124] (-) TimerEvent: {}
+[9.047517] (-) TimerEvent: {}
+[9.147950] (-) TimerEvent: {}
+[9.173860] (assignment1_rt) StdoutLine: {'line': b'[ 75%] Built target turtles\n'}
+[9.175899] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.179317] (assignment1_rt) CommandEnded: {'returncode': 2}
+[9.200822] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[9.202358] (-) EventReactorShutdown: {}
