@@ -38,10 +38,10 @@
         t2_y= msg->y;
     }
 
-    void topic_callback(const std_msgs::msg::String::SharedPtr msg) 
+   /* void topic_callback(const std_msgs::msg::String::SharedPtr msg) 
     {
         RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
-    }
+    }*/
 
     void timer_callback()
  {
@@ -60,27 +60,34 @@
     }else{
         distance_msg.data="The turtles are currently at a safe distance. Their distance is: " + std:: to_string(raduis_);
         RCLCPP_INFO(this->get_logger(), "Publishing distance: '%s'", distance_msg.data.c_str());
+        
+    }
+
+    if ((t1_x >=10.0) || (t1_x <=0.0)){
+        twist_msg.linear.x= 0.0;
+        twist_msg.angular.z = 0.0;
+        RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: x=%f", t1_x);
+      
+        distance_msg.data= "The turtle are out of bounds:" + std::to_string(raduis_);
+        publisher_->publish(distance_msg);
+    }else if ((t2_x >=10) || (t2_x <=0)){
+        RCLCPP_WARN(this->get_logger(), "Turtle 2 out of bounds: x=%f", t2_x);
+      
+        distance_msg.data= "The turtle are out of bounds:" + std::to_string(raduis_);
         publisher_->publish(distance_msg);
     }
 
-    if ((t1_x || t2_x >=10.0) || (t1_x || t2_x <=0.0)){
+    if ((t2_y >=10.0) || (t2_y <=0.0)){
         twist_msg.linear.x= 0.0;
         twist_msg.angular.z = 0.0;
-        publisher_1->publish(twist_msg);
-        RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: x=%f", t1_x);
-
-        publisher_2->publish(twist_msg);
-        RCLCPP_WARN(this->get_logger(), "Turtle 2 out of bounds: x=%f", t2_x);
-    }
-
-    if ((t1_y || t2_y >=10.0) || (t1_y || t2_y <=0.0)){
-        twist_msg.linear.x= 0.0;
-        twist_msg.angular.z = 0.0;
-        publisher_1->publish(twist_msg);
-        RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: y=%f", t1_y);
-
-        publisher_2->publish(twist_msg);
+               
         RCLCPP_WARN(this->get_logger(), "Turtle 2 out of bounds: y=%f", t2_y);
+        distance_msg.data= "The turtle are out of bounds:" + std::to_string(raduis_);
+        publisher_->publish(distance_msg);
+    }else if ((t1_y>=10) || (t1_y <=10)){
+        RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: y=%f", t1_y);
+        distance_msg.data= "The turtle are out of bounds:" + std::to_string(raduis_);
+        publisher_->publish(distance_msg);
     }
 }
 
