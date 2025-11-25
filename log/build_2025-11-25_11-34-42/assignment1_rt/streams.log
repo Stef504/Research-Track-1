@@ -1,0 +1,24 @@
+[0.016s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.121s] [ 50%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[0.121s] [ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[2.985s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:[m[K In member function ‘[01m[Kvoid Distance::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.985s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+[2.985s]    65 |     else(raduis_<=threshold_)[01;31m[K{[m[K
+[2.985s]       |                              [01;31m[K^[m[K
+[2.985s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:17:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[2.985s]    65 |     else[01;35m[K(raduis_<=threshold_)[m[K{
+[2.985s]       |         [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[2.999s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In member function ‘[01m[Kvoid TwoTurtles::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.999s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:70:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+[2.999s]    70 |     }else(valid_choice)[01;31m[K{[m[K
+[2.999s]       |                        [01;31m[K^[m[K
+[2.999s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:70:11:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[2.999s]    70 |     }else[01;35m[K(valid_choice)[m[K{
+[3.000s]       |          [01;35m[K~^~~~~~~~~~~~~[m[K
+[5.547s] gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1
+[5.547s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtles.dir/all] Error 2
+[5.547s] gmake[1]: *** Waiting for unfinished jobs....
+[5.685s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1
+[5.686s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[5.686s] gmake: *** [Makefile:146: all] Error 2
+[5.690s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16

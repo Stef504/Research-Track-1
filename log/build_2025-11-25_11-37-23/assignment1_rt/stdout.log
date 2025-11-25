@@ -1,0 +1,4 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable turtles[0m
+[ 75%] Built target turtles

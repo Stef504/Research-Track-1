@@ -1,0 +1,12 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:[m[K In member function ‘[01m[Kvoid Distance::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   50 |     [01;31m[Kelse[m[K if ((t1_x > 9.5) || (t1_x < 0.5)){
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable turtles[0m
+[ 75%] Built target turtles
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.000239] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000476] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000520] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000576] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000615] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000658] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.000955] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.024474] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.025715] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.026587] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment1_rt', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu/ros_workspace/install', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-c8e14c56-db3d-4b94-b807-6b53eed0f78e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros_workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-aea3e94a-0aea-4195-98c6-de4f121daaf4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/python_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy'}), 'shell': False}
+[0.099709] (-) TimerEvent: {}
+[0.171871] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o\x1b[0m\n'}
+[0.172243] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o\x1b[0m\n'}
+[0.199876] (-) TimerEvent: {}
+[0.300239] (-) TimerEvent: {}
+[0.400649] (-) TimerEvent: {}
+[0.501043] (-) TimerEvent: {}
+[0.601402] (-) TimerEvent: {}
+[0.701767] (-) TimerEvent: {}
+[0.802177] (-) TimerEvent: {}
+[0.902542] (-) TimerEvent: {}
+[1.002900] (-) TimerEvent: {}
+[1.103722] (-) TimerEvent: {}
+[1.204156] (-) TimerEvent: {}
+[1.304564] (-) TimerEvent: {}
+[1.405460] (-) TimerEvent: {}
+[1.505884] (-) TimerEvent: {}
+[1.607024] (-) TimerEvent: {}
+[1.707379] (-) TimerEvent: {}
+[1.808262] (-) TimerEvent: {}
+[1.908703] (-) TimerEvent: {}
+[2.009547] (-) TimerEvent: {}
+[2.110000] (-) TimerEvent: {}
+[2.210455] (-) TimerEvent: {}
+[2.310877] (-) TimerEvent: {}
+[2.411281] (-) TimerEvent: {}
+[2.511712] (-) TimerEvent: {}
+[2.612129] (-) TimerEvent: {}
+[2.712517] (-) TimerEvent: {}
+[2.812944] (-) TimerEvent: {}
+[2.906810] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:177:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[2.907176] (assignment1_rt) StderrLine: {'line': b'  177 |  }\n'}
+[2.907288] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.907375] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:12:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.907459] (assignment1_rt) StderrLine: {'line': b'   12 |  \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[2.907536] (assignment1_rt) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.913100] (-) TimerEvent: {}
+[2.915815] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTwoTurtles::\x1b[01;32m\x1b[KTwoTurtles\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.916078] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:24:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.916185] (assignment1_rt) StderrLine: {'line': b'   24 |       \x1b[01;31m\x1b[Kpublisher_1\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);\n'}
+[2.916276] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.916355] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.926437] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:25:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.926659] (assignment1_rt) StderrLine: {'line': b'   25 |       \x1b[01;31m\x1b[Kpublisher_2\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);\n'}
+[2.926723] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.926780] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.932940] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscribe_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.933224] (assignment1_rt) StderrLine: {'line': b'   27 |       \x1b[01;31m\x1b[Ksubscribe_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));\n'}
+[2.933334] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.965372] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.965678] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.965783] (assignment1_rt) StderrLine: {'line': b'   65 |     else(raduis_<=threshold_)\x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[2.965864] (assignment1_rt) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.966182] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/distance_calc.cpp:65:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.966360] (assignment1_rt) StderrLine: {'line': b'   65 |     else\x1b[01;35m\x1b[K(raduis_<=threshold_)\x1b[m\x1b[K{\n'}
+[2.966453] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.968186] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:28:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.968339] (assignment1_rt) StderrLine: {'line': b'   28 |       \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s\n'}
+[2.968429] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.968511] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[2.982228] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwoTurtles::\x1b[01;32m\x1b[Ktopic_callback\x1b[m\x1b[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.982503] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:49:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstop_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.982615] (assignment1_rt) StderrLine: {'line': b'   49 |         \x1b[01;31m\x1b[Kstop_\x1b[m\x1b[K=true;\n'}
+[2.982696] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.989295] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwoTurtles::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.989563] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:54:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.989656] (assignment1_rt) StderrLine: {'line': b'   54 |     if (!\x1b[01;31m\x1b[Kvalid_choice\x1b[m\x1b[K) {\n'}
+[2.989757] (assignment1_rt) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.995645] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:56:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturtle_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.995933] (assignment1_rt) StderrLine: {'line': b'   56 |         \x1b[01;31m\x1b[Kturtle_choice\x1b[m\x1b[K=0;\n'}
+[2.996033] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.001326] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krunning_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.001579] (assignment1_rt) StderrLine: {'line': b'   57 |         \x1b[01;31m\x1b[Krunning_\x1b[m\x1b[K = false;\n'}
+[3.001656] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.007306] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:58:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstop_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.007593] (assignment1_rt) StderrLine: {'line': b'   58 |         \x1b[01;31m\x1b[Kstop_\x1b[m\x1b[K=false;\n'}
+[3.007687] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.007871] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:70:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.008016] (assignment1_rt) StderrLine: {'line': b'   70 |     }else{valid_choice\x1b[01;31m\x1b[K}\x1b[m\x1b[K{\n'}
+[3.008105] (assignment1_rt) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.013222] (-) TimerEvent: {}
+[3.015410] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:72:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturtle_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.015708] (assignment1_rt) StderrLine: {'line': b'   72 |     if (\x1b[01;31m\x1b[Kturtle_choice\x1b[m\x1b[K==1){\n'}
+[3.015828] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.025782] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:76:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturtle_velocity_linear\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.026058] (assignment1_rt) StderrLine: {'line': b'   76 |         std::cin >> \x1b[01;31m\x1b[Kturtle_velocity_linear\x1b[m\x1b[K;\n'}
+[3.026147] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.036410] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:79:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturtle_velocity_angular\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.036672] (assignment1_rt) StderrLine: {'line': b'   79 |         std::cin >> \x1b[01;31m\x1b[Kturtle_velocity_angular\x1b[m\x1b[K;\n'}
+[3.036766] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.042517] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:82:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krunning_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.042782] (assignment1_rt) StderrLine: {'line': b'   82 |         if (!\x1b[01;31m\x1b[Krunning_\x1b[m\x1b[K){\n'}
+[3.042876] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.049819] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:83:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktick_count_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.050046] (assignment1_rt) StderrLine: {'line': b'   83 |             \x1b[01;31m\x1b[Ktick_count_\x1b[m\x1b[K++;\n'}
+[3.050149] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.056263] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:84:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_ticks_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.056467] (assignment1_rt) StderrLine: {'line': b'   84 |             if (tick_count_ < \x1b[01;31m\x1b[Kmax_ticks_\x1b[m\x1b[K){\n'}
+[3.056530] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.061869] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:86:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstop_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.062124] (assignment1_rt) StderrLine: {'line': b'   86 |                 if (\x1b[01;31m\x1b[Kstop_\x1b[m\x1b[K){\n'}
+[3.062205] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.067983] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:87:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.068229] (assignment1_rt) StderrLine: {'line': b'   87 |                     \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x = 0.0;\n'}
+[3.068324] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.074119] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:89:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.074347] (assignment1_rt) StderrLine: {'line': b'   89 |                     \x1b[01;31m\x1b[Kpublisher_1\x1b[m\x1b[K->publish(message);\n'}
+[3.074429] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.074488] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.082111] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:91:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.082406] (assignment1_rt) StderrLine: {'line': b'   91 |                     \x1b[01;31m\x1b[Kvalid_choice\x1b[m\x1b[K=false;\n'}
+[3.082515] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.088302] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:93:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.088575] (assignment1_rt) StderrLine: {'line': b'   93 |                     \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x = turtle_velocity_linear;\n'}
+[3.088692] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.094798] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:95:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.095102] (assignment1_rt) StderrLine: {'line': b'   95 |                     \x1b[01;31m\x1b[Kpublisher_1\x1b[m\x1b[K->publish(message);\n'}
+[3.095211] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.095293] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.100328] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:98:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.100570] (assignment1_rt) StderrLine: {'line': b'   98 |                 \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x = 0.0;\n'}
+[3.100661] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.106369] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:100:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.106580] (assignment1_rt) StderrLine: {'line': b'  100 |                 \x1b[01;31m\x1b[Kpublisher_1\x1b[m\x1b[K->publish(message);\n'}
+[3.106678] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.106781] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.113426] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:102:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.113631] (-) TimerEvent: {}
+[3.113731] (assignment1_rt) StderrLine: {'line': b'  102 |                 \x1b[01;31m\x1b[Kvalid_choice\x1b[m\x1b[K=false;\n'}
+[3.113843] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.120595] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:117:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktick_count_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.120913] (assignment1_rt) StderrLine: {'line': b'  117 |                 \x1b[01;31m\x1b[Ktick_count_\x1b[m\x1b[K++;\n'}
+[3.121012] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.127733] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:118:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_ticks_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.127970] (assignment1_rt) StderrLine: {'line': b'  118 |                 if (tick_count_ < \x1b[01;31m\x1b[Kmax_ticks_\x1b[m\x1b[K){\n'}
+[3.128048] (assignment1_rt) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.133689] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:120:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstop_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.133985] (assignment1_rt) StderrLine: {'line': b'  120 |                     if (\x1b[01;31m\x1b[Kstop_\x1b[m\x1b[K){\n'}
+[3.134064] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.140280] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:121:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.140564] (assignment1_rt) StderrLine: {'line': b'  121 |                         \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x = 0.0;\n'}
+[3.140667] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.146516] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:123:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.146820] (assignment1_rt) StderrLine: {'line': b'  123 |                         \x1b[01;31m\x1b[Kpublisher_2\x1b[m\x1b[K->publish(message);\n'}
+[3.146914] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.146993] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.153388] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:125:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.153618] (assignment1_rt) StderrLine: {'line': b'  125 |                         \x1b[01;31m\x1b[Kvalid_choice\x1b[m\x1b[K=false;\n'}
+[3.153691] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.158937] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:127:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.159162] (assignment1_rt) StderrLine: {'line': b'  127 |                         \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x= turtle_velocity_linear;\n'}
+[3.159239] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.165084] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:129:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.165495] (assignment1_rt) StderrLine: {'line': b'  129 |                         \x1b[01;31m\x1b[Kpublisher_2\x1b[m\x1b[K->publish(message);\n'}
+[3.165618] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.165704] (assignment1_rt) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.170530] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:132:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.170748] (assignment1_rt) StderrLine: {'line': b'  132 |                     \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.linear.x= 0.0;\n'}
+[3.170823] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.177784] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:134:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.178003] (assignment1_rt) StderrLine: {'line': b'  134 |                     \x1b[01;31m\x1b[Kpublisher_2\x1b[m\x1b[K->publish(message);\n'}
+[3.178069] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.178126] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.184913] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:136:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.185217] (assignment1_rt) StderrLine: {'line': b'  136 |                     \x1b[01;31m\x1b[Kvalid_choice\x1b[m\x1b[K=false;\n'}
+[3.185344] (assignment1_rt) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.189836] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:150:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.190405] (assignment1_rt) StderrLine: {'line': b'  150 |     double \x1b[01;35m\x1b[Kx_\x1b[m\x1b[K = 0.0, y_ = 0.0;\n'}
+[3.190500] (assignment1_rt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.190570] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:150:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.190627] (assignment1_rt) StderrLine: {'line': b'  150 |     double x_ = 0.0, \x1b[01;35m\x1b[Ky_\x1b[m\x1b[K = 0.0;\n'}
+[3.190678] (assignment1_rt) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.190728] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:151:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kselected_turtle_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.190821] (assignment1_rt) StderrLine: {'line': b'  151 |     int \x1b[01;35m\x1b[Kselected_turtle_\x1b[m\x1b[K=0;\n'}
+[3.190878] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.190932] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:152:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kturtle_velocity_linear\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191005] (assignment1_rt) StderrLine: {'line': b'  152 |     double \x1b[01;35m\x1b[Kturtle_velocity_linear\x1b[m\x1b[K=0.0;\n'}
+[3.191057] (assignment1_rt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.191108] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:153:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kturtle_velocity_angular\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191159] (assignment1_rt) StderrLine: {'line': b'  153 |     double \x1b[01;35m\x1b[Kturtle_velocity_angular\x1b[m\x1b[K=0.0;\n'}
+[3.191208] (assignment1_rt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.191257] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:154:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kturtle_choice\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191317] (assignment1_rt) StderrLine: {'line': b'  154 |     int \x1b[01;35m\x1b[Kturtle_choice\x1b[m\x1b[K = 0;\n'}
+[3.191366] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.191414] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:156:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktick_count_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191466] (assignment1_rt) StderrLine: {'line': b'  156 |     int \x1b[01;35m\x1b[Ktick_count_\x1b[m\x1b[K = 0;\n'}
+[3.191580] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.191641] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:159:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_ticks_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191712] (assignment1_rt) StderrLine: {'line': b'  159 |     int \x1b[01;35m\x1b[Kmax_ticks_\x1b[m\x1b[K = desired_seconds_/htz_;\n'}
+[3.191766] (assignment1_rt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.191816] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:161:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kt1_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.191868] (assignment1_rt) StderrLine: {'line': b'  161 |     double \x1b[01;35m\x1b[Kt1_x\x1b[m\x1b[K, t1_y;\n'}
+[3.191918] (assignment1_rt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.191968] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:161:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kt1_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192019] (assignment1_rt) StderrLine: {'line': b'  161 |     double t1_x, \x1b[01;35m\x1b[Kt1_y\x1b[m\x1b[K;\n'}
+[3.192068] (assignment1_rt) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.192117] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:162:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kt2_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192165] (assignment1_rt) StderrLine: {'line': b'  162 |     double \x1b[01;35m\x1b[Kt2_x\x1b[m\x1b[K, t2_y;\n'}
+[3.192212] (assignment1_rt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.192259] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:162:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kt2_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192316] (assignment1_rt) StderrLine: {'line': b'  162 |     double t2_x, \x1b[01;35m\x1b[Kt2_y\x1b[m\x1b[K;\n'}
+[3.192365] (assignment1_rt) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.192413] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:164:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Krunning_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192462] (assignment1_rt) StderrLine: {'line': b'  164 |     bool \x1b[01;35m\x1b[Krunning_\x1b[m\x1b[K= false;\n'}
+[3.192517] (assignment1_rt) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.192567] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:165:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kselected_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192623] (assignment1_rt) StderrLine: {'line': b'  165 |     bool \x1b[01;35m\x1b[Kselected_\x1b[m\x1b[K = false;\n'}
+[3.192671] (assignment1_rt) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.192809] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:166:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kvalid_choice\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.192891] (assignment1_rt) StderrLine: {'line': b'  166 |     bool \x1b[01;35m\x1b[Kvalid_choice\x1b[m\x1b[K = false;\n'}
+[3.192948] (assignment1_rt) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.192999] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:167:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kstop_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.193050] (assignment1_rt) StderrLine: {'line': b'  167 |     bool \x1b[01;35m\x1b[Kstop_\x1b[m\x1b[K =false;\n'}
+[3.193099] (assignment1_rt) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.193147] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.193269] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:177:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[3.193336] (assignment1_rt) StderrLine: {'line': b'  177 |  }\n'}
+[3.193390] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.213783] (-) TimerEvent: {}
+[3.314155] (-) TimerEvent: {}
+[3.414522] (-) TimerEvent: {}
+[3.514934] (-) TimerEvent: {}
+[3.615317] (-) TimerEvent: {}
+[3.715712] (-) TimerEvent: {}
+[3.816141] (-) TimerEvent: {}
+[3.916505] (-) TimerEvent: {}
+[4.016925] (-) TimerEvent: {}
+[4.117427] (-) TimerEvent: {}
+[4.217806] (-) TimerEvent: {}
+[4.318225] (-) TimerEvent: {}
+[4.418624] (-) TimerEvent: {}
+[4.518995] (-) TimerEvent: {}
+[4.619445] (-) TimerEvent: {}
+[4.719946] (-) TimerEvent: {}
+[4.820365] (-) TimerEvent: {}
+[4.920759] (-) TimerEvent: {}
+[5.021271] (-) TimerEvent: {}
+[5.121717] (-) TimerEvent: {}
+[5.222137] (-) TimerEvent: {}
+[5.322558] (-) TimerEvent: {}
+[5.423012] (-) TimerEvent: {}
+[5.440074] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1\n'}
+[5.440511] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtles.dir/all] Error 2\n'}
+[5.440757] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.523164] (-) TimerEvent: {}
+[5.623569] (-) TimerEvent: {}
+[5.631891] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_calc.cpp.o] Error 1\n'}
+[5.632314] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[5.632750] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.636160] (assignment1_rt) CommandEnded: {'returncode': 2}
+[5.658460] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[5.669374] (-) EventReactorShutdown: {}

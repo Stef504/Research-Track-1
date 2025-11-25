@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.000300] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000564] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000606] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000645] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000685] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000726] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.000768] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.010783] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.011773] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.012669] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment1_rt', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-c8e14c56-db3d-4b94-b807-6b53eed0f78e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-aea3e94a-0aea-4195-98c6-de4f121daaf4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099818] (-) TimerEvent: {}
+[0.108035] (assignment1_rt) StdoutLine: {'line': b'[ 50%] Built target distance\n'}
+[0.119231] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o\x1b[0m\n'}
+[0.200304] (-) TimerEvent: {}
+[0.300827] (-) TimerEvent: {}
+[0.401213] (-) TimerEvent: {}
+[0.501683] (-) TimerEvent: {}
+[0.602069] (-) TimerEvent: {}
+[0.702448] (-) TimerEvent: {}
+[0.802810] (-) TimerEvent: {}
+[0.903210] (-) TimerEvent: {}
+[1.003582] (-) TimerEvent: {}
+[1.104025] (-) TimerEvent: {}
+[1.204428] (-) TimerEvent: {}
+[1.304876] (-) TimerEvent: {}
+[1.405388] (-) TimerEvent: {}
+[1.505821] (-) TimerEvent: {}
+[1.606256] (-) TimerEvent: {}
+[1.706683] (-) TimerEvent: {}
+[1.807064] (-) TimerEvent: {}
+[1.907414] (-) TimerEvent: {}
+[2.007838] (-) TimerEvent: {}
+[2.108287] (-) TimerEvent: {}
+[2.208686] (-) TimerEvent: {}
+[2.309032] (-) TimerEvent: {}
+[2.382693] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:127:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSubscroption\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 does not name a template type; did you mean \xe2\x80\x98\x1b[01m\x1b[KSubscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.382937] (assignment1_rt) StderrLine: {'line': b'  127 |     rclcpp::\x1b[01;31m\x1b[KSubscroption\x1b[m\x1b[K<std_msgs::msg::String>::SharedPtr subscribe_;\n'}
+[2.383087] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.383151] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[KSubscription\x1b[m\x1b[K\n'}
+[2.386522] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:149:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.386724] (assignment1_rt) StderrLine: {'line': b'  149 |     bool stop_ =\x1b[01;31m\x1b[Kfalse\x1b[m\x1b[K\n'}
+[2.386816] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.386894] (assignment1_rt) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.387355] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTwoTurtles::\x1b[01;32m\x1b[KTwoTurtles\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.387674] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:21:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTwoTurtles::create_subscription<turtlesim::msg::Pose>(const char [13], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.387767] (assignment1_rt) StderrLine: {'line': b'   21 |       subscription_1 =\x1b[01;31m\x1b[Kthis-> create_subscription<turtlesim::msg::Pose>("turtle1/pose",10)\x1b[m\x1b[K;\n'}
+[2.387854] (assignment1_rt) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.387934] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.388052] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.388141] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[2.388192] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:1\x1b[m\x1b[K:\n'}
+[2.388242] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.388298] (assignment1_rt) StderrLine: {'line': b'  221 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[2.388399] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.388483] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 2 provided\n'}
+[2.388542] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:22:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTwoTurtles::create_subscription<turtlesim::msg::Pose>(const char [13], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.388597] (assignment1_rt) StderrLine: {'line': b'   22 |       subscription_2 =\x1b[01;31m\x1b[Kthis-> create_subscription<turtlesim::msg::Pose>("turtle2/pose",10)\x1b[m\x1b[K;\n'}
+[2.388660] (assignment1_rt) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.388710] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.388773] (assignment1_rt) StderrLine: {'line': b'  221 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[2.388830] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.388888] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 2 provided\n'}
+[2.396018] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscribe_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.396525] (assignment1_rt) StderrLine: {'line': b'   27 |       \x1b[01;31m\x1b[Ksubscribe_\x1b[m\x1b[K = this->create_subscriber<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));\n'}
+[2.396695] (assignment1_rt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.396781] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass TwoTurtles\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_subscriber\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcreate_subscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.396855] (assignment1_rt) StderrLine: {'line': b'   27 |       subscribe_ = this->\x1b[01;31m\x1b[Kcreate_subscriber\x1b[m\x1b[K<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));\n'}
+[2.396913] (assignment1_rt) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.396966] (assignment1_rt) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kcreate_subscription\x1b[m\x1b[K\n'}
+[2.397017] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.397067] (assignment1_rt) StderrLine: {'line': b'   27 |       subscribe_ = this->create_subscriber<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));\n'}
+[2.397129] (assignment1_rt) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.397181] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.397236] (assignment1_rt) StderrLine: {'line': b'   27 |       subscribe_ = this->create_subscriber<std_msgs::msg::String>(\x1b[01;35m\x1b[K"distance_topic"\x1b[m\x1b[K,10,std::bind(&TwoTurtles::topic_callback, this, _1));\n'}
+[2.397375] (assignment1_rt) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.402792] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:134:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.403006] (assignment1_rt) StderrLine: {'line': b'   27 | be_ = this->create_subscriber<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1\x1b[01;35m\x1b[K)\x1b[m\x1b[K);\n'}
+[2.403069] (assignment1_rt) StderrLine: {'line': b'      |                                                                                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.403124] (assignment1_rt) StderrLine: {'line': b'\n'}
+[2.409177] (-) TimerEvent: {}
+[2.411845] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwoTurtles::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.412021] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:114:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.412082] (assignment1_rt) StderrLine: {'line': b'  114 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K {\n'}
+[2.412203] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.412292] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:63:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.412372] (assignment1_rt) StderrLine: {'line': b'   63 |             if (!stop_)\x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[2.412445] (assignment1_rt) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.509353] (-) TimerEvent: {}
+[2.609878] (-) TimerEvent: {}
+[2.710316] (-) TimerEvent: {}
+[2.810730] (-) TimerEvent: {}
+[2.911152] (-) TimerEvent: {}
+[3.011555] (-) TimerEvent: {}
+[3.112089] (-) TimerEvent: {}
+[3.212847] (-) TimerEvent: {}
+[3.313388] (-) TimerEvent: {}
+[3.413804] (-) TimerEvent: {}
+[3.514174] (-) TimerEvent: {}
+[3.614556] (-) TimerEvent: {}
+[3.637002] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1\n'}
+[3.637505] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtles.dir/all] Error 2\n'}
+[3.637827] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.641149] (assignment1_rt) CommandEnded: {'returncode': 2}
+[3.652851] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[3.654310] (-) EventReactorShutdown: {}

@@ -1,0 +1,133 @@
+[0.000000] (-) TimerEvent: {}
+[0.000430] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000512] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000574] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000637] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000686] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000934] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.001021] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.022940] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.024243] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.024802] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment1_rt', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-c8e14c56-db3d-4b94-b807-6b53eed0f78e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-aea3e94a-0aea-4195-98c6-de4f121daaf4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099513] (-) TimerEvent: {}
+[0.199907] (-) TimerEvent: {}
+[0.211569] (assignment1_rt) StdoutLine: {'line': b'[ 50%] Built target distance\n'}
+[0.221133] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o\x1b[0m\n'}
+[0.300157] (-) TimerEvent: {}
+[0.400540] (-) TimerEvent: {}
+[0.500876] (-) TimerEvent: {}
+[0.601341] (-) TimerEvent: {}
+[0.701712] (-) TimerEvent: {}
+[0.802155] (-) TimerEvent: {}
+[0.902528] (-) TimerEvent: {}
+[1.002874] (-) TimerEvent: {}
+[1.103231] (-) TimerEvent: {}
+[1.203650] (-) TimerEvent: {}
+[1.304038] (-) TimerEvent: {}
+[1.404491] (-) TimerEvent: {}
+[1.504866] (-) TimerEvent: {}
+[1.605239] (-) TimerEvent: {}
+[1.705601] (-) TimerEvent: {}
+[1.806196] (-) TimerEvent: {}
+[1.906599] (-) TimerEvent: {}
+[2.007048] (-) TimerEvent: {}
+[2.107478] (-) TimerEvent: {}
+[2.207914] (-) TimerEvent: {}
+[2.308341] (-) TimerEvent: {}
+[2.408737] (-) TimerEvent: {}
+[2.509142] (-) TimerEvent: {}
+[2.609539] (-) TimerEvent: {}
+[2.709989] (-) TimerEvent: {}
+[2.810386] (-) TimerEvent: {}
+[2.910834] (-) TimerEvent: {}
+[3.011290] (-) TimerEvent: {}
+[3.111743] (-) TimerEvent: {}
+[3.212217] (-) TimerEvent: {}
+[3.312591] (-) TimerEvent: {}
+[3.412988] (-) TimerEvent: {}
+[3.513401] (-) TimerEvent: {}
+[3.613760] (-) TimerEvent: {}
+[3.714103] (-) TimerEvent: {}
+[3.814565] (-) TimerEvent: {}
+[3.915067] (-) TimerEvent: {}
+[4.015490] (-) TimerEvent: {}
+[4.115881] (-) TimerEvent: {}
+[4.216245] (-) TimerEvent: {}
+[4.316672] (-) TimerEvent: {}
+[4.417107] (-) TimerEvent: {}
+[4.517554] (-) TimerEvent: {}
+[4.617973] (-) TimerEvent: {}
+[4.718349] (-) TimerEvent: {}
+[4.818777] (-) TimerEvent: {}
+[4.919227] (-) TimerEvent: {}
+[5.019665] (-) TimerEvent: {}
+[5.120055] (-) TimerEvent: {}
+[5.220446] (-) TimerEvent: {}
+[5.320876] (-) TimerEvent: {}
+[5.421317] (-) TimerEvent: {}
+[5.522205] (-) TimerEvent: {}
+[5.622606] (-) TimerEvent: {}
+[5.723003] (-) TimerEvent: {}
+[5.823407] (-) TimerEvent: {}
+[5.923885] (-) TimerEvent: {}
+[6.024319] (-) TimerEvent: {}
+[6.124735] (-) TimerEvent: {}
+[6.225148] (-) TimerEvent: {}
+[6.325510] (-) TimerEvent: {}
+[6.425905] (-) TimerEvent: {}
+[6.526274] (-) TimerEvent: {}
+[6.626757] (-) TimerEvent: {}
+[6.727236] (-) TimerEvent: {}
+[6.827616] (-) TimerEvent: {}
+[6.928030] (-) TimerEvent: {}
+[7.028496] (-) TimerEvent: {}
+[7.128840] (-) TimerEvent: {}
+[7.229212] (-) TimerEvent: {}
+[7.329612] (-) TimerEvent: {}
+[7.429976] (-) TimerEvent: {}
+[7.530362] (-) TimerEvent: {}
+[7.630790] (-) TimerEvent: {}
+[7.731154] (-) TimerEvent: {}
+[7.831531] (-) TimerEvent: {}
+[7.931916] (-) TimerEvent: {}
+[8.032295] (-) TimerEvent: {}
+[8.132675] (-) TimerEvent: {}
+[8.233048] (-) TimerEvent: {}
+[8.333497] (-) TimerEvent: {}
+[8.433918] (-) TimerEvent: {}
+[8.534311] (-) TimerEvent: {}
+[8.562023] (assignment1_rt) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtles\x1b[0m\n'}
+[8.634442] (-) TimerEvent: {}
+[8.734815] (-) TimerEvent: {}
+[8.835215] (-) TimerEvent: {}
+[8.935568] (-) TimerEvent: {}
+[9.032997] (assignment1_rt) StdoutLine: {'line': b'[100%] Built target turtles\n'}
+[9.035695] (-) TimerEvent: {}
+[9.052330] (assignment1_rt) CommandEnded: {'returncode': 0}
+[9.053913] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'install'}
+[9.069862] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros_workspace/build/assignment1_rt'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.106.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-c8e14c56-db3d-4b94-b807-6b53eed0f78e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-aea3e94a-0aea-4195-98c6-de4f121daaf4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment1_rt', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.083422] (assignment1_rt) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.085947] (assignment1_rt) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles\n'}
+[9.095222] (assignment1_rt) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles" to ""\n'}
+[9.096591] (assignment1_rt) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance\n'}
+[9.107647] (assignment1_rt) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance" to ""\n'}
+[9.108123] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtle2\n'}
+[9.108246] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt\n'}
+[9.108345] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt\n'}
+[9.108433] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh\n'}
+[9.108597] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv\n'}
+[9.108839] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.sh\n'}
+[9.108923] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.dsv\n'}
+[9.109116] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.bash\n'}
+[9.109358] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.sh\n'}
+[9.109440] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.zsh\n'}
+[9.109505] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.dsv\n'}
+[9.109564] (assignment1_rt) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.dsv\n'}
+[9.109909] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt\n'}
+[9.110095] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake\n'}
+[9.110239] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake\n'}
+[9.110308] (assignment1_rt) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.xml\n'}
+[9.113346] (assignment1_rt) CommandEnded: {'returncode': 0}
+[9.135818] (-) TimerEvent: {}
+[9.141835] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 0}
+[9.143110] (-) EventReactorShutdown: {}
