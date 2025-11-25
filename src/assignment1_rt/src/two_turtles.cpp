@@ -29,20 +29,6 @@
     } 
 
   private:
-   /* void turtle1_callback(const turtlesim::msg::Pose::SharedPtr msg)
-    {
-        RCLCPP_INFO(this->get_logger(), "The position of Turtle 1 is (x,y): '%f, %f'", msg->x, msg->y);
-        t1_x= msg->x;
-        t1_y= msg->y;
-    }
-
-    void turtle2_callback(const turtlesim::msg::Pose::SharedPtr msg)
-    {
-        RCLCPP_INFO(this->get_logger(), "The position of Turtle 2 is (x,y): '%f, %f'", msg->x, msg->y);
-        t2_x= msg->x;
-        t2_y= msg->y;
-    }
-*/
      void topic_callback(const std_msgs::msg::String::SharedPtr msg) 
      {
         RCLCPP_INFO(this->get_logger(), "Distance zone: '%s'", msg->data.c_str());
@@ -57,38 +43,61 @@
         running_ = false;
         tick_count_ = 0;  
         stop_ = false;
+        reverse_=false;
         
         std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
         std::cin >> turtle_choice; //arrows here are for input
 
         if (turtle_choice==1 || turtle_choice==2)
         {
-            std::cout << "Enter the desired linear velocity: ";
-            std::cin >> turtle_velocity_linear;
+            if (turtle_choice==1){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
+                std::cout << "Enter the desired linear velocity: ";
+                std::cin >> turtle_velocity_linear;
 
-            std::cout << "Enter the desired angular velocity: ";
-            std::cin >> turtle_velocity_angular;
+                std::cout << "Enter the desired angular velocity: ";
+                std::cin >> turtle_velocity_angular;
+
+            }else if (turtle_choice==2){
+                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
+                std::cout << "Enter the desired linear velocity: ";
+                std::cin >> turtle_velocity_linear;
+
+                std::cout << "Enter the desired angular velocity: ";
+                std::cin >> turtle_velocity_angular;
+            }
+
             valid_choice=true;
         }else{
             RCLCPP_WARN(this->get_logger(), "Invalid choice '%d'. Please enter 1 or 2.", turtle_choice);
             valid_choice=false;
         }
+
     }else if(valid_choice) {
 
-        if (turtle_choice==1){
-            RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
-                            
+        if (turtle_choice==1){             
         
             if (!running_){
                 tick_count_++;
                 if (tick_count_ < max_ticks_){
                     //check raduis here and show the message
                     if (stop_){
+                        if (!reverse_){
+                            message.linear.x = -turtle_velocity_linear*htz_;
+                            message.angular.z = -turtle_velocity_angular*htz_;
+                            publisher_1->publish(message);
+
+                            reverse_=true;
+                            return;
+                        }
+                        
                         message.linear.x = 0.0;
                         message.angular.z = 0.0;
                         publisher_1->publish(message);
-                        running_ = true;
+                        
                         valid_choice=false;
+                        
+                        
                     }else {
                         message.linear.x = turtle_velocity_linear;
                         message.angular.z = turtle_velocity_angular;
@@ -98,25 +107,34 @@
                     message.linear.x = 0.0;
                     message.angular.z = 0.0;
                     publisher_1->publish(message);
-                    running_ = true;
                     valid_choice=false;
+                    
                 }
             }
         
         
             else if (turtle_choice==2){
-                RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
                 
                 if (!running_){
                     tick_count_++;
                     if (tick_count_ < max_ticks_){
 
                         if (stop_){
+                            
+                            if (!reverse_){
+                            message.linear.x = -turtle_velocity_linear*htz_;
+                            message.angular.z = -turtle_velocity_angular*htz_;
+                            publisher_2->publish(message);
+
+                            reverse_=true;
+                            return;
+                            }
+
                             message.linear.x = 0.0;
                             message.angular.z = 0.0;
                             publisher_2->publish(message);
-                            running_ = true;
                             valid_choice=false;
+                           
                         }else {
                             message.linear.x= turtle_velocity_linear;
                             message.angular.z = turtle_velocity_angular;
@@ -126,8 +144,8 @@
                         message.linear.x= 0.0;
                         message.angular.z = 0.0;
                         publisher_2->publish(message);
-                        running_ = true;
                         valid_choice=false;
+                        
                     }  
                 }        
             }
@@ -160,6 +178,7 @@
     bool selected_ = false;
     bool valid_choice = false;
     bool stop_ =false;
+    bool reverse_=false;
  };
 
  int main(int argc, char * argv[])

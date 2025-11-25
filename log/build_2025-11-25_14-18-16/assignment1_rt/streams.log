@@ -1,0 +1,28 @@
+[0.029s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.172s] [ 50%] Built target distance
+[0.180s] [ 75%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[8.390s] [100%] [32m[1mLinking CXX executable turtles[0m
+[8.769s] [100%] Built target turtles
+[8.788s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[8.807s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt
+[8.820s] -- Install configuration: ""
+[8.822s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles
+[8.832s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles" to ""
+[8.832s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance
+[8.832s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtle2
+[8.832s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+[8.833s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+[8.834s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+[8.834s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.dsv
+[8.834s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+[8.834s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+[8.835s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+[8.835s] -- Up-to-date: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.xml
+[8.837s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt
