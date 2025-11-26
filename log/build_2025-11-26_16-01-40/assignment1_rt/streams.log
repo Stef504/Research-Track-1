@@ -1,0 +1,21 @@
+[0.032s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.194s] [ 25%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_calc.cpp.o[0m
+[0.195s] [ 50%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[3.161s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In member function ‘[01m[Kvoid TwoTurtles::[01;32m[Ktopic_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.161s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdistnace_[m[K’?
+[3.161s]    35 |         [01;31m[Kdistance_[m[K =msg->data.c_str();
+[3.161s]       |         [01;31m[K^~~~~~~~~[m[K
+[3.161s]       |         [32m[Kdistnace_[m[K
+[3.161s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:37:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ has not been declared
+[3.162s]    37 |         if ((distnace_.find(bounds_xy) != [01;31m[Kstring[m[K::npos) || (distnace_.find(close_turtles) != string::npos)){
+[3.162s]       |                                           [01;31m[K^~~~~~[m[K
+[3.162s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:37:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ has not been declared
+[3.162s]    37 |         if ((distnace_.find(bounds_xy) != string::npos) || (distnace_.find(close_turtles) != [01;31m[Kstring[m[K::npos)){
+[3.162s]       |                                                                                              [01;31m[K^~~~~~[m[K
+[5.786s] gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1
+[5.786s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtles.dir/all] Error 2
+[5.787s] gmake[1]: *** Waiting for unfinished jobs....
+[8.876s] [ 75%] [32m[1mLinking CXX executable distance[0m
+[9.351s] [ 75%] Built target distance
+[9.353s] gmake: *** [Makefile:146: all] Error 2
+[9.356s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16

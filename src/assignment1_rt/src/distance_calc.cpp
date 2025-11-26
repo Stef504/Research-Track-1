@@ -49,27 +49,32 @@
     if ((t1_x > 9.5) || (t1_x < 0.5)){
         RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: x=%f", t1_x);
         distance_msg.data= "Turtle 1 out of bounds: x=" + std::to_string(t1_x);
-        publisher_->publish(distance_msg);
+        //publisher_->publish(distance_msg);
     }
     else if ((t2_x >9.5) || (t2_x < 0.5)){
         RCLCPP_WARN(this->get_logger(), "Turtle 2 out of bounds: x=%f", t2_x);
         distance_msg.data= "Turtle 2 out of bounds: x=" + std::to_string(t2_x);
-        publisher_->publish(distance_msg);
+        //publisher_->publish(distance_msg);
     }
     else if ((t2_y >9.5) || (t2_y <0.5)){               
         RCLCPP_WARN(this->get_logger(), "Turtle 2 out of bounds: y=%f", t2_y);
         distance_msg.data= "Turtle 2 out of bounds: y= " + std::to_string(t2_y);
-        publisher_->publish(distance_msg);
+        //publisher_->publish(distance_msg);
     }
     else if ((t1_y>9.5) || (t1_y <0.5)){
         RCLCPP_WARN(this->get_logger(), "Turtle 1 out of bounds: y=%f", t1_y);
         distance_msg.data= "Turtle 1 out of bounds: y=" + std::to_string(t1_y);
-        publisher_->publish(distance_msg);
+        //publisher_->publish(distance_msg);
     }else if (raduis_<=threshold_){
         distance_msg.data= "The turtles are too close! Their distance is:" + std::to_string(raduis_);
         RCLCPP_INFO(this->get_logger(), "Publishing distance: '%s'", distance_msg.data.c_str());
-        publisher_->publish(distance_msg);
+        //publisher_->publish(distance_msg);
+    }else {
+        distance_msg.data= "The turtles are safe";
+        RCLCPP_INFO(this->get_logger(), "Safe: '%s'", distance_msg.data.c_str());
+        
     }
+    publisher_->publish(distance_msg);
 
 }
 
@@ -83,7 +88,7 @@
     
     //declaring variables
     double raduis_=0.0;
-    double threshold_=1.6; //actuall threshold 1.5 gave a bit more for controls
+    double threshold_=1.2; //actuall threshold 1.1 gave a bit more for controls
     //defining turtle positions
     double t1_x = 5.54; 
     double t1_y = 5.54;

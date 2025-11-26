@@ -25,14 +25,20 @@
       publisher_2 = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
       
       subscribe_ = this->create_subscription<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));
-      timer_ = this->create_wall_timer(std::chrono::milliseconds(200), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
+      timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
     } 
 
   private:
      void topic_callback(const std_msgs::msg::String::SharedPtr msg) 
      {
         RCLCPP_INFO(this->get_logger(), "Distance zone: '%s'", msg->data.c_str());
-        stop_=true;
+        distance_ =msg->data.c_str();
+        
+        if ((distance_.find(bounds_xy) != std::string::npos) || (distance_.find(close_turtles) != std::string::npos)){
+           stop_=true; 
+        }else if (distance_.find(safe_turtles) != std::string::npos) {
+            stop_=false;
+        }
 
     }
     void timer_callback()
@@ -42,7 +48,6 @@
         turtle_choice=0;
         running_ = false;
         tick_count_ = 0;  
-        stop_ = false;
         reverse_=false;
         
         std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
@@ -79,77 +84,74 @@
         
             if (!running_){
                 tick_count_++;
-                if (tick_count_ < max_ticks_){
-                    //check raduis here and show the message
-                    if (stop_){
-                        if (!reverse_){
-                            message.linear.x = -turtle_velocity_linear*htz_;
-                            message.angular.z = -turtle_velocity_angular*htz_;
-                            publisher_1->publish(message);
+                
+                if (stop_){
+                 
+                    if (!reverse_){
+                        if (tick_count_ < max_ticks_){
+                        message.linear.x = -turtle_velocity_linear/2;
+                        message.angular.z = -turtle_velocity_angular/2;
+                        publisher_1->publish(message);
 
-                            reverse_=true;
-                            return;
+                        reverse_=true;
                         }
-                        
-                        message.linear.x = 0.0;
-                        message.angular.z = 0.0;
-                        publisher_1->publish(message);
-                        
-                        valid_choice=false;
-                        
-                        
-                    }else {
-                        message.linear.x = turtle_velocity_linear;
-                        message.angular.z = turtle_velocity_angular;
-                        publisher_1->publish(message);
+                        return;
                     }
-                }else {
+        
                     message.linear.x = 0.0;
                     message.angular.z = 0.0;
                     publisher_1->publish(message);
-                    valid_choice=false;
                     
+                    valid_choice=false;
+                    return;
+                }else{
+                
+                
+                    if (tick_count_ < max_ticks_){
+                        //check raduis here and show the message
+                            message.linear.x = turtle_velocity_linear;
+                            message.angular.z = turtle_velocity_angular;
+                            publisher_1->publish(message);
+                        }else {
+                        message.linear.x = 0.0;
+                        message.angular.z = 0.0;
+                        publisher_1->publish(message);
+                        valid_choice=false;
+                    
+                    }
                 }
+                
             }
+        }
         
         
             else if (turtle_choice==2){
                 
                 if (!running_){
                     tick_count_++;
-                    if (tick_count_ < max_ticks_){
-
-                        if (stop_){
-                            
-                            if (!reverse_){
-                            message.linear.x = -turtle_velocity_linear*htz_;
-                            message.angular.z = -turtle_velocity_angular*htz_;
-                            publisher_2->publish(message);
-
-                            reverse_=true;
-                            return;
-                            }
-
+                    if (stop_){
                             message.linear.x = 0.0;
                             message.angular.z = 0.0;
                             publisher_2->publish(message);
                             valid_choice=false;
-                           
-                        }else {
-                            message.linear.x= turtle_velocity_linear;
-                            message.angular.z = turtle_velocity_angular;
-                            publisher_2->publish(message);
+                        return;
+                    }
+                        if (tick_count_ < max_ticks_){
+
+                                message.linear.x= turtle_velocity_linear;
+                                message.angular.z = turtle_velocity_angular;
+                                publisher_2->publish(message);
                         }
-                    }else {
-                        message.linear.x= 0.0;
-                        message.angular.z = 0.0;
-                        publisher_2->publish(message);
-                        valid_choice=false;
-                        
-                    }  
-                }        
-            }
-        }
+                        else {
+                            message.linear.x= 0.0;
+                            message.angular.z = 0.0;
+                            publisher_2->publish(message);
+                            valid_choice=false;
+                            
+                        }  
+                    }        
+                }
+            
     }
 }
 
@@ -167,7 +169,7 @@
     int turtle_choice = 0;
     //calculation for ticks
     int tick_count_ = 0;
-    double htz_=0.2;
+    double htz_=0.1;
     int desired_seconds_=1;
     int max_ticks_ = desired_seconds_/htz_;
     //defining turtle positions
@@ -179,6 +181,12 @@
     bool valid_choice = false;
     bool stop_ =false;
     bool reverse_=false;
+
+    //defining what to search for
+    std::string bounds_xy= "out of bounds";
+    std::string close_turtles ="too close";
+    std::string safe_turtles= "safe";
+    std::string distance_ =" ";   
  };
 
  int main(int argc, char * argv[])
