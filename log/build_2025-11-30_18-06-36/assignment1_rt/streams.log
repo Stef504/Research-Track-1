@@ -1,0 +1,183 @@
+[0.015s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[0.115s] [ 50%] Built target distance
+[0.124s] [ 75%] [32mBuilding CXX object CMakeFiles/turtles.dir/src/two_turtles.cpp.o[0m
+[2.612s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In constructor ‘[01m[KTwoTurtles::[01;32m[KTwoTurtles[m[K()[m[K’:
+[2.612s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:24:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_1[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.612s]    24 |       [01;31m[Kpublisher_1[m[K = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
+[2.612s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[2.612s]       |       [32m[Krmw_publisher_t[m[K
+[2.621s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:25:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_2[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.621s]    25 |       [01;31m[Kpublisher_2[m[K = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
+[2.622s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[2.622s]       |       [32m[Krmw_publisher_t[m[K
+[2.627s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:27:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscribe_[m[K’ was not declared in this scope
+[2.627s]    27 |       [01;31m[Ksubscribe_[m[K = this->create_subscription<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));
+[2.627s]       |       [01;31m[K^~~~~~~~~~[m[K
+[2.664s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:28:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[2.665s]    28 |       [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
+[2.665s]       |       [01;31m[K^~~~~~[m[K
+[2.665s]       |       [32m[Ktimer_t[m[K
+[2.680s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In member function ‘[01m[Kvoid TwoTurtles::[01;32m[Ktopic_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.680s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_[m[K’ was not declared in this scope
+[2.681s]    35 |         [01;31m[Kdistance_[m[K =msg->data.c_str();
+[2.681s]       |         [01;31m[K^~~~~~~~~[m[K
+[2.687s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:37:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kbounds_xy[m[K’ was not declared in this scope
+[2.687s]    37 |         if ((distance_.find([01;31m[Kbounds_xy[m[K) != std::string::npos) || (distance_.find(close_turtles) != std::string::npos)){
+[2.687s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.695s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:37:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kclose_turtles[m[K’ was not declared in this scope
+[2.695s]    37 |         if ((distance_.find(bounds_xy) != std::string::npos) || (distance_.find([01;31m[Kclose_turtles[m[K) != std::string::npos)){
+[2.695s]       |                                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[2.700s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:38:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_[m[K’ was not declared in this scope
+[2.700s]    38 |            [01;31m[Kstop_[m[K=true;
+[2.700s]       |            [01;31m[K^~~~~[m[K
+[2.708s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:39:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksafe_turtles[m[K’ was not declared in this scope
+[2.708s]    39 |         }else if (distance_.find([01;31m[Ksafe_turtles[m[K) != std::string::npos) {
+[2.708s]       |                                  [01;31m[K^~~~~~~~~~~~[m[K
+[2.713s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:40:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_[m[K’ was not declared in this scope
+[2.713s]    40 |             [01;31m[Kstop_[m[K=false;
+[2.713s]       |             [01;31m[K^~~~~[m[K
+[2.721s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K In member function ‘[01m[Kvoid TwoTurtles::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.721s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:46:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalid_choice[m[K’ was not declared in this scope
+[2.721s]    46 |     if (![01;31m[Kvalid_choice[m[K) {
+[2.721s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[2.728s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:48:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_choice[m[K’ was not declared in this scope
+[2.728s]    48 |         [01;31m[Kturtle_choice[m[K=0;
+[2.728s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.733s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:49:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning_[m[K’ was not declared in this scope
+[2.733s]    49 |         [01;31m[Krunning_[m[K = false;
+[2.733s]       |         [01;31m[K^~~~~~~~[m[K
+[2.740s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.740s]    50 |         [01;31m[Ktick_count_[m[K = 0;
+[2.740s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.746s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_[m[K’ was not declared in this scope
+[2.746s]    51 |         [01;31m[Kreverse_[m[K=false;
+[2.746s]       |         [01;31m[K^~~~~~~~[m[K
+[2.758s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:61:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_linear[m[K’ was not declared in this scope
+[2.758s]    61 |                 std::cin >> [01;31m[Kturtle_velocity_linear[m[K;
+[2.758s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.770s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:64:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_angular[m[K’ was not declared in this scope
+[2.770s]    64 |                 std::cin >> [01;31m[Kturtle_velocity_angular[m[K;
+[2.770s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.780s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_linear[m[K’ was not declared in this scope
+[2.780s]    69 |                 std::cin >> [01;31m[Kturtle_velocity_linear[m[K;
+[2.781s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.792s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:72:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_angular[m[K’ was not declared in this scope
+[2.792s]    72 |                 std::cin >> [01;31m[Kturtle_velocity_angular[m[K;
+[2.792s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.799s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:83:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_choice[m[K’ was not declared in this scope
+[2.799s]    83 |         if ([01;31m[Kturtle_choice[m[K==1){
+[2.799s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.804s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:85:18:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning_[m[K’ was not declared in this scope
+[2.804s]    85 |             if (![01;31m[Krunning_[m[K){
+[2.804s]       |                  [01;31m[K^~~~~~~~[m[K
+[2.810s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:86:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.810s]    86 |                 [01;31m[Ktick_count_[m[K++;
+[2.810s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.815s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:88:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_[m[K’ was not declared in this scope
+[2.816s]    88 |                 if ([01;31m[Kstop_[m[K){
+[2.816s]       |                     [01;31m[K^~~~~[m[K
+[2.824s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:91:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_reverse_count_[m[K’ was not declared in this scope
+[2.824s]    91 |                     if ([01;31m[Ktick_reverse_count_[m[K < max_reverse_ticks_){
+[2.825s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.832s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:91:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_reverse_ticks_[m[K’ was not declared in this scope
+[2.833s]    91 |                     if (tick_reverse_count_ < [01;31m[Kmax_reverse_ticks_[m[K){
+[2.833s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.839s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:93:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.839s]    93 |                         [01;31m[Kmessage[m[K.linear.x = -turtle_velocity_linear/2;
+[2.839s]       |                         [01;31m[K^~~~~~~[m[K
+[2.848s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:93:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_linear[m[K’ was not declared in this scope
+[2.849s]    93 |                         message.linear.x = -[01;31m[Kturtle_velocity_linear[m[K/2;
+[2.849s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.859s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:94:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_angular[m[K’ was not declared in this scope
+[2.859s]    94 |                         message.angular.z = -[01;31m[Kturtle_velocity_angular[m[K/2;
+[2.859s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.866s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:95:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_1[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.866s]    95 |                         [01;31m[Kpublisher_1[m[K->publish(message);
+[2.866s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.866s]       |                         [32m[Krmw_publisher_t[m[K
+[2.872s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:98:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.872s]    98 |                         [01;31m[Kmessage[m[K.linear.x = 0.0;
+[2.872s]       |                         [01;31m[K^~~~~~~[m[K
+[2.878s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:100:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_1[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.878s]   100 |                         [01;31m[Kpublisher_1[m[K->publish(message);
+[2.879s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.879s]       |                         [32m[Krmw_publisher_t[m[K
+[2.884s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:111:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.884s]   111 |                     if ([01;31m[Ktick_count_[m[K < max_ticks_){
+[2.885s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.890s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:111:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ticks_[m[K’ was not declared in this scope
+[2.890s]   111 |                     if (tick_count_ < [01;31m[Kmax_ticks_[m[K){
+[2.891s]       |                                       [01;31m[K^~~~~~~~~~[m[K
+[2.895s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:113:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.895s]   113 |                             [01;31m[Kmessage[m[K.linear.x = turtle_velocity_linear;
+[2.895s]       |                             [01;31m[K^~~~~~~[m[K
+[2.905s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:113:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_linear[m[K’ was not declared in this scope
+[2.905s]   113 |                             message.linear.x = [01;31m[Kturtle_velocity_linear[m[K;
+[2.905s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.916s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:114:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_angular[m[K’ was not declared in this scope
+[2.916s]   114 |                             message.angular.z = [01;31m[Kturtle_velocity_angular[m[K;
+[2.916s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.923s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:115:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_1[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.923s]   115 |                             [01;31m[Kpublisher_1[m[K->publish(message);
+[2.923s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[2.923s]       |                             [32m[Krmw_publisher_t[m[K
+[2.929s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:117:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.929s]   117 |                         [01;31m[Kmessage[m[K.linear.x = 0.0;
+[2.929s]       |                         [01;31m[K^~~~~~~[m[K
+[2.935s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:119:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_1[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.935s]   119 |                         [01;31m[Kpublisher_1[m[K->publish(message);
+[2.935s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.936s]       |                         [32m[Krmw_publisher_t[m[K
+[2.941s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:129:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_choice[m[K’ was not declared in this scope
+[2.941s]   129 |             else if ([01;31m[Kturtle_choice[m[K==2){
+[2.942s]       |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[2.947s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:131:22:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning_[m[K’ was not declared in this scope
+[2.947s]   131 |                 if (![01;31m[Krunning_[m[K){
+[2.947s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.953s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:132:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktick_count_[m[K’ was not declared in this scope
+[2.953s]   132 |                     [01;31m[Ktick_count_[m[K++;
+[2.953s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.959s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:133:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_[m[K’ was not declared in this scope
+[2.959s]   133 |                     if ([01;31m[Kstop_[m[K){
+[2.959s]       |                         [01;31m[K^~~~~[m[K
+[2.965s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:134:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.965s]   134 |                             [01;31m[Kmessage[m[K.linear.x = 0.0;
+[2.965s]       |                             [01;31m[K^~~~~~~[m[K
+[2.972s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:136:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_2[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.972s]   136 |                             [01;31m[Kpublisher_2[m[K->publish(message);
+[2.973s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[2.973s]       |                             [32m[Krmw_publisher_t[m[K
+[2.978s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:140:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ticks_[m[K’ was not declared in this scope
+[2.979s]   140 |                         if (tick_count_ < [01;31m[Kmax_ticks_[m[K){
+[2.979s]       |                                           [01;31m[K^~~~~~~~~~[m[K
+[2.984s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:142:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.984s]   142 |                                 [01;31m[Kmessage[m[K.linear.x= turtle_velocity_linear;
+[2.984s]       |                                 [01;31m[K^~~~~~~[m[K
+[2.994s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:142:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_linear[m[K’ was not declared in this scope
+[2.994s]   142 |                                 message.linear.x= [01;31m[Kturtle_velocity_linear[m[K;
+[2.994s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.003s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:143:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle_velocity_angular[m[K’ was not declared in this scope
+[3.004s]   143 |                                 message.angular.z = [01;31m[Kturtle_velocity_angular[m[K;
+[3.004s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.010s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:144:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_2[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.010s]   144 |                                 [01;31m[Kpublisher_2[m[K->publish(message);
+[3.010s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[3.010s]       |                                 [32m[Krmw_publisher_t[m[K
+[3.015s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:147:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[3.015s]   147 |                             [01;31m[Kmessage[m[K.linear.x= 0.0;
+[3.015s]       |                             [01;31m[K^~~~~~~[m[K
+[3.022s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:149:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_2[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.022s]   149 |                             [01;31m[Kpublisher_2[m[K->publish(message);
+[3.022s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[3.022s]       |                             [32m[Krmw_publisher_t[m[K
+[3.022s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:[m[K At global scope:
+[3.022s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:161:5:[m[K [01;31m[Kerror: [m[Kspecializing member ‘[01m[Krclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > >::SharedPtr[m[K’ requires ‘[01m[Ktemplate<>[m[K’ syntax
+[3.022s]   161 |     [01;31m[Krclcpp[m[K::Subscription<std_msgs::msg::String>::SharedPtr subscribe_;
+[3.022s]       |     [01;31m[K^~~~~~[m[K
+[3.027s] [01m[K/home/ubuntu/ros_workspace/src/assignment1_rt/src/two_turtles.cpp:195:2:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.027s]   195 |  [01;31m[K}[m[K;
+[3.027s]       |  [01;31m[K^[m[K
+[5.306s] gmake[2]: *** [CMakeFiles/turtles.dir/build.make:76: CMakeFiles/turtles.dir/src/two_turtles.cpp.o] Error 1
+[5.306s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtles.dir/all] Error 2
+[5.307s] gmake: *** [Makefile:146: all] Error 2
+[5.311s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
