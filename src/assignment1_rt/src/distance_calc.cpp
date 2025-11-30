@@ -89,7 +89,7 @@
     
     //declaring variables
     double raduis_=0.0;
-    double threshold_=2; //actuall threshold 2.5 gave a bit more for controls
+    double threshold_=2; //actuall threshold 1.5 gave a bit more for controls
     //defining turtle positions
     double t1_x = 5.54; 
     double t1_y = 5.54;

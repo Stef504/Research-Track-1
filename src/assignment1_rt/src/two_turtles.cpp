@@ -19,7 +19,7 @@
       publisher_2 = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
       
       subscribe_ = this->create_subscription<std_msgs::msg::String>("distance_topic",10,std::bind(&TwoTurtles::topic_callback, this, _1));
-      timer_ = this->create_wall_timer(std::chrono::milliseconds(50), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
+      timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&TwoTurtles::timer_callback, this)); //wakes up every 0.2s
     } 
 
   private:
