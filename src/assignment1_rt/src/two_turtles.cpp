@@ -30,7 +30,8 @@
         
         if ((distance_.find(bounds_xy) != std::string::npos) || (distance_.find(close_turtles) != std::string::npos)){
            stop_=true; 
-        }else if (distance_.find(safe_turtles) != std::string::npos) {
+        }
+        else if (distance_.find(safe_turtles) != std::string::npos) {
             stop_=false;
         }
 
@@ -60,6 +61,7 @@
                 std::cout << "Enter the desired angular velocity: ";
                 std::cin >> turtle_velocity_angular;
 
+
             }else if (turtle_choice==2){
                 RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
                 std::cout << "Enter the desired linear velocity: ";
@@ -67,6 +69,15 @@
 
                 std::cout << "Enter the desired angular velocity: ";
                 std::cin >> turtle_velocity_angular;
+
+            }
+
+            if (turtle_velocity_linear > max_linear_velocity){
+                    turtle_velocity_linear=max_linear_velocity;
+                }
+
+            if (turtle_velocity_angular> max_angular_velocity){
+                turtle_velocity_angular= max_angular_velocity;
             }
 
             valid_choice=true;
@@ -168,6 +179,8 @@
     double turtle_velocity_linear=0.0;
     double turtle_velocity_angular=0.0;
     int turtle_choice = 0;
+    double max_linear_velocity =4.0;
+    double max_angular_velocity = 2;
     //calculation for ticks
     int tick_count_ = 0;
     double htz_=0.1;

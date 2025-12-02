@@ -1,0 +1,40 @@
+
+## Tasks accomplished: 
+1. The user asked to choose a turtle to move
+2. Once a specific turtle is chosen the user can choose its linear and angular velocity
+3. If the choice of turtle (1/2) is not chosen the user is shown an error and is asked to choose either 1/2
+4. A continous selection of which turtle is prompted to the user after the turtle has completed its movement
+5. The turtles adhere to the specified boundaries.
+
+## UI Turtle:
+1. It pulishes both linear and angular velocities to turtle1/2
+2. Subscribed to the distance topic so that it can reverse and stop the moving turtle.
+3. The distance is also publsihed on the interface so that it is easier for the user to see when the turtle went from a safe to unsafe distance
+4. The option of reversing then stopping allows the turtle to safely remove itself from the danger zone
+5. I choose for the turtle to reverse for 0.5s at half the speed it was going. This was a design choice.
+
+## Distance turtlesim:
+1. Subscribes to the position of turtle1/2 so that it can calculate the distance
+2. It publishes the distance to the distance topic.
+3. I set the safety distance between the two turtles to 2m, but the actual value should be 2.5m. This acts as a safety factor, ensuring that when the controller responds later, it guarantees the turtles are safe.
+4. I added the callbacks of the positions of the turtles to firstly make sure it is actually connecting to turtlesim, and secondly because I was experiencing issues before and needed to verify the source. 
+5. The distances are continuously published so that the stop function in the UI node can be set to true or false.
+
+## 🛠️ How to execute
+**1. Prerequisites** The following programs are required: **Ros2**, and **xterm**. 
+
+The access `assignment1_rt`package: the user should clone the repository into the `src` folder of their ROS workspace.
+The repository can be found at https://github.com/Stef504/Research-Track-1.git.
+
+**2.Execution**  Open your terminal in the `../ros_workspace/install` folder and run the build script:
+```bash
+ros2 launch assignment1_rt node_launch.py
+```
+
+>## ⚖️Comments
+- The designated safety for the borders was set at 10/0; however, due to the program's architecture and controls, I lowered it to prevent reaching such limits.
+- To incorporate a safety factor, I adjusted the boundaries to 9.5/0.5. The justification for this safety factor is that the distance controller operates every 50 ms, whereas the UI controller functions every 100 ms. Consequently, if the user inputs the maximum permissible linear velocity (4 m/s) and angular velocity (2 rad/s), the turtle can only travel 0.4 m in 0.1 s before the controllers activate, even when near another turtle or the boundary. Therefore, it will never reach the specified boundaries of 10/0.
+
+I configured the UI node to check every 100 ms, while the distance node checks every 50 ms. This procedure guarantees that the most current message is transmitted to the UI. 
+The distance node operates more rapidly and may experience a delay of 0.2m (assuming v=4m/s), so by the time the UI node checks, the turtle could have only travelled 0.4m.  This further emphasises the necessity of the safety factor.
+
