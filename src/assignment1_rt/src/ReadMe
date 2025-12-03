@@ -27,6 +27,7 @@
 
 The access `assignment1_rt`package: the user should clone the repository into the `src` folder of their ROS workspace.
 The repository can be found at https://github.com/Stef504/Research-Track-1.git.
+The `assignment1_rt` package is located at: `../src/assignment1_rt/`
 
 **2.Execution**  Open your terminal in the `../ros_workspace/install` folder and run the build script:
 ```bash
