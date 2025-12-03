@@ -28,6 +28,6 @@ def generate_launch_description():
             executable='turtles',
             name='turtles',
             output='screen',
-            prefix='xterm -e',
+            prefix='xterm -e', #opens a new terminal
         ),
     ])

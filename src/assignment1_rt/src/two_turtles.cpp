@@ -25,7 +25,6 @@
   private:
      void topic_callback(const std_msgs::msg::String::SharedPtr msg) 
      {
-        RCLCPP_INFO(this->get_logger(), "Distance zone: '%s'", msg->data.c_str());
         distance_ =msg->data.c_str();
         
         if ((distance_.find(bounds_xy) != std::string::npos) || (distance_.find(close_turtles) != std::string::npos)){
@@ -72,11 +71,11 @@
 
             }
 
-            if (turtle_velocity_linear > max_linear_velocity){
+            if (abs(turtle_velocity_linear) > max_linear_velocity){
                     turtle_velocity_linear=max_linear_velocity;
                 }
 
-            if (turtle_velocity_angular> max_angular_velocity){
+            if (abs(turtle_velocity_angular)> max_angular_velocity){
                 turtle_velocity_angular= max_angular_velocity;
             }
 
@@ -107,6 +106,7 @@
                     message.angular.z = 0.0;
                     publisher_1->publish(message);
                     valid_choice=false;
+                
                 }
             return;
             }
@@ -167,8 +167,6 @@
     }
 }
 
-    //rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_1;
-    //rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_2;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscribe_;
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_1;
