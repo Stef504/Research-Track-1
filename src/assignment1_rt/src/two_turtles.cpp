@@ -112,12 +112,11 @@
             }
         
                 if (tick_count_ < max_ticks_){
-                        tick_count_++;
-                    //check raduis here and show the message
-                        message.linear.x = turtle_velocity_linear;
-                        message.angular.z = turtle_velocity_angular;
-                        publisher_1->publish(message);
-                    }else {
+                    tick_count_++;
+                    message.linear.x = turtle_velocity_linear;
+                    message.angular.z = turtle_velocity_angular;
+                    publisher_1->publish(message);
+                }else {
                     message.linear.x = 0.0;
                     message.angular.z = 0.0;
                     publisher_1->publish(message);
