@@ -14,7 +14,8 @@
     TwoTurtles(): Node("UI_turtlesim")
      
     { 
-      
+      std::cout <<"To quit the game type 'q':";
+
       publisher_1 = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
       publisher_2 = this->create_publisher<geometry_msgs::msg::Twist>("turtle2/cmd_vel", 10);
       

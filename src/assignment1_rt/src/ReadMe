@@ -5,6 +5,7 @@
 3. If the choice of turtle (1/2) is not chosen, the user is shown an error and is asked to choose either 1 or 2.
 4. A continuous selection of which turtle is prompted to the user after the turtle has completed its movement.
 5. The turtles adhere to the specified boundaries.
+6. The user can quit the game by entering 'q'.
 
 ## UI Turtle:
 1. It publishes both linear and angular velocities to turtle1/2.
