@@ -50,9 +50,9 @@
         std::cout << "Select a Turtle to control (1 or 2): "; //arrows here are for output
         std::cin >> turtle_choice; //arrows here are for input
 
-        if (turtle_choice==1 || turtle_choice==2)
+        if (turtle_choice=='1' || turtle_choice=='2')
         {
-            if (turtle_choice==1){
+            if (turtle_choice=='1'){
                 RCLCPP_INFO(this->get_logger(), "You have selected Turtle 1");
                 std::cout << "Enter the desired linear velocity: ";
                 std::cin >> turtle_velocity_linear;
@@ -61,7 +61,7 @@
                 std::cin >> turtle_velocity_angular;
 
 
-            }else if (turtle_choice==2){
+            }else if (turtle_choice=='2'){
                 RCLCPP_INFO(this->get_logger(), "You have selected Turtle 2");
                 std::cout << "Enter the desired linear velocity: ";
                 std::cin >> turtle_velocity_linear;
@@ -80,14 +80,17 @@
             }
 
             valid_choice=true;
+        }else if (turtle_choice == 'q'){
+            rclcpp::shutdown();
+            exit(0);
         }else{
-            RCLCPP_WARN(this->get_logger(), "Invalid choice '%d'. Please enter 1 or 2.", turtle_choice);
+            RCLCPP_WARN(this->get_logger(), "Invalid choice '%c'. Please enter 1 or 2.", turtle_choice);
             valid_choice=false;
         }
 
     }else if(valid_choice) {
 
-        if (turtle_choice==1){             
+        if (turtle_choice=='1'){             
 
             if (stop_ && !reverse_) {
                 reverse_ = true;
@@ -125,7 +128,7 @@
                 
             
                 
-        }else if (turtle_choice==2){
+        }else if (turtle_choice=='2'){
                                 
            if (stop_ && !reverse_) {
                 reverse_ = true;
@@ -175,7 +178,7 @@
     int selected_turtle_=0;
     double turtle_velocity_linear=0.0;
     double turtle_velocity_angular=0.0;
-    int turtle_choice = 0;
+    char turtle_choice = '\0';
     double max_linear_velocity =4.0;
     double max_angular_velocity = 2;
     //calculation for ticks
