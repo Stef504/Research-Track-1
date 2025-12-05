@@ -197,43 +197,6 @@ turtlesim_controller_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller_uninstall.dir/build.make CMakeFiles/turtlesim_controller_uninstall.dir/build
 .PHONY : turtlesim_controller_uninstall/fast
 
-#=============================================================================
-# Target rules for targets named turtlesim_controller
-
-# Build rule for target.
-turtlesim_controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlesim_controller
-.PHONY : turtlesim_controller
-
-# fast build rule for target.
-turtlesim_controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/build
-.PHONY : turtlesim_controller/fast
-
-src/turtlesim_controller.o: src/turtlesim_controller.cpp.o
-.PHONY : src/turtlesim_controller.o
-
-# target to build an object file
-src/turtlesim_controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o
-.PHONY : src/turtlesim_controller.cpp.o
-
-src/turtlesim_controller.i: src/turtlesim_controller.cpp.i
-.PHONY : src/turtlesim_controller.i
-
-# target to preprocess a source file
-src/turtlesim_controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.i
-.PHONY : src/turtlesim_controller.cpp.i
-
-src/turtlesim_controller.s: src/turtlesim_controller.cpp.s
-.PHONY : src/turtlesim_controller.s
-
-# target to generate assembly for a file
-src/turtlesim_controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.s
-.PHONY : src/turtlesim_controller.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +212,6 @@ help:
 	@echo "... test"
 	@echo "... turtlesim_controller_uninstall"
 	@echo "... uninstall"
-	@echo "... turtlesim_controller"
-	@echo "... src/turtlesim_controller.o"
-	@echo "... src/turtlesim_controller.i"
-	@echo "... src/turtlesim_controller.s"
 .PHONY : help
 
 

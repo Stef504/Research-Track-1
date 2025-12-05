@@ -505,6 +505,9 @@ turtlesim_controller_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 turtlesim_controller_SOURCE_DIR:STATIC=/home/ubuntu/ros_workspace/src/turtlesim_controller
 
+//The directory containing a CMake configuration file for turtlesim_custom_msgs.
+turtlesim_custom_msgs_DIR:PATH=turtlesim_custom_msgs_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for type_description_interfaces.
 type_description_interfaces_DIR:PATH=/opt/ros/jazzy/share/type_description_interfaces/cmake
 

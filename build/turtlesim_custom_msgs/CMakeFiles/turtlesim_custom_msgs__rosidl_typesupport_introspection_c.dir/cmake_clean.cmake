@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o.d"
+  "libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c"
+  "rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

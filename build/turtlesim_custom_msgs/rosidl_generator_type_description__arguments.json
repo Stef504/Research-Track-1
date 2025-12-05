@@ -1,0 +1,12 @@
+{
+  "package_name": "turtlesim_custom_msgs",
+  "output_dir": "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_type_description/turtlesim_custom_msgs",
+  "idl_tuples": [
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:msg/Vel.idl",
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:srv/Velocity.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

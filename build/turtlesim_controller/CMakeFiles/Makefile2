@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/ros_workspace/build/turtlesim_controller
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/turtlesim_controller.dir/all
+all:
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +73,6 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/turtlesim_controller_uninstall.dir/clean
-clean: CMakeFiles/turtlesim_controller.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,32 +126,6 @@ turtlesim_controller_uninstall: CMakeFiles/turtlesim_controller_uninstall.dir/ru
 CMakeFiles/turtlesim_controller_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller_uninstall.dir/build.make CMakeFiles/turtlesim_controller_uninstall.dir/clean
 .PHONY : CMakeFiles/turtlesim_controller_uninstall.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/turtlesim_controller.dir
-
-# All Build rule for target.
-CMakeFiles/turtlesim_controller.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_controller/CMakeFiles --progress-num=1,2 "Built target turtlesim_controller"
-.PHONY : CMakeFiles/turtlesim_controller.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/turtlesim_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/turtlesim_controller/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtlesim_controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/turtlesim_controller/CMakeFiles 0
-.PHONY : CMakeFiles/turtlesim_controller.dir/rule
-
-# Convenience name for target.
-turtlesim_controller: CMakeFiles/turtlesim_controller.dir/rule
-.PHONY : turtlesim_controller
-
-# clean rule for target.
-CMakeFiles/turtlesim_controller.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/clean
-.PHONY : CMakeFiles/turtlesim_controller.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

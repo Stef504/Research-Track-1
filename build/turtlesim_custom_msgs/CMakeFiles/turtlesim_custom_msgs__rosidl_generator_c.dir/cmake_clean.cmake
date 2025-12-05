@@ -1,0 +1,35 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c.o.d"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o"
+  "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o.d"
+  "libturtlesim_custom_msgs__rosidl_generator_c.pdb"
+  "libturtlesim_custom_msgs__rosidl_generator_c.so"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__struct.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h"
+  "rosidl_generator_c/turtlesim_custom_msgs/srv/velocity.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
