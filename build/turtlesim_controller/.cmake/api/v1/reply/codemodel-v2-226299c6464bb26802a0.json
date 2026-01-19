@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-958584b0a36b1aebd641.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "turtlesim_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlesim_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlesim_controller-09cc664f5c2ed5ea3feb.json",
+					"name" : "turtlesim_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlesim_controller2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlesim_controller2-daf948673383d45649cf.json",
+					"name" : "turtlesim_controller2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlesim_controller3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlesim_controller3-742e1171acc8a7bfb14f.json",
+					"name" : "turtlesim_controller3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlesim_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlesim_controller_uninstall-59c2b783bbf8ca03bb6b.json",
+					"name" : "turtlesim_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlesim_service::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlesim_service-e166d1ee6d2ae62fc3a8.json",
+					"name" : "turtlesim_service",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-63c9044fa480adbadb43.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/ros_workspace/build/turtlesim_controller",
+		"source" : "/home/ubuntu/ros_workspace/src/turtlesim_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

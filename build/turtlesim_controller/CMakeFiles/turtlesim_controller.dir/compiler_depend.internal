@@ -3,6 +3,12 @@
 
 CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o
  /home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__builder.hpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__struct.hpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__traits.hpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.hpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/vel.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp

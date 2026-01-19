@@ -22,6 +22,7 @@ TurtlesimController(): Node("turtlesim_controller")
 
 void respawn_turtle()
 {
+    //Kill the intial turtle
     auto kill_request = std::make_shared<turtlesim::srv::Kill::Request>();
     kill_request->name = "turtle1";
     while (!kill_client_->wait_for_service(std::chrono::seconds(1))) {
@@ -29,6 +30,7 @@ void respawn_turtle()
     }
     kill_client_->async_send_request(kill_request);
 
+    //Spawn a new turtle
     auto spawn_request = std::make_shared<turtlesim::srv::Spawn::Request>();
     spawn_request->x = 5.0;
     spawn_request->y = 5.0;
@@ -37,6 +39,8 @@ void respawn_turtle()
     while (!spawn_client_->wait_for_service(std::chrono::seconds(1))) {
         RCLCPP_INFO(this->get_logger(), "Waiting for spawn service...");
     }
+
+    // Call the spawn service and wait for the result
      auto spawn_result_future = spawn_client_->async_send_request(spawn_request);
     if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), spawn_result_future)
         == rclcpp::FutureReturnCode::SUCCESS)
@@ -80,15 +84,16 @@ void timer_callback()
  float x_;
  rclcpp::Publisher<turtlesim_custom_msgs::msg::Vel>::SharedPtr publisher_vel_;
  turtlesim_custom_msgs::msg::Vel message_vel;
- rclcpp::Client<turtlesim::srv::Kill>::SharedPtr kill_client_; 
- rclcpp::Client<turtlesim::srv::Spawn>::SharedPtr spawn_client_;
+    rclcpp::Client<turtlesim::srv::Kill>::SharedPtr kill_client_;
+    rclcpp::Client<turtlesim::srv::Spawn>::SharedPtr spawn_client_;
+    
 };
 
 int main(int argc, char * argv[])
 {
  rclcpp::init(argc, argv);
  auto node = std::make_shared<TurtlesimController>();
- node->respawn_turtle(); //function created and declared here to call it , do it once not every time
+ node->respawn_turtle();
  rclcpp::spin(node);
  rclcpp::shutdown();
  return 0;

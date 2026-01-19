@@ -12,7 +12,7 @@ TurtlesimController(): Node("turtlesim_controller")
  {
  subscription_ = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose", 10, std::bind(&TurtlesimController::topic_callback, this, _1));
  publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 10);
- publisher_vel_ = this->create_publisher<turtlesim_custom_msgs::msg::Vel>("vel_topic", 10);
+ publisher_vel_ = this->create_publisher<turtlesim_custom_msgs::msg::Vel>("turtle1/custom_vel", 10);
  timer_ = this->create_wall_timer(std::chrono::milliseconds(50), std::bind(&TurtlesimController::timer_callback, this));
  }
 

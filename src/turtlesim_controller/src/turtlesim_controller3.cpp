@@ -27,13 +27,14 @@ public:
             std::chrono::milliseconds(50), std::bind(&TurtlesimController::timer_callback, this));
 
         velocity_timer_ = this->create_wall_timer(
-            std::chrono::seconds(2), std::bind(&TurtlesimController::request_velocity, this)); //used for calling the server
+            std::chrono::seconds(2), std::bind(&TurtlesimController::request_velocity, this));
 
         velocity_client_ = this->create_client<Velocity>("generate_velocity");
     }
 
     void respawn_turtle()
     {
+        //kill the initial turtle
         auto kill_request = std::make_shared<turtlesim::srv::Kill::Request>();
         kill_request->name = "turtle1";
         while (!kill_client_->wait_for_service(std::chrono::seconds(1))) {
@@ -41,6 +42,7 @@ public:
         }
         kill_client_->async_send_request(kill_request);
 
+        //spawn a new turtle
         auto spawn_request = std::make_shared<turtlesim::srv::Spawn::Request>();
         spawn_request->x = 5.0;
         spawn_request->y = 5.0;
@@ -63,7 +65,7 @@ public:
 private:
     void timer_callback()
     {
-        message.linear.x = current_x_;// values received from server
+        message.linear.x = current_x_;
         message.angular.z = current_z_;
 
         message_vel.name = "linear_x";
@@ -82,7 +84,6 @@ private:
 
     void request_velocity()
     {
-        //waiting for response from server
         if (!velocity_client_->wait_for_service(std::chrono::seconds(1))) {
             RCLCPP_WARN(this->get_logger(), "Waiting for generate_velocity service...");
             return;
@@ -92,12 +93,11 @@ private:
         request->min = 0.5;  
         request->max = 2.0;
 
-        //lamda function in c++
         auto result_future = velocity_client_->async_send_request(
             request,
             [this](rclcpp::Client<Velocity>::SharedFuture future)
             {
-                auto response = future.get(); //when we get the repsonse
+                auto response = future.get();
                 current_x_ = response->x;
                 current_z_ = response->z;
                 RCLCPP_INFO(this->get_logger(), "Updated velocity from service: x=%.2f, z=%.2f", current_x_, current_z_);
@@ -117,6 +117,7 @@ private:
     rclcpp::Client<turtlesim::srv::Kill>::SharedPtr kill_client_;
     rclcpp::Client<turtlesim::srv::Spawn>::SharedPtr spawn_client_;
     rclcpp::Client<Velocity>::SharedPtr velocity_client_;
+    
 
     float current_x_{0.0};
     float current_z_{0.0};

@@ -1,0 +1,32 @@
+[0.020s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': CMAKE_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
+[0.121s] [ 37%] Built target turtlesim_controller3
+[0.121s] [ 37%] [32mBuilding CXX object CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o[0m
+[0.121s] [ 62%] Built target turtlesim_service
+[0.124s] [ 87%] Built target turtlesim_controller
+[2.421s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:[m[K In constructor ‘[01m[KTurtlesimController::[01;32m[KTurtlesimController[m[K()[m[K’:
+[2.421s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:18:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kkill_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_client_t[m[K’?
+[2.421s]    18 |  [01;31m[Kkill_client_[m[K = this->create_client<turtlesim::srv::Kill>("kill");
+[2.421s]       |  [01;31m[K^~~~~~~~~~~~[m[K
+[2.421s]       |  [32m[Krcl_client_t[m[K
+[2.438s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:19:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kspawn_client_[m[K’ was not declared in this scope
+[2.438s]    19 |  [01;31m[Kspawn_client_[m[K = this->create_client<turtlesim::srv::Spawn>("spawn");
+[2.438s]       |  [01;31m[K^~~~~~~~~~~~~[m[K
+[2.462s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Krespawn_turtle[m[K()[m[K’:
+[2.462s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kkill_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_client_t[m[K’?
+[2.462s]    28 |     while (![01;31m[Kkill_client_[m[K->wait_for_service(std::chrono::seconds(1))) {
+[2.462s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.462s]       |             [32m[Krcl_client_t[m[K
+[2.467s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkill_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_client_t[m[K’?
+[2.467s]    31 |     [01;31m[Kkill_client_[m[K->async_send_request(kill_request);
+[2.467s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.467s]       |     [32m[Krcl_client_t[m[K
+[2.474s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:39:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kspawn_client_[m[K’ was not declared in this scope
+[2.474s]    39 |     while (![01;31m[Kspawn_client_[m[K->wait_for_service(std::chrono::seconds(1))) {
+[2.474s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.480s] [01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:44:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kspawn_client_[m[K’ was not declared in this scope
+[2.480s]    44 |      auto spawn_result_future = [01;31m[Kspawn_client_[m[K->async_send_request(spawn_request);
+[2.480s]       |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[5.192s] gmake[2]: *** [CMakeFiles/turtlesim_controller2.dir/build.make:76: CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o] Error 1
+[5.192s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/turtlesim_controller2.dir/all] Error 2
+[5.193s] gmake: *** [Makefile:146: all] Error 2
+[5.196s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/turtlesim_controller:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

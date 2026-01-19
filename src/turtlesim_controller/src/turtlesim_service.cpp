@@ -5,8 +5,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "turtlesim_custom_msgs/srv/velocity.hpp"  // il tuo servizio Velocity.srv
 
-using Velocity = turtlesim_custom_msgs::srv::Velocity; //simplify the code, similar to import used in Python. 
-                                                        //Represents type we use
+using Velocity = turtlesim_custom_msgs::srv::Velocity;
 using namespace std::chrono_literals;
 
 class VelocityServiceNode : public rclcpp::Node
@@ -16,20 +15,20 @@ public:
     {
         service_ = this->create_service<Velocity>(
             "generate_velocity",
-            std::bind(&VelocityServiceNode::handle_service, this, std::placeholders::_1, std::placeholders::_2)
+            std::bind(&VelocityServiceNode::handle_service, this, std::placeholders::_1, std::placeholders::_2) 
+            //request and response
         );
 
-        //used to random generate. c++ function
         rng_.seed(std::random_device()());
         RCLCPP_INFO(this->get_logger(), "Velocity service ready.");
     }
 
 private:
     void handle_service(
-        const std::shared_ptr<Velocity::Request> request, //constant because the call back does not modify request
-        std::shared_ptr<Velocity::Response> response) 
+        const std::shared_ptr<Velocity::Request> request,
+        std::shared_ptr<Velocity::Response> response)
     {
-        std::uniform_real_distribution<float> dist(request->min, request->max);//c++ function spawing numbers between min/max
+        std::uniform_real_distribution<float> dist(request->min, request->max);
         response->x = dist(rng_);
         response->z = dist(rng_);
         RCLCPP_INFO(this->get_logger(), "Generated x=%.2f, z=%.2f", response->x, response->z);
