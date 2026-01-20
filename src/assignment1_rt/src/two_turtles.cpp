@@ -28,6 +28,8 @@
      {
         distance_ =msg->data.c_str();
         
+        //checking for conditions to stop the turtle
+        // std::string::npos is returned if the substring is not found
         if ((distance_.find(bounds_xy) != std::string::npos) || (distance_.find(close_turtles) != std::string::npos)){
            stop_=true; 
         }

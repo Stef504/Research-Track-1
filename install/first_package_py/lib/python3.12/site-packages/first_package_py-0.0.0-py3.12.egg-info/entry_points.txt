@@ -1,0 +1,3 @@
+[console_scripts]
+pub = first_package_py.pub:main
+sub = first_package_py.sub:main

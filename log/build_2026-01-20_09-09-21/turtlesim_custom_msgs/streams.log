@@ -1,0 +1,24 @@
+[0.060s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16
+[0.313s] [  2%] Built target turtlesim_custom_msgs__rosidl_generator_type_description
+[0.338s] [  2%] Built target ament_cmake_python_copy_turtlesim_custom_msgs
+[0.358s] [  4%] Built target turtlesim_custom_msgs__cpp
+[0.370s] [ 22%] Built target turtlesim_custom_msgs__rosidl_generator_c
+[0.420s] [ 50%] Built target turtlesim_custom_msgs__rosidl_typesupport_introspection_c
+[0.420s] [ 50%] Built target turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp
+[0.420s] [ 50%] Built target turtlesim_custom_msgs__rosidl_typesupport_c
+[0.420s] [ 59%] Built target turtlesim_custom_msgs__rosidl_typesupport_cpp
+[0.425s] [ 75%] Built target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.425s] [ 77%] Built target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c
+[0.465s] [ 77%] Built target turtlesim_custom_msgs
+[0.509s] [ 79%] Built target turtlesim_custom_msgs__py
+[0.561s] [ 86%] Built target turtlesim_custom_msgs__rosidl_generator_py
+[0.581s] running egg_info
+[0.605s] writing turtlesim_custom_msgs.egg-info/PKG-INFO
+[0.606s] [ 95%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_c
+[0.606s] [ 95%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c
+[0.606s] writing dependency_links to turtlesim_custom_msgs.egg-info/dependency_links.txt
+[0.606s] writing top-level names to turtlesim_custom_msgs.egg-info/top_level.txt
+[0.608s] [100%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c
+[0.664s] reading manifest file 'turtlesim_custom_msgs.egg-info/SOURCES.txt'
+[0.665s] writing manifest file 'turtlesim_custom_msgs.egg-info/SOURCES.txt'
+[0.701s] [100%] Built target ament_cmake_python_build_turtlesim_custom_msgs_egg

@@ -1,0 +1,4 @@
+[console_scripts]
+distance = assignment1_rt_py.distance_calc:main
+turtle2 = assignment1_rt_py.turtle_spawn:main
+turtles = assignment1_rt_py.two_turtles:main

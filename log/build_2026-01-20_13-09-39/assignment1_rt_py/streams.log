@@ -1,0 +1,27 @@
+[0.700s] Invoking command in '/home/ubuntu/ros_workspace/src/assignment1_rt_py': PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment1_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment1_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment1_rt_py/install.log --single-version-externally-managed install_data
+[0.926s] running egg_info
+[0.945s] writing ../../build/assignment1_rt_py/assignment1_rt_py.egg-info/PKG-INFO
+[0.945s] writing dependency_links to ../../build/assignment1_rt_py/assignment1_rt_py.egg-info/dependency_links.txt
+[0.945s] writing entry points to ../../build/assignment1_rt_py/assignment1_rt_py.egg-info/entry_points.txt
+[0.945s] writing requirements to ../../build/assignment1_rt_py/assignment1_rt_py.egg-info/requires.txt
+[0.946s] writing top-level names to ../../build/assignment1_rt_py/assignment1_rt_py.egg-info/top_level.txt
+[0.978s] reading manifest file '../../build/assignment1_rt_py/assignment1_rt_py.egg-info/SOURCES.txt'
+[0.979s] writing manifest file '../../build/assignment1_rt_py/assignment1_rt_py.egg-info/SOURCES.txt'
+[0.979s] running build
+[0.979s] running build_py
+[0.980s] copying assignment1_rt_py/two_turtles.py -> /home/ubuntu/ros_workspace/build/assignment1_rt_py/build/lib/assignment1_rt_py
+[0.980s] running install
+[0.984s] running install_lib
+[1.000s] copying /home/ubuntu/ros_workspace/build/assignment1_rt_py/build/lib/assignment1_rt_py/two_turtles.py -> /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages/assignment1_rt_py
+[1.001s] byte-compiling /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages/assignment1_rt_py/two_turtles.py to two_turtles.cpython-312.pyc
+[1.001s] Sorry: IndentationError: unindent does not match any outer indentation level (two_turtles.py, line 131)
+[1.002s] running install_data
+[1.002s] running install_egg_info
+[1.019s] removing '/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages/assignment1_rt_py-0.0.0-py3.12.egg-info' (and everything under it)
+[1.019s] Copying ../../build/assignment1_rt_py/assignment1_rt_py.egg-info to /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages/assignment1_rt_py-0.0.0-py3.12.egg-info
+[1.022s] running install_scripts
+[1.136s] Installing distance script to /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/assignment1_rt_py
+[1.136s] Installing turtle2 script to /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/assignment1_rt_py
+[1.136s] Installing turtles script to /home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/assignment1_rt_py
+[1.137s] writing list of installed files to '/home/ubuntu/ros_workspace/build/assignment1_rt_py/install.log'
+[1.169s] Invoked command in '/home/ubuntu/ros_workspace/src/assignment1_rt_py' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment1_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment1_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment1_rt_py/install.log --single-version-externally-managed install_data

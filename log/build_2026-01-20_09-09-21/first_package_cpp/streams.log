@@ -1,0 +1,2 @@
+[0.053s] Invoking command in '/home/ubuntu/ros_workspace/build/first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/first_package_cpp -- -j16 -l16
+[0.362s] [100%] Built target talker

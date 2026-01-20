@@ -1,0 +1,27 @@
+[1.175s] Invoking command in '/home/ubuntu/ros_workspace/src/first_package_py': PYTHONPATH=/home/ubuntu/ros_workspace/build/first_package_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_package_py build --build-base /home/ubuntu/ros_workspace/build/first_package_py/build install --record /home/ubuntu/ros_workspace/build/first_package_py/install.log --single-version-externally-managed install_data
+[1.439s] running egg_info
+[1.457s] writing ../../build/first_package_py/first_package_py.egg-info/PKG-INFO
+[1.457s] writing dependency_links to ../../build/first_package_py/first_package_py.egg-info/dependency_links.txt
+[1.457s] writing entry points to ../../build/first_package_py/first_package_py.egg-info/entry_points.txt
+[1.457s] writing requirements to ../../build/first_package_py/first_package_py.egg-info/requires.txt
+[1.458s] writing top-level names to ../../build/first_package_py/first_package_py.egg-info/top_level.txt
+[1.496s] reading manifest file '../../build/first_package_py/first_package_py.egg-info/SOURCES.txt'
+[1.497s] writing manifest file '../../build/first_package_py/first_package_py.egg-info/SOURCES.txt'
+[1.497s] running build
+[1.498s] running build_py
+[1.498s] copying first_package_py/sub.py -> /home/ubuntu/ros_workspace/build/first_package_py/build/lib/first_package_py
+[1.499s] running install
+[1.504s] running install_lib
+[1.522s] copying /home/ubuntu/ros_workspace/build/first_package_py/build/lib/first_package_py/sub.py -> /home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages/first_package_py
+[1.523s] byte-compiling /home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages/first_package_py/pub.py to pub.cpython-312.pyc
+[1.524s] byte-compiling /home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages/first_package_py/sub.py to sub.cpython-312.pyc
+[1.525s] Sorry: IndentationError: expected an indented block after class definition on line 5 (sub.py, line 7)
+[1.525s] running install_data
+[1.525s] running install_egg_info
+[1.544s] removing '/home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages/first_package_py-0.0.0-py3.12.egg-info' (and everything under it)
+[1.545s] Copying ../../build/first_package_py/first_package_py.egg-info to /home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages/first_package_py-0.0.0-py3.12.egg-info
+[1.548s] running install_scripts
+[1.678s] Installing pub script to /home/ubuntu/ros_workspace/install/first_package_py/lib/first_package_py
+[1.678s] Installing sub script to /home/ubuntu/ros_workspace/install/first_package_py/lib/first_package_py
+[1.679s] writing list of installed files to '/home/ubuntu/ros_workspace/build/first_package_py/install.log'
+[1.718s] Invoked command in '/home/ubuntu/ros_workspace/src/first_package_py' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/first_package_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_package_py build --build-base /home/ubuntu/ros_workspace/build/first_package_py/build install --record /home/ubuntu/ros_workspace/build/first_package_py/install.log --single-version-externally-managed install_data
