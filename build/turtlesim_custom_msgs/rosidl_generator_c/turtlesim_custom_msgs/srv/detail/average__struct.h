@@ -23,7 +23,7 @@ extern "C"
 /// Struct defined in srv/Average in the package turtlesim_custom_msgs.
 typedef struct turtlesim_custom_msgs__srv__Average_Request
 {
-  uint8_t structure_needs_at_least_one_member;
+  int32_t count;
 } turtlesim_custom_msgs__srv__Average_Request;
 
 // Struct for a sequence of turtlesim_custom_msgs__srv__Average_Request.

@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "turtlesim_custom_msgs/srv/detail/threshold__functions.h"
+#include "turtlesim_custom_msgs/srv/detail/threshold__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "turtlesim_custom_msgs/srv/detail/threshold__struct.h"
-#include "turtlesim_custom_msgs/srv/detail/threshold__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

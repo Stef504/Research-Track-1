@@ -145,9 +145,9 @@
         "type_name": "turtlesim_custom_msgs/srv/Average_Request",
         "fields": [
           {
-            "name": "structure_needs_at_least_one_member",
+            "name": "count",
             "type": {
-              "type_id": 3,
+              "type_id": 6,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -186,7 +186,7 @@
   "type_hashes": [
     {
       "type_name": "turtlesim_custom_msgs/srv/Average",
-      "hash_string": "RIHS01_3b025e7dcdc68cb49d69457a2759b30e70d98fd7b4716b8fac6e6aa6d31a4d1d"
+      "hash_string": "RIHS01_96ca6f97ccf2d43513d2a676c93229cbe94f4622e61013eabacea8a1f1400973"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -198,11 +198,11 @@
     },
     {
       "type_name": "turtlesim_custom_msgs/srv/Average_Event",
-      "hash_string": "RIHS01_a16d5217c0d699b12578063ffac46ee246a669155f23a8f338019a7b2f41055b"
+      "hash_string": "RIHS01_3c2d997867d5182d97a9753b60753a1bf8fd229e4b82c912eb411ecacdd3e027"
     },
     {
       "type_name": "turtlesim_custom_msgs/srv/Average_Request",
-      "hash_string": "RIHS01_12ac8f53879eacaae657450a7f83427f856bd6708f7711d757c8e42733d62c81"
+      "hash_string": "RIHS01_4c1752787ecd5f1a880307bb73d22c9a1b5e896fef5d19e80a40f1ea5e637165"
     },
     {
       "type_name": "turtlesim_custom_msgs/srv/Average_Response",

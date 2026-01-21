@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "turtlesim_custom_msgs/srv/detail/average__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "turtlesim_custom_msgs/srv/detail/average__type_support.h"
 #include "turtlesim_custom_msgs/srv/detail/average__functions.h"
 #include "turtlesim_custom_msgs/srv/detail/average__struct.h"
 

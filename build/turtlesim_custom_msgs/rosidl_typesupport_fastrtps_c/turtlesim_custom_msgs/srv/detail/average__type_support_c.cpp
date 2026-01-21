@@ -48,9 +48,9 @@ bool cdr_serialize_turtlesim_custom_msgs__srv__Average_Request(
   const turtlesim_custom_msgs__srv__Average_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
-    cdr << ros_message->structure_needs_at_least_one_member;
+    cdr << ros_message->count;
   }
 
   return true;
@@ -61,9 +61,9 @@ bool cdr_deserialize_turtlesim_custom_msgs__srv__Average_Request(
   eprosima::fastcdr::Cdr & cdr,
   turtlesim_custom_msgs__srv__Average_Request * ros_message)
 {
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
-    cdr >> ros_message->structure_needs_at_least_one_member;
+    cdr >> ros_message->count;
   }
 
   return true;
@@ -84,9 +84,9 @@ size_t get_serialized_size_turtlesim_custom_msgs__srv__Average_Request(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
-    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message->count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -113,11 +113,12 @@ size_t max_serialized_size_turtlesim_custom_msgs__srv__Average_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
 
@@ -129,7 +130,7 @@ size_t max_serialized_size_turtlesim_custom_msgs__srv__Average_Request(
     using DataType = turtlesim_custom_msgs__srv__Average_Request;
     is_plain =
       (
-      offsetof(DataType, structure_needs_at_least_one_member) +
+      offsetof(DataType, count) +
       last_member_size
       ) == ret_val;
   }
@@ -141,9 +142,9 @@ bool cdr_serialize_key_turtlesim_custom_msgs__srv__Average_Request(
   const turtlesim_custom_msgs__srv__Average_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
-    cdr << ros_message->structure_needs_at_least_one_member;
+    cdr << ros_message->count;
   }
 
   return true;
@@ -164,9 +165,9 @@ size_t get_serialized_size_key_turtlesim_custom_msgs__srv__Average_Request(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
-    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message->count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -191,11 +192,12 @@ size_t max_serialized_size_key_turtlesim_custom_msgs__srv__Average_Request(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: structure_needs_at_least_one_member
+  // Field name: count
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -206,7 +208,7 @@ size_t max_serialized_size_key_turtlesim_custom_msgs__srv__Average_Request(
     using DataType = turtlesim_custom_msgs__srv__Average_Request;
     is_plain =
       (
-      offsetof(DataType, structure_needs_at_least_one_member) +
+      offsetof(DataType, count) +
       last_member_size
       ) == ret_val;
   }

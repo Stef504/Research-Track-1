@@ -6,7 +6,7 @@
 module turtlesim_custom_msgs {
   module srv {
     struct Average_Request {
-      uint8 structure_needs_at_least_one_member;
+      int32 count;
     };
     struct Average_Response {
       float avg_linear;

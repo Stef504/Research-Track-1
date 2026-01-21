@@ -16,7 +16,7 @@ turtlesim_custom_msgs__srv__Average_Request__init(turtlesim_custom_msgs__srv__Av
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // count
   return true;
 }
 
@@ -26,7 +26,7 @@ turtlesim_custom_msgs__srv__Average_Request__fini(turtlesim_custom_msgs__srv__Av
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // count
 }
 
 bool
@@ -35,8 +35,8 @@ turtlesim_custom_msgs__srv__Average_Request__are_equal(const turtlesim_custom_ms
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // count
+  if (lhs->count != rhs->count) {
     return false;
   }
   return true;
@@ -50,8 +50,8 @@ turtlesim_custom_msgs__srv__Average_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // count
+  output->count = input->count;
   return true;
 }
 

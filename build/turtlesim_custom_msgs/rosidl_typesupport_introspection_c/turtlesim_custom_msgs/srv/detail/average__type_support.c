@@ -33,15 +33,15 @@ void turtlesim_custom_msgs__srv__Average_Request__rosidl_typesupport_introspecti
 
 static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__srv__Average_Request__rosidl_typesupport_introspection_c__Average_Request_message_member_array[1] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "count",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtlesim_custom_msgs__srv__Average_Request, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(turtlesim_custom_msgs__srv__Average_Request, count),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

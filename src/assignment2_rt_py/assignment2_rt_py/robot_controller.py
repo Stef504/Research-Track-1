@@ -6,7 +6,7 @@ import sys
 import math
 
 from turtlesim_custom_msgs.msg import Vel #DistDirectionThreshold 
-from turtlesim_custom_msgs.srv import Velocity #AvgVelocity
+from turtlesim_custom_msgs.srv import Average #AvgVelocity
 from turtlesim_custom_msgs.srv import Threshold #SetThreshold
 
 class RobotController(Node):
@@ -14,7 +14,7 @@ class RobotController(Node):
     def __init__(self):
         
         # --- 2. MESSAGES ---
-        self.message = Twist()
+        #self.message = Twist()
 
         # --- 3. NUMERIC VARIABLES ---
         self.x_ = 0.0
@@ -23,9 +23,10 @@ class RobotController(Node):
         self.velocity_linear = 0.0
         self.velocity_angular = 0.0
         
-        self.max_linear_velocity = 20
-        self.max_angular_velocity = 20
-        self.max_threshold = 10.0
+        self.max_linear_velocity = 4
+        self.max_angular_velocity = 2
+        self.min_threshold = 0.5
+        self.max_threshold = 3
 
         # --- 4. CALCULATIONS FOR TICKS ---
         self.tick_count_ = 0
@@ -36,13 +37,12 @@ class RobotController(Node):
 
         # --- 5. REVERSE TICKS ---
         self.tick_reverse_count_ = 0
-        self.desired_seconds_reverse_ = self.desired_seconds_ 
-        self.max_reverse_ticks_ = int(self.desired_seconds_reverse_ / self.htz_)
+        #self.desired_seconds_reverse_ = self.desired_seconds_ / 2
+        #self.max_reverse_ticks_ = int(self.desired_seconds_reverse_ / self.htz_)
+        self.max_reverse_ticks_ = 0
 
         # --- 6. BOOLEANS ---
         self.running_ = False
-        self.selected_ = False
-        self.valid_choice = False
         self.stop_ = False
         self.reverse_ = False
 
@@ -53,6 +53,9 @@ class RobotController(Node):
 
         # --- 8. Services Clients and Requests ---
         self.req = Threshold.Request()
+        self.avg_req = Average.Request()
+        self.count = 5
+        self.value_counter = 0
 
         #--- Array of Inputs ---
         self.linear_history = []
@@ -64,7 +67,8 @@ class RobotController(Node):
 
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
 
-        self.server_avg_velocity = self.create_service(Velocity, 'AvgVelocity', self.handle_service)
+        self.server_avg_velocity = self.create_service(Average, 'AvgVelocity', self.handle_service)
+        self.client_avg_velocity = self.create_client(Average, 'AvgVelocity')
         self.threshold_client = self.create_client(Threshold, 'set_threshold')
 
         self.timer = self.create_timer(self.htz_, self.timer_callback)
@@ -72,7 +76,7 @@ class RobotController(Node):
 
     def handle_service(self, request, response):
 
-        if len(self.linear_history) < 5 or len(self.angular_history) < 5:
+        if len(self.linear_history) < self.count or len(self.angular_history) < self.count:
             response.avg_linear = 0.0
             response.avg_angular = 0.0
             self.get_logger().info('Not enough data for average velocity.')
@@ -85,12 +89,40 @@ class RobotController(Node):
             return response
 
 
+
+    def avgerage_velocity(self):
+
+        if self.value_counter < self.count:
+            return 
+        else:
+            if not self.client_avg_velocity.wait_for_service(timeout_sec=5.0):
+                self.get_logger().warn("AvgVelocity node not found! Is it running?")
+                return 
+
+        self.avg_req.count = self.count
+
+        future = self.client_avg_velocity.call_async(self.avg_req)
+        future.add_done_callback(self.avg_velocity_response_callback)
+
+    def avg_velocity_response_callback(self, future):
+        try:
+            response = future.result()
+            self.velocity_linear = response.avg_linear
+            self.velocity_angular = response.avg_angular
+            self.get_logger().info(f"Avg velocities received - Linear: {self.velocity_linear}, Angular: {self.velocity_angular}")
+        except Exception as e:
+            self.get_logger().error(f"Service call failed: {e}")
+
     def send_new_threshold(self):
             
         val = 0.0
-        user_input = input("Enter new threshold: ")
+        user_input = input("Enter new threshold (q to quit): ")
 
         try:
+            if user_input.lower() == 'q' or user_input.lower() == 'q':
+                self.get_logger().info("exiting game...")
+                rclpy.shutdown()
+                sys.exit(0)
 
             val = float(user_input)
 
@@ -104,7 +136,11 @@ class RobotController(Node):
             return
 
         # 3. Package the request
-        if val > self.max_threshold:
+        if val < self.min_threshold:
+            self.get_logger().warn(f"Threshold too low! Max is {self.min_threshold}.")
+            self.req.threshold = self.min_threshold
+            return
+        elif val > self.max_threshold:
             self.get_logger().warn(f"Threshold too high! Max is {self.max_threshold}.")
             self.req.threshold = self.max_threshold
             return
@@ -113,10 +149,17 @@ class RobotController(Node):
 
         # 4. Send it asynchronously
         future = self.threshold_client.call_async(self.req)
-        future.add_done_callback(self.response_callback)
-        
+        future.add_done_callback(self.threshold_response_callback)
+
+    def threshold_response_callback(self, future):
+        try:
+            response = future.result()
+            self.get_logger().info(f"Threshold updated to: {response.newthreshold}")
+        except Exception as e:
+            self.get_logger().error(f"Service call failed: {e}")
 
     def topic_callback(self, msg):
+        self.get_logger().info(f"Controller heard: '{msg.data}'")
         self.distance_ = msg.data
         
         # Check if "out of bounds" OR "too close" is inside the distance string
@@ -132,8 +175,21 @@ class RobotController(Node):
 
     def timer_callback(self):
         
+        message = Twist() #had to do a hard reset of message here to avoid stale data
+
         if not self.running_:
 
+            # --- THE FIX: FORCE STOP ---
+            # Send the stop command MULTIPLE times to ensure Gazebo hears it
+            # and to give physics a tiny moment to react.
+            message.linear.x = 0.0
+            message.angular.z = 0.0
+            
+            # Publish it 5 times quickly to override any lag
+            for _ in range(5):
+                self.publisher_1.publish(message)
+            # ---------------------------
+            
             self.stop_ = False
             self.reverse_ = False
             self.tick_count_ = 0
@@ -156,14 +212,18 @@ class RobotController(Node):
 
             self.linear_history.append(self.velocity_linear)
             self.angular_history.append(self.velocity_angular)
+            self.value_counter += 1
 
-            if len(self.linear_history) > 5:
+            if len(self.linear_history) > self.count:
                 self.linear_history.pop(0) # Remove oldest
                 self.angular_history.pop(0)
 
-            if len(self.angular_history) > 5:
+            if len(self.angular_history) > self.count:
                 self.linear_history.pop(0)
                 self.angular_history.pop(0)
+
+            #--- Client to call average velocity service ---
+            self.avgerage_velocity()
 
             if abs(self.velocity_linear) > self.max_linear_velocity:
                 self.velocity_linear = self.max_linear_velocity 
@@ -172,38 +232,41 @@ class RobotController(Node):
                 self.velocity_angular = self.max_angular_velocity
 
             self.running_ = True
-    
-             
+            
+
         if self.running_:
 
             if self.stop_ and not self.reverse_:
                 self.reverse_ = True
                 self.tick_reverse_count_ = 0
+                self.max_reverse_ticks_ = 0  
+                self.max_reverse_ticks_ = self.tick_count_  + 4 #lets us reverse back to intial position, adding 4s safety factor 
+                #ticks to ensure we are out of the zone
             
             if self.reverse_:
 
                 if self.tick_reverse_count_ < self.max_reverse_ticks_:
                     self.tick_reverse_count_ += 1
-                    self.message.linear.x = - float(self.velocity_linear) #reverse with same speed
-                    self.message.angular.z = - float(self.velocity_angular)
-                    self.publisher_1.publish(self.message)
+                    message.linear.x = - float(self.velocity_linear) #reverse with same speed
+                    message.angular.z = - float(self.velocity_angular)
+                    self.publisher_1.publish(message)
                     
                 else:
-                    self.message.linear.x = 0.0
-                    self.message.angular.z = 0.0
-                    self.publisher_1.publish(self.message)
+                    message.linear.x = 0.0
+                    message.angular.z = 0.0
+                    self.publisher_1.publish(message)
                     self.running_=False
                 return        
 
             if self.tick_count_ < self.max_ticks_:
                 self.tick_count_ += 1
-                self.message.linear.x = float(self.velocity_linear)
-                self.message.angular.z = float(self.velocity_angular)
-                self.publisher_1.publish(self.message)
+                message.linear.x = float(self.velocity_linear)
+                message.angular.z = float(self.velocity_angular)
+                self.publisher_1.publish(message)
             else:
-                self.message.linear.x = 0.0
-                self.message.angular.z = 0.0
-                self.publisher_1.publish(self.message)
+                message.linear.x = 0.0
+                message.angular.z = 0.0
+                self.publisher_1.publish(message)
                 self.running_=False
 
 def main(args=None):

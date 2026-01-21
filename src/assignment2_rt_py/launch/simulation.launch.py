@@ -38,21 +38,22 @@ def generate_launch_description():
         executable='robot_controller',
         name='robot',
         output='screen',
+        #prefix = 'xterm -e',
         prefix='xterm -hold -e', #keeps the window open to help debugging
     )
     
     # 2. Create the Event Handler, is normal constant
-    #shutdown_handler = RegisterEventHandler(
-     #   event_handler=OnProcessExit(
-      #      target_action=robot,
-       #     on_exit=[EmitEvent(event=Shutdown())]
-        #)
-    #)
+    shutdown_handler = RegisterEventHandler(
+       event_handler=OnProcessExit(
+            target_action=robot,
+            on_exit=[EmitEvent(event=Shutdown())]
+        )
+    )
     
     # 3. Return everything in the description
     return LaunchDescription([
         distance,
         robot,
-        #shutdown_handler,
+        shutdown_handler,
         spawn_robot,
     ])

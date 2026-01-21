@@ -17,8 +17,9 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>turtlesim_custom_msgs</exec_depend>
   
-  <exec_depend>ros2launch</exec_depend> <exec_depend>gazebo_ros</exec_depend> 
-  <exec_depend>bme_gazebo_sensors</exec_depend> </package>
+  <exec_depend>ros2launch</exec_depend> 
+  <exec_depend>gazebo_ros</exec_depend> 
+  <exec_depend>bme_gazebo_sensors</exec_depend> 
   
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

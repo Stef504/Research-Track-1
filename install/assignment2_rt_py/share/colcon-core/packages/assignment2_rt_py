@@ -1,1 +1,1 @@
-setuptools
+bme_gazebo_sensors:gazebo_ros:geometry_msgs:rclcpp:ros2launch:turtlesim_custom_msgs

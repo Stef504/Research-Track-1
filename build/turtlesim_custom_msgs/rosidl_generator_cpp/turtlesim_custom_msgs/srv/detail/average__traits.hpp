@@ -27,17 +27,28 @@ inline void to_flow_style_yaml(
   const Average_Request & msg,
   std::ostream & out)
 {
-  (void)msg;
-  out << "null";
+  out << "{";
+  // member: count
+  {
+    out << "count: ";
+    rosidl_generator_traits::value_to_yaml(msg.count, out);
+  }
+  out << "}";
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
   const Average_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  (void)msg;
-  (void)indentation;
-  out << "null\n";
+  // member: count
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "count: ";
+    rosidl_generator_traits::value_to_yaml(msg.count, out);
+    out << "\n";
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const Average_Request & msg, bool use_flow_style = false)

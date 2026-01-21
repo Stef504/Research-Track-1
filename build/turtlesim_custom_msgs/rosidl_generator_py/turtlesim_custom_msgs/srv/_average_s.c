@@ -50,7 +50,15 @@ bool turtlesim_custom_msgs__srv__average__request__convert_from_py(PyObject * _p
     assert(strncmp("turtlesim_custom_msgs.srv._average.Average_Request", full_classname_dest, 50) == 0);
   }
   turtlesim_custom_msgs__srv__Average_Request * ros_message = _ros_message;
-  ros_message->structure_needs_at_least_one_member = 0;
+  {  // count
+    PyObject * field = PyObject_GetAttrString(_pymsg, "count");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->count = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -72,7 +80,18 @@ PyObject * turtlesim_custom_msgs__srv__average__request__convert_to_py(void * ra
       return NULL;
     }
   }
-  (void)raw_ros_message;
+  turtlesim_custom_msgs__srv__Average_Request * ros_message = (turtlesim_custom_msgs__srv__Average_Request *)raw_ros_message;
+  {  // count
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->count);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "count", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

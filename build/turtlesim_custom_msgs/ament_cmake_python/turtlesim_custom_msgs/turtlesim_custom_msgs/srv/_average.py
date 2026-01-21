@@ -12,6 +12,8 @@ ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
 
 # Import statements for member types
 
+import builtins  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -60,15 +62,18 @@ class Average_Request(metaclass=Metaclass_Average_Request):
     """Message class 'Average_Request'."""
 
     __slots__ = [
+        '_count',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
+        'count': 'int32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -80,6 +85,7 @@ class Average_Request(metaclass=Metaclass_Average_Request):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.count = kwargs.get('count', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,6 +117,8 @@ class Average_Request(metaclass=Metaclass_Average_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.count != other.count:
+            return False
         return True
 
     @classmethod
@@ -118,10 +126,26 @@ class Average_Request(metaclass=Metaclass_Average_Request):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
+    @builtins.property
+    def count(self):
+        """Message field 'count'."""
+        return self._count
+
+    @count.setter
+    def count(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'count' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'count' field must be an integer in [-2147483648, 2147483647]"
+        self._count = value
+
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
+# already imported above
+# import builtins
 
 import math  # noqa: E402, I100
 

@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "turtlesim_custom_msgs/msg/detail/vel__functions.h"
 #include "turtlesim_custom_msgs/msg/detail/vel__type_support.h"
+#include "turtlesim_custom_msgs/msg/detail/vel__functions.h"
 #include "turtlesim_custom_msgs/msg/detail/vel__struct.h"
 
 #ifdef __cplusplus

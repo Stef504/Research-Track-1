@@ -21,6 +21,26 @@ namespace turtlesim_custom_msgs
 namespace srv
 {
 
+namespace builder
+{
+
+class Init_Average_Request_count
+{
+public:
+  Init_Average_Request_count()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  ::turtlesim_custom_msgs::srv::Average_Request count(::turtlesim_custom_msgs::srv::Average_Request::_count_type arg)
+  {
+    msg_.count = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::turtlesim_custom_msgs::srv::Average_Request msg_;
+};
+
+}  // namespace builder
 
 }  // namespace srv
 
@@ -31,7 +51,7 @@ template<>
 inline
 auto build<::turtlesim_custom_msgs::srv::Average_Request>()
 {
-  return ::turtlesim_custom_msgs::srv::Average_Request(rosidl_runtime_cpp::MessageInitialization::ZERO);
+  return turtlesim_custom_msgs::srv::builder::Init_Average_Request_count();
 }
 
 }  // namespace turtlesim_custom_msgs
