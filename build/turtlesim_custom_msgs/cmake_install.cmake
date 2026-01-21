@@ -55,6 +55,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_type_description/turtlesim_custom_msgs/srv/Average.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_type_description/turtlesim_custom_msgs/srv/Threshold.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtlesim_custom_msgs/turtlesim_custom_msgs" TYPE DIRECTORY FILES "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -375,11 +383,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/msg" TYPE FILE FILES "/home/ubuntu/ros_workspace/turtlesim_custom_msgs/msg/Vel.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Velocity.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Average.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Threshold.srv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

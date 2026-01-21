@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "turtlesim_custom_msgs/srv/Average_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "turtlesim_custom_msgs/srv/Average_Request",
+      "hash_string": "RIHS01_12ac8f53879eacaae657450a7f83427f856bd6708f7711d757c8e42733d62c81"
+    }
+  ]
+}

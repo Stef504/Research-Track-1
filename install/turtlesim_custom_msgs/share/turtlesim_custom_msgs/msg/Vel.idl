@@ -6,9 +6,11 @@
 module turtlesim_custom_msgs {
   module msg {
     struct Vel {
-      string name;
+      float distance;
 
-      float vel;
+      string direction;
+
+      float threshold;
     };
   };
 };

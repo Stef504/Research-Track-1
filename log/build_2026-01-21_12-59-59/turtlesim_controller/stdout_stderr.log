@@ -1,0 +1,61 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found turtlesim_custom_msgs: 0.0.0 (/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake)
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/ros_workspace/build/turtlesim_controller
+[ 12%] [32mBuilding CXX object CMakeFiles/turtlesim_controller3.dir/src/turtlesim_controller3.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_service.dir/src/turtlesim_service.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o[0m
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:31:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kname[m[K’
+   31 |       message_vel.[01;31m[Kname[m[K = "linear_x";
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvel[m[K’
+   32 |       message_vel.[01;31m[Kvel[m[K = message.linear.x;
+      |                   [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:68:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kname[m[K’
+   68 |       message_vel.[01;31m[Kname[m[K = "linear_x";
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller2.cpp:69:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvel[m[K’
+   69 |       message_vel.[01;31m[Kvel[m[K = message.linear.x;
+      |                   [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller3.cpp:[m[K In member function ‘[01m[Kvoid TurtlesimController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller3.cpp:71:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kname[m[K’
+   71 |         message_vel.[01;31m[Kname[m[K = "linear_x";
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/turtlesim_controller/src/turtlesim_controller3.cpp:72:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing turtlesim_custom_msgs::msg::Vel = struct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim_custom_msgs::msg::Vel_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvel[m[K’
+   72 |         message_vel.[01;31m[Kvel[m[K = message.linear.x;
+      |                     [01;31m[K^~~[m[K
+[ 62%] [32m[1mLinking CXX executable turtlesim_service[0m
+[ 62%] Built target turtlesim_service
+gmake[2]: *** [CMakeFiles/turtlesim_controller.dir/build.make:76: CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlesim_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/turtlesim_controller2.dir/build.make:76: CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/turtlesim_controller2.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/turtlesim_controller3.dir/build.make:76: CMakeFiles/turtlesim_controller3.dir/src/turtlesim_controller3.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/turtlesim_controller3.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

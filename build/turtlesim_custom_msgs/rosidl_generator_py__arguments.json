@@ -4,7 +4,9 @@
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
     "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:msg/Vel.idl",
-    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:srv/Velocity.idl"
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:srv/Velocity.idl",
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:srv/Average.idl",
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs:srv/Threshold.idl"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -27,6 +29,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl",
     "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl",
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl",
+    "/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"

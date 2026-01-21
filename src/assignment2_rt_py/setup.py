@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'assignment2_rt_py'
 
@@ -10,6 +12,12 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+
+        # --- ADD THIS BLOCK ---
+        # This tells ROS: "Take all .launch.py files from the 'launch' folder
+        # and copy them to the installed share folder."
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+        # ----------------------
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,6 +28,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'distance = assignment2_rt_py.distance_calc:main',
+            'robot_controller = assignment2_rt_py.robot_controller:main',
         ],
     },
 )

@@ -36,11 +36,14 @@ cdr_serialize(
   const turtlesim_custom_msgs::msg::Vel & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
+  // Member: distance
+  cdr << ros_message.distance;
 
-  // Member: vel
-  cdr << ros_message.vel;
+  // Member: direction
+  cdr << ros_message.direction;
+
+  // Member: threshold
+  cdr << ros_message.threshold;
 
   return true;
 }
@@ -51,11 +54,14 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   turtlesim_custom_msgs::msg::Vel & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
+  // Member: distance
+  cdr >> ros_message.distance;
 
-  // Member: vel
-  cdr >> ros_message.vel;
+  // Member: direction
+  cdr >> ros_message.direction;
+
+  // Member: threshold
+  cdr >> ros_message.threshold;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -74,14 +80,21 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
+  // Member: distance
+  {
+    size_t item_size = sizeof(ros_message.distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: direction
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
+    (ros_message.direction.size() + 1);
 
-  // Member: vel
+  // Member: threshold
   {
-    size_t item_size = sizeof(ros_message.vel);
+    size_t item_size = sizeof(ros_message.threshold);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -109,7 +122,14 @@ max_serialized_size_Vel(
   full_bounded = true;
   is_plain = true;
 
-  // Member: name
+  // Member: distance
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: direction
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -120,7 +140,7 @@ max_serialized_size_Vel(
         1;
     }
   }
-  // Member: vel
+  // Member: threshold
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -136,7 +156,7 @@ max_serialized_size_Vel(
     using DataType = turtlesim_custom_msgs::msg::Vel;
     is_plain =
       (
-      offsetof(DataType, vel) +
+      offsetof(DataType, threshold) +
       last_member_size
       ) == ret_val;
   }
@@ -150,11 +170,14 @@ cdr_serialize_key(
   const turtlesim_custom_msgs::msg::Vel & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
+  // Member: distance
+  cdr << ros_message.distance;
 
-  // Member: vel
-  cdr << ros_message.vel;
+  // Member: direction
+  cdr << ros_message.direction;
+
+  // Member: threshold
+  cdr << ros_message.threshold;
 
   return true;
 }
@@ -172,14 +195,21 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
+  // Member: distance
+  {
+    size_t item_size = sizeof(ros_message.distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: direction
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
+    (ros_message.direction.size() + 1);
 
-  // Member: vel
+  // Member: threshold
   {
-    size_t item_size = sizeof(ros_message.vel);
+    size_t item_size = sizeof(ros_message.threshold);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -206,7 +236,15 @@ max_serialized_size_key_Vel(
   full_bounded = true;
   is_plain = true;
 
-  // Member: name
+  // Member: distance
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: direction
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -218,7 +256,7 @@ max_serialized_size_key_Vel(
     }
   }
 
-  // Member: vel
+  // Member: threshold
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -234,7 +272,7 @@ max_serialized_size_key_Vel(
     using DataType = turtlesim_custom_msgs::msg::Vel;
     is_plain =
       (
-      offsetof(DataType, vel) +
+      offsetof(DataType, threshold) +
       last_member_size
       ) == ret_val;
   }

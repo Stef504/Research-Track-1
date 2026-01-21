@@ -68,6 +68,8 @@ include CMakeFiles/turtlesim_custom_msgs.dir/progress.make
 
 CMakeFiles/turtlesim_custom_msgs: /home/ubuntu/ros_workspace/turtlesim_custom_msgs/msg/Vel.msg
 CMakeFiles/turtlesim_custom_msgs: /home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Velocity.srv
+CMakeFiles/turtlesim_custom_msgs: /home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Average.srv
+CMakeFiles/turtlesim_custom_msgs: /home/ubuntu/ros_workspace/turtlesim_custom_msgs/srv/Threshold.srv
 CMakeFiles/turtlesim_custom_msgs: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 
 turtlesim_custom_msgs: CMakeFiles/turtlesim_custom_msgs

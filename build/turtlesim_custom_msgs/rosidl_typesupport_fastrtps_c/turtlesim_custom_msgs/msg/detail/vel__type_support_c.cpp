@@ -36,8 +36,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // name
-#include "rosidl_runtime_c/string_functions.h"  // name
+#include "rosidl_runtime_c/string.h"  // direction
+#include "rosidl_runtime_c/string_functions.h"  // direction
 
 // forward declare type support functions
 
@@ -50,9 +50,14 @@ bool cdr_serialize_turtlesim_custom_msgs__msg__Vel(
   const turtlesim_custom_msgs__msg__Vel * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: name
+  // Field name: distance
   {
-    const rosidl_runtime_c__String * str = &ros_message->name;
+    cdr << ros_message->distance;
+  }
+
+  // Field name: direction
+  {
+    const rosidl_runtime_c__String * str = &ros_message->direction;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -64,9 +69,9 @@ bool cdr_serialize_turtlesim_custom_msgs__msg__Vel(
     cdr << str->data;
   }
 
-  // Field name: vel
+  // Field name: threshold
   {
-    cdr << ros_message->vel;
+    cdr << ros_message->threshold;
   }
 
   return true;
@@ -77,25 +82,30 @@ bool cdr_deserialize_turtlesim_custom_msgs__msg__Vel(
   eprosima::fastcdr::Cdr & cdr,
   turtlesim_custom_msgs__msg__Vel * ros_message)
 {
-  // Field name: name
+  // Field name: distance
+  {
+    cdr >> ros_message->distance;
+  }
+
+  // Field name: direction
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->name.data) {
-      rosidl_runtime_c__String__init(&ros_message->name);
+    if (!ros_message->direction.data) {
+      rosidl_runtime_c__String__init(&ros_message->direction);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->name,
+      &ros_message->direction,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'name'\n");
+      fprintf(stderr, "failed to assign string into field 'direction'\n");
       return false;
     }
   }
 
-  // Field name: vel
+  // Field name: threshold
   {
-    cdr >> ros_message->vel;
+    cdr >> ros_message->threshold;
   }
 
   return true;
@@ -116,14 +126,21 @@ size_t get_serialized_size_turtlesim_custom_msgs__msg__Vel(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: name
+  // Field name: distance
+  {
+    size_t item_size = sizeof(ros_message->distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: direction
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
+    (ros_message->direction.size + 1);
 
-  // Field name: vel
+  // Field name: threshold
   {
-    size_t item_size = sizeof(ros_message->vel);
+    size_t item_size = sizeof(ros_message->threshold);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -150,7 +167,15 @@ size_t max_serialized_size_turtlesim_custom_msgs__msg__Vel(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: name
+  // Field name: distance
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: direction
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -162,7 +187,7 @@ size_t max_serialized_size_turtlesim_custom_msgs__msg__Vel(
     }
   }
 
-  // Field name: vel
+  // Field name: threshold
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -179,7 +204,7 @@ size_t max_serialized_size_turtlesim_custom_msgs__msg__Vel(
     using DataType = turtlesim_custom_msgs__msg__Vel;
     is_plain =
       (
-      offsetof(DataType, vel) +
+      offsetof(DataType, threshold) +
       last_member_size
       ) == ret_val;
   }
@@ -191,9 +216,14 @@ bool cdr_serialize_key_turtlesim_custom_msgs__msg__Vel(
   const turtlesim_custom_msgs__msg__Vel * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: name
+  // Field name: distance
   {
-    const rosidl_runtime_c__String * str = &ros_message->name;
+    cdr << ros_message->distance;
+  }
+
+  // Field name: direction
+  {
+    const rosidl_runtime_c__String * str = &ros_message->direction;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -205,9 +235,9 @@ bool cdr_serialize_key_turtlesim_custom_msgs__msg__Vel(
     cdr << str->data;
   }
 
-  // Field name: vel
+  // Field name: threshold
   {
-    cdr << ros_message->vel;
+    cdr << ros_message->threshold;
   }
 
   return true;
@@ -228,14 +258,21 @@ size_t get_serialized_size_key_turtlesim_custom_msgs__msg__Vel(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: name
+  // Field name: distance
+  {
+    size_t item_size = sizeof(ros_message->distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: direction
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
+    (ros_message->direction.size + 1);
 
-  // Field name: vel
+  // Field name: threshold
   {
-    size_t item_size = sizeof(ros_message->vel);
+    size_t item_size = sizeof(ros_message->threshold);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -260,7 +297,15 @@ size_t max_serialized_size_key_turtlesim_custom_msgs__msg__Vel(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: name
+  // Field name: distance
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: direction
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -272,7 +317,7 @@ size_t max_serialized_size_key_turtlesim_custom_msgs__msg__Vel(
     }
   }
 
-  // Field name: vel
+  // Field name: threshold
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -288,7 +333,7 @@ size_t max_serialized_size_key_turtlesim_custom_msgs__msg__Vel(
     using DataType = turtlesim_custom_msgs__msg__Vel;
     is_plain =
       (
-      offsetof(DataType, vel) +
+      offsetof(DataType, threshold) +
       last_member_size
       ) == ret_val;
   }

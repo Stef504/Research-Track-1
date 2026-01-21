@@ -79,6 +79,8 @@ rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/ve
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: /opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -93,6 +95,18 @@ rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/ve
 
 rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
@@ -122,16 +136,48 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typ
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.s
 
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp > CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp > CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.s
+
 # Object files for target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp
 turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp.o" \
-"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.o"
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o"
 
 # External object files for target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp
 turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp.o
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.o
+libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o
+libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
@@ -145,7 +191,7 @@ libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/jazzy/lib
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/jazzy/lib/librcutils.so
 libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,7 +204,11 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean:
 
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend

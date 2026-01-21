@@ -2,6 +2,8 @@
   "package_name": "turtlesim_custom_msgs",
   "non_idl_tuples": [
     "/home/ubuntu/ros_workspace/turtlesim_custom_msgs:msg/Vel.msg",
-    "/home/ubuntu/ros_workspace/turtlesim_custom_msgs:srv/Velocity.srv"
+    "/home/ubuntu/ros_workspace/turtlesim_custom_msgs:srv/Velocity.srv",
+    "/home/ubuntu/ros_workspace/turtlesim_custom_msgs:srv/Average.srv",
+    "/home/ubuntu/ros_workspace/turtlesim_custom_msgs:srv/Threshold.srv"
   ]
 }

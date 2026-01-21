@@ -4,7 +4,17 @@
       "type_name": "turtlesim_custom_msgs/msg/Vel",
       "fields": [
         {
-          "name": "name",
+          "name": "distance",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "direction",
           "type": {
             "type_id": 17,
             "capacity": 0,
@@ -14,7 +24,7 @@
           "default_value": ""
         },
         {
-          "name": "vel",
+          "name": "threshold",
           "type": {
             "type_id": 10,
             "capacity": 0,
@@ -30,7 +40,7 @@
   "type_hashes": [
     {
       "type_name": "turtlesim_custom_msgs/msg/Vel",
-      "hash_string": "RIHS01_4df20fe3a0801e1253c4d475ce1a6ddefbaf3e381ca00d454cf610737557dab7"
+      "hash_string": "RIHS01_5e6adbf44ee2ca3cf0839507470e7cf6d7dd4e8454b84bfe7d7cdb4b044e9b0c"
     }
   ]
 }

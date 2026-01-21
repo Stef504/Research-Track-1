@@ -13,7 +13,7 @@
 
 
 // Include directives for member types
-// Member `name`
+// Member `direction`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -35,17 +35,17 @@ void turtlesim_custom_msgs__msg__Vel__rosidl_typesupport_introspection_c__Vel_fi
   turtlesim_custom_msgs__msg__Vel__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__msg__Vel__rosidl_typesupport_introspection_c__Vel_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__msg__Vel__rosidl_typesupport_introspection_c__Vel_message_member_array[3] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "distance",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtlesim_custom_msgs__msg__Vel, name),  // bytes offset in struct
+    offsetof(turtlesim_custom_msgs__msg__Vel, distance),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -55,7 +55,25 @@ static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__
     NULL  // resize(index) function pointer
   },
   {
-    "vel",  // name
+    "direction",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(turtlesim_custom_msgs__msg__Vel, direction),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "threshold",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -63,7 +81,7 @@ static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtlesim_custom_msgs__msg__Vel, vel),  // bytes offset in struct
+    offsetof(turtlesim_custom_msgs__msg__Vel, threshold),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -77,7 +95,7 @@ static rosidl_typesupport_introspection_c__MessageMember turtlesim_custom_msgs__
 static const rosidl_typesupport_introspection_c__MessageMembers turtlesim_custom_msgs__msg__Vel__rosidl_typesupport_introspection_c__Vel_message_members = {
   "turtlesim_custom_msgs__msg",  // message namespace
   "Vel",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(turtlesim_custom_msgs__msg__Vel),
   false,  // has_any_key_member_
   turtlesim_custom_msgs__msg__Vel__rosidl_typesupport_introspection_c__Vel_message_member_array,  // message members

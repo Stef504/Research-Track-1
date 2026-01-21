@@ -1,0 +1,17 @@
+[0.019s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16
+[0.058s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.173s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.177s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.215s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.243s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.245s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.246s]   rosidl_generate_interfaces() the passed file 'srv/Averga.srv' doesn't exist
+[0.246s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.246s]   '/home/ubuntu/ros_workspace/turtlesim_custom_msgs'
+[0.246s] Call Stack (most recent call first):
+[0.246s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.246s] 
+[0.246s] [0m
+[0.246s] -- Configuring incomplete, errors occurred!
+[0.251s] gmake: *** [Makefile:1085: cmake_check_build_system] Error 1
+[0.255s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16

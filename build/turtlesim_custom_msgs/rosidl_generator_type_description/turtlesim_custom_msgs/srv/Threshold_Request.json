@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "turtlesim_custom_msgs/srv/Threshold_Request",
+      "fields": [
+        {
+          "name": "threshold",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "turtlesim_custom_msgs/srv/Threshold_Request",
+      "hash_string": "RIHS01_6879610da4971a17b5aa40926348204afa0e413b5f3199738ab35156489e2cb6"
+    }
+  ]
+}

@@ -79,6 +79,8 @@ rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -88,11 +90,23 @@ rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c
 
 rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
+
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+
+rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
 
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c
@@ -122,16 +136,48 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.s
 
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c > CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c > CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s
+
 # Object files for target turtlesim_custom_msgs__rosidl_typesupport_introspection_c
 turtlesim_custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o" \
-"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o"
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o"
 
 # External object files for target turtlesim_custom_msgs__rosidl_typesupport_introspection_c
 turtlesim_custom_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o
+libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o
+libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: libturtlesim_custom_msgs__rosidl_generator_c.so
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
@@ -142,7 +188,7 @@ libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librcutils.so
 libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -155,6 +201,10 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
 	cd /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake "--color=$(COLOR)"

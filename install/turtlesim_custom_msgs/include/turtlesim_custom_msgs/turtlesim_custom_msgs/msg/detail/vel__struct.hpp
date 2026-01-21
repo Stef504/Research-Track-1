@@ -41,41 +41,52 @@ struct Vel_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
-      this->vel = 0.0f;
+      this->distance = 0.0f;
+      this->direction = "";
+      this->threshold = 0.0f;
     }
   }
 
   explicit Vel_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc)
+  : direction(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
-      this->vel = 0.0f;
+      this->distance = 0.0f;
+      this->direction = "";
+      this->threshold = 0.0f;
     }
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _name_type name;
-  using _vel_type =
+  using _distance_type =
     float;
-  _vel_type vel;
+  _distance_type distance;
+  using _direction_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _direction_type direction;
+  using _threshold_type =
+    float;
+  _threshold_type threshold;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->name = _arg;
-    return *this;
-  }
-  Type & set__vel(
+  Type & set__distance(
     const float & _arg)
   {
-    this->vel = _arg;
+    this->distance = _arg;
+    return *this;
+  }
+  Type & set__direction(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->direction = _arg;
+    return *this;
+  }
+  Type & set__threshold(
+    const float & _arg)
+  {
+    this->threshold = _arg;
     return *this;
   }
 
@@ -121,10 +132,13 @@ struct Vel_
   // comparison operators
   bool operator==(const Vel_ & other) const
   {
-    if (this->name != other.name) {
+    if (this->distance != other.distance) {
       return false;
     }
-    if (this->vel != other.vel) {
+    if (this->direction != other.direction) {
+      return false;
+    }
+    if (this->threshold != other.threshold) {
       return false;
     }
     return true;

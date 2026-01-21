@@ -1,0 +1,55 @@
+[1.329s] Invoking command in '/home/ubuntu/ros_workspace/src/assignment2_rt_py': PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment2_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment2_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment2_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log --single-version-externally-managed install_data
+[1.594s] running egg_info
+[1.594s] creating ../../build/assignment2_rt_py/assignment2_rt_py.egg-info
+[1.613s] writing ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/PKG-INFO
+[1.614s] writing dependency_links to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/dependency_links.txt
+[1.614s] writing entry points to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/entry_points.txt
+[1.614s] writing requirements to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/requires.txt
+[1.614s] writing top-level names to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/top_level.txt
+[1.614s] writing manifest file '../../build/assignment2_rt_py/assignment2_rt_py.egg-info/SOURCES.txt'
+[1.652s] reading manifest file '../../build/assignment2_rt_py/assignment2_rt_py.egg-info/SOURCES.txt'
+[1.652s] writing manifest file '../../build/assignment2_rt_py/assignment2_rt_py.egg-info/SOURCES.txt'
+[1.653s] running build
+[1.653s] running build_py
+[1.653s] creating /home/ubuntu/ros_workspace/build/assignment2_rt_py/build
+[1.654s] creating /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib
+[1.655s] creating /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py
+[1.655s] copying assignment2_rt_py/robot_controller.py -> /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py
+[1.656s] copying assignment2_rt_py/__init__.py -> /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py
+[1.656s] copying assignment2_rt_py/distance_calc.py -> /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py
+[1.657s] copying assignment2_rt_py/turtlesim_services.py -> /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py
+[1.657s] running install
+[1.663s] running install_lib
+[1.681s] creating /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py
+[1.681s] copying /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py/robot_controller.py -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py
+[1.682s] copying /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py/__init__.py -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py
+[1.682s] copying /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py/distance_calc.py -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py
+[1.682s] copying /home/ubuntu/ros_workspace/build/assignment2_rt_py/build/lib/assignment2_rt_py/turtlesim_services.py -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py
+[1.683s] byte-compiling /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/robot_controller.py to robot_controller.cpython-312.pyc
+[1.683s] Sorry: IndentationError: unindent does not match any outer indentation level (robot_controller.py, line 103)
+[1.684s] byte-compiling /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__init__.py to __init__.cpython-312.pyc
+[1.684s] byte-compiling /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/distance_calc.py to distance_calc.cpython-312.pyc
+[1.685s]   File "/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/distance_calc.py", line 72
+[1.685s]     else self.lidar <= self.threshold_:
+[1.685s]          ^^^^
+[1.685s] SyntaxError: expected ':'
+[1.685s] 
+[1.686s]   File "/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/turtlesim_services.py", line 14
+[1.686s]     self.threshold_srv = 
+[1.686s]                          ^
+[1.686s] SyntaxError: invalid syntax
+[1.686s] 
+[1.686s] byte-compiling /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/turtlesim_services.py to turtlesim_services.cpython-312.pyc
+[1.686s] running install_data
+[1.686s] creating /home/ubuntu/ros_workspace/install/assignment2_rt_py/share/ament_index
+[1.686s] creating /home/ubuntu/ros_workspace/install/assignment2_rt_py/share/ament_index/resource_index
+[1.686s] creating /home/ubuntu/ros_workspace/install/assignment2_rt_py/share/ament_index/resource_index/packages
+[1.687s] copying resource/assignment2_rt_py -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/share/ament_index/resource_index/packages
+[1.687s] copying package.xml -> /home/ubuntu/ros_workspace/install/assignment2_rt_py/share/assignment2_rt_py
+[1.687s] running install_egg_info
+[1.706s] Copying ../../build/assignment2_rt_py/assignment2_rt_py.egg-info to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py-0.0.0-py3.12.egg-info
+[1.708s] running install_scripts
+[1.837s] Installing distance script to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py
+[1.838s] Installing robot_controller script to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py
+[1.838s] writing list of installed files to '/home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log'
+[1.877s] Invoked command in '/home/ubuntu/ros_workspace/src/assignment2_rt_py' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment2_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment2_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment2_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log --single-version-externally-managed install_data

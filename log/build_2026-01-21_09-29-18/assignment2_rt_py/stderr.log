@@ -1,0 +1,6 @@
+Sorry: IndentationError: unindent does not match any outer indentation level (robot_controller.py, line 103)
+  File "/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/distance_calc.py", line 77
+    if 0 < self.lidar < 90
+                          ^
+SyntaxError: expected ':'
+

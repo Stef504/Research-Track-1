@@ -6,6 +6,12 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
   rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__struct.h \
   rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h \
   rosidl_generator_c/turtlesim_custom_msgs/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h \
+  rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h \
   rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h \
   rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h \
   rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h \
@@ -307,17 +313,15 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/python3.12/methodobject.h:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/python3.12/memoryobject.h:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/usr/include/python3.12/cpython/pyctype.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/python3.12/listobject.h:
-
-/usr/include/python3.12/pystrtod.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/python3.12/iterobject.h:
 
@@ -331,8 +335,6 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
 
 /usr/include/python3.12/ceval.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /usr/include/python3.12/cpython/weakrefobject.h:
 
 /usr/include/python3.12/bytesobject.h:
@@ -343,9 +345,9 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
 
 /usr/include/python3.12/cpython/pymem.h:
 
-/usr/include/python3.12/cpython/genobject.h:
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h:
 
-/usr/include/python3.12/modsupport.h:
+/usr/include/python3.12/cpython/genobject.h:
 
 /usr/include/python3.12/exports.h:
 
@@ -358,6 +360,12 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
 /usr/include/python3.12/cpython/longobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/python3.12/cpython/pyctype.h:
+
+/usr/include/python3.12/memoryobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -403,25 +411,87 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
 
 /usr/include/python3.12/cpython/classobject.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
-
 /usr/include/python3.12/compile.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
 
 /usr/include/python3.12/codecs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/python3.12/cpython/bytesobject.h:
 
-/usr/include/python3.12/boolobject.h:
+/usr/include/python3.12/abstract.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
+/usr/include/python3.12/cpython/pylifecycle.h:
+
+/usr/include/python3.12/cpython/pytime.h:
+
+/usr/include/python3.12/cpython/cellobject.h:
+
+/usr/include/python3.12/dictobject.h:
+
+/usr/include/python3.12/Python.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__struct.h:
+
+/usr/include/python3.12/cpython/ceval.h:
+
+/usr/include/python3.12/pybuffer.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/usr/include/python3.12/pyerrors.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/python3.12/cpython/code.h:
+
+/usr/include/python3.12/cpython/abstract.h:
+
+/usr/include/python3.12/bltinmodule.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/macros.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/python3.12/fileobject.h:
+
+/usr/include/python3.12/boolobject.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h:
+
+/usr/include/python3.12/cpython/object.h:
+
+/usr/include/python3.12/bytearrayobject.h:
+
+/usr/include/python3.12/rangeobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/linux/stat.h:
+
+/usr/include/python3.12/pyframe.h:
 
 /usr/include/python3.12/genericaliasobject.h:
 
@@ -435,44 +505,6 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h:
 
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
-
-/usr/include/python3.12/fileobject.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
-
-/usr/include/python3.12/dictobject.h:
-
-/usr/include/python3.12/Python.h:
-
-/usr/include/python3.12/cpython/picklebufobject.h:
-
-/usr/include/python3.12/complexobject.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/python3.12/cpython/fileobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/python3.12/cpython/object.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/python3.12/pyframe.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h:
-
-/usr/include/python3.12/weakrefobject.h:
-
 /usr/include/python3.12/cpython/odictobject.h:
 
 /usr/include/alloca.h:
@@ -483,17 +515,63 @@ rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/macros.h:
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h:
 
-/usr/include/python3.12/cpython/code.h:
+/usr/include/linux/errno.h:
 
-/usr/include/python3.12/cpython/abstract.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/python3.12/bltinmodule.h:
+/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/python3.12/cpython/picklebufobject.h:
+
+/usr/include/python3.12/complexobject.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/python3.12/pymath.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h:
+
+/usr/include/python3.12/weakrefobject.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+/usr/include/python3.12/cpython/fileobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h:
+
+/usr/include/limits.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
+
+/usr/include/python3.12/cpython/dictobject.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/python3.12/cpython/unicodeobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -505,37 +583,19 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h:
 
 /usr/include/python3.12/cpython/modsupport.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
 
-rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__struct.h:
-
-/usr/include/python3.12/cpython/ceval.h:
-
-/usr/include/python3.12/pybuffer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
-
-/usr/include/python3.12/pyerrors.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/inttypes.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
 
 /usr/include/python3.12/cpython/longintrepr.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/inttypes.h:
 
 /usr/include/python3.12/cpython/memoryobject.h:
 
@@ -545,19 +605,11 @@ rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__struct.h:
 
 /usr/include/asm-generic/posix_types.h:
 
-/usr/include/python3.12/moduleobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
 /usr/include/ctype.h:
 
 rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.h:
 
 /usr/include/errno.h:
-
-/usr/include/python3.12/cpython/dictobject.h:
-
-rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/pthread.h:
 
@@ -567,31 +619,13 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/python3.12/objimpl.h:
 
-/usr/include/python3.12/patchlevel.h:
-
-/usr/include/strings.h:
-
 /usr/include/python3.12/fileutils.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/python3.12/cpython/pylifecycle.h:
-
-/usr/include/python3.12/cpython/pytime.h:
-
-/usr/include/python3.12/cpython/cellobject.h:
-
 /usr/include/features.h:
 
 /usr/include/python3.12/unicodeobject.h:
-
-/usr/include/limits.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/linux/limits.h:
 
@@ -603,25 +637,19 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/linux/posix_types.h:
+/usr/include/python3.12/listobject.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/include/python3.12/pystrtod.h:
 
-/usr/include/python3.12/cpython/unicodeobject.h:
+/usr/include/python3.12/methodobject.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+/usr/include/python3.12/modsupport.h:
 
-/usr/include/python3.12/abstract.h:
+/usr/include/strings.h:
 
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+/usr/include/python3.12/patchlevel.h:
 
-/usr/include/python3.12/rangeobject.h:
-
-/usr/include/python3.12/bytearrayobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/python3.12/moduleobject.h:
 
 /usr/include/python3.12/object.h:
 
@@ -630,8 +658,6 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 /usr/include/python3.12/cpython/pythonrun.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/python3.12/osmodule.h:
 
@@ -645,8 +671,6 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/python3.12/pylifecycle.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
 /usr/include/python3.12/pymacconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
@@ -658,6 +682,12 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 /usr/include/python3.12/pyport.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/python3.12/pymem.h:
+
+/usr/include/python3.12/pystate.h:
 
 /usr/include/string.h:
 
@@ -674,12 +704,6 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 /usr/include/python3.12/pythread.h:
 
 /usr/include/python3.12/pytypedefs.h:
-
-/usr/include/python3.12/pymem.h:
-
-/usr/include/python3.12/pystate.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/python3.12/structseq.h:
 
@@ -745,9 +769,9 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/python3.12/cpython/setobject.h:
-
 /usr/include/python3.12/cpython/pythread.h:
+
+/usr/include/python3.12/cpython/setobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -795,8 +819,6 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/python3.12/typeslots.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -826,7 +848,3 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:

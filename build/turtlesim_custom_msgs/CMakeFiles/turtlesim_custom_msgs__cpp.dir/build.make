@@ -76,6 +76,16 @@ CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msg
 CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__struct.hpp
 CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__traits.hpp
 CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__type_support.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/average.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__builder.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__struct.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__traits.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__type_support.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/threshold.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__builder.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__struct.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__traits.hpp
+CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__type_support.hpp
 CMakeFiles/turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -99,6 +109,8 @@ rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/share/ros
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl
+rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl
+rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -132,6 +144,36 @@ rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__traits.hpp: rosi
 rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__type_support.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__type_support.hpp
 
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/average.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/average.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__builder.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__builder.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__struct.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__struct.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__traits.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__traits.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__type_support.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__type_support.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/threshold.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/threshold.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__builder.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__builder.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__struct.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__struct.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__traits.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__traits.hpp
+
+rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__type_support.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__type_support.hpp
+
 rosidl_generator_cpp/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -142,10 +184,20 @@ turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/detai
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/detail/vel__type_support.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/msg/vel.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/average.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__builder.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__struct.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__traits.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/average__type_support.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__builder.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__struct.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__traits.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/threshold__type_support.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__builder.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__struct.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__traits.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/detail/velocity__type_support.hpp
+turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/threshold.hpp
 turtlesim_custom_msgs__cpp: rosidl_generator_cpp/turtlesim_custom_msgs/srv/velocity.hpp
 turtlesim_custom_msgs__cpp: CMakeFiles/turtlesim_custom_msgs__cpp.dir/build.make
 .PHONY : turtlesim_custom_msgs__cpp

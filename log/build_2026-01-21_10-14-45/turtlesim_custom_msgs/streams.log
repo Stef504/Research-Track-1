@@ -1,0 +1,56 @@
+[0.031s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16
+[0.130s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.311s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.319s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.486s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.612s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.613s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.613s]   turtlesim_custom_msgs --arguments-file
+[0.613s]   /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter__arguments__turtlesim_custom_msgs.json
+[0.613s]   --output-dir
+[0.613s]   /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs
+[0.613s]   --output-file
+[0.613s]   /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_adapter/turtlesim_custom_msgs.idls)
+[0.613s]   returned error code 1:
+[0.613s] 
+[0.613s]   Error processing 'float32 AvgLinear' of
+[0.613s]   'turtlesim_custom_msgs/Average_Response': ''AvgLinear' is an invalid field
+[0.613s]   name.  It should have the pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.613s] 
+[0.614s]   Traceback (most recent call last):
+[0.614s] 
+[0.614s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.614s]     File "<frozen runpy>", line 88, in _run_code
+[0.614s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.614s]       sys.exit(main())
+[0.614s]                ^^^^^^
+[0.614s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.614s]       abs_idl_file = convert_to_idl(
+[0.614s]                      ^^^^^^^^^^^^^^^
+[0.614s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.614s]       return convert_srv_to_idl(
+[0.614s]              ^^^^^^^^^^^^^^^^^^^
+[0.614s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.614s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.614s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.614s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 864, in parse_service_string
+[0.614s]       response_message = parse_message_string(
+[0.615s]                          ^^^^^^^^^^^^^^^^^^^^^
+[0.615s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.615s]       fields.append(Field(
+[0.615s]                     ^^^^^^
+[0.615s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[0.615s]       raise NameError(
+[0.615s] 
+[0.615s]   NameError: 'AvgLinear' is an invalid field name.  It should have the
+[0.615s]   pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.615s] 
+[0.615s] Call Stack (most recent call first):
+[0.615s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.615s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.615s] 
+[0.615s] [0m
+[0.615s] -- Configuring incomplete, errors occurred!
+[0.626s] gmake: *** [Makefile:1085: cmake_check_build_system] Error 1
+[0.630s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16

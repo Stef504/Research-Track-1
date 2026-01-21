@@ -237,4 +237,10 @@ CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_gen
  /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h \
+ /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h

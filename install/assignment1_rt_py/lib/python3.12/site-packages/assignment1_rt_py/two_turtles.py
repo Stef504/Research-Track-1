@@ -98,8 +98,8 @@ class TwoTurtles(Node):
 
                 if self.turtle_choice == '1':
                     self.get_logger().info("You have selected Turtle 1")
-                    self.turtle_velocity_linear = input("Enter desired linear velocity: ")
-                    self.turtle_velocity_angular = input("Enter desired angular velocity: ")    
+                    self.turtle_velocity_linear = float(input("Enter desired linear velocity: "))
+                    self.turtle_velocity_angular = float(input("Enter desired angular velocity: ") )   
 
                 elif self.turtle_choice == '2':
                     self.get_logger().info("You have selected Turtle 2")

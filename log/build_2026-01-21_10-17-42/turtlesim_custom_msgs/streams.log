@@ -1,0 +1,338 @@
+[0.032s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16
+[0.132s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.305s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.314s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.484s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.845s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.971s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.127s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.129s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.528s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.547s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.580s] -- Added test 'lint_cmake' to check CMake code style
+[1.583s] -- Added test 'xmllint' to check XML markup files
+[1.590s] -- Configuring done (1.5s)
+[1.694s] -- Generating done (0.1s)
+[1.715s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs
+[1.783s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[1.815s] [  1%] Built target ament_cmake_python_copy_turtlesim_custom_msgs
+[2.062s] [  1%] Built target turtlesim_custom_msgs__rosidl_generator_type_description
+[2.096s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.108s] running egg_info
+[2.143s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.160s] writing turtlesim_custom_msgs.egg-info/PKG-INFO
+[2.160s] writing dependency_links to turtlesim_custom_msgs.egg-info/dependency_links.txt
+[2.161s] writing top-level names to turtlesim_custom_msgs.egg-info/top_level.txt
+[2.295s] reading manifest file 'turtlesim_custom_msgs.egg-info/SOURCES.txt'
+[2.296s] writing manifest file 'turtlesim_custom_msgs.egg-info/SOURCES.txt'
+[2.363s] [  4%] Built target ament_cmake_python_build_turtlesim_custom_msgs_egg
+[2.742s] [  4%] Built target turtlesim_custom_msgs__cpp
+[2.886s] [  6%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o[0m
+[2.888s] [  7%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__functions.c.o[0m
+[2.888s] [  9%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o[0m
+[2.893s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c.o[0m
+[2.893s] [ 12%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c.o[0m
+[2.894s] [ 15%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o[0m
+[2.894s] [ 15%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o[0m
+[2.894s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o[0m
+[2.895s] [ 18%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o[0m
+[2.895s] [ 20%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o[0m
+[2.895s] [ 21%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o[0m
+[2.896s] [ 23%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o[0m
+[3.081s] [ 25%] [32m[1mLinking C shared library libturtlesim_custom_msgs__rosidl_generator_c.so[0m
+[3.163s] [ 25%] Built target turtlesim_custom_msgs__rosidl_generator_c
+[3.183s] [ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.183s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.184s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.184s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.184s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.186s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.550s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_custom_msgs/srv/average__type_support.cpp.o[0m
+[3.550s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_custom_msgs/srv/velocity__type_support.cpp.o[0m
+[3.551s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_custom_msgs/msg/vel__type_support.cpp.o[0m
+[3.551s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_custom_msgs/srv/threshold__type_support.cpp.o[0m
+[3.554s] [ 43%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_custom_msgs/srv/velocity__type_support.cpp.o[0m
+[3.555s] [ 43%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_custom_msgs/srv/average__type_support.cpp.o[0m
+[3.555s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_custom_msgs/srv/threshold__type_support.cpp.o[0m
+[3.555s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_custom_msgs/msg/vel__type_support.cpp.o[0m
+[3.657s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_custom_msgs/srv/detail/threshold__type_support.cpp.o[0m
+[3.657s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_custom_msgs/msg/detail/vel__type_support.cpp.o[0m
+[3.658s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_custom_msgs/srv/detail/velocity__type_support.cpp.o[0m
+[3.658s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_custom_msgs/srv/detail/average__type_support.cpp.o[0m
+[3.684s] [ 56%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o[0m
+[3.684s] [ 56%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o[0m
+[3.739s] [ 60%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o[0m
+[3.740s] [ 60%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o[0m
+[3.740s] [ 60%] [32m[1mLinking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_c.so[0m
+[3.839s] [ 62%] [32m[1mLinking C shared library libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.849s] [ 62%] Built target turtlesim_custom_msgs__rosidl_typesupport_c
+[3.895s] [ 65%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o[0m
+[3.895s] [ 65%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o[0m
+[3.896s] [ 67%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/msg/detail/dds_fastrtps/vel__type_support.cpp.o[0m
+[3.899s] [ 68%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_custom_msgs/srv/detail/dds_fastrtps/velocity__type_support.cpp.o[0m
+[3.939s] [ 68%] Built target turtlesim_custom_msgs__rosidl_typesupport_introspection_c
+[4.032s] [ 70%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_custom_msgs/srv/detail/velocity__type_support_c.cpp.o[0m
+[4.033s] [ 73%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_custom_msgs/srv/detail/threshold__type_support_c.cpp.o[0m
+[4.033s] [ 73%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_custom_msgs/msg/detail/vel__type_support_c.cpp.o[0m
+[4.037s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_custom_msgs/srv/detail/average__type_support_c.cpp.o[0m
+[4.477s] [ 76%] [32m[1mLinking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_cpp.so[0m
+[4.483s] [ 78%] [32m[1mLinking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.661s] [ 78%] Built target turtlesim_custom_msgs__rosidl_typesupport_cpp
+[4.665s] [ 78%] Built target turtlesim_custom_msgs__rosidl_typesupport_introspection_cpp
+[4.935s] [ 79%] [32m[1mLinking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.001s] [ 81%] [32m[1mLinking CXX shared library libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.058s] [ 81%] Built target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_c
+[5.141s] [ 81%] Built target turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp
+[5.185s] [ 81%] Built target turtlesim_custom_msgs
+[5.227s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.868s] [ 82%] Built target turtlesim_custom_msgs__py
+[5.904s] gmake[2]: Warning: File 'libturtlesim_custom_msgs__rosidl_typesupport_c.so' has modification time 0.68 s in the future
+[5.918s] [ 87%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_custom_msgs/msg/_vel_s.c.o[0m
+[5.919s] [ 87%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold_s.c.o[0m
+[5.919s] [ 87%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_custom_msgs/srv/_average_s.c.o[0m
+[5.921s] [ 89%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity_s.c.o[0m
+[6.172s] [ 90%] [32m[1mLinking C shared library libturtlesim_custom_msgs__rosidl_generator_py.so[0m
+[6.230s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.246s] [ 90%] Built target turtlesim_custom_msgs__rosidl_generator_py
+[6.278s] gmake[2]: Warning: File 'libturtlesim_custom_msgs__rosidl_typesupport_c.so' has modification time 0.31 s in the future
+[6.278s] gmake[2]: Warning: File 'libturtlesim_custom_msgs__rosidl_typesupport_c.so' has modification time 0.31 s in the future
+[6.278s] gmake[2]: Warning: File 'libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so' has modification time 0.4 s in the future
+[6.293s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.293s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[6.293s] [ 95%] [32mBuilding C object CMakeFiles/turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.462s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_c.so[0m
+[6.471s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[6.478s] [100%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[6.505s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.514s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.521s] [100%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_c
+[6.522s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.531s] [100%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c
+[6.539s] [100%] Built target turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c
+[6.564s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs -- -j16 -l16
+[6.582s] Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs
+[6.598s] -- Install configuration: ""
+[6.598s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/ament_index/resource_index/rosidl_interfaces/turtlesim_custom_msgs
+[6.598s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/msg/Vel.json
+[6.599s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Velocity.json
+[6.599s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Average.json
+[6.600s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Threshold.json
+[6.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.601s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__struct.h
+[6.601s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__functions.h
+[6.601s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__type_support.h
+[6.601s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__description.c
+[6.602s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__functions.c
+[6.602s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__type_support.h
+[6.602s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__description.c
+[6.603s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+[6.603s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__type_support.c
+[6.604s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__type_support.h
+[6.604s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__functions.h
+[6.604s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__struct.h
+[6.605s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
+[6.605s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__functions.c
+[6.605s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__functions.c
+[6.606s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__functions.h
+[6.606s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__description.c
+[6.607s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__struct.h
+[6.607s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/velocity.h
+[6.608s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/threshold.h
+[6.608s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/average.h
+[6.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.609s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__struct.h
+[6.609s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.h
+[6.609s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.c
+[6.609s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__description.c
+[6.610s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__functions.c
+[6.610s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__functions.h
+[6.611s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/vel.h
+[6.611s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[6.611s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/library_path.sh
+[6.611s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/library_path.dsv
+[6.613s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_generator_c.so
+[6.614s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_generator_c.so" to ""
+[6.615s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.615s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.615s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.615s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_c.h
+[6.615s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_c.h
+[6.616s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_c.h
+[6.616s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.616s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.616s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_fastrtps_c.h
+[6.616s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.618s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.so
+[6.619s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[6.619s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.619s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.619s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.619s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h
+[6.620s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+[6.620s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h
+[6.620s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__type_support.c
+[6.620s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
+[6.620s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h
+[6.621s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.621s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.621s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.c
+[6.621s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_c.h
+[6.621s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.622s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so
+[6.624s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.624s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_c.so
+[6.625s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_c.so" to ""
+[6.626s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.626s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.626s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.626s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__struct.hpp
+[6.626s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__struct.hpp
+[6.627s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__type_support.hpp
+[6.627s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__builder.hpp
+[6.627s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__traits.hpp
+[6.628s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__type_support.hpp
+[6.628s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__traits.hpp
+[6.628s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__type_support.hpp
+[6.629s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__traits.hpp
+[6.629s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__builder.hpp
+[6.630s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__builder.hpp
+[6.630s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__struct.hpp
+[6.631s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/threshold.hpp
+[6.631s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/velocity.hpp
+[6.631s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/average.hpp
+[6.632s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.632s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.632s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__struct.hpp
+[6.633s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__builder.hpp
+[6.633s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__traits.hpp
+[6.633s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.hpp
+[6.634s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.634s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/vel.hpp
+[6.635s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.635s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.635s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.635s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/dds_fastrtps
+[6.636s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[6.636s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp
+[6.636s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_cpp.hpp
+[6.637s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.637s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.637s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/dds_fastrtps
+[6.637s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_fastrtps_cpp.hpp
+[6.638s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.639s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.641s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.641s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs
+[6.641s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv
+[6.641s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail
+[6.642s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_cpp.hpp
+[6.642s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__type_support.cpp
+[6.642s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/average__type_support.cpp
+[6.642s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_cpp.hpp
+[6.643s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_cpp.hpp
+[6.643s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/srv/detail/threshold__type_support.cpp
+[6.643s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg
+[6.644s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail
+[6.644s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__type_support.cpp
+[6.644s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/include/turtlesim_custom_msgs/turtlesim_custom_msgs/msg/detail/vel__rosidl_typesupport_introspection_cpp.hpp
+[6.646s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.so
+[6.648s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.649s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_cpp.so
+[6.651s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_typesupport_cpp.so" to ""
+[6.651s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/pythonpath.sh
+[6.651s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/pythonpath.dsv
+[6.651s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs-0.0.0-py3.12.egg-info
+[6.652s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[6.652s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.652s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[6.652s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.653s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs
+[6.653s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c.so
+[6.653s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_c.so
+[6.654s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/__init__.py
+[6.654s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[6.654s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.655s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[6.655s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv
+[6.655s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_average.py
+[6.656s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_velocity.py
+[6.656s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_average_s.c
+[6.657s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_threshold_s.c
+[6.657s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_velocity_s.c
+[6.657s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/__init__.py
+[6.658s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_threshold.py
+[6.658s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_c.c
+[6.658s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg
+[6.659s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg/_vel.py
+[6.659s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg/_vel_s.c
+[6.659s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg/__init__.py
+[6.722s] Listing '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs'...
+[6.722s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/__init__.py'...
+[6.723s] Listing '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg/__init__.py'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/msg/_vel.py'...
+[6.723s] Listing '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/__init__.py'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_average.py'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_threshold.py'...
+[6.723s] Compiling '/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/srv/_velocity.py'...
+[6.729s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[6.730s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[6.730s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c.so
+[6.731s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[6.731s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_c.so
+[6.732s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages/turtlesim_custom_msgs/turtlesim_custom_msgs_s__rosidl_typesupport_c.so" to ""
+[6.734s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_generator_py.so
+[6.735s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/libturtlesim_custom_msgs__rosidl_generator_py.so" to ""
+[6.735s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/msg/Vel.idl
+[6.735s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Velocity.idl
+[6.736s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Average.idl
+[6.736s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Threshold.idl
+[6.736s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/msg/Vel.msg
+[6.737s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Velocity.srv
+[6.737s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Average.srv
+[6.738s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/srv/Threshold.srv
+[6.738s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/ament_index/resource_index/package_run_dependencies/turtlesim_custom_msgs
+[6.738s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/ament_index/resource_index/parent_prefix_path/turtlesim_custom_msgs
+[6.738s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/ament_prefix_path.sh
+[6.739s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/ament_prefix_path.dsv
+[6.739s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/path.sh
+[6.739s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/environment/path.dsv
+[6.740s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/local_setup.bash
+[6.740s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/local_setup.sh
+[6.740s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/local_setup.zsh
+[6.740s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/local_setup.dsv
+[6.740s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/package.dsv
+[6.740s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/ament_index/resource_index/packages/turtlesim_custom_msgs
+[6.741s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_generator_cExport.cmake
+[6.741s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.742s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[6.742s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.742s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.743s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.743s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_cExport.cmake
+[6.743s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.743s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_generator_cppExport.cmake
+[6.744s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.744s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.744s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.744s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.745s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_cppExport.cmake
+[6.745s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.746s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_generator_pyExport.cmake
+[6.746s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/export_turtlesim_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[6.746s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/rosidl_cmake-extras.cmake
+[6.746s] -- Installing: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.747s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.747s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.747s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.747s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.748s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.748s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgsConfig.cmake
+[6.748s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/cmake/turtlesim_custom_msgsConfig-version.cmake
+[6.748s] -- Up-to-date: /home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/share/turtlesim_custom_msgs/package.xml
+[6.751s] Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs

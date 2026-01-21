@@ -64,19 +64,22 @@ class Vel(metaclass=Metaclass_Vel):
     """Message class 'Vel'."""
 
     __slots__ = [
-        '_name',
-        '_vel',
+        '_distance',
+        '_direction',
+        '_threshold',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
-        'vel': 'float',
+        'distance': 'float',
+        'direction': 'string',
+        'threshold': 'float',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
@@ -90,8 +93,9 @@ class Vel(metaclass=Metaclass_Vel):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
-        self.vel = kwargs.get('vel', float())
+        self.distance = kwargs.get('distance', float())
+        self.direction = kwargs.get('direction', str())
+        self.threshold = kwargs.get('threshold', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,9 +127,11 @@ class Vel(metaclass=Metaclass_Vel):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
+        if self.distance != other.distance:
             return False
-        if self.vel != other.vel:
+        if self.direction != other.direction:
+            return False
+        if self.threshold != other.threshold:
             return False
         return True
 
@@ -135,29 +141,44 @@ class Vel(metaclass=Metaclass_Vel):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def distance(self):
+        """Message field 'distance'."""
+        return self._distance
 
-    @name.setter
-    def name(self, value):
-        if self._check_fields:
-            assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
-
-    @builtins.property
-    def vel(self):
-        """Message field 'vel'."""
-        return self._vel
-
-    @vel.setter
-    def vel(self, value):
+    @distance.setter
+    def distance(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, float), \
-                "The 'vel' field must be of type 'float'"
+                "The 'distance' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._vel = value
+                "The 'distance' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._distance = value
+
+    @builtins.property
+    def direction(self):
+        """Message field 'direction'."""
+        return self._direction
+
+    @direction.setter
+    def direction(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, str), \
+                "The 'direction' field must be of type 'str'"
+        self._direction = value
+
+    @builtins.property
+    def threshold(self):
+        """Message field 'threshold'."""
+        return self._threshold
+
+    @threshold.setter
+    def threshold(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'threshold' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'threshold' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._threshold = value

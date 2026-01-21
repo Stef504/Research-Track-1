@@ -71,10 +71,14 @@ include /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_c.c
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/_vel.py
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity.py
+/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_average.py
+/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold.py
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/__init__.py
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/__init__.py
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/_vel_s.c
 /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity_s.c
+/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_average_s.c
+/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold_s.c
 
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -91,6 +95,8 @@ rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typ
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl
+rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl
+rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -109,6 +115,12 @@ rosidl_generator_py/turtlesim_custom_msgs/msg/_vel.py: rosidl_generator_py/turtl
 rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity.py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity.py
 
+rosidl_generator_py/turtlesim_custom_msgs/srv/_average.py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_average.py
+
+rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold.py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold.py
+
 rosidl_generator_py/turtlesim_custom_msgs/msg/__init__.py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/msg/__init__.py
 
@@ -121,6 +133,12 @@ rosidl_generator_py/turtlesim_custom_msgs/msg/_vel_s.c: rosidl_generator_py/turt
 rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity_s.c: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity_s.c
 
+rosidl_generator_py/turtlesim_custom_msgs/srv/_average_s.c: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_average_s.c
+
+rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold_s.c: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold_s.c
+
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_c.c
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/_turtlesim_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -128,6 +146,10 @@ turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/__init_
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/_vel.py
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/msg/_vel_s.c
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/__init__.py
+turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_average.py
+turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_average_s.c
+turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold.py
+turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_threshold_s.c
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity.py
 turtlesim_custom_msgs__py: rosidl_generator_py/turtlesim_custom_msgs/srv/_velocity_s.c
 turtlesim_custom_msgs__py: /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/turtlesim_custom_msgs__py/CMakeFiles/turtlesim_custom_msgs__py

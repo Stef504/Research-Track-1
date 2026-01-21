@@ -1,4 +1,8 @@
 msg/Vel.idl
 msg/Vel.msg
+srv/Average.idl
+srv/Average.srv
+srv/Threshold.idl
+srv/Threshold.srv
 srv/Velocity.idl
 srv/Velocity.srv

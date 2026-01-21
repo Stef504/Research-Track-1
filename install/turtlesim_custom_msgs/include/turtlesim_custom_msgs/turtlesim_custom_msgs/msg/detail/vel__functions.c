@@ -12,7 +12,7 @@
 
 
 // Include directives for member types
-// Member `name`
+// Member `direction`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -21,12 +21,13 @@ turtlesim_custom_msgs__msg__Vel__init(turtlesim_custom_msgs__msg__Vel * msg)
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
+  // distance
+  // direction
+  if (!rosidl_runtime_c__String__init(&msg->direction)) {
     turtlesim_custom_msgs__msg__Vel__fini(msg);
     return false;
   }
-  // vel
+  // threshold
   return true;
 }
 
@@ -36,9 +37,10 @@ turtlesim_custom_msgs__msg__Vel__fini(turtlesim_custom_msgs__msg__Vel * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
-  // vel
+  // distance
+  // direction
+  rosidl_runtime_c__String__fini(&msg->direction);
+  // threshold
 }
 
 bool
@@ -47,14 +49,18 @@ turtlesim_custom_msgs__msg__Vel__are_equal(const turtlesim_custom_msgs__msg__Vel
   if (!lhs || !rhs) {
     return false;
   }
-  // name
+  // distance
+  if (lhs->distance != rhs->distance) {
+    return false;
+  }
+  // direction
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
+      &(lhs->direction), &(rhs->direction)))
   {
     return false;
   }
-  // vel
-  if (lhs->vel != rhs->vel) {
+  // threshold
+  if (lhs->threshold != rhs->threshold) {
     return false;
   }
   return true;
@@ -68,14 +74,16 @@ turtlesim_custom_msgs__msg__Vel__copy(
   if (!input || !output) {
     return false;
   }
-  // name
+  // distance
+  output->distance = input->distance;
+  // direction
   if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
+      &(input->direction), &(output->direction)))
   {
     return false;
   }
-  // vel
-  output->vel = input->vel;
+  // threshold
+  output->threshold = input->threshold;
   return true;
 }
 

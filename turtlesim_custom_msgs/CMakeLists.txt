@@ -12,7 +12,10 @@ find_package(rosidl_default_generators REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
  rosidl_generate_interfaces(${PROJECT_NAME}
- "msg/Vel.msg" "srv/Velocity.srv"
+ "msg/Vel.msg" 
+ "srv/Velocity.srv"
+ "srv/Average.srv" 
+ "srv/Threshold.srv"
  )
 
   ament_export_dependencies(rosidl_default_runtime)

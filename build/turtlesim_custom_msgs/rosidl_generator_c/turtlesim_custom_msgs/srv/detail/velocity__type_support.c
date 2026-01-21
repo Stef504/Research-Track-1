@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "turtlesim_custom_msgs/srv/detail/velocity__struct.h"
-#include "turtlesim_custom_msgs/srv/detail/velocity__type_support.h"
 #include "turtlesim_custom_msgs/srv/detail/velocity__functions.h"
+#include "turtlesim_custom_msgs/srv/detail/velocity__type_support.h"
+#include "turtlesim_custom_msgs/srv/detail/velocity__struct.h"
 
 #ifdef __cplusplus
 extern "C"

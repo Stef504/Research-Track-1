@@ -355,9 +355,7 @@ turtlesim_custom_msgs__srv__Velocity_Event__get_type_description(
 static char toplevel_type_raw_source[] =
   "float32 min\n"
   "float32 max\n"
-  "\n"
   "---\n"
-  "\n"
   "float32 x\n"
   "float32 z";
 
@@ -374,7 +372,7 @@ turtlesim_custom_msgs__srv__Velocity__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {turtlesim_custom_msgs__srv__Velocity__TYPE_NAME, 34, 34},
     {srv_encoding, 3, 3},
-    {toplevel_type_raw_source, 49, 49},
+    {toplevel_type_raw_source, 47, 47},
   };
   return &source;
 }

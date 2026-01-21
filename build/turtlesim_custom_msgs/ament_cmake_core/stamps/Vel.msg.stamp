@@ -1,2 +1,3 @@
-string name
-float32 vel
+float32 distance
+string direction
+float32 threshold

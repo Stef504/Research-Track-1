@@ -11,10 +11,10 @@ turtlesim_custom_msgs__msg__Vel__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x4d, 0xf2, 0x0f, 0xe3, 0xa0, 0x80, 0x1e, 0x12,
-      0x53, 0xc4, 0xd4, 0x75, 0xce, 0x1a, 0x6d, 0xde,
-      0xfb, 0xaf, 0x3e, 0x38, 0x1c, 0xa0, 0x0d, 0x45,
-      0x4c, 0xf6, 0x10, 0x73, 0x75, 0x57, 0xda, 0xb7,
+      0x5e, 0x6a, 0xdb, 0xf4, 0x4e, 0xe2, 0xca, 0x3c,
+      0xf0, 0x83, 0x95, 0x07, 0x47, 0x0e, 0x7c, 0xf6,
+      0xd7, 0xdd, 0x4e, 0x84, 0x54, 0xb8, 0x4b, 0xfe,
+      0x7d, 0x7c, 0xdb, 0x4b, 0x04, 0x4e, 0x9b, 0x0c,
     }};
   return &hash;
 }
@@ -31,12 +31,23 @@ turtlesim_custom_msgs__msg__Vel__get_type_hash(
 static char turtlesim_custom_msgs__msg__Vel__TYPE_NAME[] = "turtlesim_custom_msgs/msg/Vel";
 
 // Define type names, field names, and default values
-static char turtlesim_custom_msgs__msg__Vel__FIELD_NAME__name[] = "name";
-static char turtlesim_custom_msgs__msg__Vel__FIELD_NAME__vel[] = "vel";
+static char turtlesim_custom_msgs__msg__Vel__FIELD_NAME__distance[] = "distance";
+static char turtlesim_custom_msgs__msg__Vel__FIELD_NAME__direction[] = "direction";
+static char turtlesim_custom_msgs__msg__Vel__FIELD_NAME__threshold[] = "threshold";
 
 static rosidl_runtime_c__type_description__Field turtlesim_custom_msgs__msg__Vel__FIELDS[] = {
   {
-    {turtlesim_custom_msgs__msg__Vel__FIELD_NAME__name, 4, 4},
+    {turtlesim_custom_msgs__msg__Vel__FIELD_NAME__distance, 8, 8},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {turtlesim_custom_msgs__msg__Vel__FIELD_NAME__direction, 9, 9},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
       0,
@@ -46,7 +57,7 @@ static rosidl_runtime_c__type_description__Field turtlesim_custom_msgs__msg__Vel
     {NULL, 0, 0},
   },
   {
-    {turtlesim_custom_msgs__msg__Vel__FIELD_NAME__vel, 3, 3},
+    {turtlesim_custom_msgs__msg__Vel__FIELD_NAME__threshold, 9, 9},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
       0,
@@ -66,7 +77,7 @@ turtlesim_custom_msgs__msg__Vel__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {turtlesim_custom_msgs__msg__Vel__TYPE_NAME, 29, 29},
-      {turtlesim_custom_msgs__msg__Vel__FIELDS, 2, 2},
+      {turtlesim_custom_msgs__msg__Vel__FIELDS, 3, 3},
     },
     {NULL, 0, 0},
   };
@@ -77,8 +88,9 @@ turtlesim_custom_msgs__msg__Vel__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "string name\n"
-  "float32 vel";
+  "float32 distance\n"
+  "string direction\n"
+  "float32 threshold";
 
 static char msg_encoding[] = "msg";
 
@@ -92,7 +104,7 @@ turtlesim_custom_msgs__msg__Vel__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {turtlesim_custom_msgs__msg__Vel__TYPE_NAME, 29, 29},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 23, 23},
+    {toplevel_type_raw_source, 51, 51},
   };
   return &source;
 }

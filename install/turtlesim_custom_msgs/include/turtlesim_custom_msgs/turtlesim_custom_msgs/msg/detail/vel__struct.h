@@ -20,14 +20,15 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'name'
+// Member 'direction'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/Vel in the package turtlesim_custom_msgs.
 typedef struct turtlesim_custom_msgs__msg__Vel
 {
-  rosidl_runtime_c__String name;
-  float vel;
+  float distance;
+  rosidl_runtime_c__String direction;
+  float threshold;
 } turtlesim_custom_msgs__msg__Vel;
 
 // Struct for a sequence of turtlesim_custom_msgs__msg__Vel.

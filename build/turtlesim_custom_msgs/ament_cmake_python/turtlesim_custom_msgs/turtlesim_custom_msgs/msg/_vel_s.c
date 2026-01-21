@@ -53,8 +53,17 @@ bool turtlesim_custom_msgs__msg__vel__convert_from_py(PyObject * _pymsg, void * 
     assert(strncmp("turtlesim_custom_msgs.msg._vel.Vel", full_classname_dest, 34) == 0);
   }
   turtlesim_custom_msgs__msg__Vel * ros_message = _ros_message;
-  {  // name
-    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
+  {  // distance
+    PyObject * field = PyObject_GetAttrString(_pymsg, "distance");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->distance = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // direction
+    PyObject * field = PyObject_GetAttrString(_pymsg, "direction");
     if (!field) {
       return false;
     }
@@ -64,17 +73,17 @@ bool turtlesim_custom_msgs__msg__vel__convert_from_py(PyObject * _pymsg, void * 
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->direction, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // vel
-    PyObject * field = PyObject_GetAttrString(_pymsg, "vel");
+  {  // threshold
+    PyObject * field = PyObject_GetAttrString(_pymsg, "threshold");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->vel = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->threshold = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -99,28 +108,39 @@ PyObject * turtlesim_custom_msgs__msg__vel__convert_to_py(void * raw_ros_message
     }
   }
   turtlesim_custom_msgs__msg__Vel * ros_message = (turtlesim_custom_msgs__msg__Vel *)raw_ros_message;
-  {  // name
+  {  // distance
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->name.data,
-      strlen(ros_message->name.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyFloat_FromDouble(ros_message->distance);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "name", field);
+      int rc = PyObject_SetAttrString(_pymessage, "distance", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // vel
+  {  // direction
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->vel);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->direction.data,
+      strlen(ros_message->direction.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "vel", field);
+      int rc = PyObject_SetAttrString(_pymessage, "direction", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // threshold
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->threshold);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "threshold", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

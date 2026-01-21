@@ -38,17 +38,17 @@ void Vel_fini_function(void * message_memory)
   typed_message->~Vel();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Vel_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Vel_message_member_array[3] = {
   {
-    "name",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "distance",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtlesim_custom_msgs::msg::Vel, name),  // bytes offset in struct
+    offsetof(turtlesim_custom_msgs::msg::Vel, distance),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -58,7 +58,25 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Vel_message_m
     nullptr  // resize(index) function pointer
   },
   {
-    "vel",  // name
+    "direction",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(turtlesim_custom_msgs::msg::Vel, direction),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "threshold",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -66,7 +84,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Vel_message_m
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtlesim_custom_msgs::msg::Vel, vel),  // bytes offset in struct
+    offsetof(turtlesim_custom_msgs::msg::Vel, threshold),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -80,7 +98,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Vel_message_m
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Vel_message_members = {
   "turtlesim_custom_msgs::msg",  // message namespace
   "Vel",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(turtlesim_custom_msgs::msg::Vel),
   false,  // has_any_key_member_
   Vel_message_member_array,  // message members

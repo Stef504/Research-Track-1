@@ -7,4 +7,6 @@ turtlesim_custom_msgs.egg-info/top_level.txt
 turtlesim_custom_msgs/msg/__init__.py
 turtlesim_custom_msgs/msg/_vel.py
 turtlesim_custom_msgs/srv/__init__.py
+turtlesim_custom_msgs/srv/_average.py
+turtlesim_custom_msgs/srv/_threshold.py
 turtlesim_custom_msgs/srv/_velocity.py

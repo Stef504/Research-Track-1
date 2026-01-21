@@ -90,6 +90,8 @@ rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: /opt/ros/jazzy/share/rosidl_
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: /opt/ros/jazzy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: rosidl_adapter/turtlesim_custom_msgs/msg/Vel.idl
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: rosidl_adapter/turtlesim_custom_msgs/srv/Velocity.idl
+rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: rosidl_adapter/turtlesim_custom_msgs/srv/Average.idl
+rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: rosidl_adapter/turtlesim_custom_msgs/srv/Threshold.idl
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -117,6 +119,30 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h: rosidl_g
 rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h
 
+rosidl_generator_c/turtlesim_custom_msgs/srv/average.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/average.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/threshold.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/threshold.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h
+
 rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c
 
@@ -134,6 +160,24 @@ rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c: rosid
 
 rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c
+
+rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
 
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o: rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c
@@ -219,6 +263,90 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.s
 
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.s
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o -MF CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o.d -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o -c /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c > CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.i
+
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c -o CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.s
+
 # Object files for target turtlesim_custom_msgs__rosidl_generator_c
 turtlesim_custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__description.c.o" \
@@ -226,7 +354,13 @@ turtlesim_custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c.o" \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c.o" \
 "CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c.o" \
-"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o"
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o" \
+"CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o"
 
 # External object files for target turtlesim_custom_msgs__rosidl_generator_c
 turtlesim_custom_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -237,13 +371,19 @@ libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msg
 libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c.o
 libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c.o
 libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c.o
+libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c.o
 libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/build.make
 libturtlesim_custom_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 libturtlesim_custom_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libturtlesim_custom_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libturtlesim_custom_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/librcutils.so
 libturtlesim_custom_msgs__rosidl_generator_c.so: CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libturtlesim_custom_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libturtlesim_custom_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -261,12 +401,26 @@ CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.c
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/msg/detail/vel__type_support.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/msg/vel.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/average.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__description.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__functions.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__struct.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/average__type_support.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__description.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__functions.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__struct.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.c
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/threshold__type_support.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__description.c
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.c
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__functions.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__struct.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.c
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/detail/velocity__type_support.h
+CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/threshold.h
 CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_custom_msgs/srv/velocity.h
 	cd /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs /home/ubuntu/ros_workspace/build/turtlesim_custom_msgs/CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/turtlesim_custom_msgs__rosidl_generator_c.dir/depend
