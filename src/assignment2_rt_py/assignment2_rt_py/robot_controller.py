@@ -22,6 +22,8 @@ class RobotController(Node):
         
         self.velocity_linear = 0.0
         self.velocity_angular = 0.0
+        self.avg_velocity_linear = 0.0
+        self.avg_velocity_angular = 0.0
         
         self.max_linear_velocity = 4
         self.max_angular_velocity = 2
@@ -98,7 +100,7 @@ class RobotController(Node):
                 self.get_logger().warn("AvgVelocity node not found! Is it running?")
                 return 
 
-        self.avg_req.count = self.count
+        self.avg_req.count = self.value_counter
 
         future = self.client_avg_velocity.call_async(self.avg_req)
         future.add_done_callback(self.avg_velocity_response_callback)
@@ -106,9 +108,9 @@ class RobotController(Node):
     def avg_velocity_response_callback(self, future):
         try:
             response = future.result()
-            self.velocity_linear = response.avg_linear
-            self.velocity_angular = response.avg_angular
-            self.get_logger().info(f"Avg velocities received - Linear: {self.velocity_linear}, Angular: {self.velocity_angular}")
+            self.avg_velocity_linear = response.avg_linear
+            self.avg_velocity_angular = response.avg_angular
+            self.get_logger().info(f"Avg velocities received - Linear: {self.avg_velocity_linear}, Angular: {self.avg_velocity_angular}")
         except Exception as e:
             self.get_logger().error(f"Service call failed: {e}")
 

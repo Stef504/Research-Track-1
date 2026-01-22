@@ -43,6 +43,8 @@ class DistanceCalc(Node):
         # The Type, # The Topic,  # The Callback, # The QoS settings
 
         self.threshold_server = self.create_service(Threshold, 'set_threshold', self.handle_threshold_service)
+        #name = #create_service or create_client or create_publisher or create_subscription or create_timer
+        # in brackets: Type, Topic or service Name, Callback function
         self.publisher_ = self.create_publisher(String, 'distance_topic', 10)
         self.publisher_2 = self.create_publisher(Vel, 'custom_msg', 10) #distance,direction,threshold
         self.timer_ = self.create_timer(0.05, self.timer_callback)
