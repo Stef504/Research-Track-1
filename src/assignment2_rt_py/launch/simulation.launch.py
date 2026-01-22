@@ -41,6 +41,15 @@ def generate_launch_description():
         #prefix = 'xterm -e',
         prefix='xterm -hold -e', #keeps the window open to help debugging
     )
+
+    robot2 = Node(
+        package='assignment2_rt_py',
+        executable='robot_controller2',
+        name='robot2',
+        output='screen',
+        #prefix = 'xterm -e',
+        prefix='xterm -hold -e', #keeps the window open to help debugging
+    )
     
     # 2. Create the Event Handler, is normal constant
     shutdown_handler = RegisterEventHandler(
@@ -54,6 +63,7 @@ def generate_launch_description():
     return LaunchDescription([
         distance,
         robot,
+        #robot2,
         shutdown_handler,
         spawn_robot,
     ])

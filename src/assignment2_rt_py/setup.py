@@ -30,6 +30,7 @@ setup(
         'console_scripts': [
             'distance = assignment2_rt_py.distance_calc:main',
             'robot_controller = assignment2_rt_py.robot_controller:main',
+            #'robot_controller2 = assignment2_rt_py.robot_controller2:main',
         ],
     },
 )

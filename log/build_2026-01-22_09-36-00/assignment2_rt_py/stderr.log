@@ -1,0 +1,5 @@
+  File "/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/robot_controller.py", line 216
+    except ValueError:
+    ^^^^^^
+SyntaxError: invalid syntax
+

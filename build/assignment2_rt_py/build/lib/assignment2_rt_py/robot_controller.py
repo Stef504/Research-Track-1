@@ -25,7 +25,7 @@ class RobotController(Node):
         
         self.max_linear_velocity = 4
         self.max_angular_velocity = 2
-        self.min_threshold = 0.5
+        self.min_threshold = 0.8
         self.max_threshold = 3
 
         # --- 4. CALCULATIONS FOR TICKS ---
@@ -37,14 +37,13 @@ class RobotController(Node):
 
         # --- 5. REVERSE TICKS ---
         self.tick_reverse_count_ = 0
-        #self.desired_seconds_reverse_ = self.desired_seconds_ / 2
-        #self.max_reverse_ticks_ = int(self.desired_seconds_reverse_ / self.htz_)
         self.max_reverse_ticks_ = 0
 
         # --- 6. BOOLEANS ---
         self.running_ = False
         self.stop_ = False
         self.reverse_ = False
+        self.valid_input = False
 
         # --- 7. STRINGS ---
         self.close_obs = "Obstacle too close"
@@ -116,19 +115,23 @@ class RobotController(Node):
     def send_new_threshold(self):
             
         val = 0.0
-        user_input = input("Enter new threshold (q to quit): ")
+        self.valid_input = False
 
-        try:
-            if user_input.lower() == 'q' or user_input.lower() == 'q':
-                self.get_logger().info("exiting game...")
-                rclpy.shutdown()
-                sys.exit(0)
+        while not self.valid_input:
+            
+            user_input = input("Enter new threshold (q to quit): ")
+            try:
+                if user_input.lower() == 'q' or user_input.lower() == 'q':
+                    self.get_logger().info("exiting game...")
+                    rclpy.shutdown()
+                    sys.exit(0)
 
-            val = float(user_input)
+                val = float(user_input)
+                self.valid_input = True
 
-        except ValueError:
-            self.get_logger().warn("That is not a number.")
-           
+            except ValueError:
+                self.get_logger().warn("That is not a number.")
+                
 
         # 2. Check if Server is online
         if not self.threshold_client.wait_for_service(timeout_sec=5.0):
@@ -199,16 +202,41 @@ class RobotController(Node):
             #--- Asking for Threshold Input ---
             self.send_new_threshold()
 
-            user_input_lin = input("Enter desired linear velocity (or q to quit):")
-            user_input_ang = input("Enter desired angular velocity (or q to quit):")
+            self.valid_input = False
+            while not self.valid_input: 
+            
+                user_input_lin = input("Enter desired linear velocity (or q to quit):")
+                
+                try:
 
-            if user_input_lin.lower() == 'q' or user_input_ang.lower() == 'q':
-                self.get_logger().info("exiting game...")
-                rclpy.shutdown()
-                sys.exit(0)
+                    if user_input_lin.lower() == 'q':
+                        self.get_logger().info("exiting game...")
+                        rclpy.shutdown()
+                        sys.exit(0) 
 
-            self.velocity_linear = float(user_input_lin)
-            self.velocity_angular = float(user_input_ang)    
+                    self.velocity_linear = float(user_input_lin)
+                    self.valid_input = True
+                except ValueError:
+                        self.get_logger().warn("That is not a number.")
+                        
+
+                
+            self.valid_input = False
+
+            while not self.valid_input:
+                user_input_ang = input("Enter desired angular velocity (or q to quit):")
+                
+                try:
+                    if user_input_ang.lower() == 'q':
+                        self.get_logger().info("exiting game...")
+                        rclpy.shutdown()
+                        sys.exit(0)
+                    
+                    self.velocity_angular = float(user_input_ang) 
+                    self.valid_input = True  
+                except ValueError:
+                    self.get_logger().warn("That is not a number.")
+                   
 
             self.linear_history.append(self.velocity_linear)
             self.angular_history.append(self.velocity_angular)
@@ -258,6 +286,14 @@ class RobotController(Node):
                     self.running_=False
                 return        
 
+            #Relies on continous movement until obstacle detected
+            #self.tick_count_ += 1
+            #message.linear.x = float(self.velocity_linear)
+            #message.angular.z = float(self.velocity_angular)
+            #self.publisher_1.publish(message)
+
+
+            #relies moving forward for 2s if no obstacles detected
             if self.tick_count_ < self.max_ticks_:
                 self.tick_count_ += 1
                 message.linear.x = float(self.velocity_linear)

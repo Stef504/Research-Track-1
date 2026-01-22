@@ -1,7 +1,9 @@
+/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/robot_controller2.py
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/robot_controller.py
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__init__.py
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/distance_calc.py
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/turtlesim_services.py
+/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__pycache__/robot_controller2.cpython-312.pyc
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__pycache__/robot_controller.cpython-312.pyc
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__pycache__/__init__.cpython-312.pyc
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/__pycache__/distance_calc.cpython-312.pyc
@@ -17,4 +19,4 @@
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py-0.0.0-py3.12.egg-info/dependency_links.txt
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py-0.0.0-py3.12.egg-info/entry_points.txt
 /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py/distance
-/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py/robot_controller
+/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py/robot_controller2

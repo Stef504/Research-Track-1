@@ -1,0 +1,23 @@
+[0.799s] Invoking command in '/home/ubuntu/ros_workspace/src/assignment2_rt_py': AMENT_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment2_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment2_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment2_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log --single-version-externally-managed install_data
+[1.057s] running egg_info
+[1.074s] writing ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/PKG-INFO
+[1.075s] writing dependency_links to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/dependency_links.txt
+[1.075s] writing entry points to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/entry_points.txt
+[1.075s] writing requirements to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/requires.txt
+[1.075s] writing top-level names to ../../build/assignment2_rt_py/assignment2_rt_py.egg-info/top_level.txt
+[1.110s] reading manifest file '../../build/assignment2_rt_py/assignment2_rt_py.egg-info/SOURCES.txt'
+[1.110s] writing manifest file '../../build/assignment2_rt_py/assignment2_rt_py.egg-info/SOURCES.txt'
+[1.111s] running build
+[1.111s] running build_py
+[1.111s] running install
+[1.116s] running install_lib
+[1.135s] byte-compiling /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/robot_controller.py to robot_controller.cpython-312.pyc
+[1.138s] running install_data
+[1.138s] running install_egg_info
+[1.157s] removing '/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py-0.0.0-py3.12.egg-info' (and everything under it)
+[1.158s] Copying ../../build/assignment2_rt_py/assignment2_rt_py.egg-info to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py-0.0.0-py3.12.egg-info
+[1.159s] running install_scripts
+[1.286s] Installing distance script to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py
+[1.286s] Installing robot_controller script to /home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/assignment2_rt_py
+[1.286s] writing list of installed files to '/home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log'
+[1.325s] Invoked command in '/home/ubuntu/ros_workspace/src/assignment2_rt_py' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros_workspace/build/assignment2_rt_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/turtlesim_custom_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment2_rt_py build --build-base /home/ubuntu/ros_workspace/build/assignment2_rt_py/build install --record /home/ubuntu/ros_workspace/build/assignment2_rt_py/install.log --single-version-externally-managed install_data

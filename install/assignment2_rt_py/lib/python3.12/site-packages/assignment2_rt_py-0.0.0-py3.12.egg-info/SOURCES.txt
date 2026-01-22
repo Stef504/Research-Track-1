@@ -11,6 +11,7 @@ setup.py
 assignment2_rt_py/__init__.py
 assignment2_rt_py/distance_calc.py
 assignment2_rt_py/robot_controller.py
+assignment2_rt_py/robot_controller2.py
 assignment2_rt_py/turtlesim_services.py
 launch/simulation.launch.py
 resource/assignment2_rt_py
