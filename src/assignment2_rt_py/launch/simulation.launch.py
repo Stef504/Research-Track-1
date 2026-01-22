@@ -4,12 +4,11 @@ from launch_ros.actions import Node
 from launch.actions import RegisterEventHandler, EmitEvent
 from launch.events import Shutdown
 from launch.event_handlers import OnProcessExit
-
-import os
 from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+
+import os
 
 
 def generate_launch_description():
@@ -38,8 +37,8 @@ def generate_launch_description():
         executable='robot_controller',
         name='robot',
         output='screen',
-        #prefix = 'xterm -e',
-        prefix='xterm -hold -e', #keeps the window open to help debugging
+        prefix = 'xterm -e',
+        #prefix='xterm -hold -e', #keeps the window open to help debugging
     )
 
     robot2 = Node(
@@ -64,6 +63,6 @@ def generate_launch_description():
         distance,
         robot,
         #robot2,
-        shutdown_handler,
         spawn_robot,
+        shutdown_handler,
     ])

@@ -57,8 +57,8 @@ class TwoTurtles(Node):
         self.distance_ = " "
 
         super().__init__('two_turtles')
-        self.publisher_1 = self.create_publisher(String, 'turtle1/cmd_vel', 10)
-        self.publisher_2 = self.create_publisher(String, 'turtle2/cmd_vel', 10)
+        self.publisher_1 = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
+        self.publisher_2 = self.create_publisher(Twist, 'turtle2/cmd_vel', 10)
 
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
         self.timer = self.create_timer(self.htz_, self.timer_callback)
@@ -103,16 +103,17 @@ class TwoTurtles(Node):
 
                 elif self.turtle_choice == '2':
                     self.get_logger().info("You have selected Turtle 2")
-                    self.turtle_velocity_linear = input("Enter desired linear velocity: ")
-                    self.turtle_velocity_angular = input("Enter desired angular velocity: ")
+                    self.turtle_velocity_linear = float(input("Enter desired linear velocity: "))
+                    self.turtle_velocity_angular = float(input("Enter desired angular velocity: "))
 
-                if abs(self.turtle_velocity_linear) > self.max_linear_velocity and abs(self.turtle_velocity_angular) <= self.max_angular_velocity:
+                if abs(self.turtle_velocity_linear) > self.max_linear_velocity :
                     self.turtle_velocity_linear = self.max_linear_velocity 
 
-                if abs(self.turtle_velocity_angular) > self.max_angular_velocity and abs(self.turtle_velocity_linear) <= self.max_linear_velocity:
+                if abs(self.turtle_velocity_angular) > self.max_angular_velocity :
                     self.turtle_velocity_angular = self.max_angular_velocity
 
                 self.valid_choice = True
+
             elif self.turtle_choice == 'q':
                 self.get_logger().info("Exiting program.")
                 rclpy.shutdown()
@@ -143,16 +144,16 @@ class TwoTurtles(Node):
                         self.valid_choice=False
                     return        
 
-                    if self.tick_count_ < self.max_ticks_:
-                        self.tick_count_ += 1
-                        self.message.linear.x = float(self.turtle_velocity_linear)
-                        self.message.angular.z = float(self.turtle_velocity_angular)
-                        self.publisher_1.publish(self.message)
-                    else:
-                        self.message.linear.x = 0.0
-                        self.message.angular.z = 0.0
-                        self.publisher_1.publish(self.message)
-                        self.valid_choice=False
+                if self.tick_count_ < self.max_ticks_:
+                    self.tick_count_ += 1
+                    self.message.linear.x = float(self.turtle_velocity_linear)
+                    self.message.angular.z = float(self.turtle_velocity_angular)
+                    self.publisher_1.publish(self.message)
+                else:
+                    self.message.linear.x = 0.0
+                    self.message.angular.z = 0.0
+                    self.publisher_1.publish(self.message)
+                    self.valid_choice=False
 
             elif self.turtle_choice == '2':
 
@@ -175,22 +176,23 @@ class TwoTurtles(Node):
                         self.valid_choice=False
                     return        
 
-                    if self.tick_count_ < self.max_ticks_:
-                        self.tick_count_ += 1
-                        self.message.linear.x = float(self.turtle_velocity_linear)
-                        self.message.angular.z = float(self.turtle_velocity_angular)
-                        self.publisher_2.publish(self.message)
-                    else:
-                        self.message.linear.x = 0.0
-                        self.message.angular.z = 0.0
-                        self.publisher_2.publish(self.message)
-                        self.valid_choice=False
+                if self.tick_count_ < self.max_ticks_:
+                    self.tick_count_ += 1
+                    self.message.linear.x = float(self.turtle_velocity_linear)
+                    self.message.angular.z = float(self.turtle_velocity_angular)
+                    self.publisher_2.publish(self.message)
+                else:
+                    self.message.linear.x = 0.0
+                    self.message.angular.z = 0.0
+                    self.publisher_2.publish(self.message)
+                    self.valid_choice=False
 
 def main(args=None):
     rclpy.init(args=args)
     two_turtles = TwoTurtles()
     rclpy.spin(two_turtles)
-    rclpy.shutdown()
+    if rclpy.ok():
+        rclpy.shutdown()
     
 if __name__ == '__main__':
     main()   
