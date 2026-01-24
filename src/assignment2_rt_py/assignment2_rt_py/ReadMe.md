@@ -18,6 +18,13 @@
 4. The option of reversing and then stopping allows the robot to safely remove itself from the danger zone.
 5. I choose for the robot to reverse for the amount of seconds it was in the safe zone. It reverses at the same speed it enteredt the danger zone. I added a safety feature of 5 ticks to ensure the robot is fully outside the danger zone.
 6. If the robot travels in the safe zone it will travel for 2s at the desired velocities. 
+7. A service client was created where instead of changing the threshold via the terminal, it asks the user if they want to change the threshold, and if so, it calls the service client `self.send_new_threshold()`, which asks for the new threshold, and the service `handle_threshold_service`, which is in the distance node, will adjust the threshold accordingly.
+8. The average velocity service can be called via the terminal using the following command: 
+```bash
+ros2 service list
+ros2 service call /AvgVelocity robot_custom_msgs/srv/Average "{}"
+```
+It has an empty argument, as it just has a response, so there is no need for a request. If there are not enough arguments, the response will be zero. The user can type the command given and then provide the velocities via the UI.
 
 ## Distance:
 1. The node subscribes to the LaserScan `/scan` to get the minimum distance between the robot and the object.
@@ -40,9 +47,9 @@ The `assignment2_rt_py` package is located at: `../src/assignment2_rt_py/`
 The repository can be found at https://github.com/Stef504/Research-Track-1.git.
 The `bme_gazebo_sensors` package is located at: `../src/bme_gazebo_sensors/`
 
-3. `turtlesim_controller_msgs` package: the user should clone the repository into the `src` folder of their ROS workspace.
+3. `robot_controller_msgs` package: the user should clone the repository into the `src` folder of their ROS workspace.
 The repository can be found at https://github.com/Stef504/Research-Track-1.git.
-The `turtlesim_controller_msgs` package is located at: `../src/turtlesim_controller_msgs/`
+The `robot_controller_msgs` package is located at: `../src/robot_controller_msgs/`
 
 **2.Execution**  Open your terminal in the `../ros_workspace/install` folder and run the build script:
 ```bash

@@ -1,0 +1,23 @@
+[0.738s] Invoking command in '/home/ubuntu/ros_workspace/src/exam_example': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data
+[0.962s] running egg_info
+[0.977s] writing ../../build/exam_example/exam_example.egg-info/PKG-INFO
+[0.978s] writing dependency_links to ../../build/exam_example/exam_example.egg-info/dependency_links.txt
+[0.978s] writing entry points to ../../build/exam_example/exam_example.egg-info/entry_points.txt
+[0.978s] writing requirements to ../../build/exam_example/exam_example.egg-info/requires.txt
+[0.978s] writing top-level names to ../../build/exam_example/exam_example.egg-info/top_level.txt
+[1.009s] reading manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[1.010s] writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[1.010s] running build
+[1.010s] running build_py
+[1.010s] running install
+[1.015s] running install_lib
+[1.033s] running install_data
+[1.034s] running install_egg_info
+[1.051s] removing '/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info' (and everything under it)
+[1.051s] Copying ../../build/exam_example/exam_example.egg-info to /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info
+[1.053s] running install_scripts
+[1.170s] Installing distance script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[1.171s] Installing turtle2 script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[1.171s] Installing turtles script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[1.171s] writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example/install.log'
+[1.200s] Invoked command in '/home/ubuntu/ros_workspace/src/exam_example' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data

@@ -1,0 +1,23 @@
+[0.737s] Invoking command in '/home/ubuntu/ros_workspace/src/robot_custom_msgs': PYTHONPATH=/home/ubuntu/ros_workspace/build/robot_custom_msgs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_custom_msgs build --build-base /home/ubuntu/ros_workspace/build/robot_custom_msgs/build install --record /home/ubuntu/ros_workspace/build/robot_custom_msgs/install.log --single-version-externally-managed install_data
+[0.965s] running egg_info
+[0.981s] writing ../../build/robot_custom_msgs/robot_custom_msgs.egg-info/PKG-INFO
+[0.981s] writing dependency_links to ../../build/robot_custom_msgs/robot_custom_msgs.egg-info/dependency_links.txt
+[0.982s] writing entry points to ../../build/robot_custom_msgs/robot_custom_msgs.egg-info/entry_points.txt
+[0.982s] writing requirements to ../../build/robot_custom_msgs/robot_custom_msgs.egg-info/requires.txt
+[0.982s] writing top-level names to ../../build/robot_custom_msgs/robot_custom_msgs.egg-info/top_level.txt
+[1.015s] reading manifest file '../../build/robot_custom_msgs/robot_custom_msgs.egg-info/SOURCES.txt'
+[1.016s] writing manifest file '../../build/robot_custom_msgs/robot_custom_msgs.egg-info/SOURCES.txt'
+[1.016s] running build
+[1.016s] running build_py
+[1.016s] running install
+[1.021s] running install_lib
+[1.040s] running install_data
+[1.040s] running install_egg_info
+[1.057s] removing '/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info' (and everything under it)
+[1.058s] Copying ../../build/robot_custom_msgs/robot_custom_msgs.egg-info to /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info
+[1.060s] running install_scripts
+[1.177s] Installing Average script to /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/robot_custom_msgs
+[1.177s] Installing Custom script to /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/robot_custom_msgs
+[1.178s] Installing Threshold script to /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/robot_custom_msgs
+[1.178s] writing list of installed files to '/home/ubuntu/ros_workspace/build/robot_custom_msgs/install.log'
+[1.203s] Invoked command in '/home/ubuntu/ros_workspace/src/robot_custom_msgs' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/robot_custom_msgs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_custom_msgs build --build-base /home/ubuntu/ros_workspace/build/robot_custom_msgs/build install --record /home/ubuntu/ros_workspace/build/robot_custom_msgs/install.log --single-version-externally-managed install_data

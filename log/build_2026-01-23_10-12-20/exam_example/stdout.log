@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/exam_example/exam_example.egg-info
+writing ../../build/exam_example/exam_example.egg-info/PKG-INFO
+writing dependency_links to ../../build/exam_example/exam_example.egg-info/dependency_links.txt
+writing requirements to ../../build/exam_example/exam_example.egg-info/requires.txt
+writing top-level names to ../../build/exam_example/exam_example.egg-info/top_level.txt
+writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+reading manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros_workspace/build/exam_example/build
+creating /home/ubuntu/ros_workspace/build/exam_example/build/lib
+creating /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+copying exam_example/turtle_spawn.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+copying exam_example/two_turtles.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+copying exam_example/__init__.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+copying exam_example/distance_calc.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+running install
+running install_lib
+creating /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/turtle_spawn.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/two_turtles.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/__init__.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/distance_calc.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/turtle_spawn.py to turtle_spawn.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/two_turtles.py to two_turtles.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py to distance_calc.cpython-312.pyc
+running install_data
+creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index
+creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index
+creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index/packages
+copying resource/exam_example -> /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros_workspace/install/exam_example/share/exam_example
+running install_egg_info
+Copying ../../build/exam_example/exam_example.egg-info to /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example/install.log'

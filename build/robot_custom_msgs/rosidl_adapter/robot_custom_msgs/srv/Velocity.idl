@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_custom_msgs/srv/Velocity.srv
+// generated code does not contain a copyright notice
+
+
+module robot_custom_msgs {
+  module srv {
+    struct Velocity_Request {
+      float min;
+
+      float max;
+    };
+    struct Velocity_Response {
+      float x;
+
+      float z;
+    };
+  };
+};

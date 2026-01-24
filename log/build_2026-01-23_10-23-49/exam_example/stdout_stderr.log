@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/exam_example/exam_example.egg-info/PKG-INFO
+writing dependency_links to ../../build/exam_example/exam_example.egg-info/dependency_links.txt
+writing entry points to ../../build/exam_example/exam_example.egg-info/entry_points.txt
+writing requirements to ../../build/exam_example/exam_example.egg-info/requires.txt
+writing top-level names to ../../build/exam_example/exam_example.egg-info/top_level.txt
+reading manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/node.launch.py -> /home/ubuntu/ros_workspace/install/exam_example/share/exam_example/launch
+running install_egg_info
+removing '/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/exam_example/exam_example.egg-info to /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info
+running install_scripts
+Installing distance script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+Installing turtle2 script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+Installing turtles script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example/install.log'

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robot_custom_msgs__py",
+		"source" : "/home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py"
+	}
+}

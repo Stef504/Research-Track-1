@@ -1,0 +1,46 @@
+[1.167s] Invoking command in '/home/ubuntu/ros_workspace/src/exam_example': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data
+[1.399s] running egg_info
+[1.399s] creating ../../build/exam_example/exam_example.egg-info
+[1.415s] writing ../../build/exam_example/exam_example.egg-info/PKG-INFO
+[1.415s] writing dependency_links to ../../build/exam_example/exam_example.egg-info/dependency_links.txt
+[1.415s] writing requirements to ../../build/exam_example/exam_example.egg-info/requires.txt
+[1.415s] writing top-level names to ../../build/exam_example/exam_example.egg-info/top_level.txt
+[1.416s] writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[1.450s] reading manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[1.450s] writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[1.451s] running build
+[1.451s] running build_py
+[1.451s] creating /home/ubuntu/ros_workspace/build/exam_example/build
+[1.451s] creating /home/ubuntu/ros_workspace/build/exam_example/build/lib
+[1.452s] creating /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+[1.452s] copying exam_example/turtle_spawn.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+[1.453s] copying exam_example/two_turtles.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+[1.454s] copying exam_example/__init__.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+[1.454s] copying exam_example/distance_calc.py -> /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example
+[1.455s] running install
+[1.460s] running install_lib
+[1.477s] creating /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+[1.477s] copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/turtle_spawn.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+[1.478s] copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/two_turtles.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+[1.478s] copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/__init__.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+[1.478s] copying /home/ubuntu/ros_workspace/build/exam_example/build/lib/exam_example/distance_calc.py -> /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example
+[1.478s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/turtle_spawn.py to turtle_spawn.cpython-312.pyc
+[1.480s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/two_turtles.py to two_turtles.cpython-312.pyc
+[1.481s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/__init__.py to __init__.cpython-312.pyc
+[1.481s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py to distance_calc.cpython-312.pyc
+[1.482s]   File "/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py", line 60
+[1.482s]     else 
+[1.483s]          ^
+[1.483s] SyntaxError: expected ':'
+[1.483s] 
+[1.483s] running install_data
+[1.483s] creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index
+[1.483s] creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index
+[1.483s] creating /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index/packages
+[1.484s] copying resource/exam_example -> /home/ubuntu/ros_workspace/install/exam_example/share/ament_index/resource_index/packages
+[1.484s] copying package.xml -> /home/ubuntu/ros_workspace/install/exam_example/share/exam_example
+[1.484s] running install_egg_info
+[1.502s] Copying ../../build/exam_example/exam_example.egg-info to /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info
+[1.504s] running install_scripts
+[1.622s] writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example/install.log'
+[1.660s] Invoked command in '/home/ubuntu/ros_workspace/src/exam_example' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data

@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/exam_example_2/exam_example_2.egg-info
+writing ../../build/exam_example_2/exam_example_2.egg-info/PKG-INFO
+writing dependency_links to ../../build/exam_example_2/exam_example_2.egg-info/dependency_links.txt
+writing entry points to ../../build/exam_example_2/exam_example_2.egg-info/entry_points.txt
+writing requirements to ../../build/exam_example_2/exam_example_2.egg-info/requires.txt
+writing top-level names to ../../build/exam_example_2/exam_example_2.egg-info/top_level.txt
+writing manifest file '../../build/exam_example_2/exam_example_2.egg-info/SOURCES.txt'
+reading manifest file '../../build/exam_example_2/exam_example_2.egg-info/SOURCES.txt'
+writing manifest file '../../build/exam_example_2/exam_example_2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros_workspace/build/exam_example_2/build
+creating /home/ubuntu/ros_workspace/build/exam_example_2/build/lib
+creating /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2
+copying exam_example_2/robot_controller.py -> /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2
+copying exam_example_2/__init__.py -> /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2
+copying exam_example_2/distance_calc.py -> /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2
+running install
+running install_lib
+creating /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2
+copying /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2/robot_controller.py -> /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2
+copying /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2/__init__.py -> /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2
+copying /home/ubuntu/ros_workspace/build/exam_example_2/build/lib/exam_example_2/distance_calc.py -> /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2/robot_controller.py to robot_controller.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2/distance_calc.py to distance_calc.cpython-312.pyc
+running install_data
+creating /home/ubuntu/ros_workspace/install/exam_example_2/share/ament_index
+creating /home/ubuntu/ros_workspace/install/exam_example_2/share/ament_index/resource_index
+creating /home/ubuntu/ros_workspace/install/exam_example_2/share/ament_index/resource_index/packages
+copying resource/exam_example_2 -> /home/ubuntu/ros_workspace/install/exam_example_2/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros_workspace/install/exam_example_2/share/exam_example_2
+creating /home/ubuntu/ros_workspace/install/exam_example_2/share/exam_example_2/launch
+copying launch/simulation.launch.py -> /home/ubuntu/ros_workspace/install/exam_example_2/share/exam_example_2/launch
+running install_egg_info
+Copying ../../build/exam_example_2/exam_example_2.egg-info to /home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages/exam_example_2-0.0.0-py3.12.egg-info
+running install_scripts
+Installing distance script to /home/ubuntu/ros_workspace/install/exam_example_2/lib/exam_example_2
+Installing robot_controller script to /home/ubuntu/ros_workspace/install/exam_example_2/lib/exam_example_2
+writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example_2/install.log'

@@ -1,0 +1,4 @@
+[console_scripts]
+distance = exam_example.distance_calc:main
+turtle2 = exam_example.turtle_spawn:main
+turtles = exam_example.two_turtles:main

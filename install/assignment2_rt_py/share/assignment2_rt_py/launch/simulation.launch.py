@@ -37,8 +37,8 @@ def generate_launch_description():
         executable='robot_controller',
         name='robot',
         output='screen',
-        prefix = 'xterm -e',
-        #prefix='xterm -hold -e', #keeps the window open to help debugging
+        #prefix = 'xterm -e',
+        prefix='xterm -hold -e', #keeps the window open to help debugging
     )
 
     robot2 = Node(
@@ -46,8 +46,8 @@ def generate_launch_description():
         executable='robot_controller2',
         name='robot2',
         output='screen',
-        #prefix = 'xterm -e',
-        prefix='xterm -hold -e', #keeps the window open to help debugging
+        prefix = 'xterm -e',
+        #prefix='xterm -hold -e', #keeps the window open to help debugging
     )
     
     # 2. Create the Event Handler, is normal constant

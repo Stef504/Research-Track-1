@@ -1,0 +1,4 @@
+[console_scripts]
+Average = robot_custom_msgs.srv:Average
+Custom = robot_custom_msgs.msg:Custom
+Threshold = robot_custom_msgs.srv:Threshold

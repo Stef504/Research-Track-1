@@ -5,8 +5,8 @@ from std_msgs.msg import String
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
-from turtlesim_custom_msgs.msg import Vel
-from turtlesim_custom_msgs.srv import Threshold
+from robot_custom_msgs.msg import Custom
+from robot_custom_msgs.srv import Threshold
 
 import math
 
@@ -24,7 +24,7 @@ class DistanceCalc(Node):
         # --- 2. DECLARING MESSAGES ---
         # Instead of just declaring, we create the empty object instance here.
         self.distance_msg = String()
-        self.custom_msg = Vel()
+        self.custom_msg = Custom()
 
         #--- 3. DECLARING ANGLES ---
         self.angle_min = 0.0
@@ -46,7 +46,7 @@ class DistanceCalc(Node):
         #name = #create_service or create_client or create_publisher or create_subscription or create_timer
         # in brackets: Type, Topic or service Name, Callback function
         self.publisher_ = self.create_publisher(String, 'distance_topic', 10)
-        self.publisher_2 = self.create_publisher(Vel, 'custom_msg', 10) #distance,direction,threshold
+        self.publisher_2 = self.create_publisher(Custom, 'custom_msg', 10) #distance,direction,threshold
         self.timer_ = self.create_timer(0.05, self.timer_callback)
 
     def scan_callback(self, msg):
@@ -58,7 +58,7 @@ class DistanceCalc(Node):
 
         if len(range_values) > 0 :
             self.lidar = min(range_values)
-            self.index_of_min = msg.ranges.index(self.lidar)
+            self.index_of_min = msg.ranges.index(self.lidar) #.index is a built in function to get index of min value
         
 
         self.angle_min = msg.angle_min

@@ -1,1 +1,1 @@
-bme_gazebo_sensors:gazebo_ros:geometry_msgs:rclcpp:ros2launch:turtlesim_custom_msgs
+bme_gazebo_sensors:gazebo_ros:geometry_msgs:rclcpp:robot_custom_msgs:ros2launch

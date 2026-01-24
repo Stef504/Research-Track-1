@@ -1,0 +1,12 @@
+setup.py
+robot_custom_msgs/__init__.py
+robot_custom_msgs.egg-info/PKG-INFO
+robot_custom_msgs.egg-info/SOURCES.txt
+robot_custom_msgs.egg-info/dependency_links.txt
+robot_custom_msgs.egg-info/top_level.txt
+robot_custom_msgs/msg/__init__.py
+robot_custom_msgs/msg/_custom.py
+robot_custom_msgs/srv/__init__.py
+robot_custom_msgs/srv/_average.py
+robot_custom_msgs/srv/_threshold.py
+robot_custom_msgs/srv/_velocity.py

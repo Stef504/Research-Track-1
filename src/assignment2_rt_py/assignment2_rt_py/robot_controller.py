@@ -5,9 +5,9 @@ from geometry_msgs.msg import Twist
 import sys
 import math
 
-from turtlesim_custom_msgs.msg import Vel #DistDirectionThreshold 
-from turtlesim_custom_msgs.srv import Average #AvgVelocity
-from turtlesim_custom_msgs.srv import Threshold #SetThreshold
+from robot_custom_msgs.msg import Custom #DistDirectionThreshold 
+from robot_custom_msgs.srv import Average #AvgVelocity
+from robot_custom_msgs.srv import Threshold #SetThreshold
 
 class RobotController(Node):
 
@@ -90,30 +90,6 @@ class RobotController(Node):
             return response
 
 
-
-    def avgerage_velocity(self):
-
-        if self.value_counter < self.count:
-            return 
-        else:
-            if not self.client_avg_velocity.wait_for_service(timeout_sec=5.0):
-                self.get_logger().warn("AvgVelocity node not found! Is it running?")
-                return 
-
-        self.avg_req.count = self.value_counter
-
-        future = self.client_avg_velocity.call_async(self.avg_req)
-        future.add_done_callback(self.avg_velocity_response_callback)
-
-    def avg_velocity_response_callback(self, future):
-        try:
-            response = future.result()
-            self.avg_velocity_linear = response.avg_linear
-            self.avg_velocity_angular = response.avg_angular
-            self.get_logger().info(f"Avg velocities received - Linear: {self.avg_velocity_linear}, Angular: {self.avg_velocity_angular}")
-        except Exception as e:
-            self.get_logger().error(f"Service call failed: {e}")
-
     def send_new_threshold(self):
             
         val = 0.0
@@ -133,6 +109,7 @@ class RobotController(Node):
 
             except ValueError:
                 self.get_logger().warn("That is not a number.")
+                
                 
 
         # 2. Check if Server is online
@@ -201,12 +178,18 @@ class RobotController(Node):
             self.velocity_linear = 0.0
             self.velocity_angular = 0.0  
 
-            #--- Asking for Threshold Input ---
-            self.send_new_threshold()
 
             self.valid_input = False
+
             while not self.valid_input: 
-            
+
+                user_input_threshold= input("Do you want to set a new threshold? (y/n): ")
+                if user_input_threshold.lower() == 'y':
+                      #--- Asking for Threshold Input --- 
+                      #instead of via the termial
+                    self.send_new_threshold()
+                                
+           
                 user_input_lin = input("Enter desired linear velocity (or q to quit):")
                 
                 try:
@@ -220,6 +203,7 @@ class RobotController(Node):
                     self.valid_input = True
                 except ValueError:
                         self.get_logger().warn("That is not a number.")
+                      
                         
 
                 
@@ -253,7 +237,7 @@ class RobotController(Node):
                 self.angular_history.pop(0)
 
             #--- Client to call average velocity service ---
-            self.avgerage_velocity()
+            #self.avgerage_velocity() via terminal 
 
             if abs(self.velocity_linear) > self.max_linear_velocity:
                 self.velocity_linear = self.max_linear_velocity 

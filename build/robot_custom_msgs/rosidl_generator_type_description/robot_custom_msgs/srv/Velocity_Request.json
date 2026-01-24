@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "robot_custom_msgs/srv/Velocity_Request",
+      "fields": [
+        {
+          "name": "min",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "max",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "robot_custom_msgs/srv/Velocity_Request",
+      "hash_string": "RIHS01_6d5f7bae096f4ac1987f058cb44c5a5be062bd4de1c8d100a8a85fc1391cd69f"
+    }
+  ]
+}
