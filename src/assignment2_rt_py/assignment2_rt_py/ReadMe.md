@@ -42,15 +42,15 @@ It has an empty argument, as it just has a response, so there is no need for a r
 The user needs three packages:
 
 1. `assignment2_rt_py`package: the user should download the file and paste it into the `src` folder of their ROS workspace.
-The file can be found in respective repository: https://github.com/Stef504/Research-Track-1.git.
+The file can be found in the respective repository: https://github.com/Stef504/Research-Track-1.git.
 The `assignment2_rt_py` package is located at: `../src/assignment2_rt_py/`
 
 2. `bme_gazebo_sensors` package: the user should download the file and paste it into the `src` folder of their ROS workspace.
-The file can be found in respective repository: https://github.com/Stef504/Research-Track-1.git.
+The file can be found in the respective repository: https://github.com/Stef504/Research-Track-1.git.
 The `bme_gazebo_sensors` package is located at: `../src/bme_gazebo_sensors/`
 
 3. `robot_controller_msgs` package: the user should download the file and paste it into the `src` folder of their ROS workspace.
-The file can be found in respective repository: https://github.com/Stef504/Research-Track-1.git.
+The file can be found in the respective repository: https://github.com/Stef504/Research-Track-1.git.
 The `robot_controller_msgs` package is located at: `../src/robot_controller_msgs/`
 
 **2.Execution** 
