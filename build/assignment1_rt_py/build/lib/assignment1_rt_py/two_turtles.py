@@ -125,7 +125,7 @@ class TwoTurtles(Node):
 
             if self.turtle_choice == '1':
                
-                if self.stop_ and not self.reverse_:
+                if self.stop_ :
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
                 
@@ -157,7 +157,7 @@ class TwoTurtles(Node):
 
             elif self.turtle_choice == '2':
 
-                if self.stop_ and not self.reverse_:
+                if self.stop_ :
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
 

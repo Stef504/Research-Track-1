@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Float64MutltiArray
+from std_msgs.msg import String, Float64MultiArray
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist, PoseArray
 import math
@@ -49,13 +49,16 @@ class TwoTurtles(Node):
         self.selected_ = False
         self.valid_choice = False
         self.stop_ = False
+        self.stop_mine = False
         self.reverse_ = False
+        self.stop_obs = False
 
         # --- 8. STRINGS ---
         self.bounds_xy = "out of bounds"
         self.close_turtles = "too close"
         self.safe_turtles = "safe"
         self.distance_ = " "
+        self.mine_= " "
         
 
         super().__init__('two_turtles')
@@ -64,8 +67,8 @@ class TwoTurtles(Node):
 
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
 
-        self.subscribe_obst = self.create_subscription(Float64MutltiArray, 'obstacle_topic', self.obs_callback,10)
-        self.subscribe_mines = self.create_subscription(PoseArray, 'mines_topic', self.mine_callback,10)
+        self.subscribe_obst = self.create_subscription(String, 'obstacle_detect', self.obs_callback,10)
+        self.subscribe_mines = self.create_subscription(String, 'mine_detect', self.mine_callback,10)
         self.subscribe_turtle1 = self.create_subscription(Pose, 'turtle1/pose', self.turtle1_callback,10)
 
         self.timer = self.create_timer(self.htz_, self.timer_callback)
@@ -73,15 +76,14 @@ class TwoTurtles(Node):
 
     def topic_callback(self, msg):
         
-        closest_obstacle = min(msg.data)
-        
+        self.distance_ = msg.data  
         # Check if "out of bounds" OR "too close" is inside the distance string
         # Reversed order logic compared to C++
-        if closest_obstacle < self.threshold_ :
+        if self.bounds_xy in self.distance_ or self.close_turtles in self.distance_:
             self.stop_ = True
 
         # Check if "safe" is inside the distance string
-        elif closest_obstacle > self.threshold_:
+        elif self.safe_turtles in self.distance_:
             self.stop_ = False
 
 
@@ -90,29 +92,28 @@ class TwoTurtles(Node):
         self.t1_y = msg.y
 
     def mine_callback(self, msg):
-         
-        closest_obstacle = 2.0
         
+        self.mine_ = msg.data        
         # Check if "out of bounds" OR "too close" is inside the distance string
         # Reversed order logic compared to C++
         #its an array of poses so we need to loop through them
-        for i in msg.poses:
-            dist = math.sqrt((i.position.x- self.t1_x)**2 + (i.position.y - self.t1_y)**2)
+         # Check if "out of bounds" OR "too close" is inside the distance string
+        # Reversed order logic compared to C++
+        if self.close_turtles in self.mine_:
+            self.stop_mine = True
 
-             if dist <  closest_obstacle:
-                closest_obstacle = dist
-
-        if closest_obstacle < self.threshold_:
-            self.stop_ = True
+        # Check if "safe" is inside the distance string
+        elif self.safe_turtles in self.mine_:
+            self.stop_mine = False
 
     def obs_callback(self, msg):
 
-        self.obstacle_ = min(msg.data)
+        self.obstacle_ = msg.data
 
-        if self.obstacle_ < self.threshold_:
-            self.stop_ = True
-        elif self.obstacle_ > self.threshold_:  
-            self.stop_ = False
+        if self.close_turtles in self.obstacle_:
+            self.stop_obs = True
+       elif self.safe_turtles in self.obstacle_:  
+            self.stop_obs = False
 
     def timer_callback(self):
         
@@ -161,7 +162,7 @@ class TwoTurtles(Node):
 
             if self.turtle_choice == '1':
                
-                if self.stop_ and not self.reverse_:
+                if self.stop_ or self.stop_mine or self.stop_obs:
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
                 
@@ -193,7 +194,7 @@ class TwoTurtles(Node):
 
             elif self.turtle_choice == '2':
 
-                if self.stop_ and not self.reverse_:
+                if self.stop_ or self.stop_mine or self.stop_obs:
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
 

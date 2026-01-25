@@ -230,10 +230,9 @@ class RobotController(Node):
 
             if len(self.linear_history) > self.count:
                 self.linear_history.pop(0) # Remove oldest
-                self.angular_history.pop(0)
+               
 
             if len(self.angular_history) > self.count:
-                self.linear_history.pop(0)
                 self.angular_history.pop(0)
 
             #--- Client to call average velocity service ---
@@ -271,12 +270,6 @@ class RobotController(Node):
                     self.publisher_1.publish(message)
                     self.running_=False
                 return        
-
-            #Relies on continous movement until obstacle detected
-            #self.tick_count_ += 1
-            #message.linear.x = float(self.velocity_linear)
-            #message.angular.z = float(self.velocity_angular)
-            #self.publisher_1.publish(message)
 
 
             #relies moving forward for 2s if no obstacles detected

@@ -62,6 +62,7 @@ def generate_launch_description():
 
         #parameters=[
         #   {'window_size': window_config} # Linking arg to ROS Parameter
+        #the window_siz is hard coded in the script that we are looking at so use that
         #]
     )
     

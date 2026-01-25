@@ -6,9 +6,9 @@
 3. The user can choose the robot's linear and angular velocity.
 4. An error is shown if it was not a number, and it asks the user again.
 5. The linear and angular velocities have a set range of max and min values. If the user enters a velocity value above or below these values, the default value is set, respectively.
-6. The robot returns back to an initial safe position when its measured distance between itself and the closest obstacle is detected.
+6. The robot returns back to an initial safe position when its measured distance between itself and the closest obstacle is below the threshold.
 7. The user can quit the game by entering 'q' at any stage of the prompts.
-8. A custom message allows the user to view the distance to the closest object, the direction (i.e., North, South, etc.) and the current threshold.
+8. A custom message allows the user to view the distance to the closest object, the direction (i.e., Front, Back, etc.) and the current threshold.
 9. Two services have been created. One service calculates the average velocity by taking into account the five most recent velocity readings. The second gets a request from the user for a threshold value, and the response is setting the new threshold value.
 
 ## Robot Controller:
@@ -16,7 +16,7 @@
 2. Subscribed to the distance topic so that it can reverse to a safe distance and stop.
 3. The distance topic is read to set the *stop_* loop as true or false. *False* indicates the robot has crossed into the danger zone, and *true* indicates that the robot is at a safe distance.
 4. The option of reversing and then stopping allows the robot to safely remove itself from the danger zone.
-5. I choose for the robot to reverse for the amount of seconds it was in the safe zone. It reverses at the same speed it enteredt the danger zone. I added a safety feature of 5 ticks to ensure the robot is fully outside the danger zone.
+5. I choose for the robot to reverse for the amount of seconds it was in the safe zone. It reverses at the same speed it entered the danger zone. I added a safety feature of 5 ticks to ensure the robot is fully outside the danger zone.
 6. If the robot travels in the safe zone it will travel for 2s at the desired velocities. 
 7. A service client was created where instead of changing the threshold via the terminal, it asks the user if they want to change the threshold, and if so, it calls the service client `self.send_new_threshold()`, which asks for the new threshold, and the service `handle_threshold_service`, which is in the distance node, will adjust the threshold accordingly.
 8. The average velocity service can be called via the terminal using the following command: 
@@ -60,7 +60,7 @@ ros2 ros2 launch assignment2_rt_py simulation.launch.py
 >## ⚖️Comments
 - Set minimum and maximum values for threshold. 
 - The justification for this safety factor is that the Distance node operates every 50 ms, whereas the UI node functions every 100 ms. Consequently, if the user inputs the maximum permissible linear velocity (4 m/s) and angular velocity (2 rad/s), the robot can only travel 0.4 m in 0.1 s before the controller activates. So the minimum threshold value ensures a safety of 0.4 m is always maintained. The max threshold value ensures the robot can move.
-- I had to create a local variable for publishing the Twist because there was a physics lag between Gazebo and the input variables. Where Gazebo stores the previous values and misses the recent inputs.
+- I had to create a local variable (in the robot node)for publishing the Twist because there was a physics lag between Gazebo and the input variables. Where Gazebo sometimes stored the previous values and missed the recent inputs.
 - A maximum linear and angular velocity has been set to adhere to the safety threshold.
 - The robot moves for 2 seconds at a time. The choice for this over the continuous movement is because the `input` function becomes blocking when placed in the `self.running_` loop and therefore misses information if the robot is within the danger zone. It also allows the user-controlled freedom to move the robot.
 - The robot_controller2.py is my attempt to use a continous stream of input commands but realising that the `input` function blocks the `reverse` command and no longer listens to the `distance_topic`. A continous mode can be accomplished with threads.

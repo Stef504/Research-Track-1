@@ -50,17 +50,14 @@ class DistanceCalc(Node):
         self.timer_ = self.create_timer(0.05, self.timer_callback)
 
     def scan_callback(self, msg):
-        range_values=[]
+    
+        # Process incoming LIDAR scan data
+        if len(msg.ranges) == 0 :
+            return
+            
+        self.lidar = min(msg.ranges)
+        self.index_of_min = msg.ranges.index(self.lidar) #.index is a built in function to get index of min value
         
-        for i in msg.ranges:
-            if i < float('inf'):
-                range_values.append(i)
-
-        if len(range_values) > 0 :
-            self.lidar = min(range_values)
-            self.index_of_min = msg.ranges.index(self.lidar) #.index is a built in function to get index of min value
-        
-
         self.angle_min = msg.angle_min
         self.angle_max = msg.angle_max
         self.angle_increment = msg.angle_increment
@@ -94,21 +91,21 @@ class DistanceCalc(Node):
             self.distance_msg.data= f"Obstacle too close!"
 
         if 0 < self.direction_angle < 90:
-            self.custom_msg.direction = "North West"
+            self.custom_msg.direction = "Front-Left"
         elif 90 < self.direction_angle < 180:
-            self.custom_msg.direction = "South West"
+            self.custom_msg.direction = "Black-Left"
         elif -90 < self.direction_angle < 0:
-            self.custom_msg.direction = "North East"
+            self.custom_msg.direction = "Front-Right"
         elif -180 < self.direction_angle < -90:
-            self.custom_msg.direction = "South East"
+            self.custom_msg.direction = "Back-Right"
         elif self.direction_angle == 0:
-            self.custom_msg.direction = "Infront"
+            self.custom_msg.direction = "Front"
         elif self.direction_angle == -90:
             self.custom_msg.direction = "Right"
         elif self.direction_angle == 90:
             self.custom_msg.direction = "Left"
         elif self.direction_angle == -180 or self.direction_angle == 180:
-            self.custom_msg.direction = "Behind"        
+            self.custom_msg.direction = "Back"        
 
         self.publisher_.publish(self.distance_msg)
         self.publisher_2.publish(self.custom_msg)

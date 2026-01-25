@@ -37,8 +37,8 @@ def generate_launch_description():
         executable='robot_controller',
         name='robot',
         output='screen',
-        #prefix = 'xterm -e',
-        prefix='xterm -hold -e', #keeps the window open to help debugging
+        prefix = 'xterm -e',
+        #prefix='xterm -hold -e', #keeps the window open to help debugging
     )
 
     robot2 = Node(
