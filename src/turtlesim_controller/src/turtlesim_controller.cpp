@@ -1,7 +1,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "turtlesim/msg/pose.hpp"
 #include "geometry_msgs/msg/twist.hpp"
-#include "nav_msgs/msg/Odometry.hpp"
+#include "nav_msgs/msg/odometry.hpp"
+//#include "geometry_msgs/posewithcovariance.hpp"
 
 using std::placeholders::_1;
 
@@ -34,17 +35,17 @@ void timer_callback()
     publisher_->publish(message);
  }
 
- void topic_callback(const turtlesim::msg::Pose::SharedPtr msg)
+ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
  {
- RCLCPP_INFO(this->get_logger(), "The position of the turtle is (x, y): '%f, %f'", msg.pose.position.x->x, msg.pose.position.y->y);
- x_ = msg.pose.position.x->x;
+ RCLCPP_INFO(this->get_logger(), "The position of the turtle is (x, y): '%f, %f'", msg->pose.position.x, msg->pose.position.y);
+ x_ = msg->pose.position.x;
  }
 
- rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_;
+ rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
  rclcpp::TimerBase::SharedPtr timer_;
  geometry_msgs::msg::Twist message;
- 
+
  float x_;
 };
 
