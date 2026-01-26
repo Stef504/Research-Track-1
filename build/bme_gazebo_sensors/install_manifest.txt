@@ -1,6 +1,7 @@
+/home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot.exam.py
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/world.launch.py
-/home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/__pycache__/spawn_robot.launch.cpython-312.pyc
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot.launch.py
+/home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/empty.sdf
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my_world.sdf
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world.sdf
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my.sdf

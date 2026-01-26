@@ -1,1 +1,1 @@
-geometry_msgs:rclcpp:turtlesim:turtlesim_custom_msgs
+bme_gazebo_sensors:gazebo_ros:geometry_msgs:nav_msgs:rclcpp:ros2launch:turtlesim:turtlesim_custom_msgs

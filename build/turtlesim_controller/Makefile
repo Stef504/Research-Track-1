@@ -210,45 +210,6 @@ turtlesim_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/build
 .PHONY : turtlesim_controller/fast
 
-#=============================================================================
-# Target rules for targets named turtlesim_controller2
-
-# Build rule for target.
-turtlesim_controller2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlesim_controller2
-.PHONY : turtlesim_controller2
-
-# fast build rule for target.
-turtlesim_controller2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller2.dir/build.make CMakeFiles/turtlesim_controller2.dir/build
-.PHONY : turtlesim_controller2/fast
-
-#=============================================================================
-# Target rules for targets named turtlesim_controller3
-
-# Build rule for target.
-turtlesim_controller3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlesim_controller3
-.PHONY : turtlesim_controller3
-
-# fast build rule for target.
-turtlesim_controller3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller3.dir/build.make CMakeFiles/turtlesim_controller3.dir/build
-.PHONY : turtlesim_controller3/fast
-
-#=============================================================================
-# Target rules for targets named turtlesim_service
-
-# Build rule for target.
-turtlesim_service: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlesim_service
-.PHONY : turtlesim_service
-
-# fast build rule for target.
-turtlesim_service/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_service.dir/build.make CMakeFiles/turtlesim_service.dir/build
-.PHONY : turtlesim_service/fast
-
 src/turtlesim_controller.o: src/turtlesim_controller.cpp.o
 .PHONY : src/turtlesim_controller.o
 
@@ -273,78 +234,6 @@ src/turtlesim_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller.dir/build.make CMakeFiles/turtlesim_controller.dir/src/turtlesim_controller.cpp.s
 .PHONY : src/turtlesim_controller.cpp.s
 
-src/turtlesim_controller2.o: src/turtlesim_controller2.cpp.o
-.PHONY : src/turtlesim_controller2.o
-
-# target to build an object file
-src/turtlesim_controller2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller2.dir/build.make CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o
-.PHONY : src/turtlesim_controller2.cpp.o
-
-src/turtlesim_controller2.i: src/turtlesim_controller2.cpp.i
-.PHONY : src/turtlesim_controller2.i
-
-# target to preprocess a source file
-src/turtlesim_controller2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller2.dir/build.make CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.i
-.PHONY : src/turtlesim_controller2.cpp.i
-
-src/turtlesim_controller2.s: src/turtlesim_controller2.cpp.s
-.PHONY : src/turtlesim_controller2.s
-
-# target to generate assembly for a file
-src/turtlesim_controller2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller2.dir/build.make CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.s
-.PHONY : src/turtlesim_controller2.cpp.s
-
-src/turtlesim_controller3.o: src/turtlesim_controller3.cpp.o
-.PHONY : src/turtlesim_controller3.o
-
-# target to build an object file
-src/turtlesim_controller3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller3.dir/build.make CMakeFiles/turtlesim_controller3.dir/src/turtlesim_controller3.cpp.o
-.PHONY : src/turtlesim_controller3.cpp.o
-
-src/turtlesim_controller3.i: src/turtlesim_controller3.cpp.i
-.PHONY : src/turtlesim_controller3.i
-
-# target to preprocess a source file
-src/turtlesim_controller3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller3.dir/build.make CMakeFiles/turtlesim_controller3.dir/src/turtlesim_controller3.cpp.i
-.PHONY : src/turtlesim_controller3.cpp.i
-
-src/turtlesim_controller3.s: src/turtlesim_controller3.cpp.s
-.PHONY : src/turtlesim_controller3.s
-
-# target to generate assembly for a file
-src/turtlesim_controller3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_controller3.dir/build.make CMakeFiles/turtlesim_controller3.dir/src/turtlesim_controller3.cpp.s
-.PHONY : src/turtlesim_controller3.cpp.s
-
-src/turtlesim_service.o: src/turtlesim_service.cpp.o
-.PHONY : src/turtlesim_service.o
-
-# target to build an object file
-src/turtlesim_service.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_service.dir/build.make CMakeFiles/turtlesim_service.dir/src/turtlesim_service.cpp.o
-.PHONY : src/turtlesim_service.cpp.o
-
-src/turtlesim_service.i: src/turtlesim_service.cpp.i
-.PHONY : src/turtlesim_service.i
-
-# target to preprocess a source file
-src/turtlesim_service.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_service.dir/build.make CMakeFiles/turtlesim_service.dir/src/turtlesim_service.cpp.i
-.PHONY : src/turtlesim_service.cpp.i
-
-src/turtlesim_service.s: src/turtlesim_service.cpp.s
-.PHONY : src/turtlesim_service.s
-
-# target to generate assembly for a file
-src/turtlesim_service.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlesim_service.dir/build.make CMakeFiles/turtlesim_service.dir/src/turtlesim_service.cpp.s
-.PHONY : src/turtlesim_service.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,21 +250,9 @@ help:
 	@echo "... turtlesim_controller_uninstall"
 	@echo "... uninstall"
 	@echo "... turtlesim_controller"
-	@echo "... turtlesim_controller2"
-	@echo "... turtlesim_controller3"
-	@echo "... turtlesim_service"
 	@echo "... src/turtlesim_controller.o"
 	@echo "... src/turtlesim_controller.i"
 	@echo "... src/turtlesim_controller.s"
-	@echo "... src/turtlesim_controller2.o"
-	@echo "... src/turtlesim_controller2.i"
-	@echo "... src/turtlesim_controller2.s"
-	@echo "... src/turtlesim_controller3.o"
-	@echo "... src/turtlesim_controller3.i"
-	@echo "... src/turtlesim_controller3.s"
-	@echo "... src/turtlesim_service.o"
-	@echo "... src/turtlesim_service.i"
-	@echo "... src/turtlesim_service.s"
 .PHONY : help
 
 
