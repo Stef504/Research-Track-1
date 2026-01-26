@@ -5,6 +5,9 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_ge
   rosidl_generator_c/robot_custom_msgs/msg/detail/custom__functions.h \
   rosidl_generator_c/robot_custom_msgs/msg/detail/custom__struct.h \
   rosidl_generator_c/robot_custom_msgs/msg/detail/custom__type_support.h \
+  rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__functions.h \
+  rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__struct.h \
+  rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__type_support.h \
   rosidl_generator_c/robot_custom_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/robot_custom_msgs/srv/detail/average__functions.h \
   rosidl_generator_c/robot_custom_msgs/srv/detail/average__struct.h \
@@ -319,9 +322,11 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_ge
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/python3.12/iterobject.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/features-time64.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/python3.12/genericaliasobject.h:
 
@@ -355,8 +360,6 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_ge
 
 /usr/include/python3.12/memoryobject.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/python3.12/cpython/objimpl.h:
@@ -385,14 +388,6 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_ge
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/include/python3.12/intrcheck.h:
-
-/usr/include/python3.12/traceback.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
 rosidl_generator_c/robot_custom_msgs/msg/detail/custom__type_support.h:
 
 /usr/include/python3.12/cpython/context.h:
@@ -400,10 +395,6 @@ rosidl_generator_c/robot_custom_msgs/msg/detail/custom__type_support.h:
 /usr/include/python3.12/cpython/complexobject.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
-
-/usr/include/python3.12/import.h:
-
-/usr/include/python3.12/setobject.h:
 
 /usr/include/python3.12/cpython/import.h:
 
@@ -436,22 +427,6 @@ rosidl_generator_c/robot_custom_msgs/msg/detail/custom__type_support.h:
 /usr/include/python3.12/dictobject.h:
 
 /usr/include/python3.12/Python.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
-
-/usr/include/python3.12/fileobject.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
-
-rosidl_generator_c/robot_custom_msgs/srv/detail/average__functions.h:
-
-/usr/include/python3.12/cpython/picklebufobject.h:
-
-/usr/include/python3.12/complexobject.h:
-
-/usr/include/linux/stddef.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
 
@@ -489,6 +464,18 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/average__type_support.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/python3.12/fileobject.h:
+
+rosidl_generator_c/robot_custom_msgs/srv/detail/average__functions.h:
+
+/usr/include/python3.12/cpython/picklebufobject.h:
+
+/usr/include/python3.12/complexobject.h:
+
+/usr/include/linux/stddef.h:
+
 /usr/include/python3.12/cpython/odictobject.h:
 
 /usr/include/alloca.h:
@@ -499,9 +486,45 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/average__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
+/usr/include/python3.12/cpython/object.h:
+
+/usr/include/python3.12/bytearrayobject.h:
+
+/usr/include/python3.12/rangeobject.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/linux/stat.h:
+
+/usr/include/python3.12/pyframe.h:
+
+/usr/include/python3.12/object.h:
+
+/usr/include/python3.12/pycapsule.h:
+
 /usr/include/python3.12/cpython/memoryobject.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/usr/include/python3.12/cpython/fileobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/python3.12/enumobject.h:
+
+/usr/include/python3.12/cpython/classobject.h:
+
+rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/python3.12/cpython/pythonrun.h:
 
 /usr/include/python3.12/cpython/floatobject.h:
 
@@ -515,67 +538,11 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-rosidl_generator_c/robot_custom_msgs/srv/detail/threshold__struct.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
 
-/usr/include/asm-generic/errno-base.h:
-
-rosidl_generator_c/robot_custom_msgs/msg/rosidl_generator_c__visibility_control.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
-
-/usr/include/python3.12/cpython/fileobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/python3.12/cpython/object.h:
-
-/usr/include/python3.12/bytearrayobject.h:
-
-/usr/include/python3.12/rangeobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/python3.12/object.h:
-
-/usr/include/python3.12/pycapsule.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/python3.12/pyframe.h:
-
-/usr/include/python3.12/enumobject.h:
-
-/usr/include/python3.12/cpython/classobject.h:
-
-rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__struct.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/python3.12/cpython/pythonrun.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/python3.12/pymath.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
-
-rosidl_generator_c/robot_custom_msgs/msg/detail/custom__struct.h:
-
-/usr/include/python3.12/pyport.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__type_support.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
 
@@ -585,21 +552,29 @@ rosidl_generator_c/robot_custom_msgs/msg/detail/custom__struct.h:
 
 /usr/include/inttypes.h:
 
-rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c:
+rosidl_generator_c/robot_custom_msgs/srv/detail/threshold__struct.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
-
-/usr/include/asm-generic/posix_types.h:
+rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__struct.h:
 
 /usr/include/ctype.h:
 
-/usr/include/errno.h:
+/usr/include/asm-generic/errno-base.h:
+
+rosidl_generator_c/robot_custom_msgs/msg/rosidl_generator_c__visibility_control.h:
+
+rosidl_generator_c/robot_custom_msgs/msg/detail/custom__struct.h:
+
+/usr/include/python3.12/pyport.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/python3.12/cpython/modsupport.h:
 
 /usr/include/python3.12/cpython/dictobject.h:
+
+/usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -609,7 +584,25 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/threshold__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/pthread.h:
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/python3.12/pymath.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
+
+/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/errno.h:
 
 /usr/include/python3.12/cpython/warnings.h:
 
@@ -622,6 +615,10 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/threshold__type_support.h:
 /usr/include/python3.12/cpython/pydebug.h:
 
 rosidl_generator_c/robot_custom_msgs/srv/detail/average__struct.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/python3.12/iterobject.h:
 
 rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__type_support.h:
 
@@ -641,6 +638,8 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__functions.h:
+
 /usr/include/linux/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
@@ -648,6 +647,18 @@ rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__type_support.h:
 /usr/include/python3.12/cpython/unicodeobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/python3.12/import.h:
+
+/usr/include/python3.12/setobject.h:
+
+/usr/include/python3.12/intrcheck.h:
+
+/usr/include/python3.12/traceback.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/python3.12/listobject.h:
 
@@ -833,9 +844,9 @@ rosidl_generator_c/robot_custom_msgs/msg/detail/custom__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/asm-generic/types.h:
-
 /usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -846,5 +857,3 @@ rosidl_generator_c/robot_custom_msgs/msg/detail/custom__functions.h:
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:

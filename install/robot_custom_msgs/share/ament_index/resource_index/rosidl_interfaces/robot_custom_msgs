@@ -1,5 +1,7 @@
 msg/Custom.idl
 msg/Custom.msg
+msg/ExamCustom.idl
+msg/ExamCustom.msg
 srv/Average.idl
 srv/Average.srv
 srv/Threshold.idl

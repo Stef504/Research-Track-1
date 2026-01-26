@@ -1,0 +1,255 @@
+[0.020s] Invoking command in '/home/ubuntu/ros_workspace/build/robot_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/robot_custom_msgs -- -j16 -l16
+[0.115s] [  1%] Built target robot_custom_msgs__rosidl_generator_type_description
+[0.136s] [  1%] Built target ament_cmake_python_copy_robot_custom_msgs
+[0.155s] [  2%] Built target robot_custom_msgs__cpp
+[0.172s] [ 25%] Built target robot_custom_msgs__rosidl_generator_c
+[0.225s] [ 43%] Built target robot_custom_msgs__rosidl_typesupport_introspection_c
+[0.225s] [ 44%] Built target robot_custom_msgs__rosidl_typesupport_c
+[0.235s] [ 59%] Built target robot_custom_msgs__rosidl_typesupport_fastrtps_c
+[0.235s] [ 63%] Built target robot_custom_msgs__rosidl_typesupport_cpp
+[0.237s] [ 72%] Built target robot_custom_msgs__rosidl_typesupport_introspection_cpp
+[0.239s] [ 82%] Built target robot_custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.279s] [ 82%] Built target robot_custom_msgs
+[0.321s] [ 83%] Built target robot_custom_msgs__py
+[0.379s] [ 91%] Built target robot_custom_msgs__rosidl_generator_py
+[0.395s] running egg_info
+[0.419s] writing robot_custom_msgs.egg-info/PKG-INFO
+[0.419s] writing dependency_links to robot_custom_msgs.egg-info/dependency_links.txt
+[0.420s] writing top-level names to robot_custom_msgs.egg-info/top_level.txt
+[0.426s] [ 95%] Built target robot_custom_msgs_s__rosidl_typesupport_introspection_c
+[0.426s] [ 97%] Built target robot_custom_msgs_s__rosidl_typesupport_fastrtps_c
+[0.427s] [100%] Built target robot_custom_msgs_s__rosidl_typesupport_c
+[0.478s] reading manifest file 'robot_custom_msgs.egg-info/SOURCES.txt'
+[0.479s] writing manifest file 'robot_custom_msgs.egg-info/SOURCES.txt'
+[0.524s] [100%] Built target ament_cmake_python_build_robot_custom_msgs_egg
+[0.552s] Invoked command in '/home/ubuntu/ros_workspace/build/robot_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/robot_custom_msgs -- -j16 -l16
+[0.570s] Invoking command in '/home/ubuntu/ros_workspace/build/robot_custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/robot_custom_msgs
+[0.586s] -- Install configuration: ""
+[0.586s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_custom_msgs
+[0.586s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/Custom.json
+[0.586s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/ExamCustom.json
+[0.586s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Velocity.json
+[0.587s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Average.json
+[0.587s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Threshold.json
+[0.587s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.587s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.587s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.588s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__struct.h
+[0.588s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__functions.h
+[0.588s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__type_support.h
+[0.588s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__description.c
+[0.589s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__functions.c
+[0.589s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__type_support.h
+[0.589s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__description.c
+[0.589s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__type_support.c
+[0.589s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__type_support.c
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__type_support.h
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__functions.h
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__struct.h
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__type_support.c
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__functions.c
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__functions.c
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__functions.h
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__description.c
+[0.590s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__struct.h
+[0.591s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/velocity.h
+[0.591s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/threshold.h
+[0.591s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/average.h
+[0.591s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.591s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.592s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__description.c
+[0.592s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__functions.c
+[0.592s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__description.c
+[0.592s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__type_support.c
+[0.592s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__functions.c
+[0.593s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__type_support.c
+[0.593s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__type_support.h
+[0.593s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__struct.h
+[0.593s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__functions.h
+[0.593s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__type_support.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__functions.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__struct.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/exam_custom.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/custom.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.594s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/library_path.sh
+[0.595s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/library_path.dsv
+[0.595s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_generator_c.so
+[0.595s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.595s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.596s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.596s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_c.h
+[0.596s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_c.h
+[0.596s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_c.h
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_fastrtps_c.h
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_fastrtps_c.h
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.597s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_fastrtps_c.so
+[0.598s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.598s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.598s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.598s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h
+[0.598s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__type_support.c
+[0.599s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h
+[0.599s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__type_support.c
+[0.599s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__type_support.c
+[0.599s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h
+[0.599s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
+[0.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_c.h
+[0.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__type_support.c
+[0.600s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__type_support.c
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_introspection_c.so
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_c.so
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__struct.hpp
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__struct.hpp
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__type_support.hpp
+[0.601s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__builder.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__traits.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__type_support.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__traits.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__type_support.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__traits.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__builder.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__builder.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__struct.hpp
+[0.602s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/threshold.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/velocity.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/average.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__type_support.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__builder.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__traits.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__struct.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__traits.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__builder.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__type_support.hpp
+[0.603s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__struct.hpp
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/custom.hpp
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/exam_custom.hpp
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.604s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/dds_fastrtps
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_fastrtps_cpp.hpp
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.605s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/dds_fastrtps
+[0.606s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_fastrtps_cpp.hpp
+[0.606s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_fastrtps_cpp.hpp
+[0.606s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.606s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.606s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_cpp.hpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__type_support.cpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/average__type_support.cpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_cpp.hpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_cpp.hpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/srv/detail/threshold__type_support.cpp
+[0.607s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__type_support.cpp
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__type_support.cpp
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_cpp.hpp
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/include/robot_custom_msgs/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_cpp.hpp
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_introspection_cpp.so
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_typesupport_cpp.so
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/pythonpath.sh
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/pythonpath.dsv
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info
+[0.608s] -- Installing: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[0.608s] -- Installing: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.608s] -- Installing: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[0.608s] -- Installing: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs
+[0.608s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_introspection_c.so
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_c.so
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/__init__.py
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_average.py
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_velocity.py
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_average_s.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_threshold_s.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_velocity_s.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/__init__.py
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv/_threshold.py
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_c.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg/_custom_s.c
+[0.609s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg/__init__.py
+[0.610s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg/_exam_custom_s.c
+[0.610s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg/_custom.py
+[0.610s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg/_exam_custom.py
+[0.650s] Listing '/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs'...
+[0.650s] Listing '/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/msg'...
+[0.650s] Listing '/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/srv'...
+[0.656s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.657s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_introspection_c.so
+[0.658s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages/robot_custom_msgs/robot_custom_msgs_s__rosidl_typesupport_c.so
+[0.658s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/librobot_custom_msgs__rosidl_generator_py.so
+[0.658s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/Custom.idl
+[0.659s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/ExamCustom.idl
+[0.659s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Velocity.idl
+[0.659s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Average.idl
+[0.660s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Threshold.idl
+[0.660s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/Custom.msg
+[0.660s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/msg/ExamCustom.msg
+[0.660s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Velocity.srv
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Average.srv
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/srv/Threshold.srv
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/ament_index/resource_index/package_run_dependencies/robot_custom_msgs
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/ament_index/resource_index/parent_prefix_path/robot_custom_msgs
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/ament_prefix_path.sh
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/ament_prefix_path.dsv
+[0.661s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/path.sh
+[0.662s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/environment/path.dsv
+[0.662s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/local_setup.bash
+[0.662s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/local_setup.sh
+[0.662s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/local_setup.zsh
+[0.662s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/local_setup.dsv
+[0.663s] -- Installing: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/package.dsv
+[0.663s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/ament_index/resource_index/packages/robot_custom_msgs
+[0.663s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_generator_cExport.cmake
+[0.663s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.663s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.664s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.664s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.664s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.664s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_cExport.cmake
+[0.665s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.665s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_generator_cppExport.cmake
+[0.665s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.665s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.665s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_cppExport.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_generator_pyExport.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/export_robot_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/rosidl_cmake-extras.cmake
+[0.666s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgsConfig.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/cmake/robot_custom_msgsConfig-version.cmake
+[0.667s] -- Up-to-date: /home/ubuntu/ros_workspace/install/robot_custom_msgs/share/robot_custom_msgs/package.xml
+[0.669s] Invoked command in '/home/ubuntu/ros_workspace/build/robot_custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/robot_custom_msgs

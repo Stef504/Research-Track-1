@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "robot_custom_msgs/srv/detail/threshold__struct.h"
-#include "robot_custom_msgs/srv/detail/threshold__functions.h"
 #include "robot_custom_msgs/srv/detail/threshold__type_support.h"
+#include "robot_custom_msgs/srv/detail/threshold__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "robot_custom_msgs/srv/detail/threshold__functions.h"
 
 #ifdef __cplusplus
 extern "C"

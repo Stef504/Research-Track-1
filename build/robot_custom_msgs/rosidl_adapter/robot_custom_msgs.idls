@@ -1,4 +1,5 @@
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:msg/Custom.idl
+/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:msg/ExamCustom.idl
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Velocity.idl
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Average.idl
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Threshold.idl

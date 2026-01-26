@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/custom__type_support.cpp.o"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/custom__type_support.cpp.o.d"
+  "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.cpp.o"
+  "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.cpp.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/average__type_support.cpp.o"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/average__type_support.cpp.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/threshold__type_support.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "librobot_custom_msgs__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/custom__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/average__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_cpp.hpp"

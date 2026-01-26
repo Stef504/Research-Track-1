@@ -70,12 +70,14 @@ include /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_c.c
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_custom.py
+/home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_exam_custom.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_velocity.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_average.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_threshold.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/__init__.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/__init__.py
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c
+/home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_average_s.c
 /home/ubuntu/ros_workspace/build/robot_custom_msgs/robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c
@@ -94,6 +96,7 @@ rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_custom_msgs/msg/Custom.idl
+rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_custom_msgs/msg/ExamCustom.idl
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_custom_msgs/srv/Velocity.idl
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_custom_msgs/srv/Average.idl
 rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_custom_msgs/srv/Threshold.idl
@@ -111,6 +114,9 @@ rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport
 
 rosidl_generator_py/robot_custom_msgs/msg/_custom.py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/msg/_custom.py
+
+rosidl_generator_py/robot_custom_msgs/msg/_exam_custom.py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/msg/_exam_custom.py
 
 rosidl_generator_py/robot_custom_msgs/srv/_velocity.py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/srv/_velocity.py
@@ -130,6 +136,9 @@ rosidl_generator_py/robot_custom_msgs/srv/__init__.py: rosidl_generator_py/robot
 rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c
 
+rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c
+
 rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c
 
@@ -146,6 +155,8 @@ robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/_robot_custom_msgs_
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/__init__.py
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_custom.py
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c
+robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_exam_custom.py
+robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/__init__.py
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_average.py
 robot_custom_msgs__py: rosidl_generator_py/robot_custom_msgs/srv/_average_s.c

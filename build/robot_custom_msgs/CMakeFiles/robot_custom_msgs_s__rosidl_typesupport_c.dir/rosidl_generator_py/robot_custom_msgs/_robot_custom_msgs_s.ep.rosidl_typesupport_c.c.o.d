@@ -233,6 +233,9 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/rob
  /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/rosidl_generator_c__visibility_control.h \
  /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/detail/custom__struct.h \
  /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/detail/custom__functions.h \
+ /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__type_support.h \
+ /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__struct.h \
+ /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/msg/detail/exam_custom__functions.h \
  /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__type_support.h \
  /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_c/robot_custom_msgs/srv/detail/velocity__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \

@@ -14,9 +14,11 @@ find_package(rosidl_default_generators REQUIRED)
 
  rosidl_generate_interfaces(${PROJECT_NAME}
  "msg/Custom.msg" 
+ "msg/ExamCustom.msg"
  "srv/Velocity.srv"
  "srv/Average.srv" 
  "srv/Threshold.srv"
+ 
  )
 
   ament_export_dependencies(rosidl_default_runtime)

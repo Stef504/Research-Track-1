@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.o"
   "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.o.d"
+  "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o"
+  "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o"
   "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o"

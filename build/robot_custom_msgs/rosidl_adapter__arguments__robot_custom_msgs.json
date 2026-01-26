@@ -2,6 +2,7 @@
   "package_name": "robot_custom_msgs",
   "non_idl_tuples": [
     "/home/ubuntu/ros_workspace/src/robot_custom_msgs:msg/Custom.msg",
+    "/home/ubuntu/ros_workspace/src/robot_custom_msgs:msg/ExamCustom.msg",
     "/home/ubuntu/ros_workspace/src/robot_custom_msgs:srv/Velocity.srv",
     "/home/ubuntu/ros_workspace/src/robot_custom_msgs:srv/Average.srv",
     "/home/ubuntu/ros_workspace/src/robot_custom_msgs:srv/Threshold.srv"

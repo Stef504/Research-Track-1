@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/custom__type_support.cpp.o"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/custom__type_support.cpp.o.d"
+  "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/exam_custom__type_support.cpp.o"
+  "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/exam_custom__type_support.cpp.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp.o.d"
   "CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "librobot_custom_msgs__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/custom__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/dds_fastrtps/exam_custom__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/average__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/dds_fastrtps/average__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/robot_custom_msgs/srv/detail/dds_fastrtps/threshold__type_support.cpp"

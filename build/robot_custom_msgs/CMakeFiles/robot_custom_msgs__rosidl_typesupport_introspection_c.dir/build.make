@@ -78,6 +78,7 @@ rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_t
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: rosidl_adapter/robot_custom_msgs/msg/Custom.idl
+rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: rosidl_adapter/robot_custom_msgs/msg/ExamCustom.idl
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: rosidl_adapter/robot_custom_msgs/srv/Velocity.idl
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: rosidl_adapter/robot_custom_msgs/srv/Average.idl
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: rosidl_adapter/robot_custom_msgs/srv/Threshold.idl
@@ -86,6 +87,9 @@ rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_t
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c__arguments.json
+
+rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_c.h
 
 rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__rosidl_typesupport_introspection_c.h
@@ -98,6 +102,9 @@ rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__rosid
 
 rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c
+
+rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c
 
 rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c
@@ -122,10 +129,24 @@ CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c.s
 
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c
+
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c > CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.i
+
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.s
+
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c
 
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.i: cmake_force
@@ -139,7 +160,7 @@ CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_type
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c
 
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.i: cmake_force
@@ -153,7 +174,7 @@ CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_type
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c
 
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.i: cmake_force
@@ -167,6 +188,7 @@ CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_type
 # Object files for target robot_custom_msgs__rosidl_typesupport_introspection_c
 robot_custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c.o" \
+"CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o"
@@ -175,6 +197,7 @@ robot_custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 robot_custom_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c.o
+librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c.o
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/velocity__type_support.c.o
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c.o
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__type_support.c.o
@@ -188,7 +211,7 @@ librobot_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librcutils.so
 librobot_custom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library librobot_custom_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library librobot_custom_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +224,8 @@ CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__rosidl_typesupport_introspection_c.h
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/custom__type_support.c
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__rosidl_typesupport_introspection_c.h
+CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/msg/detail/exam_custom__type_support.c
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__rosidl_typesupport_introspection_c.h
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/average__type_support.c
 CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/robot_custom_msgs/srv/detail/threshold__rosidl_typesupport_introspection_c.h

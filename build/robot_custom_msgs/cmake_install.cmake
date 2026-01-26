@@ -51,6 +51,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/msg" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/msg/ExamCustom.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/srv/Velocity.json")
 endif()
 
@@ -379,6 +383,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/msg" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/msg/ExamCustom.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/srv" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/srv/Velocity.idl")
 endif()
 
@@ -392,6 +400,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/msg" TYPE FILE FILES "/home/ubuntu/ros_workspace/src/robot_custom_msgs/msg/Custom.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_custom_msgs/msg" TYPE FILE FILES "/home/ubuntu/ros_workspace/src/robot_custom_msgs/msg/ExamCustom.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

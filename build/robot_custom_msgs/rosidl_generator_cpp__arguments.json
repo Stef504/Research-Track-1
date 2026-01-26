@@ -4,6 +4,7 @@
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:msg/Custom.idl",
+    "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:msg/ExamCustom.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Velocity.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Average.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs:srv/Threshold.idl"
@@ -34,6 +35,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/msg/Custom.idl",
+    "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/msg/ExamCustom.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/srv/Velocity.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/srv/Average.idl",
     "/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_adapter/robot_custom_msgs/srv/Threshold.idl",
@@ -43,6 +45,7 @@
   ],
   "type_description_tuples": [
     "msg/Custom.idl:/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/msg/Custom.json",
+    "msg/ExamCustom.idl:/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/msg/ExamCustom.json",
     "srv/Velocity.idl:/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/srv/Velocity.json",
     "srv/Average.idl:/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/srv/Average.json",
     "srv/Threshold.idl:/home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_type_description/robot_custom_msgs/srv/Threshold.json"

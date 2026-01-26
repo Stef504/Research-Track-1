@@ -5,12 +5,15 @@ from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 import math
 
+from robot_custom_msgs.msg import ExamCustom #Velocity as float and string 
+
 class TwoTurtles(Node):
 
     def __init__(self):
         
         # --- 2. MESSAGES ---
         self.message = Twist()
+        self.custom_msg = ExamCustom()
 
         # --- 3. NUMERIC VARIABLES ---
         self.x_ = 0.0
@@ -60,6 +63,8 @@ class TwoTurtles(Node):
         self.publisher_1 = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
         self.publisher_2 = self.create_publisher(Twist, 'turtle2/cmd_vel', 10)
 
+        self.publisher_3 = self.create_publisher(ExamCustom, 'custom_msg', 10)
+
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
         self.timer = self.create_timer(self.htz_, self.timer_callback)
         self.i = 0
@@ -106,11 +111,18 @@ class TwoTurtles(Node):
                     self.turtle_velocity_linear = float(input("Enter desired linear velocity: "))
                     self.turtle_velocity_angular = float(input("Enter desired angular velocity: "))
 
+
                 if abs(self.turtle_velocity_linear) > self.max_linear_velocity :
                     self.turtle_velocity_linear = self.max_linear_velocity 
 
                 if abs(self.turtle_velocity_angular) > self.max_angular_velocity :
                     self.turtle_velocity_angular = self.max_angular_velocity
+
+                #publish to exam_custom message
+                self.custom_msg.linear_velocity =self.turtle_velocity_linear
+                self.custom_msg.angular_velocity =self.turtle_velocity_angular
+                self.custom_msg.name = "velocity"
+                self.publisher_3.publish(self.custom_msg)
 
                 self.valid_choice = True
 

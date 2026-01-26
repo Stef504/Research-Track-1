@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
+#include "robot_custom_msgs/msg/detail/custom__struct.h"
 #include "robot_custom_msgs/msg/detail/custom__functions.h"
 #include "robot_custom_msgs/msg/detail/custom__type_support.h"
-#include "robot_custom_msgs/msg/detail/custom__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

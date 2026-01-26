@@ -71,6 +71,11 @@ CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/de
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__struct.hpp
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__traits.hpp
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__type_support.hpp
+CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/exam_custom.hpp
+CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__builder.hpp
+CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__struct.hpp
+CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__traits.hpp
+CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.hpp
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/srv/velocity.hpp
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/srv/detail/velocity__builder.hpp
 CMakeFiles/robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/srv/detail/velocity__struct.hpp
@@ -108,6 +113,7 @@ rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: /opt/ros/jazzy/share/rosi
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: rosidl_adapter/robot_custom_msgs/msg/Custom.idl
+rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: rosidl_adapter/robot_custom_msgs/msg/ExamCustom.idl
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: rosidl_adapter/robot_custom_msgs/srv/Velocity.idl
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: rosidl_adapter/robot_custom_msgs/srv/Average.idl
 rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp: rosidl_adapter/robot_custom_msgs/srv/Threshold.idl
@@ -128,6 +134,21 @@ rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__traits.hpp: rosidl_gen
 
 rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__type_support.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__type_support.hpp
+
+rosidl_generator_cpp/robot_custom_msgs/msg/exam_custom.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/exam_custom.hpp
+
+rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__builder.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__builder.hpp
+
+rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__struct.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__struct.hpp
+
+rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__traits.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__traits.hpp
+
+rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.hpp
 
 rosidl_generator_cpp/robot_custom_msgs/srv/velocity.hpp: rosidl_generator_cpp/robot_custom_msgs/msg/custom.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_custom_msgs/srv/velocity.hpp
@@ -183,6 +204,11 @@ robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__struct.hpp
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__traits.hpp
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/custom__type_support.hpp
+robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__builder.hpp
+robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__struct.hpp
+robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__traits.hpp
+robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/detail/exam_custom__type_support.hpp
+robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/exam_custom.hpp
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/srv/average.hpp
 robot_custom_msgs__cpp: rosidl_generator_cpp/robot_custom_msgs/srv/detail/average__builder.hpp

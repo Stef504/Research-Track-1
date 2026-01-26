@@ -67,6 +67,7 @@ include CMakeFiles/robot_custom_msgs.dir/compiler_depend.make
 include CMakeFiles/robot_custom_msgs.dir/progress.make
 
 CMakeFiles/robot_custom_msgs: /home/ubuntu/ros_workspace/src/robot_custom_msgs/msg/Custom.msg
+CMakeFiles/robot_custom_msgs: /home/ubuntu/ros_workspace/src/robot_custom_msgs/msg/ExamCustom.msg
 CMakeFiles/robot_custom_msgs: /home/ubuntu/ros_workspace/src/robot_custom_msgs/srv/Velocity.srv
 CMakeFiles/robot_custom_msgs: /home/ubuntu/ros_workspace/src/robot_custom_msgs/srv/Average.srv
 CMakeFiles/robot_custom_msgs: /home/ubuntu/ros_workspace/src/robot_custom_msgs/srv/Threshold.srv

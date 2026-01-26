@@ -83,10 +83,24 @@ CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.s
 
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o: rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c
+
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c > CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.i
+
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.s
+
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o: rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c
 
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o: rosidl_generator_py/robot_custom_msgs/srv/_average_s.c
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c
 
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o: rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o -MF CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o.d -o CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o -c /home/ubuntu/ros_workspace/build/robot_custom_msgs/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c
 
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_
 # Object files for target robot_custom_msgs__rosidl_generator_py
 robot_custom_msgs__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.o" \
+"CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o" \
 "CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o"
@@ -136,6 +151,7 @@ robot_custom_msgs__rosidl_generator_py_OBJECTS = \
 robot_custom_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_custom_s.c.o
+librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/msg/_exam_custom_s.c.o
 librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_velocity_s.c.o
 librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_average_s.c.o
 librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_custom_msgs/srv/_threshold_s.c.o
@@ -169,7 +185,7 @@ librobot_custom_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_inte
 librobot_custom_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 librobot_custom_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librcutils.so
 librobot_custom_msgs__rosidl_generator_py.so: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library librobot_custom_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library librobot_custom_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
