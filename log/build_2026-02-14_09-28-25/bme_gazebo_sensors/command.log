@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16
+Invoked command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16

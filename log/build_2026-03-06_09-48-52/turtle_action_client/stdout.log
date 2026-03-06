@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/turtle_action_client/turtle_action_client.egg-info
+writing ../../build/turtle_action_client/turtle_action_client.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtle_action_client/turtle_action_client.egg-info/dependency_links.txt
+writing entry points to ../../build/turtle_action_client/turtle_action_client.egg-info/entry_points.txt
+writing requirements to ../../build/turtle_action_client/turtle_action_client.egg-info/requires.txt
+writing top-level names to ../../build/turtle_action_client/turtle_action_client.egg-info/top_level.txt
+writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros_workspace/build/turtle_action_client/build
+creating /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib
+creating /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+copying turtle_action_client/minimal_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+copying turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+copying turtle_action_client/more_complete_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+copying turtle_action_client/__init__.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+copying turtle_action_client/complete_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+running install
+running install_lib
+creating /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/minimal_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/more_complete_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/__init__.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/complete_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/minimal_action_client.py to minimal_action_client.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/cancel_action_client.py to cancel_action_client.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/more_complete_action_client.py to more_complete_action_client.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/complete_action_client.py to complete_action_client.cpython-312.pyc
+running install_data
+creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index
+creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index
+creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index/packages
+copying resource/turtle_action_client -> /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros_workspace/install/turtle_action_client/share/turtle_action_client
+running install_egg_info
+Copying ../../build/turtle_action_client/turtle_action_client.egg-info to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info
+running install_scripts
+Installing cancel_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+Installing rotate_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+Installing rotate_client2 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+Installing rotate_client3 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+writing list of installed files to '/home/ubuntu/ros_workspace/build/turtle_action_client/install.log'

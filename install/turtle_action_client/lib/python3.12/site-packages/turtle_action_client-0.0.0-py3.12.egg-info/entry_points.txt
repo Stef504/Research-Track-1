@@ -1,0 +1,5 @@
+[console_scripts]
+cancel_client = turtle_action_client.cancel_action_client:main
+rotate_client = turtle_action_client.minimal_action_client:main
+rotate_client2 = turtle_action_client.more_complete_action_client:main
+rotate_client3 = turtle_action_client.complete_action_client:main
