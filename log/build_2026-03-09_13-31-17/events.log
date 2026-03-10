@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000775] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000906] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000995] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.001088] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.001122] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.001148] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.001170] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.001189] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.001208] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.001228] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.001248] (-) JobUnselected: {'identifier': 'python_package'}
+[0.001268] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.001287] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.001306] (-) JobUnselected: {'identifier': 'turtlesim_custom_msgs'}
+[0.001327] (turtle_action_client) JobQueued: {'identifier': 'turtle_action_client', 'dependencies': OrderedDict()}
+[0.001399] (turtle_action_client) JobStarted: {'identifier': 'turtle_action_client'}
+[0.100359] (-) TimerEvent: {}
+[0.202401] (-) TimerEvent: {}
+[0.302894] (-) TimerEvent: {}
+[0.405203] (-) TimerEvent: {}
+[0.506812] (-) TimerEvent: {}
+[0.609783] (-) TimerEvent: {}
+[0.712523] (-) TimerEvent: {}
+[0.815219] (-) TimerEvent: {}
+[0.915649] (-) TimerEvent: {}
+[1.017532] (-) TimerEvent: {}
+[1.118579] (-) TimerEvent: {}
+[1.200638] (turtle_action_client) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_action_client', 'build', '--build-base', '/home/ubuntu/ros_workspace/build/turtle_action_client/build', 'install', '--record', '/home/ubuntu/ros_workspace/build/turtle_action_client/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros_workspace/src/turtle_action_client', 'env': {'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/0870c2a0c7c0564e7631bfed2675573a94ba4455/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/0870c2a0c7c0564e7631bfed2675573a94ba4455/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.110.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-4774dd98-9232-473f-bfcd-0c38ebee32d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/0870c2a0c7c0564e7631bfed2675573a94ba4455/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/0870c2a0c7c0564e7631bfed2675573a94ba4455/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-ec9c8b69-be75-42c3-bef4-ac58993fafd3.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/0870c2a0c7c0564e7631bfed2675573a94ba4455/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/turtle_action_client', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/build/turtle_action_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.218673] (-) TimerEvent: {}
+[1.319154] (-) TimerEvent: {}
+[1.422119] (-) TimerEvent: {}
+[1.457562] (turtle_action_client) StdoutLine: {'line': b'running egg_info\n'}
+[1.474347] (turtle_action_client) StdoutLine: {'line': b'writing ../../build/turtle_action_client/turtle_action_client.egg-info/PKG-INFO\n'}
+[1.474770] (turtle_action_client) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_action_client/turtle_action_client.egg-info/dependency_links.txt\n'}
+[1.474969] (turtle_action_client) StdoutLine: {'line': b'writing entry points to ../../build/turtle_action_client/turtle_action_client.egg-info/entry_points.txt\n'}
+[1.475246] (turtle_action_client) StdoutLine: {'line': b'writing requirements to ../../build/turtle_action_client/turtle_action_client.egg-info/requires.txt\n'}
+[1.475432] (turtle_action_client) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_action_client/turtle_action_client.egg-info/top_level.txt\n'}
+[1.511621] (turtle_action_client) StdoutLine: {'line': b"reading manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'\n"}
+[1.513148] (turtle_action_client) StdoutLine: {'line': b"writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'\n"}
+[1.513434] (turtle_action_client) StdoutLine: {'line': b'running build\n'}
+[1.513535] (turtle_action_client) StdoutLine: {'line': b'running build_py\n'}
+[1.513754] (turtle_action_client) StdoutLine: {'line': b'copying turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client\n'}
+[1.515158] (turtle_action_client) StdoutLine: {'line': b'running install\n'}
+[1.520447] (turtle_action_client) StdoutLine: {'line': b'running install_lib\n'}
+[1.522332] (-) TimerEvent: {}
+[1.538771] (turtle_action_client) StdoutLine: {'line': b'copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client\n'}
+[1.539867] (turtle_action_client) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/cancel_action_client.py to cancel_action_client.cpython-312.pyc\n'}
+[1.541073] (turtle_action_client) StdoutLine: {'line': b'running install_data\n'}
+[1.541308] (turtle_action_client) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.560311] (turtle_action_client) StdoutLine: {'line': b"removing '/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.561559] (turtle_action_client) StdoutLine: {'line': b'Copying ../../build/turtle_action_client/turtle_action_client.egg-info to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info\n'}
+[1.564433] (turtle_action_client) StdoutLine: {'line': b'running install_scripts\n'}
+[1.627328] (-) TimerEvent: {}
+[1.696023] (turtle_action_client) StdoutLine: {'line': b'Installing cancel_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client\n'}
+[1.696366] (turtle_action_client) StdoutLine: {'line': b'Installing rotate_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client\n'}
+[1.696841] (turtle_action_client) StdoutLine: {'line': b'Installing rotate_client2 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client\n'}
+[1.697059] (turtle_action_client) StdoutLine: {'line': b'Installing rotate_client3 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client\n'}
+[1.697367] (turtle_action_client) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros_workspace/build/turtle_action_client/install.log'\n"}
+[1.729377] (-) TimerEvent: {}
+[1.734312] (turtle_action_client) CommandEnded: {'returncode': 0}
+[1.758753] (turtle_action_client) JobEnded: {'identifier': 'turtle_action_client', 'rc': 0}
+[1.760141] (-) EventReactorShutdown: {}

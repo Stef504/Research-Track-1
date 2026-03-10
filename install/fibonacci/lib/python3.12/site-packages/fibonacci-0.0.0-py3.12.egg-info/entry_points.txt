@@ -1,0 +1,9 @@
+[console_scripts]
+fibonacci_client = fibonacci.basic_client:main
+fibonacci_client_2 = fibonacci.action_client:main
+fibonacci_client_3 = fibonacci.cancel_client:main
+fibonacci_server = fibonacci.basic_server:main
+fibonacci_server_2 = fibonacci.basic_server_2:main
+fibonacci_server_3 = fibonacci.action_server:main
+fibonacci_server_4 = fibonacci.action_server_2:main
+fibonacci_server_5 = fibonacci.action_server_3:main
