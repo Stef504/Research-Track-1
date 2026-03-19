@@ -23,8 +23,8 @@ class FibonacciActionServer(Node):
 
         self._action_server = ActionServer(
             self,
-            Fibonacci,
-            'fibonacci',
+            Fibonacci, #this is from the action file
+            'fibonacci', #this is the name of the name of the server in the file
             execute_callback=self.execute_callback,
             cancel_callback=self.cancel_callback,
             goal_callback=self.goal_callback,

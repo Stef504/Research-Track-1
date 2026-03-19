@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_tutorials_interfaces/action/Tut1.action
+// generated code does not contain a copyright notice
+
+
+module action_tutorials_interfaces {
+  module action {
+    struct Tut1_Goal {
+      float goal;
+    };
+    struct Tut1_Result {
+      string final;
+    };
+    struct Tut1_Feedback {
+      float moving;
+    };
+  };
+};

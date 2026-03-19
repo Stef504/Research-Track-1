@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "action_tutorials_interfaces/action/Tut1_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "action_tutorials_interfaces/action/Tut1_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "action_tutorials_interfaces/action/Tut1_Result",
+        "fields": [
+          {
+            "name": "final",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "action_tutorials_interfaces/action/Tut1_GetResult_Response",
+      "hash_string": "RIHS01_d4eff11db49a7ceb5a5617fe47923faea4c4fc34102aea95e54d0e6b6fca5075"
+    },
+    {
+      "type_name": "action_tutorials_interfaces/action/Tut1_Result",
+      "hash_string": "RIHS01_1db0451357de4cddf2e227a3cf49b3ab0dda07cc79f203b3080903e383833f36"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[0.928s] Invoking command in '/home/ubuntu/ros_workspace/src/tutorial_1_action': PYTHONPATH=/home/ubuntu/ros_workspace/build/tutorial_1_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tutorial_1_action build --build-base /home/ubuntu/ros_workspace/build/tutorial_1_action/build install --record /home/ubuntu/ros_workspace/build/tutorial_1_action/install.log --single-version-externally-managed install_data
+[1.222s] running egg_info
+[1.246s] writing ../../build/tutorial_1_action/tutorial_1_action.egg-info/PKG-INFO
+[1.247s] writing dependency_links to ../../build/tutorial_1_action/tutorial_1_action.egg-info/dependency_links.txt
+[1.247s] writing entry points to ../../build/tutorial_1_action/tutorial_1_action.egg-info/entry_points.txt
+[1.247s] writing requirements to ../../build/tutorial_1_action/tutorial_1_action.egg-info/requires.txt
+[1.248s] writing top-level names to ../../build/tutorial_1_action/tutorial_1_action.egg-info/top_level.txt
+[1.297s] reading manifest file '../../build/tutorial_1_action/tutorial_1_action.egg-info/SOURCES.txt'
+[1.298s] writing manifest file '../../build/tutorial_1_action/tutorial_1_action.egg-info/SOURCES.txt'
+[1.298s] running build
+[1.298s] running build_py
+[1.298s] copying tutorial_1_action/action_server_.py -> /home/ubuntu/ros_workspace/build/tutorial_1_action/build/lib/tutorial_1_action
+[1.299s] running install
+[1.306s] running install_lib
+[1.328s] copying /home/ubuntu/ros_workspace/build/tutorial_1_action/build/lib/tutorial_1_action/action_server_.py -> /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action
+[1.329s] byte-compiling /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action/action_server_.py to action_server_.cpython-312.pyc
+[1.331s] running install_data
+[1.332s] running install_egg_info
+[1.357s] removing '/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action-0.0.0-py3.12.egg-info' (and everything under it)
+[1.358s] Copying ../../build/tutorial_1_action/tutorial_1_action.egg-info to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action-0.0.0-py3.12.egg-info
+[1.360s] running install_scripts
+[1.544s] Installing action_client_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action
+[1.544s] Installing action_server_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action
+[1.545s] Installing cancel_client_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action
+[1.545s] writing list of installed files to '/home/ubuntu/ros_workspace/build/tutorial_1_action/install.log'
+[1.588s] Invoked command in '/home/ubuntu/ros_workspace/src/tutorial_1_action' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/tutorial_1_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tutorial_1_action build --build-base /home/ubuntu/ros_workspace/build/tutorial_1_action/build install --record /home/ubuntu/ros_workspace/build/tutorial_1_action/install.log --single-version-externally-managed install_data

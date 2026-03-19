@@ -3,10 +3,12 @@
   "output_dir": "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_c/action_tutorials_interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Fibonacci.idl"
+    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Fibonacci.idl",
+    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Tut1.idl"
   ],
   "ros_interface_files": [
-    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces/action/Fibonacci.action"
+    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces/action/Fibonacci.action",
+    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces/action/Tut1.action"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -39,6 +41,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces/action/Fibonacci.idl",
+    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces/action/Tut1.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
@@ -49,6 +52,7 @@
     "/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "type_description_tuples": [
-    "action/Fibonacci.idl:/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_type_description/action_tutorials_interfaces/action/Fibonacci.json"
+    "action/Fibonacci.idl:/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_type_description/action_tutorials_interfaces/action/Fibonacci.json",
+    "action/Tut1.idl:/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_type_description/action_tutorials_interfaces/action/Tut1.json"
   ]
 }

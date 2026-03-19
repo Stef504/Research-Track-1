@@ -2,7 +2,8 @@
   "package_name": "action_tutorials_interfaces",
   "output_dir": "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_type_description/action_tutorials_interfaces",
   "idl_tuples": [
-    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Fibonacci.idl"
+    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Fibonacci.idl",
+    "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces:action/Tut1.idl"
   ],
   "include_paths": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs",

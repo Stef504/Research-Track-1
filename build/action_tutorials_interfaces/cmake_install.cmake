@@ -51,6 +51,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/action_tutorials_interfaces/action" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_type_description/action_tutorials_interfaces/action/Tut1.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/action_tutorials_interfaces/action_tutorials_interfaces" TYPE DIRECTORY FILES "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_generator_c/action_tutorials_interfaces/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -367,7 +371,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/action_tutorials_interfaces/action" TYPE FILE FILES "/home/ubuntu/ros_workspace/build/action_tutorials_interfaces/rosidl_adapter/action_tutorials_interfaces/action/Tut1.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/action_tutorials_interfaces/action" TYPE FILE FILES "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces/action/Fibonacci.action")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/action_tutorials_interfaces/action" TYPE FILE FILES "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces/action/Tut1.action")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -4,7 +4,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__struct.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__traits.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__type_support.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/tut1__builder.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/tut1__struct.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/tut1__traits.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/tut1__type_support.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/fibonacci.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/tut1.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp"
 )
 

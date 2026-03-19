@@ -5,3 +5,10 @@ from action_tutorials_interfaces.action._fibonacci import Fibonacci_GetResult_Re
 from action_tutorials_interfaces.action._fibonacci import Fibonacci_SendGoal_Event  # noqa: F401
 from action_tutorials_interfaces.action._fibonacci import Fibonacci_SendGoal_Request  # noqa: F401
 from action_tutorials_interfaces.action._fibonacci import Fibonacci_SendGoal_Response  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_GetResult_Event  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_GetResult_Request  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_GetResult_Response  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_SendGoal_Event  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_SendGoal_Request  # noqa: F401
+from action_tutorials_interfaces.action._tut1 import Tut1_SendGoal_Response  # noqa: F401

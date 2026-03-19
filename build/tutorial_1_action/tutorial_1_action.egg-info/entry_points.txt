@@ -1,0 +1,4 @@
+[console_scripts]
+action_client_ = tutorial_1_action.action_client_:main
+action_server_ = tutorial_1_action.action_server_:main
+cancel_client_ = tutorial_1_action.cancel_client_:main
