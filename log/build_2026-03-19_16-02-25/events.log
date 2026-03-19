@@ -1,0 +1,57 @@
+[0.000000] (-) TimerEvent: {}
+[0.000478] (-) JobUnselected: {'identifier': 'action_assignment'}
+[0.000526] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000567] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000607] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000647] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.000687] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.000726] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000765] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.000804] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.000843] (-) JobUnselected: {'identifier': 'fibonacci'}
+[0.000882] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000921] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.000960] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000999] (-) JobUnselected: {'identifier': 'python_package'}
+[0.001038] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.001077] (-) JobUnselected: {'identifier': 'turtle_action_client'}
+[0.001116] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.001156] (-) JobUnselected: {'identifier': 'turtlesim_custom_msgs'}
+[0.001198] (tutorial_1_action) JobQueued: {'identifier': 'tutorial_1_action', 'dependencies': OrderedDict()}
+[0.001246] (tutorial_1_action) JobStarted: {'identifier': 'tutorial_1_action'}
+[0.099871] (-) TimerEvent: {}
+[0.200318] (-) TimerEvent: {}
+[0.300654] (-) TimerEvent: {}
+[0.401150] (-) TimerEvent: {}
+[0.501585] (-) TimerEvent: {}
+[0.601900] (-) TimerEvent: {}
+[0.702308] (-) TimerEvent: {}
+[0.711115] (tutorial_1_action) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/tutorial_1_action', 'build', '--build-base', '/home/ubuntu/ros_workspace/build/tutorial_1_action/build', 'install', '--record', '/home/ubuntu/ros_workspace/build/tutorial_1_action/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros_workspace/src/tutorial_1_action', 'env': {'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.111.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-45751dc2-9ce6-4aec-812d-d0dc3b9b06d9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-8eb048d5-ce70-4c52-8d7a-fe38a3a7efba.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/tutorial_1_action', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/build/tutorial_1_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.802491] (-) TimerEvent: {}
+[0.902872] (-) TimerEvent: {}
+[0.937395] (tutorial_1_action) StdoutLine: {'line': b'running egg_info\n'}
+[0.952174] (tutorial_1_action) StdoutLine: {'line': b'writing ../../build/tutorial_1_action/tutorial_1_action.egg-info/PKG-INFO\n'}
+[0.952524] (tutorial_1_action) StdoutLine: {'line': b'writing dependency_links to ../../build/tutorial_1_action/tutorial_1_action.egg-info/dependency_links.txt\n'}
+[0.952933] (tutorial_1_action) StdoutLine: {'line': b'writing entry points to ../../build/tutorial_1_action/tutorial_1_action.egg-info/entry_points.txt\n'}
+[0.953062] (tutorial_1_action) StdoutLine: {'line': b'writing requirements to ../../build/tutorial_1_action/tutorial_1_action.egg-info/requires.txt\n'}
+[0.953390] (tutorial_1_action) StdoutLine: {'line': b'writing top-level names to ../../build/tutorial_1_action/tutorial_1_action.egg-info/top_level.txt\n'}
+[0.984451] (tutorial_1_action) StdoutLine: {'line': b"reading manifest file '../../build/tutorial_1_action/tutorial_1_action.egg-info/SOURCES.txt'\n"}
+[0.985226] (tutorial_1_action) StdoutLine: {'line': b"writing manifest file '../../build/tutorial_1_action/tutorial_1_action.egg-info/SOURCES.txt'\n"}
+[0.985493] (tutorial_1_action) StdoutLine: {'line': b'running build\n'}
+[0.985619] (tutorial_1_action) StdoutLine: {'line': b'running build_py\n'}
+[0.985837] (tutorial_1_action) StdoutLine: {'line': b'running install\n'}
+[0.990151] (tutorial_1_action) StdoutLine: {'line': b'running install_lib\n'}
+[1.002982] (-) TimerEvent: {}
+[1.006366] (tutorial_1_action) StdoutLine: {'line': b'running install_data\n'}
+[1.006907] (tutorial_1_action) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.023326] (tutorial_1_action) StdoutLine: {'line': b"removing '/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.023836] (tutorial_1_action) StdoutLine: {'line': b'Copying ../../build/tutorial_1_action/tutorial_1_action.egg-info to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages/tutorial_1_action-0.0.0-py3.12.egg-info\n'}
+[1.025656] (tutorial_1_action) StdoutLine: {'line': b'running install_scripts\n'}
+[1.103171] (-) TimerEvent: {}
+[1.141809] (tutorial_1_action) StdoutLine: {'line': b'Installing action_client_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action\n'}
+[1.142306] (tutorial_1_action) StdoutLine: {'line': b'Installing action_server_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action\n'}
+[1.142435] (tutorial_1_action) StdoutLine: {'line': b'Installing cancel_client_ script to /home/ubuntu/ros_workspace/install/tutorial_1_action/lib/tutorial_1_action\n'}
+[1.142583] (tutorial_1_action) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros_workspace/build/tutorial_1_action/install.log'\n"}
+[1.170511] (tutorial_1_action) CommandEnded: {'returncode': 0}
+[1.178953] (tutorial_1_action) JobEnded: {'identifier': 'tutorial_1_action', 'rc': 0}
+[1.180213] (-) EventReactorShutdown: {}

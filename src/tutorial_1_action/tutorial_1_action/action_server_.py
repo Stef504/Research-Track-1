@@ -25,8 +25,11 @@ class RobotActionServer(Node):
         # --- 3. NUMERIC VARIABLES ---
         self.x_ = 0.0
         self.velocity_linear = 0.0 
+        self.tolerance = 0.0
         self.running_ = False       
 
+        # --- 4. THREADING TOOLS ---
+        # Because the server can now interrupt itself, we need to be able to run multiple callbacks at the same time.
         self._cb_group = ReentrantCallbackGroup()
         self._lock = threading.Lock()
 
@@ -46,7 +49,8 @@ class RobotActionServer(Node):
 
 
     def goal_callback(self, goal_request):
-        self.get_logger().info(f'Received goal request: goal={goal_request.goal}')
+        self.get_logger().info(f'Received goal request: goal={goal_request.goal}') #goal is the name of the variable 
+                                                                                 #in the .action file
         
         # 2. Grab the lock so we can safely check the server's memory
         with self._lock:
@@ -63,7 +67,7 @@ class RobotActionServer(Node):
 
     def cancel_callback(self, goal_handle):
         self.get_logger().warn('Received cancel request (from client)')
-        return CancelResponse.ACCEPT
+        return CancelResponse.ACCEPT #ROS2 defined 
 
     def execute_callback(self, goal_handle):
         self.get_logger().info('Executing goal...')
@@ -72,10 +76,10 @@ class RobotActionServer(Node):
         with self._lock:
             self._current_goal_handle = goal_handle
 
-        feedback_msg = Tut1.Feedback()
-        running_ = True
+        feedback_msg = Tut1.Feedback() #our intermediate message
+        self.running_ = True
 
-        while running_ == True:
+        while self.running_ == True:
 
             # --- CHECK 1: Did the CLIENT ask to cancel? ---
             if goal_handle.is_cancel_requested:
@@ -83,6 +87,7 @@ class RobotActionServer(Node):
                 goal_handle.canceled()
                 result = Tut1.Result()
                 result.final = str(feedback_msg.moving) #need to convert to string because of definition in .action file
+
                 # BUT wait, before we exit, we must wipe our name from the whiteboard
                 with self._lock:
                     if self._current_goal_handle is goal_handle:
@@ -91,6 +96,7 @@ class RobotActionServer(Node):
                     self.velocity_linear = 0.0
                     self.message.linear.x = self.velocity_linear
                     self.publisher_1.publish(self.message)
+                   
                 return result
 
             # 2) Preemption requested by server policy (new goal arrived)
@@ -103,9 +109,14 @@ class RobotActionServer(Node):
                     if self._preempt_requested_for is not None
                     else None
                 )
+            #we just assigned the goal ID of the current (preempted) goal to the variable preempt_id, 
+            #but if there is no goal on the hit list, we set preempt_id to None
+            #now we can check without having to locking again
+
 
             # 3. Check if MY goal ID matches the one on the hit list    
             preempt_me = (preempt_id is not None and goal_handle.goal_id == preempt_id)
+            #all local variables, so we can check without locking again
 
             # 4. If yes, kill myself and return the partial result (same as cancel, but with a different log message)
             if preempt_me:
@@ -126,19 +137,28 @@ class RobotActionServer(Node):
 
                     self.velocity_linear = 0.0
                     self.message.linear.x = self.velocity_linear
-                    self.publisher_1.publish(self.message)                
+                    self.publisher_1.publish(self.message)
+                                    
                 return result
 
             feedback_msg.moving = self.x_
             goal_handle.publish_feedback(feedback_msg)
             
-            tolerance = goal_handle.request.goal - self.x_
-            if self.x_ < goal_handle.request.goal:
+            self.tolerance = goal_handle.request.goal - self.x_
+            
+            if abs(self.tolerance) < 0.2:
+                self.velocity_linear = 0.0
+                self.message.linear.x = self.velocity_linear
+                self.publisher_1.publish(self.message)
+                self.running_ = False
+
+            if self.tolerance > 0.0:
                 self.velocity_linear = 2.0
                 self.message.linear.x = self.velocity_linear
                 self.publisher_1.publish(self.message)
                 time.sleep(0.1)
-            else:
+            
+            if self.tolerance < 0.0:
                 self.velocity_linear = -2.0
                 self.message.linear.x = self.velocity_linear
                 self.publisher_1.publish(self.message)
@@ -158,6 +178,7 @@ class RobotActionServer(Node):
             self.velocity_linear = 0.0
             self.message.linear.x = self.velocity_linear
             self.publisher_1.publish(self.message)
+            
         return result
 
 

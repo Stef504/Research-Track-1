@@ -25,6 +25,7 @@ class RobotActionServer(Node):
         # --- 3. NUMERIC VARIABLES ---
         self.x_ = 0.0
         self.velocity_linear = 0.0 
+        self.tolerance = 0.0
         self.running_ = False       
 
         self._cb_group = ReentrantCallbackGroup()
@@ -73,9 +74,9 @@ class RobotActionServer(Node):
             self._current_goal_handle = goal_handle
 
         feedback_msg = Tut1.Feedback()
-        running_ = True
+        self.running_ = True
 
-        while running_ == True:
+        while self.running_ == True:
 
             # --- CHECK 1: Did the CLIENT ask to cancel? ---
             if goal_handle.is_cancel_requested:
@@ -91,6 +92,7 @@ class RobotActionServer(Node):
                     self.velocity_linear = 0.0
                     self.message.linear.x = self.velocity_linear
                     self.publisher_1.publish(self.message)
+                   
                 return result
 
             # 2) Preemption requested by server policy (new goal arrived)
@@ -126,22 +128,32 @@ class RobotActionServer(Node):
 
                     self.velocity_linear = 0.0
                     self.message.linear.x = self.velocity_linear
-                    self.publisher_1.publish(self.message)                
+                    self.publisher_1.publish(self.message)
+                                    
                 return result
 
             feedback_msg.moving = self.x_
             goal_handle.publish_feedback(feedback_msg)
             
-            if self.x_ < goal_handle.request.goal:
+            self.tolerance = goal_handle.request.goal - self.x_
+            
+            if abs(self.tolerance) < 0.1:
+                self.velocity_linear = 0.0
+                self.message.linear.x = self.velocity_linear
+                self.publisher_1.publish(self.message)
+                self.running_ = False
+
+            if self.tolerance > 0.0:
                 self.velocity_linear = 2.0
                 self.message.linear.x = self.velocity_linear
                 self.publisher_1.publish(self.message)
-                time.sleep(1)
-            else:
+                time.sleep(0.1)
+            
+            if self.tolerance < 0.0:
                 self.velocity_linear = -2.0
                 self.message.linear.x = self.velocity_linear
                 self.publisher_1.publish(self.message)
-                time.sleep(1) 
+                time.sleep(0.1) 
 
         self.velocity_linear = 0.0
         self.message.linear.x = self.velocity_linear
@@ -157,6 +169,7 @@ class RobotActionServer(Node):
             self.velocity_linear = 0.0
             self.message.linear.x = self.velocity_linear
             self.publisher_1.publish(self.message)
+            
         return result
 
 
