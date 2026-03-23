@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e7e1f59be0ac6d7188c5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "first_package_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "first_package_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-first_package_cpp_uninstall-eedc5d6e2afce7cdde79.json",
+					"name" : "first_package_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manual_composition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manual_composition-a81862236cc03e1ec02e.json",
+					"name" : "manual_composition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subscriber_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subscriber_component-6c686662e9cf67856ad2.json",
+					"name" : "subscriber_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subscriber_component2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subscriber_component2-9fec9828fc16bdbe6282.json",
+					"name" : "subscriber_component2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subscriber_component_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subscriber_component_exe-c5aa21d8084f447d0578.json",
+					"name" : "subscriber_component_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subscriber_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subscriber_exe-a557609d85a87480787e.json",
+					"name" : "subscriber_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talker_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talker_component-6796ca0d02303ea16640.json",
+					"name" : "talker_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talker_component2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talker_component2-5b5089b6610169ce7e2c.json",
+					"name" : "talker_component2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talker_component_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talker_component_exe-58b6beb5f560203c80d7.json",
+					"name" : "talker_component_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talker_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talker_exe-8f21161fa1c03b0f3b68.json",
+					"name" : "talker_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-12647b006de06eae9a6a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/ros_workspace/build/first_package_cpp",
+		"source" : "/home/ubuntu/ros_workspace/src/first_package_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

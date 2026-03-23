@@ -1,0 +1,4 @@
+first_package_cpp::MinimalPublisher;lib/libtalker_component.so
+first_package_cpp::MinimalSubscriber;lib/libsubscriber_component.so
+first_package_cpp::MinimalSubscriber_component;lib/libsubscriber_component2.so
+first_package_cpp::MinimalPublisher_component;lib/libtalker_component2.so

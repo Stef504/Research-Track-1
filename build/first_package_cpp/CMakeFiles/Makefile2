@@ -63,7 +63,15 @@ CMAKE_BINARY_DIR = /home/ubuntu/ros_workspace/build/first_package_cpp
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/talker.dir/all
+all: CMakeFiles/talker_component.dir/all
+all: CMakeFiles/talker_component2.dir/all
+all: CMakeFiles/subscriber_component.dir/all
+all: CMakeFiles/subscriber_component2.dir/all
+all: CMakeFiles/manual_composition.dir/all
+all: CMakeFiles/talker_exe.dir/all
+all: CMakeFiles/subscriber_exe.dir/all
+all: CMakeFiles/subscriber_component_exe.dir/all
+all: CMakeFiles/talker_component_exe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +81,15 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/first_package_cpp_uninstall.dir/clean
-clean: CMakeFiles/talker.dir/clean
+clean: CMakeFiles/talker_component.dir/clean
+clean: CMakeFiles/talker_component2.dir/clean
+clean: CMakeFiles/subscriber_component.dir/clean
+clean: CMakeFiles/subscriber_component2.dir/clean
+clean: CMakeFiles/manual_composition.dir/clean
+clean: CMakeFiles/talker_exe.dir/clean
+clean: CMakeFiles/subscriber_exe.dir/clean
+clean: CMakeFiles/subscriber_component_exe.dir/clean
+clean: CMakeFiles/talker_component_exe.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -129,30 +145,238 @@ CMakeFiles/first_package_cpp_uninstall.dir/clean:
 .PHONY : CMakeFiles/first_package_cpp_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/talker.dir
+# Target rules for target CMakeFiles/talker_component.dir
 
 # All Build rule for target.
-CMakeFiles/talker.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=1,2 "Built target talker"
-.PHONY : CMakeFiles/talker.dir/all
+CMakeFiles/talker_component.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=11,12 "Built target talker_component"
+.PHONY : CMakeFiles/talker_component.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/talker.dir/rule: cmake_check_build_system
+CMakeFiles/talker_component.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker_component.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
-.PHONY : CMakeFiles/talker.dir/rule
+.PHONY : CMakeFiles/talker_component.dir/rule
 
 # Convenience name for target.
-talker: CMakeFiles/talker.dir/rule
-.PHONY : talker
+talker_component: CMakeFiles/talker_component.dir/rule
+.PHONY : talker_component
 
 # clean rule for target.
-CMakeFiles/talker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/clean
-.PHONY : CMakeFiles/talker.dir/clean
+CMakeFiles/talker_component.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/clean
+.PHONY : CMakeFiles/talker_component.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/talker_component2.dir
+
+# All Build rule for target.
+CMakeFiles/talker_component2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=13,14 "Built target talker_component2"
+.PHONY : CMakeFiles/talker_component2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/talker_component2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker_component2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/talker_component2.dir/rule
+
+# Convenience name for target.
+talker_component2: CMakeFiles/talker_component2.dir/rule
+.PHONY : talker_component2
+
+# clean rule for target.
+CMakeFiles/talker_component2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/clean
+.PHONY : CMakeFiles/talker_component2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/subscriber_component.dir
+
+# All Build rule for target.
+CMakeFiles/subscriber_component.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=3,4 "Built target subscriber_component"
+.PHONY : CMakeFiles/subscriber_component.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/subscriber_component.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subscriber_component.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/subscriber_component.dir/rule
+
+# Convenience name for target.
+subscriber_component: CMakeFiles/subscriber_component.dir/rule
+.PHONY : subscriber_component
+
+# clean rule for target.
+CMakeFiles/subscriber_component.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/clean
+.PHONY : CMakeFiles/subscriber_component.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/subscriber_component2.dir
+
+# All Build rule for target.
+CMakeFiles/subscriber_component2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=5,6 "Built target subscriber_component2"
+.PHONY : CMakeFiles/subscriber_component2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/subscriber_component2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subscriber_component2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/subscriber_component2.dir/rule
+
+# Convenience name for target.
+subscriber_component2: CMakeFiles/subscriber_component2.dir/rule
+.PHONY : subscriber_component2
+
+# clean rule for target.
+CMakeFiles/subscriber_component2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/clean
+.PHONY : CMakeFiles/subscriber_component2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/manual_composition.dir
+
+# All Build rule for target.
+CMakeFiles/manual_composition.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=1,2 "Built target manual_composition"
+.PHONY : CMakeFiles/manual_composition.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/manual_composition.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/manual_composition.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/manual_composition.dir/rule
+
+# Convenience name for target.
+manual_composition: CMakeFiles/manual_composition.dir/rule
+.PHONY : manual_composition
+
+# clean rule for target.
+CMakeFiles/manual_composition.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/clean
+.PHONY : CMakeFiles/manual_composition.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/talker_exe.dir
+
+# All Build rule for target.
+CMakeFiles/talker_exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=17,18 "Built target talker_exe"
+.PHONY : CMakeFiles/talker_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/talker_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/talker_exe.dir/rule
+
+# Convenience name for target.
+talker_exe: CMakeFiles/talker_exe.dir/rule
+.PHONY : talker_exe
+
+# clean rule for target.
+CMakeFiles/talker_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/clean
+.PHONY : CMakeFiles/talker_exe.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/subscriber_exe.dir
+
+# All Build rule for target.
+CMakeFiles/subscriber_exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=9,10 "Built target subscriber_exe"
+.PHONY : CMakeFiles/subscriber_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/subscriber_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subscriber_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/subscriber_exe.dir/rule
+
+# Convenience name for target.
+subscriber_exe: CMakeFiles/subscriber_exe.dir/rule
+.PHONY : subscriber_exe
+
+# clean rule for target.
+CMakeFiles/subscriber_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/clean
+.PHONY : CMakeFiles/subscriber_exe.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/subscriber_component_exe.dir
+
+# All Build rule for target.
+CMakeFiles/subscriber_component_exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=7,8 "Built target subscriber_component_exe"
+.PHONY : CMakeFiles/subscriber_component_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/subscriber_component_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subscriber_component_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/subscriber_component_exe.dir/rule
+
+# Convenience name for target.
+subscriber_component_exe: CMakeFiles/subscriber_component_exe.dir/rule
+.PHONY : subscriber_component_exe
+
+# clean rule for target.
+CMakeFiles/subscriber_component_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/clean
+.PHONY : CMakeFiles/subscriber_component_exe.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/talker_component_exe.dir
+
+# All Build rule for target.
+CMakeFiles/talker_component_exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles --progress-num=15,16 "Built target talker_component_exe"
+.PHONY : CMakeFiles/talker_component_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/talker_component_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker_component_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/first_package_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/talker_component_exe.dir/rule
+
+# Convenience name for target.
+talker_component_exe: CMakeFiles/talker_component_exe.dir/rule
+.PHONY : talker_component_exe
+
+# clean rule for target.
+CMakeFiles/talker_component_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/clean
+.PHONY : CMakeFiles/talker_component_exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

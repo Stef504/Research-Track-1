@@ -198,41 +198,337 @@ first_package_cpp_uninstall/fast:
 .PHONY : first_package_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named talker_component
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+talker_component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_component
+.PHONY : talker_component
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+talker_component/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/build
+.PHONY : talker_component/fast
 
-src/first_package.o: src/first_package.cpp.o
-.PHONY : src/first_package.o
+#=============================================================================
+# Target rules for targets named talker_component2
+
+# Build rule for target.
+talker_component2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_component2
+.PHONY : talker_component2
+
+# fast build rule for target.
+talker_component2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/build
+.PHONY : talker_component2/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_component
+
+# Build rule for target.
+subscriber_component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber_component
+.PHONY : subscriber_component
+
+# fast build rule for target.
+subscriber_component/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/build
+.PHONY : subscriber_component/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_component2
+
+# Build rule for target.
+subscriber_component2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber_component2
+.PHONY : subscriber_component2
+
+# fast build rule for target.
+subscriber_component2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/build
+.PHONY : subscriber_component2/fast
+
+#=============================================================================
+# Target rules for targets named manual_composition
+
+# Build rule for target.
+manual_composition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manual_composition
+.PHONY : manual_composition
+
+# fast build rule for target.
+manual_composition/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/build
+.PHONY : manual_composition/fast
+
+#=============================================================================
+# Target rules for targets named talker_exe
+
+# Build rule for target.
+talker_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_exe
+.PHONY : talker_exe
+
+# fast build rule for target.
+talker_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/build
+.PHONY : talker_exe/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_exe
+
+# Build rule for target.
+subscriber_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber_exe
+.PHONY : subscriber_exe
+
+# fast build rule for target.
+subscriber_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/build
+.PHONY : subscriber_exe/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_component_exe
+
+# Build rule for target.
+subscriber_component_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber_component_exe
+.PHONY : subscriber_component_exe
+
+# fast build rule for target.
+subscriber_component_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/build
+.PHONY : subscriber_component_exe/fast
+
+#=============================================================================
+# Target rules for targets named talker_component_exe
+
+# Build rule for target.
+talker_component_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_component_exe
+.PHONY : talker_component_exe
+
+# fast build rule for target.
+talker_component_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/build
+.PHONY : talker_component_exe/fast
+
+rclcpp_components/node_main_subscriber_component_exe.o: rclcpp_components/node_main_subscriber_component_exe.cpp.o
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.o
 
 # target to build an object file
-src/first_package.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/first_package.cpp.o
-.PHONY : src/first_package.cpp.o
+rclcpp_components/node_main_subscriber_component_exe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/rclcpp_components/node_main_subscriber_component_exe.cpp.o
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.cpp.o
 
-src/first_package.i: src/first_package.cpp.i
-.PHONY : src/first_package.i
+rclcpp_components/node_main_subscriber_component_exe.i: rclcpp_components/node_main_subscriber_component_exe.cpp.i
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.i
 
 # target to preprocess a source file
-src/first_package.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/first_package.cpp.i
-.PHONY : src/first_package.cpp.i
+rclcpp_components/node_main_subscriber_component_exe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/rclcpp_components/node_main_subscriber_component_exe.cpp.i
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.cpp.i
 
-src/first_package.s: src/first_package.cpp.s
-.PHONY : src/first_package.s
+rclcpp_components/node_main_subscriber_component_exe.s: rclcpp_components/node_main_subscriber_component_exe.cpp.s
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.s
 
 # target to generate assembly for a file
-src/first_package.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/first_package.cpp.s
-.PHONY : src/first_package.cpp.s
+rclcpp_components/node_main_subscriber_component_exe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component_exe.dir/build.make CMakeFiles/subscriber_component_exe.dir/rclcpp_components/node_main_subscriber_component_exe.cpp.s
+.PHONY : rclcpp_components/node_main_subscriber_component_exe.cpp.s
+
+rclcpp_components/node_main_subscriber_exe.o: rclcpp_components/node_main_subscriber_exe.cpp.o
+.PHONY : rclcpp_components/node_main_subscriber_exe.o
+
+# target to build an object file
+rclcpp_components/node_main_subscriber_exe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/rclcpp_components/node_main_subscriber_exe.cpp.o
+.PHONY : rclcpp_components/node_main_subscriber_exe.cpp.o
+
+rclcpp_components/node_main_subscriber_exe.i: rclcpp_components/node_main_subscriber_exe.cpp.i
+.PHONY : rclcpp_components/node_main_subscriber_exe.i
+
+# target to preprocess a source file
+rclcpp_components/node_main_subscriber_exe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/rclcpp_components/node_main_subscriber_exe.cpp.i
+.PHONY : rclcpp_components/node_main_subscriber_exe.cpp.i
+
+rclcpp_components/node_main_subscriber_exe.s: rclcpp_components/node_main_subscriber_exe.cpp.s
+.PHONY : rclcpp_components/node_main_subscriber_exe.s
+
+# target to generate assembly for a file
+rclcpp_components/node_main_subscriber_exe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_exe.dir/build.make CMakeFiles/subscriber_exe.dir/rclcpp_components/node_main_subscriber_exe.cpp.s
+.PHONY : rclcpp_components/node_main_subscriber_exe.cpp.s
+
+rclcpp_components/node_main_talker_component_exe.o: rclcpp_components/node_main_talker_component_exe.cpp.o
+.PHONY : rclcpp_components/node_main_talker_component_exe.o
+
+# target to build an object file
+rclcpp_components/node_main_talker_component_exe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/rclcpp_components/node_main_talker_component_exe.cpp.o
+.PHONY : rclcpp_components/node_main_talker_component_exe.cpp.o
+
+rclcpp_components/node_main_talker_component_exe.i: rclcpp_components/node_main_talker_component_exe.cpp.i
+.PHONY : rclcpp_components/node_main_talker_component_exe.i
+
+# target to preprocess a source file
+rclcpp_components/node_main_talker_component_exe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/rclcpp_components/node_main_talker_component_exe.cpp.i
+.PHONY : rclcpp_components/node_main_talker_component_exe.cpp.i
+
+rclcpp_components/node_main_talker_component_exe.s: rclcpp_components/node_main_talker_component_exe.cpp.s
+.PHONY : rclcpp_components/node_main_talker_component_exe.s
+
+# target to generate assembly for a file
+rclcpp_components/node_main_talker_component_exe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component_exe.dir/build.make CMakeFiles/talker_component_exe.dir/rclcpp_components/node_main_talker_component_exe.cpp.s
+.PHONY : rclcpp_components/node_main_talker_component_exe.cpp.s
+
+rclcpp_components/node_main_talker_exe.o: rclcpp_components/node_main_talker_exe.cpp.o
+.PHONY : rclcpp_components/node_main_talker_exe.o
+
+# target to build an object file
+rclcpp_components/node_main_talker_exe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/rclcpp_components/node_main_talker_exe.cpp.o
+.PHONY : rclcpp_components/node_main_talker_exe.cpp.o
+
+rclcpp_components/node_main_talker_exe.i: rclcpp_components/node_main_talker_exe.cpp.i
+.PHONY : rclcpp_components/node_main_talker_exe.i
+
+# target to preprocess a source file
+rclcpp_components/node_main_talker_exe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/rclcpp_components/node_main_talker_exe.cpp.i
+.PHONY : rclcpp_components/node_main_talker_exe.cpp.i
+
+rclcpp_components/node_main_talker_exe.s: rclcpp_components/node_main_talker_exe.cpp.s
+.PHONY : rclcpp_components/node_main_talker_exe.s
+
+# target to generate assembly for a file
+rclcpp_components/node_main_talker_exe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_exe.dir/build.make CMakeFiles/talker_exe.dir/rclcpp_components/node_main_talker_exe.cpp.s
+.PHONY : rclcpp_components/node_main_talker_exe.cpp.s
+
+src/manual_composition.o: src/manual_composition.cpp.o
+.PHONY : src/manual_composition.o
+
+# target to build an object file
+src/manual_composition.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/src/manual_composition.cpp.o
+.PHONY : src/manual_composition.cpp.o
+
+src/manual_composition.i: src/manual_composition.cpp.i
+.PHONY : src/manual_composition.i
+
+# target to preprocess a source file
+src/manual_composition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/src/manual_composition.cpp.i
+.PHONY : src/manual_composition.cpp.i
+
+src/manual_composition.s: src/manual_composition.cpp.s
+.PHONY : src/manual_composition.s
+
+# target to generate assembly for a file
+src/manual_composition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/src/manual_composition.cpp.s
+.PHONY : src/manual_composition.cpp.s
+
+src/subscriber_component.o: src/subscriber_component.cpp.o
+.PHONY : src/subscriber_component.o
+
+# target to build an object file
+src/subscriber_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/src/subscriber_component.cpp.o
+.PHONY : src/subscriber_component.cpp.o
+
+src/subscriber_component.i: src/subscriber_component.cpp.i
+.PHONY : src/subscriber_component.i
+
+# target to preprocess a source file
+src/subscriber_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/src/subscriber_component.cpp.i
+.PHONY : src/subscriber_component.cpp.i
+
+src/subscriber_component.s: src/subscriber_component.cpp.s
+.PHONY : src/subscriber_component.s
+
+# target to generate assembly for a file
+src/subscriber_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component.dir/build.make CMakeFiles/subscriber_component.dir/src/subscriber_component.cpp.s
+.PHONY : src/subscriber_component.cpp.s
+
+src/subscriber_component2.o: src/subscriber_component2.cpp.o
+.PHONY : src/subscriber_component2.o
+
+# target to build an object file
+src/subscriber_component2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.o
+.PHONY : src/subscriber_component2.cpp.o
+
+src/subscriber_component2.i: src/subscriber_component2.cpp.i
+.PHONY : src/subscriber_component2.i
+
+# target to preprocess a source file
+src/subscriber_component2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.i
+.PHONY : src/subscriber_component2.cpp.i
+
+src/subscriber_component2.s: src/subscriber_component2.cpp.s
+.PHONY : src/subscriber_component2.s
+
+# target to generate assembly for a file
+src/subscriber_component2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_component2.dir/build.make CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.s
+.PHONY : src/subscriber_component2.cpp.s
+
+src/talker_component.o: src/talker_component.cpp.o
+.PHONY : src/talker_component.o
+
+# target to build an object file
+src/talker_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/src/talker_component.cpp.o
+.PHONY : src/talker_component.cpp.o
+
+src/talker_component.i: src/talker_component.cpp.i
+.PHONY : src/talker_component.i
+
+# target to preprocess a source file
+src/talker_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/src/talker_component.cpp.i
+.PHONY : src/talker_component.cpp.i
+
+src/talker_component.s: src/talker_component.cpp.s
+.PHONY : src/talker_component.s
+
+# target to generate assembly for a file
+src/talker_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component.dir/build.make CMakeFiles/talker_component.dir/src/talker_component.cpp.s
+.PHONY : src/talker_component.cpp.s
+
+src/talker_component2.o: src/talker_component2.cpp.o
+.PHONY : src/talker_component2.o
+
+# target to build an object file
+src/talker_component2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/src/talker_component2.cpp.o
+.PHONY : src/talker_component2.cpp.o
+
+src/talker_component2.i: src/talker_component2.cpp.i
+.PHONY : src/talker_component2.i
+
+# target to preprocess a source file
+src/talker_component2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/src/talker_component2.cpp.i
+.PHONY : src/talker_component2.cpp.i
+
+src/talker_component2.s: src/talker_component2.cpp.s
+.PHONY : src/talker_component2.s
+
+# target to generate assembly for a file
+src/talker_component2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_component2.dir/build.make CMakeFiles/talker_component2.dir/src/talker_component2.cpp.s
+.PHONY : src/talker_component2.cpp.s
 
 # Help Target
 help:
@@ -249,10 +545,42 @@ help:
 	@echo "... test"
 	@echo "... first_package_cpp_uninstall"
 	@echo "... uninstall"
-	@echo "... talker"
-	@echo "... src/first_package.o"
-	@echo "... src/first_package.i"
-	@echo "... src/first_package.s"
+	@echo "... manual_composition"
+	@echo "... subscriber_component"
+	@echo "... subscriber_component2"
+	@echo "... subscriber_component_exe"
+	@echo "... subscriber_exe"
+	@echo "... talker_component"
+	@echo "... talker_component2"
+	@echo "... talker_component_exe"
+	@echo "... talker_exe"
+	@echo "... rclcpp_components/node_main_subscriber_component_exe.o"
+	@echo "... rclcpp_components/node_main_subscriber_component_exe.i"
+	@echo "... rclcpp_components/node_main_subscriber_component_exe.s"
+	@echo "... rclcpp_components/node_main_subscriber_exe.o"
+	@echo "... rclcpp_components/node_main_subscriber_exe.i"
+	@echo "... rclcpp_components/node_main_subscriber_exe.s"
+	@echo "... rclcpp_components/node_main_talker_component_exe.o"
+	@echo "... rclcpp_components/node_main_talker_component_exe.i"
+	@echo "... rclcpp_components/node_main_talker_component_exe.s"
+	@echo "... rclcpp_components/node_main_talker_exe.o"
+	@echo "... rclcpp_components/node_main_talker_exe.i"
+	@echo "... rclcpp_components/node_main_talker_exe.s"
+	@echo "... src/manual_composition.o"
+	@echo "... src/manual_composition.i"
+	@echo "... src/manual_composition.s"
+	@echo "... src/subscriber_component.o"
+	@echo "... src/subscriber_component.i"
+	@echo "... src/subscriber_component.s"
+	@echo "... src/subscriber_component2.o"
+	@echo "... src/subscriber_component2.i"
+	@echo "... src/subscriber_component2.s"
+	@echo "... src/talker_component.o"
+	@echo "... src/talker_component.i"
+	@echo "... src/talker_component.s"
+	@echo "... src/talker_component2.o"
+	@echo "... src/talker_component2.i"
+	@echo "... src/talker_component2.s"
 .PHONY : help
 
 

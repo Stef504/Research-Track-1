@@ -1,4 +1,13 @@
-/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_exe
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_exe
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_component_exe
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_component_exe
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component.so
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component.so
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component2.so
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component2.so
+/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/manual_composition
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/launch/composition.launch.py
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/package_run_dependencies/first_package_cpp
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/parent_prefix_path/first_package_cpp
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/environment/ament_prefix_path.sh
@@ -11,6 +20,12 @@
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/local_setup.dsv
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/package.dsv
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/packages/first_package_cpp
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/rclcpp_components/first_package_cpp
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_talker_componentExport.cmake
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_talker_componentExport-noconfig.cmake
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_subscriber_componentExport.cmake
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_subscriber_componentExport-noconfig.cmake
+/home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/ament_cmake_export_targets-extras.cmake
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig.cmake
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig-version.cmake
 /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/package.xml

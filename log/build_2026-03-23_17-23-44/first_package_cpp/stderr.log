@@ -1,0 +1,21 @@
+In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/home/ubuntu/ros_workspace/src/first_package_cpp/src/subscriber_component2.cpp:3[m[K:
+[01m[K/home/ubuntu/ros_workspace/src/first_package_cpp/src/subscriber_component2.cpp:29:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_package_cpp[m[K’ was not declared in this scope
+   29 | RCLCPP_COMPONENTS_REGISTER_NODE([01;31m[Kfirst_package_cpp[m[K::MinimalSubscriber_component)
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/first_package_cpp/src/subscriber_component2.cpp:29:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(first_package_cpp::MinimalSubscriber_component)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58[m[K,
+                 from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55[m[K:
+/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::[01;32m[Kcreate[m[K() const [35m[K[with C = int; B = rclcpp_components::NodeFactory][m[K[m[K’:
+[01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint*[m[K’ to ‘[01m[Krclcpp_components::NodeFactory*[m[K’ in return
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+      |            [01;31m[K|[m[K
+      |            [01;31m[Kint*[m[K
+gmake[2]: *** [CMakeFiles/subscriber_component2.dir/build.make:76: CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/subscriber_component2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
