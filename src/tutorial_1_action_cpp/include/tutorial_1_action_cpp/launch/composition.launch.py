@@ -11,16 +11,22 @@ def generate_launch_description():
             executable='component_container',
             composable_node_descriptions=[
                 ComposableNode(
-                    package='first_package_cpp',
-                    plugin='first_package_cpp::MinimalSubscriber_component',
-                    name='listener',
+                    package='tutorial_1_action_cpp',
+                    plugin='tutorial_1_action_cpp::RobotActionClient',
+                    name='action_client',
                     #extra_arguments=[{'use_intra_process_comms': True}]  # <--- ADDED HERE
                     ),
                     
                 ComposableNode(
-                    package='first_package_cpp',
-                    plugin='first_package_cpp::MinimalPublisher_component',
-                    name='talker',
+                    package='tutorial_1_action_cpp',
+                    plugin='tutorial_1_action_cpp::RobotActionServer',
+                    name='action_server',
+                    )
+
+                ComposableNode(
+                    package='tutorial_1_action_cpp',
+                    plugin='tutorial_1_action_cpp::RobotActionCancelClient',
+                    name='cancel_client',
                     )
             ],
             output='screen',

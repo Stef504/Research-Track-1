@@ -2,20 +2,20 @@ import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
 
-from action_tutorials_interfaces.action import Fibonacci
+from action_tutorials_interfaces.action import Tut1
 
 
-class FibonacciActionClient(Node):
+class Tut1ActionClient(Node):
 
     def __init__(self):
-        super().__init__('fibonacci_action_client')
-        self._action_client = ActionClient(self, Fibonacci, 'fibonacci')
+        super().__init__('tut1_action_client')
+        self._action_client = ActionClient(self, Tut1, 'tut1')
         self._goal_handle = None
         self._cancel_sent = False
 
-    def send_goal(self, order):
-        goal_msg = Fibonacci.Goal()
-        goal_msg.order = order
+    def send_goal(self, goal):
+        goal_msg = Tut1.Goal()
+        goal_msg.goal = goal
 
         self._action_client.wait_for_server()
 
@@ -49,7 +49,7 @@ class FibonacciActionClient(Node):
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        seq = feedback.partial_sequence
+        seq = feedback.moving
         self.get_logger().info(f'Received feedback: {seq}')
 
         if self._cancel_sent or self._goal_handle is None or len(seq) == 0:

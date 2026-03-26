@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libtalker_component2.so"
+			"path" : "libsubscriber_component2.so"
 		}
 	],
 	"backtrace" : 1,
@@ -77,19 +77,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 19,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 55,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 26,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -692,7 +692,7 @@
 					"define" : "FASTCDR_DYN_LINK"
 				},
 				{
-					"define" : "talker_component2_EXPORTS"
+					"define" : "subscriber_component2_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -855,7 +855,7 @@
 			]
 		}
 	],
-	"id" : "talker_component2::@6890427a1f51a3e7e1df",
+	"id" : "subscriber_component2::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -1343,8 +1343,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "talker_component2",
-	"nameOnDisk" : "libtalker_component2.so",
+	"name" : "subscriber_component2",
+	"nameOnDisk" : "libsubscriber_component2.so",
 	"paths" : 
 	{
 		"build" : ".",
@@ -1365,7 +1365,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/talker_component2.cpp",
+			"path" : "src/subscriber_component2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

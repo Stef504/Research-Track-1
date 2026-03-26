@@ -52,6 +52,7 @@ install (TARGETS subscriber_component
         LIBRARY DESTINATION lib
         RUNTIME DESTINATION bin)
 
+# 2. Install the components and export their targets
 install (TARGETS talker_component2 
         EXPORT export_${PROJECT_NAME}_talker_component 
         ARCHIVE DESTINATION lib

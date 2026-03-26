@@ -12,13 +12,14 @@ def generate_launch_description():
             composable_node_descriptions=[
                 ComposableNode(
                     package='first_package_cpp',
-                    plugin='first_package_cpp::MinimalSubscriber',
+                    plugin='first_package_cpp::MinimalSubscriber_component',
                     name='listener',
+                    #extra_arguments=[{'use_intra_process_comms': True}]  # <--- ADDED HERE
                     ),
                     
                 ComposableNode(
                     package='first_package_cpp',
-                    plugin='first_package_cpp::MinimalPublisher',
+                    plugin='first_package_cpp::MinimalPublisher_component',
                     name='talker',
                     )
             ],
