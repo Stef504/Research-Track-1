@@ -500,8 +500,8 @@ CMakeFiles/ament_cmake_python_build_robot_custom_msgs_egg.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_c.dir/all
-CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_c.dir/all
+CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=20,21,22,23,24,25 "Built target robot_custom_msgs__rosidl_generator_py"
@@ -528,10 +528,10 @@ CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_c.dir/all
-CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all
-CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_c.dir/all
+CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all
+CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=71,72 "Built target robot_custom_msgs_s__rosidl_typesupport_fastrtps_c"
@@ -558,10 +558,10 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_c.dir/all
-CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all
-CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_c.dir/all
+CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all
+CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=73,74 "Built target robot_custom_msgs_s__rosidl_typesupport_introspection_c"
@@ -588,9 +588,9 @@ CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_introspection_c.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_c.dir/all
+CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_c.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_generator_py.dir/all
 CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/all: robot_custom_msgs__py/CMakeFiles/robot_custom_msgs__py.dir/all
-CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/all: CMakeFiles/robot_custom_msgs__rosidl_typesupport_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/build.make CMakeFiles/robot_custom_msgs_s__rosidl_typesupport_c.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/robot_custom_msgs/CMakeFiles --progress-num=69,70 "Built target robot_custom_msgs_s__rosidl_typesupport_c"

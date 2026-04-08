@@ -10,6 +10,10 @@
 #include "rclcpp/executors/multi_threaded_executor.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+#include "std_msgs/msg/string.hpp"
+#include <rclcpp_components/register_node_macro.hpp>
+#include <cinttypes>
+#include <cstdio>
 
 // Replace with your actual package/action name
 #include "action_tutorials_interfaces/action/tut1.hpp"
@@ -27,8 +31,7 @@ public:
   {
     using namespace std::placeholders;
 
-    cb_group_ = this->create_callback_group(
-      rclcpp::CallbackGroupType::Reentrant);
+    cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
 
     publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
 

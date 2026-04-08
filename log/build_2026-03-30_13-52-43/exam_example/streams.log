@@ -1,0 +1,31 @@
+[3.331s] Invoking command in '/home/ubuntu/ros_workspace/src/exam_example': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data
+[3.697s] running egg_info
+[3.727s] writing ../../build/exam_example/exam_example.egg-info/PKG-INFO
+[3.728s] writing dependency_links to ../../build/exam_example/exam_example.egg-info/dependency_links.txt
+[3.728s] writing entry points to ../../build/exam_example/exam_example.egg-info/entry_points.txt
+[3.729s] writing requirements to ../../build/exam_example/exam_example.egg-info/requires.txt
+[3.729s] writing top-level names to ../../build/exam_example/exam_example.egg-info/top_level.txt
+[3.788s] reading manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[3.790s] writing manifest file '../../build/exam_example/exam_example.egg-info/SOURCES.txt'
+[3.790s] running build
+[3.790s] running build_py
+[3.791s] running install
+[3.807s] running install_lib
+[3.833s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/two_turtles.py to two_turtles.cpython-312.pyc
+[3.834s] Sorry: IndentationError: unindent does not match any outer indentation level (two_turtles.py, line 115)
+[3.834s] byte-compiling /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py to distance_calc.cpython-312.pyc
+[3.835s]   File "/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py", line 63
+[3.835s]     def obstacle_callback (self,msg)
+[3.835s]                                     ^
+[3.836s] SyntaxError: expected ':'
+[3.836s] 
+[3.836s] running install_data
+[3.836s] running install_egg_info
+[3.867s] removing '/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info' (and everything under it)
+[3.867s] Copying ../../build/exam_example/exam_example.egg-info to /home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example-0.0.0-py3.12.egg-info
+[3.870s] running install_scripts
+[4.066s] Installing distance script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[4.067s] Installing turtle2 script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[4.067s] Installing turtles script to /home/ubuntu/ros_workspace/install/exam_example/lib/exam_example
+[4.068s] writing list of installed files to '/home/ubuntu/ros_workspace/build/exam_example/install.log'
+[4.147s] Invoked command in '/home/ubuntu/ros_workspace/src/exam_example' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/exam_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/exam_example build --build-base /home/ubuntu/ros_workspace/build/exam_example/build install --record /home/ubuntu/ros_workspace/build/exam_example/install.log --single-version-externally-managed install_data

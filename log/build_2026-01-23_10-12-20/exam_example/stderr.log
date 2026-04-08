@@ -1,5 +1,0 @@
-  File "/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages/exam_example/distance_calc.py", line 60
-    else 
-         ^
-SyntaxError: expected ':'
-

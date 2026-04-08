@@ -32,7 +32,7 @@ def generate_launch_description():
         executable='turtles',
         name='turtles',
         output='screen',
-        prefix='xterm -hold -e',
+        prefix='xterm -e',
     )
     
     # 2. Create the Event Handler, is normal constant

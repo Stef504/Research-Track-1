@@ -7,8 +7,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)          
 find_package(action_tutorials_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
@@ -19,21 +21,19 @@ find_package(action_msgs REQUIRED)
 
 add_library(client SHARED src/action_client.cpp)
 add_library(server SHARED src/action_server.cpp)
-add_library(cancel_client SHARED src/cancel_client.cpp)
-add_executable(manual_composition src/manual_composition.cpp)
+add_library(cancel_client SHARED src/cancel_action.cpp)
+#add_executable(manual_composition src/manual_composition.cpp)
 
 
-ament_target_dependencies(client rclcpp rclcpp_components std_msgs)
-ament_target_dependencies(server rclcpp rclcpp_components std_msgs)
-ament_target_dependencies(cancel_client rclcpp rclcpp_components std_msgs)
-ament_target_dependencies(manual_composition rclcpp std_msgs)
+ament_target_dependencies(client rclcpp rclcpp_components rclcpp rclcpp_action rclcpp_components action_tutorials_interfaces std_msgs )
+ament_target_dependencies(server rclcpp rclcpp_components rclcpp rclcpp_action rclcpp_components action_tutorials_interfaces std_msgs nav_msgs geometry_msgs)
+ament_target_dependencies(cancel_client rclcpp rclcpp_components rclcpp rclcpp_action rclcpp_components action_tutorials_interfaces std_msgs)
+#ament_target_dependencies(manual_composition rclcpp rclcpp_components std_msgs) 
 
 
 rclcpp_components_register_node(client PLUGIN "tutorial_1_action_cpp::RobotActionClient" EXECUTABLE client_exe)
 rclcpp_components_register_node(server PLUGIN "tutorial_1_action_cpp::RobotActionServer" EXECUTABLE server_exe) 
-
-# 3. Register BOTH components (Note the different PLUGIN names!)
-rclcpp_components_register_node( cancel_client PLUGIN "tutorial_1_action_cpp::RobotActionCancelClient" EXECUTABLE cancel_client_exe)
+rclcpp_components_register_node(cancel_client PLUGIN "tutorial_1_action_cpp::RobotActionCancelClient" EXECUTABLE cancel_client_exe)
 
 ament_export_targets(export_${PROJECT_NAME}_client)
 ament_export_targets(export_${PROJECT_NAME}_server)
@@ -58,10 +58,10 @@ install (TARGETS cancel_client
         RUNTIME DESTINATION bin)
 
 
-install(TARGETS
-  manual_composition
-  DESTINATION lib/${PROJECT_NAME}
-)
+#install(TARGETS
+ # manual_composition
+  #DESTINATION lib/${PROJECT_NAME}
+#)
 
 install(
   DIRECTORY launch

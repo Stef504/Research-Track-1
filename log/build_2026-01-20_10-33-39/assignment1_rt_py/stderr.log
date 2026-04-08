@@ -1,5 +1,0 @@
-  File "/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages/assignment1_rt_py/two_turtles.py", line 112
-    elif self.valid_choice
-                          ^
-SyntaxError: expected ':'
-

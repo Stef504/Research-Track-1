@@ -1,0 +1,49 @@
+[3.665s] Invoking command in '/home/ubuntu/ros_workspace/src/turtle_action_client': PYTHONPATH=/home/ubuntu/ros_workspace/build/turtle_action_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_action_client build --build-base /home/ubuntu/ros_workspace/build/turtle_action_client/build install --record /home/ubuntu/ros_workspace/build/turtle_action_client/install.log --single-version-externally-managed install_data
+[4.077s] running egg_info
+[4.079s] creating ../../build/turtle_action_client/turtle_action_client.egg-info
+[4.108s] writing ../../build/turtle_action_client/turtle_action_client.egg-info/PKG-INFO
+[4.108s] writing dependency_links to ../../build/turtle_action_client/turtle_action_client.egg-info/dependency_links.txt
+[4.108s] writing entry points to ../../build/turtle_action_client/turtle_action_client.egg-info/entry_points.txt
+[4.108s] writing requirements to ../../build/turtle_action_client/turtle_action_client.egg-info/requires.txt
+[4.109s] writing top-level names to ../../build/turtle_action_client/turtle_action_client.egg-info/top_level.txt
+[4.109s] writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+[4.170s] reading manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+[4.171s] writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+[4.172s] running build
+[4.172s] running build_py
+[4.172s] creating /home/ubuntu/ros_workspace/build/turtle_action_client/build
+[4.172s] creating /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib
+[4.173s] creating /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.173s] copying turtle_action_client/minimal_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.174s] copying turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.181s] copying turtle_action_client/more_complete_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.181s] copying turtle_action_client/__init__.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.181s] copying turtle_action_client/complete_action_client.py -> /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client
+[4.183s] running install
+[4.191s] running install_lib
+[4.244s] creating /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/minimal_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/cancel_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/more_complete_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/__init__.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] copying /home/ubuntu/ros_workspace/build/turtle_action_client/build/lib/turtle_action_client/complete_action_client.py -> /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client
+[4.244s] byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/minimal_action_client.py to minimal_action_client.cpython-312.pyc
+[4.244s] byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/cancel_action_client.py to cancel_action_client.cpython-312.pyc
+[4.245s] byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/more_complete_action_client.py to more_complete_action_client.cpython-312.pyc
+[4.245s] byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/__init__.py to __init__.cpython-312.pyc
+[4.245s] byte-compiling /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client/complete_action_client.py to complete_action_client.cpython-312.pyc
+[4.245s] running install_data
+[4.245s] creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index
+[4.245s] creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index
+[4.245s] creating /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index/packages
+[4.245s] copying resource/turtle_action_client -> /home/ubuntu/ros_workspace/install/turtle_action_client/share/ament_index/resource_index/packages
+[4.246s] copying package.xml -> /home/ubuntu/ros_workspace/install/turtle_action_client/share/turtle_action_client
+[4.246s] running install_egg_info
+[4.274s] Copying ../../build/turtle_action_client/turtle_action_client.egg-info to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info
+[4.277s] running install_scripts
+[4.563s] Installing cancel_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.568s] Installing rotate_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.568s] Installing rotate_client2 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.568s] Installing rotate_client3 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.576s] writing list of installed files to '/home/ubuntu/ros_workspace/build/turtle_action_client/install.log'
+[4.699s] Invoked command in '/home/ubuntu/ros_workspace/src/turtle_action_client' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/turtle_action_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_action_client build --build-base /home/ubuntu/ros_workspace/build/turtle_action_client/build install --record /home/ubuntu/ros_workspace/build/turtle_action_client/install.log --single-version-externally-managed install_data

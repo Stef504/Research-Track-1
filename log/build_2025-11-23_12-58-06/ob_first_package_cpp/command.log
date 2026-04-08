@@ -1,1 +1,0 @@
-Invoking command in '/home/ubuntu/ros_workspace/build/ob_first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/python_package:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/ob_first_package_cpp -- -j16 -l16

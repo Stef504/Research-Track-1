@@ -1,0 +1,25 @@
+[ 50%] Built target distance
+[100%] Built target turtles
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/launch
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/launch/node_launch.py
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtle2
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.xml

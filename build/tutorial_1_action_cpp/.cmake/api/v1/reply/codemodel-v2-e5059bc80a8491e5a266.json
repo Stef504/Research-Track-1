@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cad242ce100b7eb08be4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tutorial_1_action_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cancel_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cancel_client-43e2685249a18e14f574.json",
+					"name" : "cancel_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cancel_client_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cancel_client_exe-b9a4b99e8dff6206aee3.json",
+					"name" : "cancel_client_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-e7e1c466365a70143ac5.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client_exe-c319d18a5bcd5909073a.json",
+					"name" : "client_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-e078d2a6380f38248f9a.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_exe-8c29b5308125c160be4a.json",
+					"name" : "server_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tutorial_1_action_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tutorial_1_action_cpp_uninstall-30c446043e5e9d23c494.json",
+					"name" : "tutorial_1_action_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-823e09d0cbcf37b281ea.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/ros_workspace/build/tutorial_1_action_cpp",
+		"source" : "/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

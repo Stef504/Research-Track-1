@@ -3,6 +3,10 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "std_msgs/msg/string.hpp"
+#include <rclcpp_components/register_node_macro.hpp>
+#include <cinttypes>
+#include <cstdio>
 
 // Replace with your actual package/action name
 #include "action_tutorials_interfaces/action/tut1.hpp"

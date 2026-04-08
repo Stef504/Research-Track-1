@@ -1,0 +1,29 @@
+[0.096s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[1.377s] [ 50%] Built target distance
+[1.377s] [100%] Built target turtles
+[1.404s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
+[1.405s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt
+[1.749s] -- Install configuration: ""
+[1.750s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles
+[1.750s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtles" to ""
+[1.750s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance
+[1.750s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/distance" to ""
+[1.750s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/launch
+[1.751s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/launch/node_launch.py
+[1.751s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/lib/assignment1_rt/turtle2
+[1.751s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+[1.752s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+[1.752s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+[1.752s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+[1.752s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+[1.753s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+[1.754s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+[1.754s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.dsv
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+[1.755s] -- Installing: /home/ubuntu/ros_workspace/install/assignment1_rt/share/assignment1_rt/package.xml
+[1.922s] Invoked command in '/home/ubuntu/ros_workspace/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/assignment1_rt

@@ -1,8 +1,8 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import String, Float64MultiArray
 from turtlesim.msg import Pose
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, PoseArray
 import math
 
 class TwoTurtles(Node):
@@ -20,7 +20,8 @@ class TwoTurtles(Node):
         self.turtle_velocity_linear = 0.0
         self.turtle_velocity_angular = 0.0
         self.turtle_choice = ''  # Python doesn't have 'char', we use an empty string
-        
+        self.threshold_ = 2.0 
+
         self.max_linear_velocity = 4.0
         self.max_angular_velocity = 2.0
 
@@ -48,27 +49,34 @@ class TwoTurtles(Node):
         self.selected_ = False
         self.valid_choice = False
         self.stop_ = False
+        self.stop_mine = False
         self.reverse_ = False
+        self.stop_obs = False
 
         # --- 8. STRINGS ---
         self.bounds_xy = "out of bounds"
         self.close_turtles = "too close"
         self.safe_turtles = "safe"
         self.distance_ = " "
-        self.obstacle_ = " "
+        self.mine_= " "
+        
 
         super().__init__('two_turtles')
         self.publisher_1 = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
         self.publisher_2 = self.create_publisher(Twist, 'turtle2/cmd_vel', 10)
 
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
-        self.subscribe_obst = self.create_subscription(String, 'obstacle_topic', self.obs_callback,10)
+
+        self.subscribe_obst = self.create_subscription(String, 'obstacle_detect', self.obs_callback,10)
+        self.subscribe_mines = self.create_subscription(String, 'mine_detect', self.mine_callback,10)
+        self.subscribe_turtle1 = self.create_subscription(Pose, 'turtle1/pose', self.turtle1_callback,10)
+
         self.timer = self.create_timer(self.htz_, self.timer_callback)
         self.i = 0
 
     def topic_callback(self, msg):
-        self.distance_ = msg.data
         
+        self.distance_ = msg.data  
         # Check if "out of bounds" OR "too close" is inside the distance string
         # Reversed order logic compared to C++
         if self.bounds_xy in self.distance_ or self.close_turtles in self.distance_:
@@ -78,14 +86,34 @@ class TwoTurtles(Node):
         elif self.safe_turtles in self.distance_:
             self.stop_ = False
 
+
+    def turtle1_callback(self, msg):
+        self.t1_x = msg.x
+        self.t1_y = msg.y
+
+    def mine_callback(self, msg):
+        
+        self.mine_ = msg.data        
+        # Check if "out of bounds" OR "too close" is inside the distance string
+        # Reversed order logic compared to C++
+        #its an array of poses so we need to loop through them
+         # Check if "out of bounds" OR "too close" is inside the distance string
+        # Reversed order logic compared to C++
+        if self.close_turtles in self.mine_:
+            self.stop_mine = True
+
+        # Check if "safe" is inside the distance string
+        elif self.safe_turtles in self.mine_:
+            self.stop_mine = False
+
     def obs_callback(self, msg):
+
         self.obstacle_ = msg.data
 
         if self.close_turtles in self.obstacle_:
-            self.stop_ = True
-        
-        elif self.safe_turtles in self.obstacle_:
-            self.stop_ = False
+            self.stop_obs = True
+       elif self.safe_turtles in self.obstacle_:  
+            self.stop_obs = False
 
     def timer_callback(self):
         
@@ -134,7 +162,7 @@ class TwoTurtles(Node):
 
             if self.turtle_choice == '1':
                
-                if self.stop_ and not self.reverse_:
+                if self.stop_ or self.stop_mine or self.stop_obs:
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
                 
@@ -166,7 +194,7 @@ class TwoTurtles(Node):
 
             elif self.turtle_choice == '2':
 
-                if self.stop_ and not self.reverse_:
+                if self.stop_ or self.stop_mine or self.stop_obs:
                    self.reverse_ = True
                    self.tick_reverse_count_ = 0
 

@@ -44,20 +44,20 @@ class Tut1ActionClient(Node):
         result_msg = future.result()
         result = result_msg.result
         status = result_msg.status
-        self.get_logger().info(f'Result status={status}, sequence={result.sequence}')
+        self.get_logger().info(f'Result status={status}, sequence={result.final}')
         rclpy.shutdown()
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        seq = feedback.moving
-        self.get_logger().info(f'Received feedback: {seq}')
+        current_x = feedback.moving
+        self.get_logger().info(f'Received feedback: {current_x}')
 
-        if self._cancel_sent or self._goal_handle is None or len(seq) == 0:
+        if self._cancel_sent or self._goal_handle is None:
             return
 
-        if max(seq) > 30:
+        if abs(current_x) > 10.0:
             self._cancel_sent = True
-            self.get_logger().warn('A number in the sequence is > 30, cancelling goal...')
+            self.get_logger().warn('The robot has moved out of bounds, cancelling goal')
             cancel_future = self._goal_handle.cancel_goal_async()
             cancel_future.add_done_callback(self.cancel_done_callback)
 
@@ -72,7 +72,7 @@ class Tut1ActionClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     action_client = FibonacciActionClient()
-    action_client.send_goal(50)  
+    action_client.send_goal(10)  
     rclpy.spin(action_client)
 
 

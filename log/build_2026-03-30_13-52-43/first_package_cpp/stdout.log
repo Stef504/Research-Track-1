@@ -1,0 +1,51 @@
+[ 22%] Built target manual_composition
+[ 50%] Built target subscriber_exe
+[ 33%] Built target subscriber_component_exe
+[ 55%] Built target talker_component
+[ 55%] Built target talker_exe
+[ 66%] Built target talker_component2
+[ 77%] Built target subscriber_component
+[ 88%] Built target subscriber_component2
+[100%] Built target talker_component_exe
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_component_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/subscriber_component_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_component_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/talker_component_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component2.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libtalker_component2.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component2.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/libsubscriber_component2.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/manual_composition
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/first_package_cpp/lib/first_package_cpp/manual_composition" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/launch
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/launch/composition.launch.py
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/package_run_dependencies/first_package_cpp
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/parent_prefix_path/first_package_cpp
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/environment/path.sh
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/environment/path.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/local_setup.bash
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/local_setup.sh
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/local_setup.zsh
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/local_setup.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/package.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/packages/first_package_cpp
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/ament_index/resource_index/rclcpp_components/first_package_cpp
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_talker_componentExport.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_talker_componentExport-noconfig.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_subscriber_componentExport.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/export_first_package_cpp_subscriber_componentExport-noconfig.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig-version.cmake
+-- Installing: /home/ubuntu/ros_workspace/install/first_package_cpp/share/first_package_cpp/package.xml

@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/ros_workspace/build/ob_first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/ob_first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/ob_first_package_cpp
-Invoked command in '/home/ubuntu/ros_workspace/build/ob_first_package_cpp' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/ob_first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/ob_first_package_cpp

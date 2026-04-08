@@ -1,0 +1,15 @@
+/home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/package_run_dependencies/action_assignment
+/home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/parent_prefix_path/action_assignment
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/ament_prefix_path.sh
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/ament_prefix_path.dsv
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/path.sh
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/path.dsv
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.bash
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.sh
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.zsh
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.dsv
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/package.dsv
+/home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/packages/action_assignment
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/cmake/action_assignmentConfig.cmake
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/cmake/action_assignmentConfig-version.cmake
+/home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/package.xml

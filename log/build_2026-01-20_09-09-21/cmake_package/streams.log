@@ -1,1 +1,0 @@
-[0.055s] Invoking command in '/home/ubuntu/ros_workspace/build/cmake_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/cmake_package -- -j16 -l16

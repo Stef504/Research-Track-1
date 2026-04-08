@@ -1,6 +1,0 @@
-[31mCMake Error at cmake_install.cmake:164 (file):
-  file INSTALL cannot find
-  "/home/ubuntu/ros_workspace/src/first_package_cpp/launch": No such file or
-  directory.
-
-[0m

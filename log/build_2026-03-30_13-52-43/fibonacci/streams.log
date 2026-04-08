@@ -1,0 +1,28 @@
+[3.330s] Invoking command in '/home/ubuntu/ros_workspace/src/fibonacci': PYTHONPATH=/home/ubuntu/ros_workspace/build/fibonacci/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fibonacci build --build-base /home/ubuntu/ros_workspace/build/fibonacci/build install --record /home/ubuntu/ros_workspace/build/fibonacci/install.log --single-version-externally-managed install_data
+[3.707s] running egg_info
+[3.736s] writing ../../build/fibonacci/fibonacci.egg-info/PKG-INFO
+[3.737s] writing dependency_links to ../../build/fibonacci/fibonacci.egg-info/dependency_links.txt
+[3.737s] writing entry points to ../../build/fibonacci/fibonacci.egg-info/entry_points.txt
+[3.737s] writing requirements to ../../build/fibonacci/fibonacci.egg-info/requires.txt
+[3.739s] writing top-level names to ../../build/fibonacci/fibonacci.egg-info/top_level.txt
+[3.804s] reading manifest file '../../build/fibonacci/fibonacci.egg-info/SOURCES.txt'
+[3.807s] writing manifest file '../../build/fibonacci/fibonacci.egg-info/SOURCES.txt'
+[3.808s] running build
+[3.808s] running build_py
+[3.808s] running install
+[3.815s] running install_lib
+[3.843s] running install_data
+[3.844s] running install_egg_info
+[3.874s] removing '/home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages/fibonacci-0.0.0-py3.12.egg-info' (and everything under it)
+[3.875s] Copying ../../build/fibonacci/fibonacci.egg-info to /home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages/fibonacci-0.0.0-py3.12.egg-info
+[3.876s] running install_scripts
+[4.066s] Installing fibonacci_client script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_client_2 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_client_3 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_server script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_server_2 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_server_3 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_server_4 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] Installing fibonacci_server_5 script to /home/ubuntu/ros_workspace/install/fibonacci/lib/fibonacci
+[4.066s] writing list of installed files to '/home/ubuntu/ros_workspace/build/fibonacci/install.log'
+[4.163s] Invoked command in '/home/ubuntu/ros_workspace/src/fibonacci' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/fibonacci/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fibonacci build --build-base /home/ubuntu/ros_workspace/build/fibonacci/build install --record /home/ubuntu/ros_workspace/build/fibonacci/install.log --single-version-externally-managed install_data

@@ -1,5 +1,0 @@
-  File "/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages/assignment2_rt_py/distance_calc.py", line 102
-    elif self.direction_angle == 0::
-                                   ^
-SyntaxError: invalid syntax
-

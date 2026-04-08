@@ -1,0 +1,42 @@
+[0.112s] Invoking command in '/home/ubuntu/ros_workspace/build/action_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/action_assignment -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/action_assignment
+[1.952s] -- The C compiler identification is GNU 13.3.0
+[1.953s] -- The CXX compiler identification is GNU 13.3.0
+[1.953s] -- Detecting C compiler ABI info
+[1.953s] -- Detecting C compiler ABI info - done
+[1.953s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.953s] -- Detecting C compile features
+[1.954s] -- Detecting C compile features - done
+[1.954s] -- Detecting CXX compiler ABI info
+[1.954s] -- Detecting CXX compiler ABI info - done
+[1.954s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.954s] -- Detecting CXX compile features
+[1.954s] -- Detecting CXX compile features - done
+[1.954s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.954s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.955s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.154s] -- Added test 'lint_cmake' to check CMake code style
+[2.166s] -- Added test 'xmllint' to check XML markup files
+[2.168s] -- Configuring done (2.0s)
+[2.180s] -- Generating done (0.0s)
+[2.186s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/action_assignment
+[2.195s] Invoked command in '/home/ubuntu/ros_workspace/build/action_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/action_assignment -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/action_assignment
+[2.197s] Invoking command in '/home/ubuntu/ros_workspace/build/action_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/action_assignment -- -j16 -l16
+[2.288s] Invoked command in '/home/ubuntu/ros_workspace/build/action_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/action_assignment -- -j16 -l16
+[2.308s] Invoking command in '/home/ubuntu/ros_workspace/build/action_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/action_assignment
+[2.324s] -- Install configuration: ""
+[2.328s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/package_run_dependencies/action_assignment
+[2.329s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/parent_prefix_path/action_assignment
+[2.330s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/ament_prefix_path.sh
+[2.330s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/ament_prefix_path.dsv
+[2.330s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/path.sh
+[2.331s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/environment/path.dsv
+[2.331s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.bash
+[2.332s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.sh
+[2.332s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.zsh
+[2.333s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/local_setup.dsv
+[2.333s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/package.dsv
+[2.334s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/ament_index/resource_index/packages/action_assignment
+[2.335s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/cmake/action_assignmentConfig.cmake
+[2.335s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/cmake/action_assignmentConfig-version.cmake
+[2.336s] -- Installing: /home/ubuntu/ros_workspace/install/action_assignment/share/action_assignment/package.xml
+[2.340s] Invoked command in '/home/ubuntu/ros_workspace/build/action_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/action_assignment

@@ -6,8 +6,8 @@
 
 #include "robot_custom_msgs/srv/detail/velocity__struct.h"
 #include "robot_custom_msgs/srv/detail/velocity__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "robot_custom_msgs/srv/detail/velocity__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

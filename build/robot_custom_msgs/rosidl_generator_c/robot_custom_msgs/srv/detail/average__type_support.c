@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "robot_custom_msgs/srv/detail/average__type_support.h"
-#include "robot_custom_msgs/srv/detail/average__functions.h"
 #include "robot_custom_msgs/srv/detail/average__struct.h"
+#include "robot_custom_msgs/srv/detail/average__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

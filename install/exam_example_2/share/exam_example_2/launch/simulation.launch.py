@@ -7,6 +7,8 @@ from launch.event_handlers import OnProcessExit
 from ament_index_python.packages import get_package_share_directory
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 
 import os
 
@@ -25,6 +27,17 @@ def generate_launch_description():
             os.path.join(pkg_bme_gazebo, 'launch', 'spawn_robot.launch.py')
         ),
     )
+
+    # 1. DECLARE the argument (name: 'window_size', default: '5')
+    #window_arg = DeclareLaunchArgument(
+    #    'window_size',
+    #    default_value='5',
+    #    description='Size of the velocity averaging window'
+    #)
+
+    # 2. CAPTURE the configuration
+    window_config = LaunchConfiguration('window_size')
+
     distance = Node(
         package='exam_example_2',
         executable='distance',
@@ -39,6 +52,18 @@ def generate_launch_description():
         output='screen',
         prefix = 'xterm -e',
         #prefix='xterm -hold -e', #keeps the window open to help debugging
+
+        # The node writes to '/cmd_vel', but we map it to '/cmd_vel_mux'
+        #its a from- to analogy
+        #remappings=[
+        #   ('/cmd_vel', '/cmd_vel_mux'),
+        #   ('/odom', '/localization/odom') # Example: changing input topic too
+        #]
+
+        #parameters=[
+        #   {'window_size': window_config} # Linking arg to ROS Parameter
+        #the window_siz is hard coded in the script that we are looking at so use that
+        #]
     )
     
     # 2. Create the Event Handler, is normal constant
@@ -54,6 +79,7 @@ def generate_launch_description():
         distance,
         robot,
         #robot2,
+        #window_arg,
         spawn_robot,
         shutdown_handler,
     ])

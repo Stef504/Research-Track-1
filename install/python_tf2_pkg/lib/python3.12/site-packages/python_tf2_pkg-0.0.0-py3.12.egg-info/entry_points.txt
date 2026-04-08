@@ -1,0 +1,6 @@
+[console_scripts]
+carrot = python_tf2_pkg.carrot:main
+simple_quaternion = python_tf2_pkg.simple_quaternions:main
+static_broadcaster = python_tf2_pkg.static_broad:main
+turtle_broadcaster = python_tf2_pkg.broadcaster:main
+turtle_listener = python_tf2_pkg.listener:main

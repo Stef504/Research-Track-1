@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/ros_workspace/build/turtlesim_controller': /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16
-Invoked command in '/home/ubuntu/ros_workspace/build/turtlesim_controller' returned '2': /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/turtlesim_controller -- -j16 -l16

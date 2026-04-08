@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.11 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (3.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ubuntu/ros_workspace/build/first_package_cpp
+[ 11%] [32mBuilding CXX object CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/talker_component2.dir/src/talker_component2.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/talker_component.dir/src/talker_component.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/talker_component_exe.dir/rclcpp_components/node_main_talker_component_exe.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/manual_composition.dir/src/manual_composition.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/talker_exe.dir/rclcpp_components/node_main_talker_exe.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/subscriber_component.dir/src/subscriber_component.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/subscriber_component_exe.dir/rclcpp_components/node_main_subscriber_component_exe.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/subscriber_exe.dir/rclcpp_components/node_main_subscriber_exe.cpp.o[0m
+[ 55%] [32m[1mLinking CXX executable talker_exe[0m
+[ 61%] [32m[1mLinking CXX executable subscriber_component_exe[0m
+[ 66%] [32m[1mLinking CXX executable subscriber_exe[0m
+[ 72%] [32m[1mLinking CXX executable talker_component_exe[0m
+[ 72%] Built target talker_exe
+[ 72%] Built target subscriber_component_exe
+[ 72%] Built target subscriber_exe
+[ 72%] Built target talker_component_exe
+[ 77%] [32m[1mLinking CXX shared library libtalker_component2.so[0m
+[ 77%] Built target talker_component2
+[ 83%] [32m[1mLinking CXX shared library libtalker_component.so[0m
+[ 83%] Built target talker_component
+[ 88%] [32m[1mLinking CXX shared library libsubscriber_component2.so[0m
+[ 94%] [32m[1mLinking CXX shared library libsubscriber_component.so[0m
+[100%] [32m[1mLinking CXX executable manual_composition[0m
+[100%] Built target subscriber_component2
+[100%] Built target subscriber_component
+[100%] Built target manual_composition

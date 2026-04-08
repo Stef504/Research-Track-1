@@ -1,0 +1,69 @@
+[0.132s] Invoking command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/bme_gazebo_sensors -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/bme_gazebo_sensors
+[1.967s] -- The C compiler identification is GNU 13.3.0
+[1.968s] -- The CXX compiler identification is GNU 13.3.0
+[1.968s] -- Detecting C compiler ABI info
+[1.968s] -- Detecting C compiler ABI info - done
+[1.968s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.968s] -- Detecting C compile features
+[1.969s] -- Detecting C compile features - done
+[1.969s] -- Detecting CXX compiler ABI info
+[1.970s] -- Detecting CXX compiler ABI info - done
+[1.970s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.971s] -- Detecting CXX compile features
+[1.972s] -- Detecting CXX compile features - done
+[1.973s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.973s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.973s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.203s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.203s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.213s] -- Added test 'lint_cmake' to check CMake code style
+[2.213s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.231s] -- Added test 'xmllint' to check XML markup files
+[2.240s] -- Configuring done (2.0s)
+[2.252s] -- Generating done (0.0s)
+[2.257s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/bme_gazebo_sensors
+[2.271s] Invoked command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/bme_gazebo_sensors -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/bme_gazebo_sensors
+[2.271s] Invoking command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16
+[2.362s] Invoked command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16
+[2.363s] Invoking command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/bme_gazebo_sensors
+[2.380s] -- Install configuration: ""
+[2.381s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch
+[2.384s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/world.launch.py
+[2.384s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot_ex.launch.py
+[2.385s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot.launch.py
+[2.385s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds
+[2.386s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my_world.sdf
+[2.387s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world.sdf
+[2.388s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my.sdf
+[2.388s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world_empty.sdf
+[2.390s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/home.sdf
+[2.391s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz
+[2.392s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/urdf.rviz
+[2.393s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/rviz.rviz
+[2.394s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/gps.rviz
+[2.394s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf
+[2.395s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.gazebo
+[2.395s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.urdf
+[2.396s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/materials.xacro
+[2.396s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes
+[2.398s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/mogi_bot.dae
+[2.399s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/wheel.dae
+[2.400s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/lidar.dae
+[2.402s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config
+[2.403s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config/ekf.yaml
+[2.405s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/ament_index/resource_index/package_run_dependencies/bme_gazebo_sensors
+[2.406s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/ament_index/resource_index/parent_prefix_path/bme_gazebo_sensors
+[2.407s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.sh
+[2.407s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.dsv
+[2.408s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.sh
+[2.409s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.dsv
+[2.409s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.bash
+[2.409s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.sh
+[2.410s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.zsh
+[2.410s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.dsv
+[2.410s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.dsv
+[2.410s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/ament_index/resource_index/packages/bme_gazebo_sensors
+[2.412s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig.cmake
+[2.413s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig-version.cmake
+[2.413s] -- Installing: /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.xml
+[2.445s] Invoked command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/ros_workspace/build/bme_gazebo_sensors

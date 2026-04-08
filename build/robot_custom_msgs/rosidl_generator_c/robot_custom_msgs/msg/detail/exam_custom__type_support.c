@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "robot_custom_msgs/msg/detail/exam_custom__functions.h"
-#include "robot_custom_msgs/msg/detail/exam_custom__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "robot_custom_msgs/msg/detail/exam_custom__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "robot_custom_msgs/msg/detail/exam_custom__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

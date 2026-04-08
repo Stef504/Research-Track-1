@@ -64,6 +64,17 @@ class RobotController(Node):
 
 
         super().__init__('robot_controller')
+
+        # --- STEP 1: Declare the Parameter ---
+        # You tell ROS: "I expect a parameter named 'window_size'. 
+        # If the user doesn't provide one, use 5."
+        #self.declare_parameter('window_size',5 )
+
+        # --- STEP 2: Get the Value ---
+        # You reach into ROS, grab the value (which might be from the launch file),
+        # and store it in a standard Python variable.
+        #self.window_size_ = self.get_parameter('window_size').get_parameter_value().integer_value #.integer_value relates to type
+
         self.publisher_1 = self.create_publisher(Twist, '/robot_vel', 10)
 
         self.subscribe_ = self.create_subscription(String, 'distance_topic', self.topic_callback,10)
@@ -92,6 +103,8 @@ class RobotController(Node):
 
 
     def avgerage_velocity(self):
+
+        #self.count = self.window_size_
 
         if self.value_counter < self.count:
             return 

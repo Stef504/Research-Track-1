@@ -28,9 +28,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'action_server_ = tutorial_1_action.action_server_:main',
-            'action_client_ = tutorial_1_action.action_client_:main',
-            'cancel_client_ = tutorial_1_action.cancel_client_:main',
+            'action_server_ = tutorial_1_action.action_server_:main', 
+            'action_client_ = tutorial_1_action.action_client:main',
+            'cancel_client_ = tutorial_1_action.cancel_client:main',
         ],
     },
 )

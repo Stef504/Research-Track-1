@@ -1,3 +1,0 @@
-[0.060s] Invoking command in '/home/ubuntu/ros_workspace/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/assignment1_rt -- -j16 -l16
-[0.379s] [ 50%] Built target distance
-[0.379s] [100%] Built target turtles

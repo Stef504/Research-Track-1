@@ -1,0 +1,53 @@
+[1.082s] Invoking command in '/home/ubuntu/ros_workspace/src/python_tf2_pkg': PYTHONPATH=/home/ubuntu/ros_workspace/build/python_tf2_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_tf2_pkg build --build-base /home/ubuntu/ros_workspace/build/python_tf2_pkg/build install --record /home/ubuntu/ros_workspace/build/python_tf2_pkg/install.log --single-version-externally-managed install_data
+[1.303s] running egg_info
+[1.303s] creating ../../build/python_tf2_pkg/python_tf2_pkg.egg-info
+[1.319s] writing ../../build/python_tf2_pkg/python_tf2_pkg.egg-info/PKG-INFO
+[1.320s] writing dependency_links to ../../build/python_tf2_pkg/python_tf2_pkg.egg-info/dependency_links.txt
+[1.320s] writing entry points to ../../build/python_tf2_pkg/python_tf2_pkg.egg-info/entry_points.txt
+[1.320s] writing requirements to ../../build/python_tf2_pkg/python_tf2_pkg.egg-info/requires.txt
+[1.320s] writing top-level names to ../../build/python_tf2_pkg/python_tf2_pkg.egg-info/top_level.txt
+[1.321s] writing manifest file '../../build/python_tf2_pkg/python_tf2_pkg.egg-info/SOURCES.txt'
+[1.352s] reading manifest file '../../build/python_tf2_pkg/python_tf2_pkg.egg-info/SOURCES.txt'
+[1.352s] writing manifest file '../../build/python_tf2_pkg/python_tf2_pkg.egg-info/SOURCES.txt'
+[1.353s] running build
+[1.353s] running build_py
+[1.353s] creating /home/ubuntu/ros_workspace/build/python_tf2_pkg/build
+[1.354s] creating /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib
+[1.354s] creating /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.355s] copying python_tf2_pkg/carrot.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.356s] copying python_tf2_pkg/broadcaster.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.357s] copying python_tf2_pkg/static_broad.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.358s] copying python_tf2_pkg/simple_quaternions.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.359s] copying python_tf2_pkg/listener.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.359s] copying python_tf2_pkg/__init__.py -> /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg
+[1.360s] running install
+[1.364s] running install_lib
+[1.380s] creating /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.380s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/carrot.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.381s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/broadcaster.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.381s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/static_broad.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.381s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/simple_quaternions.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.381s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/listener.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.382s] copying /home/ubuntu/ros_workspace/build/python_tf2_pkg/build/lib/python_tf2_pkg/__init__.py -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg
+[1.384s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/carrot.py to carrot.cpython-312.pyc
+[1.384s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/broadcaster.py to broadcaster.cpython-312.pyc
+[1.385s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/static_broad.py to static_broad.cpython-312.pyc
+[1.386s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/simple_quaternions.py to simple_quaternions.cpython-312.pyc
+[1.386s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/listener.py to listener.cpython-312.pyc
+[1.387s] byte-compiling /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg/__init__.py to __init__.cpython-312.pyc
+[1.387s] running install_data
+[1.387s] creating /home/ubuntu/ros_workspace/install/python_tf2_pkg/share/ament_index
+[1.388s] creating /home/ubuntu/ros_workspace/install/python_tf2_pkg/share/ament_index/resource_index
+[1.388s] creating /home/ubuntu/ros_workspace/install/python_tf2_pkg/share/ament_index/resource_index/packages
+[1.388s] copying resource/python_tf2_pkg -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/share/ament_index/resource_index/packages
+[1.389s] copying package.xml -> /home/ubuntu/ros_workspace/install/python_tf2_pkg/share/python_tf2_pkg
+[1.389s] running install_egg_info
+[1.406s] Copying ../../build/python_tf2_pkg/python_tf2_pkg.egg-info to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages/python_tf2_pkg-0.0.0-py3.12.egg-info
+[1.408s] running install_scripts
+[1.523s] Installing carrot script to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python_tf2_pkg
+[1.523s] Installing simple_quaternion script to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python_tf2_pkg
+[1.523s] Installing static_broadcaster script to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python_tf2_pkg
+[1.524s] Installing turtle_broadcaster script to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python_tf2_pkg
+[1.524s] Installing turtle_listener script to /home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python_tf2_pkg
+[1.524s] writing list of installed files to '/home/ubuntu/ros_workspace/build/python_tf2_pkg/install.log'
+[1.551s] Invoked command in '/home/ubuntu/ros_workspace/src/python_tf2_pkg' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/python_tf2_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_tf2_pkg build --build-base /home/ubuntu/ros_workspace/build/python_tf2_pkg/build install --record /home/ubuntu/ros_workspace/build/python_tf2_pkg/install.log --single-version-externally-managed install_data

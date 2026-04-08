@@ -1,8 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000429] (-) JobUnselected: {'identifier': 'assignment1_rt'}
-[0.000568] (-) JobUnselected: {'identifier': 'cmake_package'}
-[0.000647] (-) JobUnselected: {'identifier': 'first_package_cpp'}
-[0.000694] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
-[0.000744] (-) JobUnselected: {'identifier': 'python_package'}
-[0.000789] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
-[0.001128] (-) EventReactorShutdown: {}

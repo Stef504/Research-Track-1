@@ -1,0 +1,70 @@
+[0.744s] Invoking command in '/home/ubuntu/ros_workspace/build/first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/first_package_cpp
+[1.923s] -- The C compiler identification is GNU 13.3.0
+[1.924s] -- The CXX compiler identification is GNU 13.3.0
+[1.926s] -- Detecting C compiler ABI info
+[1.927s] -- Detecting C compiler ABI info - done
+[1.927s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.927s] -- Detecting C compile features
+[1.927s] -- Detecting C compile features - done
+[1.927s] -- Detecting CXX compiler ABI info
+[1.927s] -- Detecting CXX compiler ABI info - done
+[1.927s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.927s] -- Detecting CXX compile features
+[1.927s] -- Detecting CXX compile features - done
+[1.927s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.928s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.931s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.087s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.137s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.199s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.532s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.556s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.984s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.069s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.134s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.430s] -- Found rclcpp_components: 28.1.11 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[3.582s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.643s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.932s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.932s] -- Configured cppcheck include dirs: 
+[3.932s] -- Configured cppcheck exclude dirs and/or files: 
+[3.934s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.934s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.940s] -- Added test 'lint_cmake' to check CMake code style
+[3.942s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.948s] -- Added test 'uncrustify' to check C / C++ code style
+[3.948s] -- Configured uncrustify additional arguments: 
+[3.960s] -- Added test 'xmllint' to check XML markup files
+[3.964s] -- Configuring done (3.2s)
+[4.084s] -- Generating done (0.1s)
+[4.112s] -- Build files have been written to: /home/ubuntu/ros_workspace/build/first_package_cpp
+[4.139s] Invoked command in '/home/ubuntu/ros_workspace/build/first_package_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/ros_workspace/src/first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_workspace/install/first_package_cpp
+[4.142s] Invoking command in '/home/ubuntu/ros_workspace/build/first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/first_package_cpp -- -j16 -l16
+[4.716s] [ 11%] [32mBuilding CXX object CMakeFiles/subscriber_component2.dir/src/subscriber_component2.cpp.o[0m
+[4.716s] [ 11%] [32mBuilding CXX object CMakeFiles/talker_component2.dir/src/talker_component2.cpp.o[0m
+[4.716s] [ 16%] [32mBuilding CXX object CMakeFiles/talker_component.dir/src/talker_component.cpp.o[0m
+[4.721s] [ 22%] [32mBuilding CXX object CMakeFiles/talker_component_exe.dir/rclcpp_components/node_main_talker_component_exe.cpp.o[0m
+[4.721s] [ 27%] [32mBuilding CXX object CMakeFiles/manual_composition.dir/src/manual_composition.cpp.o[0m
+[4.721s] [ 33%] [32mBuilding CXX object CMakeFiles/talker_exe.dir/rclcpp_components/node_main_talker_exe.cpp.o[0m
+[4.721s] [ 38%] [32mBuilding CXX object CMakeFiles/subscriber_component.dir/src/subscriber_component.cpp.o[0m
+[4.721s] [ 44%] [32mBuilding CXX object CMakeFiles/subscriber_component_exe.dir/rclcpp_components/node_main_subscriber_component_exe.cpp.o[0m
+[4.722s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber_exe.dir/rclcpp_components/node_main_subscriber_exe.cpp.o[0m
+[12.650s] [ 55%] [32m[1mLinking CXX executable talker_exe[0m
+[12.754s] [ 61%] [32m[1mLinking CXX executable subscriber_component_exe[0m
+[13.372s] [ 66%] [32m[1mLinking CXX executable subscriber_exe[0m
+[13.978s] [ 72%] [32m[1mLinking CXX executable talker_component_exe[0m
+[14.070s] [ 72%] Built target talker_exe
+[14.095s] [ 72%] Built target subscriber_component_exe
+[14.300s] [ 72%] Built target subscriber_exe
+[14.317s] [ 72%] Built target talker_component_exe
+[17.319s] [ 77%] [32m[1mLinking CXX shared library libtalker_component2.so[0m
+[18.158s] [ 77%] Built target talker_component2
+[18.378s] [ 83%] [32m[1mLinking CXX shared library libtalker_component.so[0m
+[18.805s] [ 83%] Built target talker_component
+[22.039s] [ 88%] [32m[1mLinking CXX shared library libsubscriber_component2.so[0m
+[22.072s] [ 94%] [32m[1mLinking CXX shared library libsubscriber_component.so[0m
+[22.321s] [100%] [32m[1mLinking CXX executable manual_composition[0m
+[22.450s] [100%] Built target subscriber_component2
+[22.454s] [100%] Built target subscriber_component
+[22.749s] [100%] Built target manual_composition

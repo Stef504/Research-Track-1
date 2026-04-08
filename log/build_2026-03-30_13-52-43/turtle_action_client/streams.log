@@ -1,0 +1,24 @@
+[3.282s] Invoking command in '/home/ubuntu/ros_workspace/src/turtle_action_client': PYTHONPATH=/home/ubuntu/ros_workspace/build/turtle_action_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_action_client build --build-base /home/ubuntu/ros_workspace/build/turtle_action_client/build install --record /home/ubuntu/ros_workspace/build/turtle_action_client/install.log --single-version-externally-managed install_data
+[3.670s] running egg_info
+[3.704s] writing ../../build/turtle_action_client/turtle_action_client.egg-info/PKG-INFO
+[3.704s] writing dependency_links to ../../build/turtle_action_client/turtle_action_client.egg-info/dependency_links.txt
+[3.704s] writing entry points to ../../build/turtle_action_client/turtle_action_client.egg-info/entry_points.txt
+[3.704s] writing requirements to ../../build/turtle_action_client/turtle_action_client.egg-info/requires.txt
+[3.705s] writing top-level names to ../../build/turtle_action_client/turtle_action_client.egg-info/top_level.txt
+[3.762s] reading manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+[3.763s] writing manifest file '../../build/turtle_action_client/turtle_action_client.egg-info/SOURCES.txt'
+[3.766s] running build
+[3.766s] running build_py
+[3.767s] running install
+[3.775s] running install_lib
+[3.804s] running install_data
+[3.804s] running install_egg_info
+[3.834s] removing '/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info' (and everything under it)
+[3.836s] Copying ../../build/turtle_action_client/turtle_action_client.egg-info to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages/turtle_action_client-0.0.0-py3.12.egg-info
+[3.838s] running install_scripts
+[4.032s] Installing cancel_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.033s] Installing rotate_client script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.034s] Installing rotate_client2 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.034s] Installing rotate_client3 script to /home/ubuntu/ros_workspace/install/turtle_action_client/lib/turtle_action_client
+[4.034s] writing list of installed files to '/home/ubuntu/ros_workspace/build/turtle_action_client/install.log'
+[4.151s] Invoked command in '/home/ubuntu/ros_workspace/src/turtle_action_client' returned '0': PYTHONPATH=/home/ubuntu/ros_workspace/build/turtle_action_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_action_client build --build-base /home/ubuntu/ros_workspace/build/turtle_action_client/build install --record /home/ubuntu/ros_workspace/build/turtle_action_client/install.log --single-version-externally-managed install_data

@@ -1,5 +1,0 @@
-[0.035s] Invoking command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16
-[0.153s] [0mCMake Error: The source directory "/home/ubuntu/ros_workspace/src/bme_gazebo_sensors" does not exist.
-[0.153s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.166s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.172s] Invoked command in '/home/ubuntu/ros_workspace/build/bme_gazebo_sensors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/ros_workspace/build/bme_gazebo_sensors -- -j16 -l16

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "action_tutorials_interfaces/action/detail/tut1__type_support.h"
-#include "action_tutorials_interfaces/action/detail/tut1__functions.h"
 #include "action_tutorials_interfaces/action/detail/tut1__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "action_tutorials_interfaces/action/detail/tut1__functions.h"
+#include "action_tutorials_interfaces/action/detail/tut1__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

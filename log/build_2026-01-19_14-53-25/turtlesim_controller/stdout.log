@@ -1,4 +1,0 @@
-[ 37%] Built target turtlesim_controller3
-[ 37%] [32mBuilding CXX object CMakeFiles/turtlesim_controller2.dir/src/turtlesim_controller2.cpp.o[0m
-[ 62%] Built target turtlesim_service
-[ 87%] Built target turtlesim_controller

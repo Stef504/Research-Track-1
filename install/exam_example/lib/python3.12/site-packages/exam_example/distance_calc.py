@@ -1,9 +1,9 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from std_msgs.msg import String, Float64MultiArray
 from turtlesim.msg import Pose
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, PoseArray
 import math
 
 class DistanceCalc(Node):
@@ -16,8 +16,7 @@ class DistanceCalc(Node):
         # Note: 'double' becomes just a float number.
         self.radius_ = 0.0
         self.threshold_ = 2.0  # actual threshold 1.5 gave a bit more for controls
-        self.range_ = [2,3,4,5,6,7,8,9,10,2.5,3.5,4.5,5.5,6.5,7.5,8.5]  #list to store distances
-        
+    
         # Defining turtle positions
         self.t1_x = 5.54
         self.t1_y = 5.54
@@ -33,13 +32,22 @@ class DistanceCalc(Node):
         self.distance_msg = String()
         self.twist_msg = Twist()
         self.obstacle_msg = String()
+        self.mines_msg = String()
+
+        self.obstacle_closest = 0.0 
 
         super().__init__('distance_calc') #name of node
         self.subscription_1 = self.create_subscription(Pose,"turtle1/pose",self.tutrle1_callback,10)
         self.subscription_2 = self.create_subscription(Pose,"turtle2/pose",self.tutrle2_callback,10)
-
+        
+        self.subscribe_mines = self.create_subscription(PoseArray, 'mines_topic',self.mine_callback, 10)
+        self.publish_mines = self.create_publisher(String,'mine_detect',10)
+        
         self.publisher_ = self.create_publisher(String, 'distance_topic', 10)
-        self.publisher_obs = self.create_publisher(String, 'obstacle_topic', 10)
+
+        self.subscriber_obs = self.create_subscription(Float64MultiArray, 'obstacle_topic',self.obstacle_callback, 10)
+        self.publisher_obs = self.create_publisher(String,'obstacle_detect', 10)
+
         self.timer_ = self.create_timer(0.05, self.timer_callback)
 
     def tutrle1_callback(self, msg):
@@ -51,17 +59,46 @@ class DistanceCalc(Node):
         self.t2_x = msg.x
         self.t2_y = msg.y
         self.t2_has_data = True
+        
+    def obstacle_callback (self,msg)
+        
+        if len(msg.data) == 0
+         return
+        
+        self.obstacle_closest = min(msg.data)
+
+        if self.obstacle_closest < self.threshold_
+            self.obstacle_msg = f"The obstacles are too close"
+            self.get_logger().warn(f"Not safe:'{self.obstacle_msg.data}'")
+        else
+            self.obstacle_msg = f"safe"
+
+    def mine_callback(self, msg):
+         
+        dist=[]
+
+        # Check if "out of bounds" OR "too close" is inside the distance string
+        # Reversed order logic compared to C++
+        #its an array of poses so we need to loop through them
+        for i in msg.poses:
+            d = math.sqrt((i.position.x- self.t1_x)**2 + (i.position.y - self.t1_y)**2)
+            dist.append(d)
+
+        if min(dist) < self.threshold_:
+            self.mines_msg.data= f"The mines are too close"
+            self.get_logger().warn(f"Not safe:'{self.mines_msg.data}'")
+        else:
+            self.mines_msg.data= f"safe" 
+
+        
 
     def timer_callback(self):
         
-        for i in self.range_:
-            if i < self.threshold_:
-                self.obstacle_msg.data = f"safe"
-            else: 
-                self.obstacle_msg.data = f"obstacle are too close!"
-
+        
         self.publisher_obs.publish(self.obstacle_msg)
 
+        self.publish_mines.publish(self.mines_msg)
+        
         if not self.t1_has_data or not self.t2_has_data:
             return
 
