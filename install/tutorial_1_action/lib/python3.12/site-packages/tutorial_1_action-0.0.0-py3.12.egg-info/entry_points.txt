@@ -1,4 +1,4 @@
 [console_scripts]
-action_client_ = tutorial_1_action.action_client.py:main
-action_server_ = tutorial_1_action.action_server.py:main
-cancel_client_ = tutorial_1_action.cancel_client.py:main
+action_client_ = tutorial_1_action.action_client:main
+action_server_ = tutorial_1_action.action_server_:main
+cancel_client_ = tutorial_1_action.cancel_client:main

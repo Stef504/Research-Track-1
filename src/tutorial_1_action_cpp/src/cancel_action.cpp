@@ -21,86 +21,72 @@ public:
    Node("robot_action_cancel_client", rclcpp::NodeOptions(options).use_intra_process_comms(true)),
     goal_handle_(nullptr), cancel_sent_(false)
 {
-    client_ = rclcpp_action::create_client<Tut1>(this, "tutorial_1_action");
+    client_ptr_ = rclcpp_action::create_client<Tut1>(this, "tutorial_1_action");
   }
 
-  void send_goal(double goal_value)
-  {
-    goal_handle_  = nullptr;
-    cancel_sent_  = false;
+  void send_goal(float target_goal)
+    {
+        if (!client_ptr_->wait_for_action_server(std::chrono::seconds(10))) {
+            RCLCPP_ERROR(this->get_logger(), "Action server not available");
+            rclcpp::shutdown();
+            return;
+        }
 
-    if (!client_->wait_for_action_server(std::chrono::seconds(10))) {
-      RCLCPP_ERROR(this->get_logger(), "Action server not available");
-      rclcpp::shutdown();
-      return;
+        auto goal_msg = Tut1::Goal();
+        goal_msg.goal = target_goal;
+        cancel_sent_ = false;
+
+        RCLCPP_INFO(this->get_logger(), "Sending goal...");
+
+        auto send_goal_options = rclcpp_action::Client<Tut1>::SendGoalOptions();
+        send_goal_options.goal_response_callback = std::bind(&RobotActionCancelClient::goal_response_callback, this, std::placeholders::_1);
+        send_goal_options.feedback_callback = std::bind(&RobotActionCancelClient::feedback_callback, this, std::placeholders::_1, std::placeholders::_2);
+        send_goal_options.result_callback = std::bind(&RobotActionCancelClient::get_result_callback, this, std::placeholders::_1);
+
+        client_ptr_->async_send_goal(goal_msg, send_goal_options);
     }
-
-    auto goal_msg   = Tut1::Goal();
-    goal_msg.goal  = goal_value;
-
-    auto send_goal_options = rclcpp_action::Client<Tut1>::SendGoalOptions();
-
-    // ── goal response ──────────────────────────────────────────────────────
-    send_goal_options.goal_response_callback =
-      [this](const GoalHandleTut1::SharedPtr & gh) {
-        if (!gh) {
-          RCLCPP_INFO(this->get_logger(), "Goal rejected :(");
-          return;
-        }
-        RCLCPP_INFO(this->get_logger(), "Goal accepted :)");
-        goal_handle_ = gh;   // store for potential cancellation
-      };
-
-    // ── feedback ───────────────────────────────────────────────────────────
-    send_goal_options.feedback_callback =
-      [this](GoalHandleTut1::SharedPtr,
-             const std::shared_ptr<const Tut1::Feedback> feedback) {
-        
-        RCLCPP_INFO(this->get_logger(), "Received feedback: %.4f", feedback->moving);
-
-        if (cancel_sent_ || goal_handle_ == nullptr )
-          return;
-
-          if (feedback->moving > 30.0) {
-          cancel_sent_ = true;
-          RCLCPP_WARN(this->get_logger(),
-            "Position > 30, cancelling goal...");
-
-          goal_handle_->async_cancel_goal(
-            [this](const action_msgs::srv::CancelGoal::Response::SharedPtr resp) {
-              this->cancel_done_callback(resp);
-            });
-        }
-      };
-
-    // ── result ─────────────────────────────────────────────────────────────
-    send_goal_options.result_callback =
-      [this](const GoalHandleFib::WrappedResult & result) {
-        RCLCPP_INFO(this->get_logger(),
-            "Result status=%d, final=%s",
-            static_cast<int>(result.code),
-            result.result->final.c_str());
-          rclcpp::shutdown();
-        };
-
-    client_->async_send_goal(goal_msg, send_goal_options);
-  }
 
 private:
-  rclcpp_action::Client<Tut1>::SharedPtr client_;
-  GoalHandleTut1::SharedPtr                    goal_handle_;
-  bool                                         cancel_sent_;
+    rclcpp_action::Client<Tut1>::SharedPtr client_ptr_;
+    GoalHandleTut1::SharedPtr goal_handle_;
+    bool cancel_sent_ = false;
 
-  void cancel_done_callback(
-    const action_msgs::srv::CancelGoal::Response::SharedPtr & resp)
-  {
-    if (!resp->goals_canceling.empty()) {
-      RCLCPP_INFO(this->get_logger(), "Cancel request accepted");
-    } else {
-      RCLCPP_WARN(this->get_logger(),
-        "Cancel request rejected / goal already finished");
+    void goal_response_callback(const GoalHandleTut1::SharedPtr & goal_handle)
+    {
+        if (!goal_handle) {
+            RCLCPP_ERROR(this->get_logger(), "Goal rejected :(");
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Goal accepted :)");
+            goal_handle_ = goal_handle; // Store it for cancellation
+        }
     }
-  }
+
+    void feedback_callback(GoalHandleTut1::SharedPtr, const std::shared_ptr<const Tut1::Feedback> feedback)
+    {
+        float current_x = feedback->moving;
+        RCLCPP_INFO(this->get_logger(), "Received feedback: %f", current_x);
+
+        if (cancel_sent_ || !goal_handle_) {
+            return;
+        }
+
+        if (std::abs(current_x) > 10.0) {
+            cancel_sent_ = true;
+            RCLCPP_WARN(this->get_logger(), "The robot has moved out of bounds, cancelling goal");
+            
+            auto cancel_result_future = client_ptr_->async_cancel_goal(goal_handle_);
+            
+            // Wait for the cancel response asynchronously
+            // In C++, the result callback handles the final shutdown when it receives the CANCELED state
+        }
+    }
+
+    void get_result_callback(const GoalHandleTut1::WrappedResult & result)
+    {
+        RCLCPP_INFO(this->get_logger(), "Result status=%d, sequence=%s", 
+                    static_cast<int>(result.code), result.result->final.c_str());
+        rclcpp::shutdown();
+    }
 };
 
 }

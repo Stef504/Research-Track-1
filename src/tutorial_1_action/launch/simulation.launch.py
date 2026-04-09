@@ -35,13 +35,13 @@ def generate_launch_description():
         prefix='xterm -hold -e', #keeps the window open to help debugging
     )
     
-    client = Node(
-        package='tutorial_1_action',
-        executable='action_client_',
-        name='client',
-        output='screen',
+    #client = Node(
+    #    package='tutorial_1_action',
+    #    executable='action_client_',
+    #    name='client',
+    #    output='screen',
 
-    )
+    #)
 
     cancel = Node(
         package='tutorial_1_action',
@@ -61,8 +61,8 @@ def generate_launch_description():
     # 3. Return everything in the description
     return LaunchDescription([
         robot,
-        client,
-        cancel,
+        #client,
+        cancel, 
         spawn_robot,
         shutdown_handler,
     ])

@@ -33,11 +33,11 @@ public:
 
     cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
 
-    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    publisher_1_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
 
     rclcpp::SubscriptionOptions sub_opts;
     sub_opts.callback_group = cb_group_;
-    subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
+    subscribe_ = this->create_subscription<nav_msgs::msg::Odometry>(
       "/odom", 10,
       std::bind(&RobotActionServer::topic_callback, this, _1),
       sub_opts);
@@ -45,167 +45,132 @@ public:
     action_server_ = rclcpp_action::create_server<Tut1>(
       this,
       "tutorial_1_action",
-      std::bind(&RobotActionServer::goal_callback, this, _1, _2),
-      std::bind(&RobotActionServer::cancel_callback, this, _1),
-      std::bind(&RobotActionServer::execute_callback, this, _1),
+      std::bind(&RobotActionServer::handle_goal, this, _1, _2),
+      std::bind(&RobotActionServer::handle_cancel, this, _1),
+      std::bind(&RobotActionServer::handle_accepted, this, _1),
       rcl_action_server_get_default_options(),
       cb_group_);
   }
 
 
 private:
-  // ── member variables ───────────────────────────────────────────────────────
-  double velocity_linear_;
-  double tolerance_;
-  double x_;
-  bool   running_;
+    rclcpp_action::Server<Tut1>::SharedPtr action_server_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_1_;
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscribe_;
 
-  geometry_msgs::msg::Twist message_;
+    std::shared_ptr<GoalHandleTut1> current_goal_handle_;
+    std::mutex lock_;
 
-  std::mutex lock_;
-  std::shared_ptr<GoalHandleTut1> current_goal_handle_;
-  std::shared_ptr<GoalHandleTut1> preempt_requested_for_;
+    rclcpp::CallbackGroup::SharedPtr cb_group_;
 
-  rclcpp::CallbackGroup::SharedPtr                  cb_group_;
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
-  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
-  rclcpp_action::Server<Tut1>::SharedPtr            action_server_;
+    geometry_msgs::msg::Twist message_;
+    double x_ = 0.0;
+    double velocity_linear_ = 0.0;
+    double tolerance_ = 0.0;
+    bool running_ = false;
 
-  // ── callbacks ──────────────────────────────────────────────────────────────
-  rclcpp_action::GoalResponse goal_callback(
-    const rclcpp_action::GoalUUID & /*uuid*/,
-    std::shared_ptr<const Tut1::Goal> goal)
-  {
-    RCLCPP_INFO(this->get_logger(),
-      "Received goal request: goal=%.2f", goal->goal);
-
-    std::lock_guard<std::mutex> guard(lock_);
-    if (current_goal_handle_ != nullptr) {
-      RCLCPP_WARN(this->get_logger(), "Preempting previous goal (server abort)");
-      preempt_requested_for_ = current_goal_handle_;
-    }
-    return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
-  }
-
-  rclcpp_action::CancelResponse cancel_callback(
-    const std::shared_ptr<GoalHandleTut1> /*goal_handle*/)
-  {
-    RCLCPP_WARN(this->get_logger(), "Received cancel request (from client)");
-    return rclcpp_action::CancelResponse::ACCEPT;
-  }
-
-  void execute_callback(const std::shared_ptr<GoalHandleTut1> goal_handle)
-  {
-    RCLCPP_INFO(this->get_logger(), "Executing goal...");
-
+    void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
-      std::lock_guard<std::mutex> guard(lock_);
-      current_goal_handle_ = goal_handle;
+        x_ = msg->pose.pose.position.x;
+        // Optional: RCLCPP_INFO(this->get_logger(), "Controller heard: '%f'", x_);
     }
 
-    auto feedback_msg = std::make_shared<Tut1::Feedback>();
-    auto result       = std::make_shared<Tut1::Result>();
-    running_ = true;
-
-    while (running_) {
-
-      // ── CHECK 1: client cancel ──────────────────────────────────────────
-      if (goal_handle->is_canceling()) {
-        RCLCPP_WARN(this->get_logger(),
-          "Cancel requested by client, stopping execution");
-
-        stop_robot();
-        result->final = std::to_string(feedback_msg->moving);
-        goal_handle->canceled(result);
-
-        {
-          std::lock_guard<std::mutex> guard(lock_);
-          if (current_goal_handle_ == goal_handle)
-            current_goal_handle_ = nullptr;
-        }
-        return;
-      }
-
-      // ── CHECK 2: server preemption ──────────────────────────────────────
-      rclcpp_action::GoalUUID preempt_id{};
-      bool has_preempt = false;
-      {
-        std::lock_guard<std::mutex> guard(lock_);
-        if (preempt_requested_for_ != nullptr) {
-          preempt_id  = preempt_requested_for_->get_goal_id();
-          has_preempt = true;
-        }
-      }
-
-      bool preempt_me = has_preempt && (goal_handle->get_goal_id() == preempt_id);
-
-      if (preempt_me) {
-        RCLCPP_WARN(this->get_logger(),
-          "Preempted by a newer goal, aborting this one");
-
-        stop_robot();
-        result->final = std::to_string(feedback_msg->moving);
-        goal_handle->abort(result);
-
-        {
-          std::lock_guard<std::mutex> guard(lock_);
-          if (current_goal_handle_ == goal_handle)
-            current_goal_handle_ = nullptr;
-          if (preempt_requested_for_ != nullptr &&
-              preempt_requested_for_->get_goal_id() == goal_handle->get_goal_id())
-            preempt_requested_for_ = nullptr;
-        }
-        return;
-      }
-
-      // ── Normal execution ────────────────────────────────────────────────
-      feedback_msg->moving = x_;
-      goal_handle->publish_feedback(feedback_msg);
-
-      tolerance_ = goal_handle->get_goal()->goal - x_;
-
-      if (std::abs(tolerance_) < 0.2) {
-        stop_robot();
-        running_ = false;
-      } else if (tolerance_ > 0.0) {
-        set_velocity(2.0);
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-      } else {
-        set_velocity(-2.0);
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-      }
-    }
-
-    stop_robot();
-    result->final = std::to_string(feedback_msg->moving);
-    goal_handle->succeed(result);
-
+    rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID & uuid, std::shared_ptr<const Tut1::Goal> goal)
     {
-      std::lock_guard<std::mutex> guard(lock_);
-      if (current_goal_handle_ == goal_handle)
-        current_goal_handle_ = nullptr;
+        (void)uuid;
+        RCLCPP_INFO(this->get_logger(), "Received goal request: goal=%f", goal->goal);
+        return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
     }
-  }
 
-  void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
-  {
-    RCLCPP_INFO(this->get_logger(),
-      "Controller heard: '%.4f'", msg->pose.pose.position.x);
-    x_ = msg->pose.pose.position.x;
-  }
+    rclcpp_action::CancelResponse handle_cancel(const std::shared_ptr<GoalHandleTut1> goal_handle)
+    {
+        (void)goal_handle;
+        RCLCPP_WARN(this->get_logger(), "Received cancel request (from client)");
+        return rclcpp_action::CancelResponse::ACCEPT;
+    }
 
-  // ── helpers ────────────────────────────────────────────────────────────────
-  void set_velocity(double v)
-  {
-    velocity_linear_        = v;
-    message_.linear.x       = velocity_linear_;
-    publisher_->publish(message_);
-  }
+    void handle_accepted(const std::shared_ptr<GoalHandleTut1> goal_handle)
+    {
+        // Preemption logic: If there is already a goal running, flag it to be aborted
+        {
+            std::lock_guard<std::mutex> lock(lock_);
+            if (current_goal_handle_ != nullptr && current_goal_handle_->is_active()) {
+                RCLCPP_WARN(this->get_logger(), "Preempting previous goal (server abort)");
+            }
+            current_goal_handle_ = goal_handle;
+        }
 
-  void stop_robot()
-  {
-    set_velocity(0.0);
-  }
+        // Start a new thread for execution
+        std::thread{std::bind(&RobotActionServer::execute_callback, this, std::placeholders::_1), goal_handle}.detach();
+    }
+
+    void execute_callback(const std::shared_ptr<GoalHandleTut1> goal_handle)
+    {
+        RCLCPP_INFO(this->get_logger(), "Executing goal...");
+        auto feedback_msg = std::make_shared<Tut1::Feedback>();
+        auto result = std::make_shared<Tut1::Result>();
+        
+        running_ = true;
+        rclcpp::Rate loop_rate(10); // 10 Hz (similar to time.sleep(0.1))
+
+        while (rclcpp::ok() && running_) {
+            // Check if canceled by client
+            if (goal_handle->is_canceling()) {
+                RCLCPP_WARN(this->get_logger(), "Cancel requested by client, stopping execution");
+                result->final = std::to_string(x_);
+                goal_handle->canceled(result);
+                stop_robot();
+                return;
+            }
+
+            // Check if preempted by a new goal on the server
+            {
+                std::lock_guard<std::mutex> lock(lock_);
+                if (current_goal_handle_ != goal_handle) {
+                    RCLCPP_WARN(this->get_logger(), "Preempted by a newer goal, aborting this one");
+                    result->final = std::to_string(x_);
+                    goal_handle->abort(result);
+                    stop_robot();
+                    return;
+                }
+            }
+
+            // Normal Execution
+            feedback_msg->moving = x_;
+            goal_handle->publish_feedback(feedback_msg);
+
+            tolerance_ = goal_handle->get_goal()->goal - x_;
+
+            if (std::abs(tolerance_) < 0.2) {
+                stop_robot();
+                running_ = false;
+            } else if (tolerance_ > 0.0) {
+                velocity_linear_ = 2.0;
+                message_.linear.x = velocity_linear_;
+                publisher_1_->publish(message_);
+            } else {
+                velocity_linear_ = -2.0;
+                message_.linear.x = velocity_linear_;
+                publisher_1_->publish(message_);
+            }
+
+            loop_rate.sleep();
+        }
+
+        // Job Done Successfully
+        if (rclcpp::ok()) {
+            stop_robot();
+            result->final = std::to_string(x_);
+            goal_handle->succeed(result);
+            RCLCPP_INFO(this->get_logger(), "Goal Succeeded");
+        }
+    }
+
+    void stop_robot() {
+        velocity_linear_ = 0.0;
+        message_.linear.x = velocity_linear_;
+        publisher_1_->publish(message_);
+    }
 };
 
 }

@@ -9,7 +9,7 @@ class Tut1ActionClient(Node):
 
     def __init__(self):
         super().__init__('tut1_action_client')
-        self._action_client = ActionClient(self, Tut1, 'tut1')
+        self._action_client = ActionClient(self, Tut1, 'tutorial_1_action')
         self._goal_handle = None
         self._cancel_sent = False
 
@@ -71,8 +71,8 @@ class Tut1ActionClient(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    action_client = FibonacciActionClient()
-    action_client.send_goal(10)  
+    action_client = Tut1ActionClient()
+    action_client.send_goal(11.0)  
     rclpy.spin(action_client)
 
 

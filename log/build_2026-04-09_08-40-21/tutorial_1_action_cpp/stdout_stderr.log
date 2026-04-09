@@ -1,0 +1,27 @@
+[ 33%] Built target server_exe
+[ 50%] Built target client
+[ 50%] Built target server
+[ 66%] Built target client_exe
+[ 83%] Built target cancel_client_exe
+[ 91%] [32mBuilding CXX object CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libcancel_client.so[0m
+[100%] Built target cancel_client
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/client_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/client_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/server_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/server_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/cancel_client_exe
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/tutorial_1_action_cpp/cancel_client_exe" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libclient.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libclient.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libserver.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libserver.so" to ""
+-- Installing: /home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libcancel_client.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib/libcancel_client.so" to ""
+[31mCMake Error at cmake_install.cmake:187 (file):
+  file INSTALL cannot find
+  "/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/launch": No such file
+  or directory.
+
+[0m

@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000647] (-) JobUnselected: {'identifier': 'action_assignment'}
+[0.000834] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000857] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000898] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000914] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.000929] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.000942] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000953] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.000965] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.000976] (-) JobUnselected: {'identifier': 'fibonacci'}
+[0.000986] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000998] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.001010] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.001022] (-) JobUnselected: {'identifier': 'python_package'}
+[0.001033] (-) JobUnselected: {'identifier': 'python_tf2_pkg'}
+[0.001045] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.001057] (-) JobUnselected: {'identifier': 'turtle_action_client'}
+[0.001068] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.001080] (-) JobUnselected: {'identifier': 'tutorial_1_action'}
+[0.001099] (tutorial_1_action_cpp) JobQueued: {'identifier': 'tutorial_1_action_cpp', 'dependencies': OrderedDict({'action_tutorials_interfaces': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces', 'bme_gazebo_sensors': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors'})}
+[0.001145] (tutorial_1_action_cpp) JobStarted: {'identifier': 'tutorial_1_action_cpp'}
+[0.037800] (tutorial_1_action_cpp) JobProgress: {'identifier': 'tutorial_1_action_cpp', 'progress': 'cmake'}
+[0.039055] (tutorial_1_action_cpp) JobProgress: {'identifier': 'tutorial_1_action_cpp', 'progress': 'build'}
+[0.040434] (tutorial_1_action_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/tutorial_1_action_cpp', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/tutorial_1_action_cpp', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib:/home/ubuntu/ros_workspace/install/first_package_cpp/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu/ros_workspace/install', 'TERM_PROGRAM_VERSION': '1.114.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-9eba9871-9aa7-4550-9694-ed2946744926.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros_workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-5668219e-ef79-427a-901f-2ce69ea1463a.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/robot_custom_msgs:/home/ubuntu/ros_workspace/install/python_tf2_pkg:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/exam_example:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/assignment1_rt:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/home/ubuntu/ros_workspace/install/action_assignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/tutorial_1_action_cpp', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/python_package/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/home/ubuntu/ros_workspace/install/robot_custom_msgs:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment1_rt:/home/ubuntu/ros_workspace/install/action_assignment:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_tf2_pkg:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy'}), 'shell': False}
+[0.099754] (-) TimerEvent: {}
+[0.200153] (-) TimerEvent: {}
+[0.204531] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 16%] Built target cancel_client_exe\n'}
+[0.204818] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 33%] Built target server_exe\n'}
+[0.205579] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 50%] Built target client_exe\n'}
+[0.215574] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/client.dir/src/action_client.cpp.o\x1b[0m\n'}
+[0.215793] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o\x1b[0m\n'}
+[0.218734] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o\x1b[0m\n'}
+[0.300308] (-) TimerEvent: {}
+[0.400731] (-) TimerEvent: {}
+[0.501140] (-) TimerEvent: {}
+[0.601500] (-) TimerEvent: {}
+[0.701912] (-) TimerEvent: {}
+[0.802473] (-) TimerEvent: {}
+[0.902924] (-) TimerEvent: {}
+[1.003369] (-) TimerEvent: {}
+[1.103902] (-) TimerEvent: {}
+[1.204335] (-) TimerEvent: {}
+[1.304929] (-) TimerEvent: {}
+[1.405402] (-) TimerEvent: {}
+[1.505951] (-) TimerEvent: {}
+[1.606435] (-) TimerEvent: {}
+[1.706959] (-) TimerEvent: {}
+[1.807496] (-) TimerEvent: {}
+[1.908042] (-) TimerEvent: {}
+[2.008554] (-) TimerEvent: {}
+[2.109044] (-) TimerEvent: {}
+[2.209538] (-) TimerEvent: {}
+[2.309977] (-) TimerEvent: {}
+[2.410369] (-) TimerEvent: {}
+[2.510925] (-) TimerEvent: {}
+[2.611420] (-) TimerEvent: {}
+[2.711851] (-) TimerEvent: {}
+[2.812277] (-) TimerEvent: {}
+[2.912710] (-) TimerEvent: {}
+[3.013245] (-) TimerEvent: {}
+[3.113768] (-) TimerEvent: {}
+[3.214200] (-) TimerEvent: {}
+[3.314621] (-) TimerEvent: {}
+[3.415035] (-) TimerEvent: {}
+[3.456902] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ktutorial_1_action_cpp::RobotActionCancelClient::\x1b[01;32m\x1b[KRobotActionCancelClient\x1b[m\x1b[K(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.457308] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:24:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kclient_ptr_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.457446] (tutorial_1_action_cpp) StderrLine: {'line': b'   24 |     \x1b[01;31m\x1b[Kclient_\x1b[m\x1b[K = rclcpp_action::create_client<Tut1>(this, "tutorial_1_action");\n'}
+[3.457547] (tutorial_1_action_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.457640] (tutorial_1_action_cpp) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kclient_ptr_\x1b[m\x1b[K\n'}
+[3.459126] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid tutorial_1_action_cpp::RobotActionCancelClient::\x1b[01;32m\x1b[Ksend_goal\x1b[m\x1b[K(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.459318] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:42:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTut1ActionClient\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.459387] (tutorial_1_action_cpp) StderrLine: {'line': b'   42 |         send_goal_options.goal_response_callback = std::bind(&\x1b[01;31m\x1b[KTut1ActionClient\x1b[m\x1b[K::goal_response_callback, this, std::placeholders::_1);\n'}
+[3.459444] (tutorial_1_action_cpp) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.459498] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:43:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTut1ActionClient\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.459551] (tutorial_1_action_cpp) StderrLine: {'line': b'   43 |         send_goal_options.feedback_callback = std::bind(&\x1b[01;31m\x1b[KTut1ActionClient\x1b[m\x1b[K::feedback_callback, this, std::placeholders::_1, std::placeholders::_2);\n'}
+[3.459604] (tutorial_1_action_cpp) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.459656] (tutorial_1_action_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/tutorial_1_action_cpp/src/cancel_action.cpp:44:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTut1ActionClient\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.459709] (tutorial_1_action_cpp) StderrLine: {'line': b'   44 |         send_goal_options.result_callback = std::bind(&\x1b[01;31m\x1b[KTut1ActionClient\x1b[m\x1b[K::get_result_callback, this, std::placeholders::_1);\n'}
+[3.459762] (tutorial_1_action_cpp) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.515182] (-) TimerEvent: {}
+[3.615531] (-) TimerEvent: {}
+[3.715930] (-) TimerEvent: {}
+[3.816431] (-) TimerEvent: {}
+[3.916955] (-) TimerEvent: {}
+[4.017424] (-) TimerEvent: {}
+[4.117890] (-) TimerEvent: {}
+[4.218257] (-) TimerEvent: {}
+[4.318670] (-) TimerEvent: {}
+[4.419048] (-) TimerEvent: {}
+[4.519597] (-) TimerEvent: {}
+[4.564658] (tutorial_1_action_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cancel_client.dir/build.make:76: CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o] Error 1\n'}
+[4.565287] (tutorial_1_action_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/cancel_client.dir/all] Error 2\n'}
+[4.565386] (tutorial_1_action_cpp) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.619760] (-) TimerEvent: {}
+[4.720163] (-) TimerEvent: {}
+[4.820823] (-) TimerEvent: {}
+[4.921226] (-) TimerEvent: {}
+[5.021726] (-) TimerEvent: {}
+[5.122242] (-) TimerEvent: {}
+[5.182598] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libclient.so\x1b[0m\n'}
+[5.222393] (-) TimerEvent: {}
+[5.322836] (-) TimerEvent: {}
+[5.423329] (-) TimerEvent: {}
+[5.510174] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 83%] Built target client\n'}
+[5.523462] (-) TimerEvent: {}
+[5.623899] (-) TimerEvent: {}
+[5.724391] (-) TimerEvent: {}
+[5.824915] (-) TimerEvent: {}
+[5.925362] (-) TimerEvent: {}
+[6.025843] (-) TimerEvent: {}
+[6.126373] (-) TimerEvent: {}
+[6.226775] (-) TimerEvent: {}
+[6.327263] (-) TimerEvent: {}
+[6.427701] (-) TimerEvent: {}
+[6.528095] (-) TimerEvent: {}
+[6.628638] (-) TimerEvent: {}
+[6.729117] (-) TimerEvent: {}
+[6.829495] (-) TimerEvent: {}
+[6.929986] (-) TimerEvent: {}
+[7.030531] (-) TimerEvent: {}
+[7.130992] (-) TimerEvent: {}
+[7.231350] (-) TimerEvent: {}
+[7.331753] (-) TimerEvent: {}
+[7.432248] (-) TimerEvent: {}
+[7.532691] (-) TimerEvent: {}
+[7.633062] (-) TimerEvent: {}
+[7.733480] (-) TimerEvent: {}
+[7.834133] (-) TimerEvent: {}
+[7.934590] (-) TimerEvent: {}
+[8.035096] (-) TimerEvent: {}
+[8.135688] (-) TimerEvent: {}
+[8.236558] (-) TimerEvent: {}
+[8.337063] (-) TimerEvent: {}
+[8.437458] (-) TimerEvent: {}
+[8.537939] (-) TimerEvent: {}
+[8.638660] (-) TimerEvent: {}
+[8.739187] (-) TimerEvent: {}
+[8.839701] (-) TimerEvent: {}
+[8.940126] (-) TimerEvent: {}
+[9.040567] (-) TimerEvent: {}
+[9.141020] (-) TimerEvent: {}
+[9.241612] (-) TimerEvent: {}
+[9.342620] (-) TimerEvent: {}
+[9.443056] (-) TimerEvent: {}
+[9.543480] (-) TimerEvent: {}
+[9.643995] (-) TimerEvent: {}
+[9.722936] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libserver.so\x1b[0m\n'}
+[9.744145] (-) TimerEvent: {}
+[9.844576] (-) TimerEvent: {}
+[9.945033] (-) TimerEvent: {}
+[10.045497] (-) TimerEvent: {}
+[10.141241] (tutorial_1_action_cpp) StdoutLine: {'line': b'[ 91%] Built target server\n'}
+[10.143022] (tutorial_1_action_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.145959] (-) TimerEvent: {}
+[10.146705] (tutorial_1_action_cpp) CommandEnded: {'returncode': 2}
+[10.167137] (tutorial_1_action_cpp) JobEnded: {'identifier': 'tutorial_1_action_cpp', 'rc': 2}
+[10.178077] (-) EventReactorShutdown: {}
