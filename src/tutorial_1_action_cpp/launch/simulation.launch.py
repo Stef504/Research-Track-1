@@ -8,6 +8,10 @@ from ament_index_python.packages import get_package_share_directory
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
+# NEW: Import the tools needed for Components
+from launch_ros.actions import ComposableNodeContainer
+from launch_ros.descriptions import ComposableNode
+
 import os
 
 
@@ -45,16 +49,10 @@ def generate_launch_description():
         package='tutorial_1_action_cpp',
         plugin='tutorial_1_action_cpp::RobotActionCancelClient',
         name='cancel',
-        output='screen',
+        
 
     )
-    # 2. Create the Event Handler, is normal constant
-    shutdown_handler = RegisterEventHandler(
-       event_handler=OnProcessExit(
-            target_action=robot,
-            on_exit=[EmitEvent(event=Shutdown())]
-        )
-    )
+    
     
     action_container = ComposableNodeContainer(
         name='action_container',
@@ -68,6 +66,16 @@ def generate_launch_description():
         ],
         output='screen',
     )
+    
+    # 2. Create the Event Handler, is normal constant
+    shutdown_handler = RegisterEventHandler(
+       event_handler=OnProcessExit(
+            # MAKE SURE THIS POINTS TO THE CONTAINER!
+            target_action=action_container, 
+            on_exit=[EmitEvent(event=Shutdown())]
+        )
+    )
+    
     # 3. Return everything in the description
     return LaunchDescription([
         spawn_robot,

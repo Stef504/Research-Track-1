@@ -37,7 +37,10 @@ class FramePublisher(Node):
         # Read message content and assign it to
         # corresponding tf variables
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'world'
+        
+        # 2. Set the frame_id and child_frame_id. 
+        #The frame_id is the name of the reference frame, and the child_frame_id is the name of the frame we are broadcasting.
+        t.header.frame_id = 'world' 
         t.child_frame_id = self.turtlename
 
         # Turtle only exists in 2D, thus we get x and y translation
@@ -49,6 +52,9 @@ class FramePublisher(Node):
         # For the same reason, turtle can only rotate around one axis
         # and this why we set rotation in x and y to 0 and obtain
         # rotation in z axis from the message
+        # had to build the quaternion from the euler angle, 
+        # since the message only contains the angle of rotation around z axis, 
+        # and we need to convert it to a quaternion for the transform message.
         quat = Rotation.from_euler('xyz', [0, 0, msg.theta]).as_quat()
         t.transform.rotation.x = quat[0]
         t.transform.rotation.y = quat[1]

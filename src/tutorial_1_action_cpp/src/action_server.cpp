@@ -44,7 +44,7 @@ public:
 
     action_server_ = rclcpp_action::create_server<Tut1>(
       this,
-      "tutorial_1_action",
+      "tutorial_1_action_cpp",
       std::bind(&RobotActionServer::handle_goal, this, _1, _2),
       std::bind(&RobotActionServer::handle_cancel, this, _1),
       std::bind(&RobotActionServer::handle_accepted, this, _1),

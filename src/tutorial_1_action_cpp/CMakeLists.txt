@@ -31,7 +31,7 @@ ament_target_dependencies(cancel_client rclcpp rclcpp_components rclcpp rclcpp_a
 #ament_target_dependencies(manual_composition rclcpp rclcpp_components std_msgs) 
 
 
-rclcpp_components_register_node(client PLUGIN "tutorial_1_action_cpp::RobotActionClient" EXECUTABLE client_exe)
+rclcpp_components_register_node(client PLUGIN "tutorial_1_action_cpp::RobotActionClient" EXECUTABLE client_exe) #last one is the executable name
 rclcpp_components_register_node(server PLUGIN "tutorial_1_action_cpp::RobotActionServer" EXECUTABLE server_exe) 
 rclcpp_components_register_node(cancel_client PLUGIN "tutorial_1_action_cpp::RobotActionCancelClient" EXECUTABLE cancel_client_exe)
 

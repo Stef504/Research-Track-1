@@ -22,7 +22,7 @@ public:
 
   explicit RobotActionClient(const rclcpp::NodeOptions & options): Node("robot_action_client", rclcpp::NodeOptions(options).use_intra_process_comms(true))
   {
-    client_ = rclcpp_action::create_client<Tut1>(this, "tutorial_1_action");
+    client_ = rclcpp_action::create_client<Tut1>(this, "tutorial_1_action_cpp");
   }
 
   void send_goal(float target_goal)
