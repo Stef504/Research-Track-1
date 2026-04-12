@@ -1,0 +1,16 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:[m[K In member function ‘[01m[Kvoid assignment_1_rt2::RobotActionServer::[01;32m[Kexecute_callback[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:222:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  222 |             q_target.[01;31m[Ktransform[m[K.rotation.x= q_target.x();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:223:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  223 |             q_target.[01;31m[Ktransform[m[K.rotation.y= q_target.y();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:224:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  224 |             q_target.[01;31m[Ktransform[m[K.rotation.z= q_target.z();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:225:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  225 |             q_target.[01;31m[Ktransform[m[K.rotation.w= q_target.w();
+      |                      [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

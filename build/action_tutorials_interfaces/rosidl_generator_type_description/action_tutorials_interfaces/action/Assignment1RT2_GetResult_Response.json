@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "action_tutorials_interfaces/action/Assignment1RT2_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Result",
+        "fields": [
+          {
+            "name": "final",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_GetResult_Response",
+      "hash_string": "RIHS01_c80e3dc2d424850371e740304e59696f73c94763174a9e286059f162813b70dc"
+    },
+    {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Result",
+      "hash_string": "RIHS01_2c0475444d6d169145e7543bf079177a3558a15afc24976c5d3406709f3828e3"
+    }
+  ]
+}

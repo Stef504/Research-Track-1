@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/action_client.cpp.o[0m
+[ 50%] Built target client_exe
+[ 75%] Built target server_exe

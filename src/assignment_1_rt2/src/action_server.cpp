@@ -8,9 +8,11 @@
 
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "tf2/LinearMath/Quaternion.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Vector3.h"
 #include "tf2_ros/transform_broadcaster.hpp"
-#include "turtlesim/msg/pose.hpp"
+#include "tf2_ros/buffer.h"
+#include "tf2_ros/transform_listener.h"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 #include "rclcpp/callback_group.hpp"
@@ -21,9 +23,11 @@
 #include <rclcpp_components/register_node_macro.hpp>
 #include <cinttypes>
 #include <cstdio>
+#include "tf2/utils.h" // For easy Yaw extraction
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
 // Replace with your actual package/action name
-#include "action_tutorials_interfaces/action/assignment1RT2.hpp"
+#include "action_tutorials_interfaces/action/assignment1_rt2.hpp"
 
 using Assignment1RT2 = action_tutorials_interfaces::action::Assignment1RT2;
 using GoalHandleAssignment1RT2 = rclcpp_action::ServerGoalHandle<Assignment1RT2>;
@@ -44,10 +48,16 @@ public:
     sub_opts.callback_group = cb_group_;
     
     publisher_1_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    
     tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);  
+    tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     subscribe_ = this->create_subscription<nav_msgs::msg::Odometry>(
       "/odom", 10, std::bind(&RobotActionServer::topic_callback, this, _1),sub_opts);
+
+    subscribe_user_interface_ = this->create_subscription<std_msgs::msg::String>(
+      "/user_interface", 10, std::bind(&RobotActionServer::user_interface_callback, this, _1),sub_opts);
 
     action_server_ = rclcpp_action::create_server<Assignment1RT2>(
       this,
@@ -58,8 +68,47 @@ public:
       rcl_action_server_get_default_options(),
       cb_group_);
 
-    //helper function to handle the subscription callback, which will broadcast the transform from world to robot
-    auto handle_robot_pose = [this](const std::shared_ptr<const nav_msgs::msg::Odometry> msg){
+    }
+
+        
+
+private:
+    rclcpp_action::Server<Assignment1RT2>::SharedPtr action_server_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_1_;
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscribe_;
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscribe_user_interface_;
+
+    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
+    std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
+
+    std::shared_ptr<GoalHandleAssignment1RT2> current_goal_handle_;
+    std::mutex lock_;
+
+    rclcpp::CallbackGroup::SharedPtr cb_group_;
+
+    geometry_msgs::msg::Twist cmd_vel;
+    float x_ = 0.0;
+    float y_ = 0.0;
+    float theta_ = 0.0;
+    float velocity_linear_ = 0.0;
+    float tolerance_ = 0.0;
+    bool running_ = false;
+
+    void user_interface_callback(const std_msgs::msg::String::SharedPtr msg) {
+        RCLCPP_INFO(this->get_logger(), "Received message from user interface: '%s'", msg->data.c_str());
+        // Here you can add logic to handle different commands from the user interface
+        
+    }
+
+    void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
+    {
+        x_ = msg->pose.pose.position.x;
+        y_ = msg->pose.pose.position.y;
+
+        tf2:: Quaternion q;
+        tf2::fromMsg(msg->pose.pose.orientation, q);
+        theta_ = tf2::getYaw(q); // Convert quaternion to yaw angle
         geometry_msgs::msg::TransformStamped t; //this is fixed for transformation
 
         // Read message content and assign it to corresponding tf variables
@@ -84,40 +133,12 @@ public:
 
         // Send the transformation
         tf_broadcaster_->sendTransform(t);
-    };
-
-private:
-    rclcpp_action::Server<Assignment1RT2>::SharedPtr action_server_;
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_1_;
-    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscribe_;
-    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-
-    std::shared_ptr<GoalHandleAssignment1RT2> current_goal_handle_;
-    std::mutex lock_;
-
-    rclcpp::CallbackGroup::SharedPtr cb_group_;
-
-    geometry_msgs::msg::Twist message_;
-    double x_ = 0.0;
-    double y_ = 0.0;
-    double theta_ = 0.0;
-    double velocity_linear_ = 0.0;
-    double tolerance_ = 0.0;
-    bool running_ = false;
-
-
-    void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
-    {
-        x_ = msg->pose.pose.position.x;
-        y_ = msg->pose.pose.position.y;
-        theta_ = msg->pose.pose.orientation.z; // Assuming 2D plane, we can ignore x and y orientation
-        // Optional: RCLCPP_INFO(this->get_logger(), "Controller heard: '%f'", x_);
     }
 
     rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID & uuid, std::shared_ptr<const Assignment1RT2::Goal> goal)
     {
         (void)uuid;
-        RCLCPP_INFO(this->get_logger(), "Received goal request: goal=%f", goal->goal);
+        RCLCPP_INFO(this->get_logger(), "Received goal request: goal: x=%f, y=%f, theta= %f", goal->target_coordinates[0], goal->target_coordinates[1], goal->target_coordinates[2]);
         return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
     }
 
@@ -150,6 +171,12 @@ private:
         auto feedback_msg = std::make_shared<Assignment1RT2::Feedback>();
         auto result = std::make_shared<Assignment1RT2::Result>();
         
+        // Extract target coordinates from the goal
+        const auto goal = goal_handle->get_goal();
+        float target_x = goal->target_coordinates[0];
+        float target_y = goal->target_coordinates[1];
+        float target_theta = goal->target_coordinates[2];
+        
         running_ = true;
         rclcpp::Rate loop_rate(10); // 10 Hz (similar to time.sleep(0.1))
 
@@ -175,26 +202,79 @@ private:
                 }
             }
 
+
             // Normal Execution
-            feedback_msg[1]->eta_target[1] = x_;
-            feedback_msg[2]->eta_target[2] = y_;
-            feedback_msg[3]->eta_target[3] = theta_;
-            
+            feedback_msg->eta_target = {x_, y_, theta_};
             goal_handle->publish_feedback(feedback_msg);
+            
+            //Setting the target frame for tf2
+            geometry_msgs::msg::TransformStamped t_target;  
+            t_target.header.stamp = this->get_clock()->now();
+            t_target.header.frame_id = "odom"; //frame of world map
+            t_target.child_frame_id = "goal_frame"; //frame of the target goal 
 
-            tolerance_ = goal_handle->get_goal()->goal - x_;
+            t_target.transform.translation.x = target_x;
+            t_target.transform.translation.y = target_y;
+            t_target.transform.translation.z = 0.0;
 
-            if (std::abs(tolerance_) < 0.2) {
-                stop_robot();
-                running_ = false;
-            } else if (tolerance_ > 0.0) {
-                velocity_linear_ = 2.0;
-                message_.linear.x = velocity_linear_;
-                publisher_1_->publish(message_);
-            } else {
-                velocity_linear_ = -2.0;
-                message_.linear.x = velocity_linear_;
-                publisher_1_->publish(message_);
+            tf2::Quaternion q_target;
+            q_target.setRPY(0, 0, target_theta); // Assuming rotation around
+            
+            t_target.transform.rotation.x= q_target.x();
+            t_target.transform.rotation.y= q_target.y();
+            t_target.transform.rotation.z= q_target.z();
+            t_target.transform.rotation.w= q_target.w();
+
+            tf_broadcaster_->sendTransform(t_target);
+
+
+            try {
+                geometry_msgs::msg::TransformStamped t;
+
+                // Look up the transform from the robot's current position to the goal position
+                t = tf_buffer_ -> lookupTransform("base_link", "goal_frame", tf2::TimePointZero);
+                
+                // Linear Error Calculation
+                float error_x = t.transform.translation.x;
+                float error_y = t.transform.translation.y;
+
+                // Angular Error Calculation
+                tf2::Quaternion q;
+                tf2::fromMsg(t.transform.rotation, q);
+
+                // 2. Extract the Angle and the Axis of roattion
+                float theta = q.getAngle();     
+                tf2::Vector3 h = q.getAxis();
+
+                float error_theta = theta * h.z(); // Assuming rotation around Z-axis for 2D plane
+
+                // Controller Gains
+                float Kp_linear = 0.8;
+                float Kp_angular = 0.8;
+
+                // Distance to Goal
+                float distance_to_goal = std::sqrt(error_x * error_x + error_y * error_y);
+
+                // Proportional Control for Velocity
+                cmd_vel.linear.x = Kp_linear * distance_to_goal;
+                cmd_vel.angular.z = Kp_angular * error_theta ;
+                
+                tolerance_ = 0.1;
+
+                if (distance_to_goal < tolerance_) {
+                    stop_robot();
+                    running_ = false;
+                } else {
+                    publisher_1_->publish(cmd_vel);
+                }
+
+            }
+            catch (const tf2::TransformException & ex) {
+                //#RCLCPP_WARN(this->get_logger(), "Could not transform: %s", ex.what());
+                //stop_robot();
+                //running_ = false;
+                RCLCPP_INFO(this->get_logger(), "Waiting for transform between 'base_link' and 'goal_frame'...");
+
             }
 
             loop_rate.sleep();
@@ -210,9 +290,9 @@ private:
     }
 
     void stop_robot() {
-        velocity_linear_ = 0.0;
-        message_.linear.x = velocity_linear_;
-        publisher_1_->publish(message_);
+        cmd_vel.angular.z = 0.0;
+        cmd_vel.linear.x = 0.0;
+        publisher_1_->publish(cmd_vel);
     }
 };
 

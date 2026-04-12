@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/action_tutorials_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_tutorials_interfaces/action/_assignment1_rt2_s.c.o"
+  "CMakeFiles/action_tutorials_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_tutorials_interfaces/action/_assignment1_rt2_s.c.o.d"
   "CMakeFiles/action_tutorials_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_tutorials_interfaces/action/_fibonacci_s.c.o"
   "CMakeFiles/action_tutorials_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_tutorials_interfaces/action/_fibonacci_s.c.o.d"
   "CMakeFiles/action_tutorials_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_tutorials_interfaces/action/_tut1_s.c.o"

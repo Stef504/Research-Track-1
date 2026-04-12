@@ -1,0 +1,18 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/action_client.cpp.o[0m
+[ 75%] Built target client_exe
+[ 75%] Built target server_exe
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Quaternion.hpp: No such file or directory
+   11 | #include [01;31m[K"tf2/LinearMath/Quaternion.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kaction_tutorials_interfaces/action/assignment1rt2.hpp: No such file or directory
+   12 | #include [01;31m[K"action_tutorials_interfaces/action/assignment1rt2.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/action_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

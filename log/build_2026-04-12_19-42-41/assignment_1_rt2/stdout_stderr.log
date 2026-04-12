@@ -1,0 +1,26 @@
+[ 50%] Built target server_exe
+[ 50%] Built target cancel_client_exe
+[ 50%] Built target client_exe
+[ 66%] Built target cancel_client
+[ 83%] Built target client
+[ 91%] [32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o[0m
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:[m[K In member function ‘[01m[Kvoid assignment_1_rt2::RobotActionServer::[01;32m[Kexecute_callback[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:222:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  222 |             q_target.[01;31m[Ktransform[m[K.rotation.x= q_target.x();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:223:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  223 |             q_target.[01;31m[Ktransform[m[K.rotation.y= q_target.y();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:224:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  224 |             q_target.[01;31m[Ktransform[m[K.rotation.z= q_target.z();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:225:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[Ktransform[m[K’
+  225 |             q_target.[01;31m[Ktransform[m[K.rotation.w= q_target.w();
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:275:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+  275 |                 [01;31m[KRCLPP_INFO[m[K(this->get_logger(), "Waiting for transform between 'base_link' and 'goal_frame'...");
+      |                 [01;31m[K^~~~~~~~~~[m[K
+      |                 [32m[KRCLCPP_INFO[m[K
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

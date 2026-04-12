@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Goal",
+      "fields": [
+        {
+          "name": "target_coordinates",
+          "type": {
+            "type_id": 58,
+            "capacity": 3,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Goal",
+      "hash_string": "RIHS01_ddf517473650ed39579502ee7318f1cbeb0b1b49b0095f15d870a332a9677bda"
+    }
+  ]
+}

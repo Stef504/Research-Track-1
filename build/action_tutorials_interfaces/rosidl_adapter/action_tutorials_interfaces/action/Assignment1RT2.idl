@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_tutorials_interfaces/action/Assignment1RT2.action
+// generated code does not contain a copyright notice
+
+
+module action_tutorials_interfaces {
+  module action {
+    typedef float float__3[3];
+    struct Assignment1RT2_Goal {
+      float__3 target_coordinates;
+    };
+    struct Assignment1RT2_Result {
+      string final;
+    };
+    typedef float float__3[3];
+    struct Assignment1RT2_Feedback {
+      float__3 eta_target;
+    };
+  };
+};

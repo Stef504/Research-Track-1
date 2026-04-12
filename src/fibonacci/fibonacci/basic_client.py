@@ -11,8 +11,11 @@ class FibonacciClient(Node):
         super().__init__('fibonacci_client')
         self._client = ActionClient(self, Fibonacci, 'fibonacci')
 
-    def send_goal(self, order):
+    def send_goal(self, order): #order is the input from user and is user defined name
         goal_msg = Fibonacci.Goal()
+       
+        #the .order is from the Fibonacci action definition, 
+        #and the order on the right is the input from user
         goal_msg.order = order
 
         self._client.wait_for_server()

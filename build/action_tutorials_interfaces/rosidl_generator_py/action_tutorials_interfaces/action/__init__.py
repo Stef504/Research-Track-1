@@ -1,3 +1,10 @@
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_GetResult_Event  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_GetResult_Request  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_GetResult_Response  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_SendGoal_Event  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_SendGoal_Request  # noqa: F401
+from action_tutorials_interfaces.action._assignment1_rt2 import Assignment1RT2_SendGoal_Response  # noqa: F401
 from action_tutorials_interfaces.action._fibonacci import Fibonacci  # noqa: F401
 from action_tutorials_interfaces.action._fibonacci import Fibonacci_GetResult_Event  # noqa: F401
 from action_tutorials_interfaces.action._fibonacci import Fibonacci_GetResult_Request  # noqa: F401

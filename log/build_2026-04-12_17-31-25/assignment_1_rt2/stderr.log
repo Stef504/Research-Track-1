@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:[m[K In constructor ‘[01m[Kassignment_1_rt2::RobotActionCancelClient::[01;32m[KRobotActionCancelClient[m[K(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscribe_user_interface_[m[K’ was not declared in this scope
+   25 |     [01;31m[Ksubscribe_user_interface_[m[K = this->create_subscription<std_msgs::msg::String>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cancel_client.dir/build.make:76: CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/cancel_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

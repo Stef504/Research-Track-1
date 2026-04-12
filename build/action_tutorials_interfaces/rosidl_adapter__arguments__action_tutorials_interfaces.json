@@ -2,6 +2,7 @@
   "package_name": "action_tutorials_interfaces",
   "non_idl_tuples": [
     "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces:action/Fibonacci.action",
-    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces:action/Tut1.action"
+    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces:action/Tut1.action",
+    "/home/ubuntu/ros_workspace/src/action_tutorials_interfaces:action/Assignment1RT2.action"
   ]
 }

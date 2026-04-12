@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Result",
+      "fields": [
+        {
+          "name": "final",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Result",
+      "hash_string": "RIHS01_2c0475444d6d169145e7543bf079177a3558a15afc24976c5d3406709f3828e3"
+    }
+  ]
+}

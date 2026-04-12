@@ -1,0 +1,25 @@
+[ 16%] Built target client_exe
+[ 50%] Built target client
+[ 50%] Built target server_exe
+[ 66%] Built target server
+[ 83%] Built target cancel_client_exe
+[ 91%] [32mBuilding CXX object CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o[0m
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:[m[K In constructor ‘[01m[Kassignment_1_rt2::RobotActionCancelClient::[01;32m[KRobotActionCancelClient[m[K(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscribe_user_interface_[m[K’ was not declared in this scope
+   25 |     [01;31m[Ksubscribe_user_interface_[m[K = this->create_subscription<std_msgs::msg::String>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:26:94:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   26 |       "cancel_topic", 10, std::bind(&RobotActionCancelClient::user_interface_callback, this, [01;31m[K_1[m[K));
+      |                                                                                              [01;31m[K^~[m[K
+      |                                                                                              [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/cancel_action.cpp:3[m[K:
+[01m[K/usr/include/c++/13/functional:294:48:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  294 |     _GLIBCXX_PLACEHOLDER const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                                [01;36m[K^~[m[K
+gmake[2]: *** [CMakeFiles/cancel_client.dir/build.make:76: CMakeFiles/cancel_client.dir/src/cancel_action.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/cancel_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

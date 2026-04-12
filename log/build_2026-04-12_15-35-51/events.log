@@ -1,0 +1,237 @@
+[0.000000] (-) TimerEvent: {}
+[0.000682] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000736] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000785] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000827] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.000868] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.000915] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000968] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.001009] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.001060] (-) JobUnselected: {'identifier': 'fibonacci'}
+[0.001101] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.001143] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.001280] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.001322] (-) JobUnselected: {'identifier': 'python_package'}
+[0.001363] (-) JobUnselected: {'identifier': 'python_tf2_pkg'}
+[0.001379] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.001390] (-) JobUnselected: {'identifier': 'turtle_action_client'}
+[0.001605] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.001662] (-) JobUnselected: {'identifier': 'tutorial_1_action'}
+[0.001703] (-) JobUnselected: {'identifier': 'tutorial_1_action_cpp'}
+[0.001753] (assignment_1_rt2) JobQueued: {'identifier': 'assignment_1_rt2', 'dependencies': OrderedDict({'action_tutorials_interfaces': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces', 'bme_gazebo_sensors': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors'})}
+[0.001899] (assignment_1_rt2) JobStarted: {'identifier': 'assignment_1_rt2'}
+[0.046577] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'cmake'}
+[0.048044] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'build'}
+[0.048581] (assignment_1_rt2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment_1_rt2', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib:/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp/lib:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib:/home/ubuntu/ros_workspace/install/first_package_cpp/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu/ros_workspace/install', 'TERM_PROGRAM_VERSION': '1.115.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-16edb99d-0f7b-411f-8524-767a6566c86d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros_workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-16d3c016-109e-4883-84fe-110655d8d19e.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/robot_custom_msgs:/home/ubuntu/ros_workspace/install/python_tf2_pkg:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/exam_example:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment_1_rt2:/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/assignment1_rt:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/home/ubuntu/ros_workspace/install/action_assignment:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/tutorial_1_action/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/turtle_action_client/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/assignment2_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/assignment1_rt_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/robot_custom_msgs/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/python_tf2_pkg/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/python_package/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/first_package_py/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/fibonacci/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/exam_example_2/lib/python3.12/site-packages:/home/ubuntu/ros_workspace/install/exam_example/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/home/ubuntu/ros_workspace/install/tutorial_1_action_cpp:/home/ubuntu/ros_workspace/install/robot_custom_msgs:/home/ubuntu/ros_workspace/install/ob_first_package_cpp:/home/ubuntu/ros_workspace/install/first_package_cpp:/home/ubuntu/ros_workspace/install/cmake_package:/home/ubuntu/ros_workspace/install/assignment_1_rt2:/home/ubuntu/ros_workspace/install/assignment1_rt:/home/ubuntu/ros_workspace/install/action_assignment:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ubuntu/ros_workspace/install/tutorial_1_action:/home/ubuntu/ros_workspace/install/turtle_action_client:/home/ubuntu/ros_workspace/install/assignment2_rt_py:/home/ubuntu/ros_workspace/install/assignment1_rt_py:/home/ubuntu/ros_workspace/install/python_tf2_pkg:/home/ubuntu/ros_workspace/install/python_package:/home/ubuntu/ros_workspace/install/first_package_py:/home/ubuntu/ros_workspace/install/fibonacci:/home/ubuntu/ros_workspace/install/exam_example_2:/home/ubuntu/ros_workspace/install/exam_example:/opt/ros/jazzy'}), 'shell': False}
+[0.099772] (-) TimerEvent: {}
+[0.200402] (-) TimerEvent: {}
+[0.257188] (assignment_1_rt2) StdoutLine: {'line': b'[ 50%] Built target client_exe\n'}
+[0.257512] (assignment_1_rt2) StdoutLine: {'line': b'[ 50%] Built target server_exe\n'}
+[0.274440] (assignment_1_rt2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/client.dir/src/action_client.cpp.o\x1b[0m\n'}
+[0.277874] (assignment_1_rt2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o\x1b[0m\n'}
+[0.300561] (-) TimerEvent: {}
+[0.400938] (-) TimerEvent: {}
+[0.501702] (-) TimerEvent: {}
+[0.602270] (-) TimerEvent: {}
+[0.702831] (-) TimerEvent: {}
+[0.803495] (-) TimerEvent: {}
+[0.903862] (-) TimerEvent: {}
+[1.004269] (-) TimerEvent: {}
+[1.104723] (-) TimerEvent: {}
+[1.205136] (-) TimerEvent: {}
+[1.305496] (-) TimerEvent: {}
+[1.405902] (-) TimerEvent: {}
+[1.506605] (-) TimerEvent: {}
+[1.607139] (-) TimerEvent: {}
+[1.707755] (-) TimerEvent: {}
+[1.808251] (-) TimerEvent: {}
+[1.908718] (-) TimerEvent: {}
+[2.009252] (-) TimerEvent: {}
+[2.109845] (-) TimerEvent: {}
+[2.210406] (-) TimerEvent: {}
+[2.310899] (-) TimerEvent: {}
+[2.411496] (-) TimerEvent: {}
+[2.512000] (-) TimerEvent: {}
+[2.612491] (-) TimerEvent: {}
+[2.712979] (-) TimerEvent: {}
+[2.813441] (-) TimerEvent: {}
+[2.913899] (-) TimerEvent: {}
+[3.014333] (-) TimerEvent: {}
+[3.114812] (-) TimerEvent: {}
+[3.215270] (-) TimerEvent: {}
+[3.315713] (-) TimerEvent: {}
+[3.416223] (-) TimerEvent: {}
+[3.516667] (-) TimerEvent: {}
+[3.570320] (assignment_1_rt2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.570622] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[3.570741] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[3.570816] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:4\x1b[m\x1b[K:\n'}
+[3.570874] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid assignment_1_rt2::RobotActionClient::\x1b[01;32m\x1b[Kfeedback_callback\x1b[m\x1b[K(rclcpp_action::ClientGoalHandle<action_tutorials_interfaces::action::Assignment1RT2>::SharedPtr, std::shared_ptr<const action_tutorials_interfaces::action::Assignment1RT2_Feedback_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.570983] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:98:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst action_tutorials_interfaces::action::Assignment1RT2_Feedback_<std::allocator<void> >::_eta_target_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.571052] (assignment_1_rt2) StderrLine: {'line': b'   98 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Received feedback: %f"\x1b[m\x1b[K, \x1b[32m\x1b[Kfeedback->eta_target\x1b[m\x1b[K);\n'}
+[3.571205] (assignment_1_rt2) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.571275] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[3.571332] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[Kconst action_tutorials_interfaces::action::Assignment1RT2_Feedback_<std::allocator<void> >::_eta_target_type {aka const std::array<float, 3>}\x1b[m\x1b[K\n'}
+[3.571391] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:98:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[3.571446] (assignment_1_rt2) StderrLine: {'line': b'   98 |         RCLCPP_INFO(this->get_logger(), "Received feedback: \x1b[01;36m\x1b[K%f\x1b[m\x1b[K", feedback->eta_target);\n'}
+[3.571500] (assignment_1_rt2) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[3.571567] (assignment_1_rt2) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[3.571631] (assignment_1_rt2) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[3.616827] (-) TimerEvent: {}
+[3.628359] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:72:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-static data member declared with placeholder \xe2\x80\x98\x1b[01m\x1b[Kauto\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.628607] (assignment_1_rt2) StderrLine: {'line': b'   72 |     \x1b[01;31m\x1b[Kauto\x1b[m\x1b[K handle_robot_pose = [this](const std::shared_ptr<const nav_msgs::msg::Odometry> msg){\n'}
+[3.628712] (assignment_1_rt2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.701650] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:107:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBuffer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.702007] (assignment_1_rt2) StderrLine: {'line': b'  107 |     std::shared_ptr<tf2_ros::\x1b[01;31m\x1b[KBuffer\x1b[m\x1b[K> tf_buffer_;\n'}
+[3.702267] (assignment_1_rt2) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.702380] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:107:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.702483] (assignment_1_rt2) StderrLine: {'line': b'  107 |     std::shared_ptr<tf2_ros::Buffer\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_buffer_;\n'}
+[3.702544] (assignment_1_rt2) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.703259] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:108:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformListener\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.703400] (assignment_1_rt2) StderrLine: {'line': b'  108 |     std::shared_ptr<tf2_ros::\x1b[01;31m\x1b[KTransformListener\x1b[m\x1b[K> tf_listener_;\n'}
+[3.703467] (assignment_1_rt2) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.703534] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:108:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.703600] (assignment_1_rt2) StderrLine: {'line': b'  108 |     std::shared_ptr<tf2_ros::TransformListener\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_listener_;\n'}
+[3.703657] (assignment_1_rt2) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.709870] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kassignment_1_rt2::RobotActionServer::\x1b[01;32m\x1b[KRobotActionServer\x1b[m\x1b[K(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.710435] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:51:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBuffer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.710560] (assignment_1_rt2) StderrLine: {'line': b'   51 |     tf_buffer_ = std::make_unique<tf2_ros::\x1b[01;31m\x1b[KBuffer\x1b[m\x1b[K>(this->get_clock());\n'}
+[3.710635] (assignment_1_rt2) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.710696] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:51:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_unique<<expression error> >(rclcpp::Clock::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.710795] (assignment_1_rt2) StderrLine: {'line': b'   51 |     tf_buffer_ = \x1b[01;31m\x1b[Kstd::make_unique<tf2_ros::Buffer>(this->get_clock())\x1b[m\x1b[K;\n'}
+[3.710941] (assignment_1_rt2) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.711185] (assignment_1_rt2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:78\x1b[m\x1b[K,\n'}
+[3.711300] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:2\x1b[m\x1b[K:\n'}
+[3.711366] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::\x1b[01;32m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.711427] (assignment_1_rt2) StderrLine: {'line': b' 1069 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.711484] (assignment_1_rt2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.711538] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.711593] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:51:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.711647] (assignment_1_rt2) StderrLine: {'line': b'   51 |     tf_buffer_ = \x1b[01;31m\x1b[Kstd::make_unique<tf2_ros::Buffer>(this->get_clock())\x1b[m\x1b[K;\n'}
+[3.711700] (assignment_1_rt2) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.711753] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::\x1b[01;32m\x1b[Kmake_unique\x1b[m\x1b[K(size_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.711808] (assignment_1_rt2) StderrLine: {'line': b' 1084 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(size_t __num)\n'}
+[3.711859] (assignment_1_rt2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.711950] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.712013] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:51:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.712068] (assignment_1_rt2) StderrLine: {'line': b'   51 |     tf_buffer_ = \x1b[01;31m\x1b[Kstd::make_unique<tf2_ros::Buffer>(this->get_clock())\x1b[m\x1b[K;\n'}
+[3.712122] (assignment_1_rt2) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.712177] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::\x1b[01;32m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99 (deleted)\n'}
+[3.712241] (assignment_1_rt2) StderrLine: {'line': b' 1094 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&&...) = delete;\n'}
+[3.712304] (assignment_1_rt2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.712357] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.712409] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:51:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.712461] (assignment_1_rt2) StderrLine: {'line': b'   51 |     tf_buffer_ = \x1b[01;31m\x1b[Kstd::make_unique<tf2_ros::Buffer>(this->get_clock())\x1b[m\x1b[K;\n'}
+[3.712517] (assignment_1_rt2) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.712569] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:52:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformListener\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.712621] (assignment_1_rt2) StderrLine: {'line': b'   52 |     tf_listener_ = std::make_shared<tf2_ros::\x1b[01;31m\x1b[KTransformListener\x1b[m\x1b[K>(*tf_buffer_);\n'}
+[3.712671] (assignment_1_rt2) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.712729] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:52:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.712788] (assignment_1_rt2) StderrLine: {'line': b'   52 |     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(\x1b[01;31m\x1b[K*tf_buffer_\x1b[m\x1b[K);\n'}
+[3.712843] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.716944] (-) TimerEvent: {}
+[3.740152] (assignment_1_rt2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.740384] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[3.740488] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[3.740551] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:10\x1b[m\x1b[K:\n'}
+[3.740608] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse assignment_1_rt2::RobotActionServer::\x1b[01;32m\x1b[Khandle_goal\x1b[m\x1b[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const action_tutorials_interfaces::action::Assignment1RT2_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.740668] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:140:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst action_tutorials_interfaces::action::Assignment1RT2_Goal_<std::allocator<void> >::_target_coordinates_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.740743] (assignment_1_rt2) StderrLine: {'line': b'  140 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Received goal request: goal=%f"\x1b[m\x1b[K, \x1b[32m\x1b[Kgoal->target_coordinates\x1b[m\x1b[K);\n'}
+[3.740800] (assignment_1_rt2) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.740852] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                                 \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[3.740904] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                                 \x1b[32m\x1b[Kconst action_tutorials_interfaces::action::Assignment1RT2_Goal_<std::allocator<void> >::_target_coordinates_type {aka const std::array<float, 3>}\x1b[m\x1b[K\n'}
+[3.740990] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:140:71:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[3.741059] (assignment_1_rt2) StderrLine: {'line': b'  140 |         RCLCPP_INFO(this->get_logger(), "Received goal request: goal=\x1b[01;36m\x1b[K%f\x1b[m\x1b[K", goal->target_coordinates);\n'}
+[3.741116] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[3.741169] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[3.741221] (assignment_1_rt2) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[3.800577] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid assignment_1_rt2::RobotActionServer::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.800884] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:201:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((assignment_1_rt2::RobotActionServer*)this)->assignment_1_rt2::RobotActionServer::x_\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.800966] (assignment_1_rt2) StderrLine: {'line': b'  201 |             feedback_msg->eta_target = {\x1b[01;35m\x1b[Kx_\x1b[m\x1b[K, y_, theta_};\n'}
+[3.801068] (assignment_1_rt2) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801134] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:201:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((assignment_1_rt2::RobotActionServer*)this)->assignment_1_rt2::RobotActionServer::y_\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.801205] (assignment_1_rt2) StderrLine: {'line': b'  201 |             feedback_msg->eta_target = {x_, \x1b[01;35m\x1b[Ky_\x1b[m\x1b[K, theta_};\n'}
+[3.801377] (assignment_1_rt2) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801458] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:201:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((assignment_1_rt2::RobotActionServer*)this)->assignment_1_rt2::RobotActionServer::theta_\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.801522] (assignment_1_rt2) StderrLine: {'line': b'  201 |             feedback_msg->eta_target = {x_, y_, \x1b[01;35m\x1b[Ktheta_\x1b[m\x1b[K};\n'}
+[3.801580] (assignment_1_rt2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.801635] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:208:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[3.801689] (assignment_1_rt2) StderrLine: {'line': b'  208 |                 t = tf_buffer_ \x1b[01;31m\x1b[K->\x1b[m\x1b[K lookupTransform("base_link", "goal_frame", tf2::TimePointZero);\n'}
+[3.801742] (assignment_1_rt2) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801936] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:219:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktheta\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.802052] (assignment_1_rt2) StderrLine: {'line': b'  219 |                 double \x1b[01;35m\x1b[Ktheta\x1b[m\x1b[K = q.getAngle();\n'}
+[3.802115] (assignment_1_rt2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.817102] (-) TimerEvent: {}
+[3.917575] (-) TimerEvent: {}
+[4.018106] (-) TimerEvent: {}
+[4.118525] (-) TimerEvent: {}
+[4.218914] (-) TimerEvent: {}
+[4.319365] (-) TimerEvent: {}
+[4.419784] (-) TimerEvent: {}
+[4.520275] (-) TimerEvent: {}
+[4.620759] (-) TimerEvent: {}
+[4.721158] (-) TimerEvent: {}
+[4.821629] (-) TimerEvent: {}
+[4.922014] (-) TimerEvent: {}
+[5.022506] (-) TimerEvent: {}
+[5.122994] (-) TimerEvent: {}
+[5.223565] (-) TimerEvent: {}
+[5.324060] (-) TimerEvent: {}
+[5.424504] (-) TimerEvent: {}
+[5.525009] (-) TimerEvent: {}
+[5.625494] (-) TimerEvent: {}
+[5.725925] (-) TimerEvent: {}
+[5.826379] (-) TimerEvent: {}
+[5.926831] (-) TimerEvent: {}
+[6.027377] (-) TimerEvent: {}
+[6.127848] (-) TimerEvent: {}
+[6.228301] (-) TimerEvent: {}
+[6.328804] (-) TimerEvent: {}
+[6.429290] (-) TimerEvent: {}
+[6.529803] (-) TimerEvent: {}
+[6.630303] (-) TimerEvent: {}
+[6.730804] (-) TimerEvent: {}
+[6.831244] (-) TimerEvent: {}
+[6.931728] (-) TimerEvent: {}
+[7.032170] (-) TimerEvent: {}
+[7.132679] (-) TimerEvent: {}
+[7.233048] (-) TimerEvent: {}
+[7.333476] (-) TimerEvent: {}
+[7.434022] (-) TimerEvent: {}
+[7.445358] (assignment_1_rt2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1\n'}
+[7.445743] (assignment_1_rt2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/server.dir/all] Error 2\n'}
+[7.445875] (assignment_1_rt2) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[7.534187] (-) TimerEvent: {}
+[7.634618] (-) TimerEvent: {}
+[7.735133] (-) TimerEvent: {}
+[7.835692] (-) TimerEvent: {}
+[7.936230] (-) TimerEvent: {}
+[8.036652] (-) TimerEvent: {}
+[8.137193] (-) TimerEvent: {}
+[8.237641] (-) TimerEvent: {}
+[8.338019] (-) TimerEvent: {}
+[8.438427] (-) TimerEvent: {}
+[8.538941] (-) TimerEvent: {}
+[8.639402] (-) TimerEvent: {}
+[8.739895] (-) TimerEvent: {}
+[8.840364] (-) TimerEvent: {}
+[8.940866] (-) TimerEvent: {}
+[9.041379] (-) TimerEvent: {}
+[9.141858] (-) TimerEvent: {}
+[9.242704] (-) TimerEvent: {}
+[9.343194] (-) TimerEvent: {}
+[9.443691] (-) TimerEvent: {}
+[9.544242] (-) TimerEvent: {}
+[9.644702] (-) TimerEvent: {}
+[9.647798] (assignment_1_rt2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libclient.so\x1b[0m\n'}
+[9.744879] (-) TimerEvent: {}
+[9.845261] (-) TimerEvent: {}
+[9.945644] (-) TimerEvent: {}
+[10.046031] (-) TimerEvent: {}
+[10.146451] (-) TimerEvent: {}
+[10.215784] (assignment_1_rt2) StdoutLine: {'line': b'[ 87%] Built target client\n'}
+[10.217989] (assignment_1_rt2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.222174] (assignment_1_rt2) CommandEnded: {'returncode': 2}
+[10.246607] (-) TimerEvent: {}
+[10.253583] (assignment_1_rt2) JobEnded: {'identifier': 'assignment_1_rt2', 'rc': 2}
+[10.256240] (-) EventReactorShutdown: {}

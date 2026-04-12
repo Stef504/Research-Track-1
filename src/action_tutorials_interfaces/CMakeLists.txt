@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/Fibonacci.action"
   "action/Tut1.action"
+  "action/Assignment1RT2.action"
 )
 # uncomment the following section in order to fill in
 # further dependencies manually.

@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/action_tutorials_interfaces__cpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/assignment1_rt2.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/assignment1_rt2__builder.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/assignment1_rt2__struct.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/assignment1_rt2__traits.hpp"
+  "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/assignment1_rt2__type_support.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__builder.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__struct.hpp"
   "rosidl_generator_cpp/action_tutorials_interfaces/action/detail/fibonacci__traits.hpp"

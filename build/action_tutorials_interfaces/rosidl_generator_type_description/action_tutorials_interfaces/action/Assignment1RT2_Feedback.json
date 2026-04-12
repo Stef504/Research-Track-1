@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Feedback",
+      "fields": [
+        {
+          "name": "eta_target",
+          "type": {
+            "type_id": 58,
+            "capacity": 3,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "action_tutorials_interfaces/action/Assignment1RT2_Feedback",
+      "hash_string": "RIHS01_8f6649fbea981326829b8db3979b5f984c9fa8810d834c53082e652bb0c305fd"
+    }
+  ]
+}

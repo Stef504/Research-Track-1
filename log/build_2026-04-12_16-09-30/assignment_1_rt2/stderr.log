@@ -1,0 +1,4 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:[m[K In member function ‘[01m[Kvoid assignment_1_rt2::RobotActionServer::[01;32m[Kexecute_callback[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:220:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  220 |                 double [01;35m[Ktheta[m[K = q.getAngle();
+      |                        [01;35m[K^~~~~[m[K
