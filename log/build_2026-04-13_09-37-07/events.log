@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000230] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000285] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000329] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000391] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.000414] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.000426] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.000437] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.000461] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.000471] (-) JobUnselected: {'identifier': 'fibonacci'}
+[0.000482] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.000494] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.000505] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.000534] (-) JobUnselected: {'identifier': 'python_package'}
+[0.000577] (-) JobUnselected: {'identifier': 'python_tf2_pkg'}
+[0.000626] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.000676] (-) JobUnselected: {'identifier': 'turtle_action_client'}
+[0.000717] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.000758] (-) JobUnselected: {'identifier': 'tutorial_1_action'}
+[0.000799] (-) JobUnselected: {'identifier': 'tutorial_1_action_cpp'}
+[0.000847] (assignment_1_rt2) JobQueued: {'identifier': 'assignment_1_rt2', 'dependencies': OrderedDict({'action_tutorials_interfaces': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces', 'bme_gazebo_sensors': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors'})}
+[0.001317] (assignment_1_rt2) JobStarted: {'identifier': 'assignment_1_rt2'}
+[0.019704] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'cmake'}
+[0.020771] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'build'}
+[0.021304] (assignment_1_rt2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment_1_rt2', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.115.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-845069c3-c2bf-4b3b-b984-ce3cf07e16fc.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-a2b5da0b-db83-43e1-8120-b9be76544d41.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.064703] (assignment_1_rt2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099779] (-) TimerEvent: {}
+[0.200181] (-) TimerEvent: {}
+[0.288095] (assignment_1_rt2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.300334] (-) TimerEvent: {}
+[0.316074] (assignment_1_rt2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.324551] (assignment_1_rt2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.335489] (assignment_1_rt2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.348031] (assignment_1_rt2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400476] (-) TimerEvent: {}
+[0.405596] (assignment_1_rt2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.406912] (assignment_1_rt2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.482927] (assignment_1_rt2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500625] (-) TimerEvent: {}
+[0.546784] (assignment_1_rt2) StdoutLine: {'line': b'-- Found tf2: 0.36.14 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[0.578458] (assignment_1_rt2) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[0.600803] (-) TimerEvent: {}
+[0.680950] (assignment_1_rt2) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[0.684841] (assignment_1_rt2) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[0.686109] (assignment_1_rt2) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.688217] (assignment_1_rt2) StdoutLine: {'line': b'-- Found action_tutorials_interfaces: 0.0.0 (/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/share/action_tutorials_interfaces/cmake)\n'}
+[0.700945] (-) TimerEvent: {}
+[0.707112] (assignment_1_rt2) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.739081] (assignment_1_rt2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.801071] (-) TimerEvent: {}
+[0.834533] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.834903] (assignment_1_rt2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.835261] (assignment_1_rt2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.835469] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.835577] (assignment_1_rt2) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.835803] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.836051] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.837539] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.837660] (assignment_1_rt2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.838078] (assignment_1_rt2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.839291] (assignment_1_rt2) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.886175] (assignment_1_rt2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.899508] (assignment_1_rt2) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros_workspace/build/assignment_1_rt2\n'}
+[0.901154] (-) TimerEvent: {}
+[0.978003] (assignment_1_rt2) StdoutLine: {'line': b'[ 33%] Built target cancel_client_exe\n'}
+[0.978260] (assignment_1_rt2) StdoutLine: {'line': b'[ 33%] Built target client_exe\n'}
+[0.978946] (assignment_1_rt2) StdoutLine: {'line': b'[ 50%] Built target client\n'}
+[0.979516] (assignment_1_rt2) StdoutLine: {'line': b'[ 75%] Built target cancel_client\n'}
+[0.979677] (assignment_1_rt2) StdoutLine: {'line': b'[ 83%] Built target server_exe\n'}
+[0.984548] (assignment_1_rt2) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o\x1b[0m\n'}
+[1.001299] (-) TimerEvent: {}
+[1.101639] (-) TimerEvent: {}
+[1.202098] (-) TimerEvent: {}
+[1.302501] (-) TimerEvent: {}
+[1.402883] (-) TimerEvent: {}
+[1.503316] (-) TimerEvent: {}
+[1.603706] (-) TimerEvent: {}
+[1.704159] (-) TimerEvent: {}
+[1.804613] (-) TimerEvent: {}
+[1.905070] (-) TimerEvent: {}
+[2.005487] (-) TimerEvent: {}
+[2.105967] (-) TimerEvent: {}
+[2.206492] (-) TimerEvent: {}
+[2.307017] (-) TimerEvent: {}
+[2.407517] (-) TimerEvent: {}
+[2.507952] (-) TimerEvent: {}
+[2.608426] (-) TimerEvent: {}
+[2.708868] (-) TimerEvent: {}
+[2.809334] (-) TimerEvent: {}
+[2.909780] (-) TimerEvent: {}
+[3.010168] (-) TimerEvent: {}
+[3.110663] (-) TimerEvent: {}
+[3.211128] (-) TimerEvent: {}
+[3.311489] (-) TimerEvent: {}
+[3.411870] (-) TimerEvent: {}
+[3.512332] (-) TimerEvent: {}
+[3.612851] (-) TimerEvent: {}
+[3.713398] (-) TimerEvent: {}
+[3.813843] (-) TimerEvent: {}
+[3.914310] (-) TimerEvent: {}
+[4.014836] (-) TimerEvent: {}
+[4.022385] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid assignment_1_rt2::RobotActionServer::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.022861] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:259:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdistance_to_goal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.023011] (assignment_1_rt2) StderrLine: {'line': b'  259 |                     cmd_vel.linear.x = Kp_linear * \x1b[01;31m\x1b[Kdistance_to_goal\x1b[m\x1b[K;\n'}
+[4.023077] (assignment_1_rt2) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.114984] (-) TimerEvent: {}
+[4.215390] (-) TimerEvent: {}
+[4.315836] (-) TimerEvent: {}
+[4.416465] (-) TimerEvent: {}
+[4.516909] (-) TimerEvent: {}
+[4.617305] (-) TimerEvent: {}
+[4.717840] (-) TimerEvent: {}
+[4.818311] (-) TimerEvent: {}
+[4.918838] (-) TimerEvent: {}
+[5.019358] (-) TimerEvent: {}
+[5.120458] (-) TimerEvent: {}
+[5.220980] (-) TimerEvent: {}
+[5.321449] (-) TimerEvent: {}
+[5.422320] (-) TimerEvent: {}
+[5.522795] (-) TimerEvent: {}
+[5.623216] (-) TimerEvent: {}
+[5.723638] (-) TimerEvent: {}
+[5.824858] (-) TimerEvent: {}
+[5.925364] (-) TimerEvent: {}
+[6.025857] (-) TimerEvent: {}
+[6.126339] (-) TimerEvent: {}
+[6.226860] (-) TimerEvent: {}
+[6.327753] (-) TimerEvent: {}
+[6.428244] (-) TimerEvent: {}
+[6.528739] (-) TimerEvent: {}
+[6.629233] (-) TimerEvent: {}
+[6.729752] (-) TimerEvent: {}
+[6.830294] (-) TimerEvent: {}
+[6.930749] (-) TimerEvent: {}
+[7.031249] (-) TimerEvent: {}
+[7.131711] (-) TimerEvent: {}
+[7.232241] (-) TimerEvent: {}
+[7.332779] (-) TimerEvent: {}
+[7.433271] (-) TimerEvent: {}
+[7.533764] (-) TimerEvent: {}
+[7.634284] (-) TimerEvent: {}
+[7.663418] (assignment_1_rt2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1\n'}
+[7.664044] (assignment_1_rt2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/server.dir/all] Error 2\n'}
+[7.664330] (assignment_1_rt2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.667799] (assignment_1_rt2) CommandEnded: {'returncode': 2}
+[7.680311] (assignment_1_rt2) JobEnded: {'identifier': 'assignment_1_rt2', 'rc': 2}
+[7.691174] (-) EventReactorShutdown: {}

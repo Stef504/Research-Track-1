@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.000666] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000722] (-) JobUnselected: {'identifier': 'assignment1_rt'}
+[0.000766] (-) JobUnselected: {'identifier': 'assignment1_rt_py'}
+[0.000808] (-) JobUnselected: {'identifier': 'assignment2_rt_py'}
+[0.000849] (-) JobUnselected: {'identifier': 'bme_gazebo_sensors'}
+[0.000890] (-) JobUnselected: {'identifier': 'cmake_package'}
+[0.001117] (-) JobUnselected: {'identifier': 'exam_example'}
+[0.001462] (-) JobUnselected: {'identifier': 'exam_example_2'}
+[0.001571] (-) JobUnselected: {'identifier': 'fibonacci'}
+[0.001706] (-) JobUnselected: {'identifier': 'first_package_cpp'}
+[0.001769] (-) JobUnselected: {'identifier': 'first_package_py'}
+[0.001788] (-) JobUnselected: {'identifier': 'ob_first_package_cpp'}
+[0.001800] (-) JobUnselected: {'identifier': 'python_package'}
+[0.001811] (-) JobUnselected: {'identifier': 'python_tf2_pkg'}
+[0.001820] (-) JobUnselected: {'identifier': 'robot_custom_msgs'}
+[0.001829] (-) JobUnselected: {'identifier': 'turtle_action_client'}
+[0.001839] (-) JobUnselected: {'identifier': 'turtlesim_controller'}
+[0.001849] (-) JobUnselected: {'identifier': 'tutorial_1_action'}
+[0.001858] (-) JobUnselected: {'identifier': 'tutorial_1_action_cpp'}
+[0.001881] (assignment_1_rt2) JobQueued: {'identifier': 'assignment_1_rt2', 'dependencies': OrderedDict({'action_tutorials_interfaces': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces', 'bme_gazebo_sensors': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors'})}
+[0.001927] (assignment_1_rt2) JobStarted: {'identifier': 'assignment_1_rt2'}
+[0.046820] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'cmake'}
+[0.049154] (assignment_1_rt2) JobProgress: {'identifier': 'assignment_1_rt2', 'progress': 'build'}
+[0.049251] (assignment_1_rt2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros_workspace/build/assignment_1_rt2', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'env': OrderedDict({'GZ_SIM_RESOURCE_PATH': '/home/ubuntu/gazebo_models', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.115.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1e8a0591-926f-4791-bd03-9c07031eb664.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-a2b5da0b-db83-43e1-8120-b9be76544d41.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/root/.gnupg/S.gpg-agent"]', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-e65c0286b8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/ros_workspace/build/assignment_1_rt2', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros_workspace/install/action_tutorials_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros_workspace/install/bme_gazebo_sensors:/home/ubuntu/ros_workspace/install/action_tutorials_interfaces:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099913] (-) TimerEvent: {}
+[0.200399] (-) TimerEvent: {}
+[0.300763] (-) TimerEvent: {}
+[0.366041] (assignment_1_rt2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/server.dir/src/action_server.cpp.o\x1b[0m\n'}
+[0.366724] (assignment_1_rt2) StdoutLine: {'line': b'[ 66%] Built target client_exe\n'}
+[0.367072] (assignment_1_rt2) StdoutLine: {'line': b'[ 75%] Built target cancel_client\n'}
+[0.367255] (assignment_1_rt2) StdoutLine: {'line': b'[ 75%] Built target client\n'}
+[0.367325] (assignment_1_rt2) StdoutLine: {'line': b'[ 75%] Built target server_exe\n'}
+[0.367495] (assignment_1_rt2) StdoutLine: {'line': b'[ 91%] Built target cancel_client_exe\n'}
+[0.400887] (-) TimerEvent: {}
+[0.501310] (-) TimerEvent: {}
+[0.601763] (-) TimerEvent: {}
+[0.702136] (-) TimerEvent: {}
+[0.802607] (-) TimerEvent: {}
+[0.903094] (-) TimerEvent: {}
+[1.003556] (-) TimerEvent: {}
+[1.103908] (-) TimerEvent: {}
+[1.204317] (-) TimerEvent: {}
+[1.304733] (-) TimerEvent: {}
+[1.405106] (-) TimerEvent: {}
+[1.505515] (-) TimerEvent: {}
+[1.605980] (-) TimerEvent: {}
+[1.706488] (-) TimerEvent: {}
+[1.807266] (-) TimerEvent: {}
+[1.907815] (-) TimerEvent: {}
+[2.008350] (-) TimerEvent: {}
+[2.108819] (-) TimerEvent: {}
+[2.209325] (-) TimerEvent: {}
+[2.309808] (-) TimerEvent: {}
+[2.410357] (-) TimerEvent: {}
+[2.510858] (-) TimerEvent: {}
+[2.611381] (-) TimerEvent: {}
+[2.711928] (-) TimerEvent: {}
+[2.812433] (-) TimerEvent: {}
+[2.912936] (-) TimerEvent: {}
+[3.013411] (-) TimerEvent: {}
+[3.113935] (-) TimerEvent: {}
+[3.214378] (-) TimerEvent: {}
+[3.314827] (-) TimerEvent: {}
+[3.415542] (-) TimerEvent: {}
+[3.516035] (-) TimerEvent: {}
+[3.616745] (-) TimerEvent: {}
+[3.717220] (-) TimerEvent: {}
+[3.817623] (-) TimerEvent: {}
+[3.918084] (-) TimerEvent: {}
+[4.018495] (-) TimerEvent: {}
+[4.118880] (-) TimerEvent: {}
+[4.144467] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid assignment_1_rt2::RobotActionServer::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.144964] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:246:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Katan2\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.145048] (assignment_1_rt2) StderrLine: {'line': b'  246 |                 float error_theta = tf2::\x1b[01;31m\x1b[Katan2\x1b[m\x1b[K(error_x, error_y);\n'}
+[4.145161] (assignment_1_rt2) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.145228] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:246:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[4.145626] (assignment_1_rt2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[4.145752] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[4.145854] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[4.145920] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[4.145977] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[4.146043] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.146096] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.146168] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[4.146231] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[4.146398] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.146514] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.146644] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[4.146759] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:10\x1b[m\x1b[K:\n'}
+[4.146835] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/cmath:146:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Katan2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.147009] (assignment_1_rt2) StderrLine: {'line': b'  146 |   \x1b[01;36m\x1b[Katan2\x1b[m\x1b[K(float __y, float __x)\n'}
+[4.147188] (assignment_1_rt2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.147324] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/cmath:1052:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::atan2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.147389] (assignment_1_rt2) StderrLine: {'line': b' 1052 |     \x1b[01;36m\x1b[Katan2\x1b[m\x1b[K(_Tp __y, _Up __x)\n'}
+[4.147445] (assignment_1_rt2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.147499] (assignment_1_rt2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/features.h:502\x1b[m\x1b[K,\n'}
+[4.147551] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:39\x1b[m\x1b[K,\n'}
+[4.147699] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:679\x1b[m\x1b[K,\n'}
+[4.147788] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/functional:48\x1b[m\x1b[K,\n'}
+[4.147854] (assignment_1_rt2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:1\x1b[m\x1b[K:\n'}
+[4.147923] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::atan2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.147989] (assignment_1_rt2) StderrLine: {'line': b'   59 | \x1b[01;36m\x1b[K__MATHCALL_VEC\x1b[m\x1b[K (atan2,, (_Mdouble_ __y, _Mdouble_ __x));\n'}
+[4.148043] (assignment_1_rt2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.157060] (assignment_1_rt2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:258:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdistance_to_goal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.157530] (assignment_1_rt2) StderrLine: {'line': b'  258 |                     cmd_vel.linear.x = Kp_linear * \x1b[01;31m\x1b[Kdistance_to_goal\x1b[m\x1b[K;\n'}
+[4.157651] (assignment_1_rt2) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.219032] (-) TimerEvent: {}
+[4.319454] (-) TimerEvent: {}
+[4.419838] (-) TimerEvent: {}
+[4.520274] (-) TimerEvent: {}
+[4.620756] (-) TimerEvent: {}
+[4.721261] (-) TimerEvent: {}
+[4.821664] (-) TimerEvent: {}
+[4.922138] (-) TimerEvent: {}
+[5.022649] (-) TimerEvent: {}
+[5.123148] (-) TimerEvent: {}
+[5.223575] (-) TimerEvent: {}
+[5.324069] (-) TimerEvent: {}
+[5.424617] (-) TimerEvent: {}
+[5.525086] (-) TimerEvent: {}
+[5.625616] (-) TimerEvent: {}
+[5.726093] (-) TimerEvent: {}
+[5.826556] (-) TimerEvent: {}
+[5.926985] (-) TimerEvent: {}
+[6.027549] (-) TimerEvent: {}
+[6.128059] (-) TimerEvent: {}
+[6.228552] (-) TimerEvent: {}
+[6.329060] (-) TimerEvent: {}
+[6.429628] (-) TimerEvent: {}
+[6.530087] (-) TimerEvent: {}
+[6.630654] (-) TimerEvent: {}
+[6.731211] (-) TimerEvent: {}
+[6.832146] (-) TimerEvent: {}
+[6.932662] (-) TimerEvent: {}
+[7.033111] (-) TimerEvent: {}
+[7.133542] (-) TimerEvent: {}
+[7.233990] (-) TimerEvent: {}
+[7.334483] (-) TimerEvent: {}
+[7.435037] (-) TimerEvent: {}
+[7.535582] (-) TimerEvent: {}
+[7.636045] (-) TimerEvent: {}
+[7.736634] (-) TimerEvent: {}
+[7.837115] (-) TimerEvent: {}
+[7.926246] (assignment_1_rt2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1\n'}
+[7.926888] (assignment_1_rt2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/server.dir/all] Error 2\n'}
+[7.927347] (assignment_1_rt2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.930636] (assignment_1_rt2) CommandEnded: {'returncode': 2}
+[7.937201] (-) TimerEvent: {}
+[7.958976] (assignment_1_rt2) JobEnded: {'identifier': 'assignment_1_rt2', 'rc': 2}
+[7.969922] (-) EventReactorShutdown: {}

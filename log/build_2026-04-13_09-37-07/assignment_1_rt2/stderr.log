@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:[m[K In member function ‘[01m[Kvoid assignment_1_rt2::RobotActionServer::[01;32m[Kexecute_callback[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_tutorials_interfaces::action::Assignment1RT2> >)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_server.cpp:259:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_to_goal[m[K’ was not declared in this scope
+  259 |                     cmd_vel.linear.x = Kp_linear * [01;31m[Kdistance_to_goal[m[K;
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/action_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

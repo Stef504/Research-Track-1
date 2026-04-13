@@ -23,6 +23,7 @@
 #include <rclcpp_components/register_node_macro.hpp>
 #include <cinttypes>
 #include <cstdio>
+#include <cmath>
 #include "tf2/utils.h" // For easy Yaw extraction
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
@@ -108,7 +109,7 @@ private:
 
         tf2:: Quaternion q;
         tf2::fromMsg(msg->pose.pose.orientation, q);
-        theta_ = tf2::getYaw(q); // Convert quaternion to yaw angle
+        theta_ = tf2::getYaw(q); // Convert quaternion to yaw angle, the angle of the frame 
         geometry_msgs::msg::TransformStamped t; //this is fixed for transformation
 
         // Read message content and assign it to corresponding tf variables
@@ -218,7 +219,7 @@ private:
             t_target.transform.translation.z = 0.0;
 
             tf2::Quaternion q_target;
-            q_target.setRPY(0, 0, target_theta); // Assuming rotation around
+            q_target.setRPY(0, 0, target_theta); // Assuming rotation around z axis for 2D plane
             
             t_target.transform.rotation.x= q_target.x();
             t_target.transform.rotation.y= q_target.y();
@@ -242,33 +243,50 @@ private:
                 tf2::Quaternion q;
                 tf2::fromMsg(t.transform.rotation, q);
 
-                // 2. Extract the Angle and the Axis of roattion
-                float theta = q.getAngle();     
-                tf2::Vector3 h = q.getAxis();
-
-                float error_theta = theta * h.z(); // Assuming rotation around Z-axis for 2D plane
+                // 2. Extract the Angle to the goal
+                float error_theta = std::atan2(error_y, error_x); 
 
                 // Controller Gains
-                float Kp_linear = 0.8;
-                float Kp_angular = 0.8;
-
+                float Kp_linear = 0.5;
+                float Kp_angular = 0.5;
+                
                 // Distance to Goal
                 float distance_to_goal = std::sqrt(error_x * error_x + error_y * error_y);
-
-                // Proportional Control for Velocity
-                cmd_vel.linear.x = Kp_linear * distance_to_goal;
-                cmd_vel.angular.z = Kp_angular * error_theta ;
-                
                 tolerance_ = 0.1;
+                
+                //now we check first how far we are from the goal position
+                if (distance_to_goal > tolerance_) {
+                    
+                    if (std::abs(error_theta) > 0.2){
+                        cmd_vel.linear.x = 0.0; // No linear motion yet
+                        cmd_vel.angular.z = Kp_angular * error_theta; // Rotates in place to align with goal position
 
-                if (distance_to_goal < tolerance_) {
-                    stop_robot();
-                    running_ = false;
-                } else {
+                    }else {
+                        // Proportional Control for Velocity
+                        cmd_vel.linear.x = Kp_linear * distance_to_goal;
+                        cmd_vel.angular.z = Kp_angular * error_theta ;
+                    }
+
+                }else {
+                    
+                    //checks when we arrived at the goal position
+                    if (std::abs(error_theta) <0.1){
+                        cmd_vel.linear.x = 0.0; // No linear motion yet
+                        cmd_vel.angular.z = Kp_angular * error_theta; // Rotates in place to align with goal position
+
+                    }else {
+                        stop_robot();
+                        running_ = false;
+                    }
+
+                } 
+
+                if (running_){
                     publisher_1_->publish(cmd_vel);
                 }
-
+            
             }
+
             catch (const tf2::TransformException & ex) {
                 //#RCLCPP_WARN(this->get_logger(), "Could not transform: %s", ex.what());
                 //stop_robot();

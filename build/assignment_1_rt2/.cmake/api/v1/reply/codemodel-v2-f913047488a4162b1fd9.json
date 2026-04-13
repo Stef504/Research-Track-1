@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-91602daa445391fae135.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "assignment_1_rt2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "assignment_1_rt2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-assignment_1_rt2_uninstall-565916ef9519588fccb9.json",
+					"name" : "assignment_1_rt2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cancel_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cancel_client-3c3b8d191fd93db7db8e.json",
+					"name" : "cancel_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cancel_client_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cancel_client_exe-d5959d946ba2daaed049.json",
+					"name" : "cancel_client_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-8ad0f05c8aba83ba6499.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client_exe-6997c0977d75e0062486.json",
+					"name" : "client_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-c659abf89f97f9b6477a.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_exe-5baa77e5f30269f0cdb8.json",
+					"name" : "server_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9079ed4e93e92987a70b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/ros_workspace/build/assignment_1_rt2",
+		"source" : "/home/ubuntu/ros_workspace/src/assignment_1_rt2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
