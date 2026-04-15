@@ -114,7 +114,7 @@ private:
                 RCLCPP_ERROR(this->get_logger(), "Unknown result code");
                 break;
         }
-        rclcpp::shutdown();
+        //rclcpp::shutdown();
     }
 };
 

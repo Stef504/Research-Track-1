@@ -84,6 +84,7 @@ private:
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
 
     std::shared_ptr<GoalHandleAssignment1RT2> current_goal_handle_;
+    std::shared_ptr<GoalHandleAssignment1RT2> preempt_requested_;
     std::mutex lock_;
 
     rclcpp::CallbackGroup::SharedPtr cb_group_;
@@ -93,12 +94,16 @@ private:
     float y_ = 0.0;
     float theta_ = 0.0;
     float velocity_linear_ = 0.0;
-    float tolerance_ = 0.0;
-    bool running_ = false;
+    
 
     void user_interface_callback(const std_msgs::msg::String::SharedPtr msg) {
         RCLCPP_INFO(this->get_logger(), "Received message from user interface: '%s'", msg->data.c_str());
         // Here you can add logic to handle different commands from the user interface
+
+        if (msg->data == "shutdown") {
+            RCLCPP_INFO(this->get_logger(), "Shutting down...");
+            rclcpp::shutdown(); 
+        }
         
     }
 
@@ -178,7 +183,8 @@ private:
         float target_y = goal->target_coordinates[1];
         float target_theta = goal->target_coordinates[2];
         
-        running_ = true;
+        float tolerance_ = 0.0;
+        bool running_ = true;
         rclcpp::Rate loop_rate(10); // 10 Hz (similar to time.sleep(0.1))
 
         while (rclcpp::ok() && running_) {
@@ -186,7 +192,11 @@ private:
             if (goal_handle->is_canceling()) {
                 RCLCPP_WARN(this->get_logger(), "Cancel requested by client, stopping execution");
                 result->final = std::to_string(x_);
-                goal_handle->canceled(result);
+                
+                if (goal_handle -> is_active()){
+                    goal_handle->abort(result);
+                }
+
                 stop_robot();
                 return;
             }
@@ -197,7 +207,11 @@ private:
                 if (current_goal_handle_ != goal_handle) {
                     RCLCPP_WARN(this->get_logger(), "Preempted by a newer goal, aborting this one");
                     result->final = std::to_string(x_);
-                    goal_handle->abort(result);
+
+                    if (goal_handle -> is_active()){
+                        goal_handle->canceled(result);
+                    }
+
                     stop_robot();
                     return;
                 }
@@ -239,10 +253,6 @@ private:
                 float error_x = t.transform.translation.x;
                 float error_y = t.transform.translation.y;
 
-                // Angular Error Calculation
-                tf2::Quaternion q;
-                tf2::fromMsg(t.transform.rotation, q);
-
                 // 2. Extract the Angle to the goal
                 float error_theta = std::atan2(error_y, error_x); 
 
@@ -262,9 +272,14 @@ private:
                         cmd_vel.angular.z = Kp_angular * error_theta; // Rotates in place to align with goal position
 
                     }else {
+
                         // Proportional Control for Velocity
                         cmd_vel.linear.x = Kp_linear * distance_to_goal;
                         cmd_vel.angular.z = Kp_angular * error_theta ;
+
+                        if (cmd_vel.linear.x > 1.2) { // Limit max linear speed
+                            cmd_vel.linear.x = 1.2; // Limit max linear speed
+                        }
                     }
 
                 }else {
@@ -301,9 +316,13 @@ private:
         // Job Done Successfully
         if (rclcpp::ok()) {
             stop_robot();
-            result->final = std::to_string(x_);
-            goal_handle->succeed(result);
-            RCLCPP_INFO(this->get_logger(), "Goal Succeeded");
+            result-> final = 
+            result->final = std::to_string(x_); 
+
+            if (goal_handle -> is_active()){
+                goal_handle->succeed(result);
+                RCLCPP_INFO(this->get_logger(), "Goal Succeeded");
+            }
         }
     }
 

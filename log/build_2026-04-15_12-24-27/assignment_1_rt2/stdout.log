@@ -1,0 +1,39 @@
+[ 16%] Built target server
+[ 58%] Built target cancel_client
+[ 66%] Built target cancel_client_exe
+[ 66%] Built target client_exe
+[ 83%] Built target client
+[100%] Built target server_exe
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/assignment_1_rt2/client_exe
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/assignment_1_rt2/server_exe
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/assignment_1_rt2/cancel_client_exe
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/libclient.so
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/libserver.so
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/libcancel_client.so
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/lib/assignment_1_rt2/user_interface.py
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/launch
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/launch/simulation.launch.py
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/ament_index/resource_index/package_run_dependencies/assignment_1_rt2
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/ament_index/resource_index/parent_prefix_path/assignment_1_rt2
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/environment/path.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/environment/path.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/local_setup.bash
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/local_setup.sh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/local_setup.zsh
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/local_setup.dsv
+-- Installing: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/package.dsv
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/ament_index/resource_index/packages/assignment_1_rt2
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/ament_index/resource_index/rclcpp_components/assignment_1_rt2
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_clientExport.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_clientExport-noconfig.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_serverExport.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_serverExport-noconfig.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_cancel_clientExport.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/export_assignment_1_rt2_cancel_clientExport-noconfig.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/assignment_1_rt2Config.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/cmake/assignment_1_rt2Config-version.cmake
+-- Up-to-date: /home/ubuntu/ros_workspace/install/assignment_1_rt2/share/assignment_1_rt2/package.xml

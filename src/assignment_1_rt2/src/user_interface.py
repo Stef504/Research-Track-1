@@ -18,7 +18,7 @@ class UserInterface(Node):
         super().__init__('user_interface')
         self.publish_ = self.create_publisher(String, 'interface_topic', 10)
         self.publish_cancel = self.create_publisher(String, 'cancel_topic', 10)
-        self.get_logger().info("User Interface started. Enter commands. q is to quit.")
+        self.get_logger().info("User Interface started. Enter commands. q is to quit. c is to cancel the goal.")
     
     def timer_callback(self):
 
@@ -30,11 +30,17 @@ class UserInterface(Node):
             y_input_1 = input("Enter y coordinate: ")
             theta_input_1 = input("Enter theta (orientation): ")
 
-            if x_input_1.lower() == 'q' or y_input_1.lower() == 'q' or theta_input_1.lower() == 'q':
-                self.get_logger().info("exiting game...")
+            if x_input_1.lower() == 'c' or y_input_1.lower() == 'c' or theta_input_1.lower() == 'c':
+                self.get_logger().info("Cancelling target goal...")
                 self.publish_cancel.publish(String(data="cancel")) #publish cancel message to cancel the goal
+                #rclpy.shutdown()
+                #sys.exit(0) 
+
+            if x_input_1.lower() == 'q' or y_input_1.lower() == 'q' or theta_input_1.lower() == 'q':
+                self.get_logger().info("Shutting down...")
+                self.publish_.publish(String(data="shutdown")) #publish shutdown message to shut down the node before shutting down
                 rclpy.shutdown()
-                sys.exit(0) 
+                sys.exit(0)
 
             try:
 
@@ -59,16 +65,13 @@ class UserInterface(Node):
                 self.x_input = x_input_2
                 self.y_input = y_input_2
                 self.theta_input = theta_input_2
-                self.valid_input = True
 
+                self.custom_msg = String()
+                self.custom_msg.data = f"{self.x_input},{self.y_input},{self.theta_input}"
+                self.publish_.publish(self.custom_msg)
             except ValueError:
                 self.get_logger().warn("Invalid input. Please enter numeric values for x, y, and theta.")
-                
-
-        
-            self.custom_msg = String()
-            self.custom_msg.data = f"{self.x_input},{self.y_input},{self.theta_input}"
-            self.publish_.publish(self.custom_msg)
+         
 
         
             self.get_logger().info(f"Published: {self.custom_msg.data}")

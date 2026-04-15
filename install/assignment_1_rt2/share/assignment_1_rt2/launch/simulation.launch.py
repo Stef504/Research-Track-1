@@ -59,6 +59,7 @@ def generate_launch_description():
        executable='user_interface.py',
        name='user_interface',
        output='screen',
+       prefix = 'xterm -e',
     )
     
     
