@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_targets/cmake/ament_cmake_export_targets-extras.cmake.in
 
-set(_exported_targets "export_assignment_1_rt2_client;export_assignment_1_rt2_server;export_assignment_1_rt2_cancel_client")
+set(_exported_targets "export_assignment_1_rt2_client;export_assignment_1_rt2_server")
 
 # include all exported targets
 if(NOT _exported_targets STREQUAL "")

@@ -47,19 +47,13 @@ def generate_launch_description():
 
     )
 
-    cancel = ComposableNode(
-            package='assignment_1_rt2',
-            plugin='assignment_1_rt2::RobotActionCancelClient',
-            name='cancel',
-            parameters=[{'use_sim_time': True}],
-        )
 
     interface = Node(
        package='assignment_1_rt2',
        executable='user_interface.py',
        name='user_interface',
        output='screen',
-       prefix = 'xterm -e',
+       prefix = 'xterm -hold -e',
     )
     
     
@@ -71,7 +65,6 @@ def generate_launch_description():
         composable_node_descriptions=[
             robot,
             client,
-            cancel,
         ],
         output='screen',
         parameters=[{'use_sim_time': True}]

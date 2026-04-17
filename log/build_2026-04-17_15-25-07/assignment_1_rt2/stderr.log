@@ -1,0 +1,8 @@
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:[m[K In constructor ‘[01m[Kassignment_1_rt2::RobotActionClient::[01;32m[KRobotActionClient[m[K(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ubuntu/ros_workspace/src/assignment_1_rt2/src/action_client.cpp:32:38:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotActionCancelClient[m[K’ has not been declared
+   32 |       "cancel_topic", 10, std::bind(&[01;31m[KRobotActionCancelClient[m[K::cancel_callback, this, _1));
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/action_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

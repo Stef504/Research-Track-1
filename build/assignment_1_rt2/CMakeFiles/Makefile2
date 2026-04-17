@@ -65,10 +65,8 @@ CMAKE_BINARY_DIR = /home/ubuntu/ros_workspace/build/assignment_1_rt2
 # The main recursive "all" target.
 all: CMakeFiles/client.dir/all
 all: CMakeFiles/server.dir/all
-all: CMakeFiles/cancel_client.dir/all
 all: CMakeFiles/client_exe.dir/all
 all: CMakeFiles/server_exe.dir/all
-all: CMakeFiles/cancel_client_exe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,10 +78,8 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/assignment_1_rt2_uninstall.dir/clean
 clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/server.dir/clean
-clean: CMakeFiles/cancel_client.dir/clean
 clean: CMakeFiles/client_exe.dir/clean
 clean: CMakeFiles/server_exe.dir/clean
-clean: CMakeFiles/cancel_client_exe.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -145,7 +141,7 @@ CMakeFiles/assignment_1_rt2_uninstall.dir/clean:
 CMakeFiles/client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=5,6 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=1,2 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,7 +167,7 @@ CMakeFiles/client.dir/clean:
 CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=9,10 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=5,6 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,39 +187,13 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cancel_client.dir
-
-# All Build rule for target.
-CMakeFiles/cancel_client.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client.dir/build.make CMakeFiles/cancel_client.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client.dir/build.make CMakeFiles/cancel_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=1,2 "Built target cancel_client"
-.PHONY : CMakeFiles/cancel_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cancel_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cancel_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles 0
-.PHONY : CMakeFiles/cancel_client.dir/rule
-
-# Convenience name for target.
-cancel_client: CMakeFiles/cancel_client.dir/rule
-.PHONY : cancel_client
-
-# clean rule for target.
-CMakeFiles/cancel_client.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client.dir/build.make CMakeFiles/cancel_client.dir/clean
-.PHONY : CMakeFiles/cancel_client.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/client_exe.dir
 
 # All Build rule for target.
 CMakeFiles/client_exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_exe.dir/build.make CMakeFiles/client_exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_exe.dir/build.make CMakeFiles/client_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=7,8 "Built target client_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=3,4 "Built target client_exe"
 .PHONY : CMakeFiles/client_exe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +219,7 @@ CMakeFiles/client_exe.dir/clean:
 CMakeFiles/server_exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_exe.dir/build.make CMakeFiles/server_exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_exe.dir/build.make CMakeFiles/server_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=11,12 "Built target server_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=7,8 "Built target server_exe"
 .PHONY : CMakeFiles/server_exe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,32 +237,6 @@ server_exe: CMakeFiles/server_exe.dir/rule
 CMakeFiles/server_exe.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_exe.dir/build.make CMakeFiles/server_exe.dir/clean
 .PHONY : CMakeFiles/server_exe.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/cancel_client_exe.dir
-
-# All Build rule for target.
-CMakeFiles/cancel_client_exe.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client_exe.dir/build.make CMakeFiles/cancel_client_exe.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client_exe.dir/build.make CMakeFiles/cancel_client_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles --progress-num=3,4 "Built target cancel_client_exe"
-.PHONY : CMakeFiles/cancel_client_exe.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cancel_client_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cancel_client_exe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_workspace/build/assignment_1_rt2/CMakeFiles 0
-.PHONY : CMakeFiles/cancel_client_exe.dir/rule
-
-# Convenience name for target.
-cancel_client_exe: CMakeFiles/cancel_client_exe.dir/rule
-.PHONY : cancel_client_exe
-
-# clean rule for target.
-CMakeFiles/cancel_client_exe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cancel_client_exe.dir/build.make CMakeFiles/cancel_client_exe.dir/clean
-.PHONY : CMakeFiles/cancel_client_exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

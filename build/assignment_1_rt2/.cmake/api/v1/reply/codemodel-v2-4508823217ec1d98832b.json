@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-91602daa445391fae135.json",
+					"jsonFile" : "directory-.-88fd62a05dde5b79b601.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -21,9 +21,7 @@
 						2,
 						3,
 						4,
-						5,
-						6,
-						7
+						5
 					]
 				}
 			],
@@ -43,9 +41,7 @@
 						2,
 						3,
 						4,
-						5,
-						6,
-						7
+						5
 					]
 				}
 			],
@@ -60,43 +56,29 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "cancel_client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cancel_client-3c3b8d191fd93db7db8e.json",
-					"name" : "cancel_client",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "cancel_client_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cancel_client_exe-d5959d946ba2daaed049.json",
-					"name" : "cancel_client_exe",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-client-8ad0f05c8aba83ba6499.json",
+					"jsonFile" : "target-client-a200cfbbf4cf089ea26a.json",
 					"name" : "client",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "client_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-client_exe-6997c0977d75e0062486.json",
+					"jsonFile" : "target-client_exe-7545dcf7a5ed7f40d466.json",
 					"name" : "client_exe",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server-c659abf89f97f9b6477a.json",
+					"jsonFile" : "target-server-c17c64bd262a4bb843ab.json",
 					"name" : "server",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "server_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server_exe-5baa77e5f30269f0cdb8.json",
+					"jsonFile" : "target-server_exe-80e1c3f32b2afecb633c.json",
 					"name" : "server_exe",
 					"projectIndex" : 0
 				},

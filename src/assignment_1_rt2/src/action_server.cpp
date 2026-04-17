@@ -157,7 +157,7 @@ private:
 
     void handle_accepted(const std::shared_ptr<GoalHandleAssignment1RT2> goal_handle)
     {
-        // Preemption logic: If there is already a goal running, flag it to be aborted
+        // Used for preemption logic, to test if we should abort the current goal when a new one comes in
         {
             std::lock_guard<std::mutex> lock(lock_);
             if (current_goal_handle_ != nullptr && current_goal_handle_->is_active()) {
@@ -166,7 +166,7 @@ private:
             current_goal_handle_ = goal_handle;
         }
 
-        // Start a new thread for execution
+        // Start a new thread for execution so the previous goal can be preempted or canceled safely
         std::thread{std::bind(&RobotActionServer::execute_callback, this, std::placeholders::_1), goal_handle}.detach();
     }
 
@@ -188,13 +188,14 @@ private:
         rclcpp::Rate loop_rate(10); // 10 Hz (similar to time.sleep(0.1))
 
         while (rclcpp::ok() && running_) {
+
             // Check if canceled by client
             if (goal_handle->is_canceling()) {
                 RCLCPP_WARN(this->get_logger(), "Cancel requested by client, stopping execution");
-                result->final = std::to_string(x_);
+                result->final = std::to_string(x_) + "," + std::to_string(y_) + "," + std::to_string(theta_);
                 
                 if (goal_handle -> is_active()){
-                    goal_handle->abort(result);
+                    goal_handle->canceled(result);
                 }
 
                 stop_robot();
@@ -206,10 +207,10 @@ private:
                 std::lock_guard<std::mutex> lock(lock_);
                 if (current_goal_handle_ != goal_handle) {
                     RCLCPP_WARN(this->get_logger(), "Preempted by a newer goal, aborting this one");
-                    result->final = std::to_string(x_);
+                    result->final = std::to_string(x_) + "," + std::to_string(y_) + "," + std::to_string(theta_);
 
                     if (goal_handle -> is_active()){
-                        goal_handle->canceled(result);
+                        goal_handle->abort(result);
                     }
 
                     stop_robot();
@@ -316,8 +317,7 @@ private:
         // Job Done Successfully
         if (rclcpp::ok()) {
             stop_robot();
-            result-> final = 
-            result->final = std::to_string(x_); 
+            result->final = std::to_string(x_) + "," + std::to_string(y_) + "," + std::to_string(theta_);
 
             if (goal_handle -> is_active()){
                 goal_handle->succeed(result);

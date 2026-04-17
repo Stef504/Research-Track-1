@@ -32,7 +32,8 @@ class FramePublisher(Node):
         #Remeber POSE contains x, y, theta, linear_velocity and angular_velocity. You can use any of these to create your transform.
     
     def handle_turtle_pose(self, msg):
-        t = TransformStamped() # 1. Create the empty message
+        t = TransformStamped() # 1. Create the empty message to send the transformation. 
+        #This is the message type that we will fill in with the turtle's pose and then broadcast as a transform.
 
         # Read message content and assign it to
         # corresponding tf variables

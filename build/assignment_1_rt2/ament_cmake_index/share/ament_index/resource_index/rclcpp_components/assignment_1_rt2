@@ -1,3 +1,2 @@
 assignment_1_rt2::RobotActionClient;lib/libclient.so
 assignment_1_rt2::RobotActionServer;lib/libserver.so
-assignment_1_rt2::RobotActionCancelClient;lib/libcancel_client.so
