@@ -24,7 +24,8 @@ class UserInterface(Node):
 
         self.valid_input = False
 
-
+        # Continuously prompts the user to input the respected target coordinates.
+        # It also checks for quit and cancel commands.
         while not self.valid_input:
             
             x_input_1 = input("Enter x coordinate: ") 
@@ -59,11 +60,15 @@ class UserInterface(Node):
 
 
             try:
-
+                
+                # Converts the input strings to floats and validates the input values
                 x_input_2 = float(x_input_1)
                 y_input_2 = float(y_input_1)
                 theta_input_2 = float(theta_input_1)
 
+                # Restricts the input values to a reasonable range for the robot's workspace and orientation, 
+                #which is necessary to prevent sending goals that are out of bounds or could cause issues for the robot's control system. 
+                # If the input values are invalid, it logs a warning and prompts the user to enter the values again.
                 if x_input_2 > 10.0 or x_input_2 < -10.0:
                     self.get_logger().warn("Invalid x coordinate. Please enter a number between -10 and 10.")
                     continue #goes back to the start of the while loop to ask for input again
@@ -78,6 +83,9 @@ class UserInterface(Node):
                     self.get_logger().warn("Invalid theta. Please enter a number between -360 and 360.")
                     continue
                   
+                # If the input values are valid, it updates the instance variables 
+                # and publishes the target coordinates as a string message to the 'interface_topic' topic, which will be received by the action client to send the goal to the action server. 
+                # It also logs the published message for confirmation.  
                 self.x_input = x_input_2
                 self.y_input = y_input_2
                 self.theta_input = theta_input_2
@@ -88,10 +96,7 @@ class UserInterface(Node):
                 self.get_logger().info(f"Published: {self.custom_msg.data}")
             except ValueError:
                 self.get_logger().warn("Please enter numeric values for x, y, and theta.")
-         
-
-            
-            
+                 
 
    
 

@@ -9,6 +9,7 @@
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/urdf.rviz
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/rviz.rviz
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/gps.rviz
+/home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/tf_setup.rviz
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.gazebo
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.urdf
 /home/ubuntu/ros_workspace/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/materials.xacro

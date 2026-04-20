@@ -32,6 +32,8 @@ public:
       "cancel_topic", 10, std::bind(&RobotActionClient::cancel_callback, this, _1));  
   }
 
+
+  // Function to send a goal to the action server, called when a message is received from the user interface
   void send_goal(float x, float y, float theta)
     {
         if (!client_->wait_for_action_server(std::chrono::seconds(10))) {
@@ -81,6 +83,7 @@ private:
         }
     }
 
+    // Translates the string message from the user interface into a goal and sends it to the action server.
     void user_interface_callback(const std_msgs::msg::String::SharedPtr msg) {
         RCLCPP_INFO(this->get_logger(), "Received message from user interface: '%s'", msg->data.c_str());
 

@@ -20,9 +20,10 @@ def generate_launch_description():
     )
 
     rviz_config_arg = DeclareLaunchArgument(
-        'rviz_config', default_value='rviz.rviz',
+        'rviz_config', default_value='tf_setup.rviz',
         description='RViz config file'
     )
+
 
     world_arg = DeclareLaunchArgument(
         'world', default_value='world_empty.sdf',

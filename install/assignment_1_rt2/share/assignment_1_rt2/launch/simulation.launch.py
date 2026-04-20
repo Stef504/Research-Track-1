@@ -29,6 +29,7 @@ def generate_launch_description():
             os.path.join(pkg_bme_gazebo, 'launch', 'spawn_robot_ex.launch.py')
         ),
     )
+
     
     robot = ComposableNode(
         package='assignment_1_rt2',

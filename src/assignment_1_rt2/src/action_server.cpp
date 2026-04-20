@@ -44,6 +44,7 @@ public:
     using namespace std::placeholders;
 
     //allows for mutiple threads to call the callbacks, which is necessary for handling preemption and cancellation of goals
+    //As well as for handling the incoming messages from the odometry topic without blocking the action execution
     cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
     rclcpp::SubscriptionOptions sub_opts;
     sub_opts.callback_group = cb_group_;
@@ -96,9 +97,9 @@ private:
     float velocity_linear_ = 0.0;
     
 
+    // Callback for user interface messages, listens for shutdown command
     void user_interface_callback(const std_msgs::msg::String::SharedPtr msg) {
         RCLCPP_INFO(this->get_logger(), "Received message from user interface: '%s'", msg->data.c_str());
-        // Here you can add logic to handle different commands from the user interface
 
         if (msg->data == "shutdown") {
             RCLCPP_INFO(this->get_logger(), "Shutting down...");
@@ -107,6 +108,7 @@ private:
         
     }
 
+    // Callback for odometry messages, updates the robot's current position and broadcasts the transform from the odometry frame to the robot's base frame
     void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         x_ = msg->pose.pose.position.x;
@@ -163,7 +165,7 @@ private:
             if (current_goal_handle_ != nullptr && current_goal_handle_->is_active()) {
                 RCLCPP_WARN(this->get_logger(), "Preempting previous goal (server abort)");
             }
-            current_goal_handle_ = goal_handle;
+            current_goal_handle_ = goal_handle; // Update the current goal handle to the newly accepted goal
         }
 
         // Start a new thread for execution so the previous goal can be preempted or canceled safely
@@ -171,6 +173,8 @@ private:
     }
 
     
+    // The main execution loop for the action server, which handles moving the robot towards the target coordinates 
+    //while checking for preemption and cancellation requests
     void execute_callback(const std::shared_ptr<GoalHandleAssignment1RT2> goal_handle)
     {
         RCLCPP_INFO(this->get_logger(), "Executing goal...");
@@ -220,6 +224,8 @@ private:
 
 
             // Normal Execution
+
+            //Feedback Publishing
             feedback_msg->eta_target = {x_, y_, theta_};
             goal_handle->publish_feedback(feedback_msg);
             
@@ -241,8 +247,14 @@ private:
             t_target.transform.rotation.z= q_target.z();
             t_target.transform.rotation.w= q_target.w();
 
+            // Broadcast the target transform so we can use it for control and visualization
             tf_broadcaster_->sendTransform(t_target);
 
+
+            // ____Movement of the robot towards the target frame____
+            // 1. Look up the transform from the robot's current position to the goal position
+            // If the transform is not available yet, we catch the exception and wait until it becomes available, which is necessary at the beginning of execution when the target frame is just being broadcasted
+            // The control logic is based on a simple proportional controller that calculates the linear and angular velocity commands based on the distance and angle to the target frame.
 
             try {
                 geometry_msgs::msg::TransformStamped t;
@@ -304,9 +316,7 @@ private:
             }
 
             catch (const tf2::TransformException & ex) {
-                //#RCLCPP_WARN(this->get_logger(), "Could not transform: %s", ex.what());
-                //stop_robot();
-                //running_ = false;
+                
                 RCLCPP_INFO(this->get_logger(), "Waiting for transform between 'base_link' and 'goal_frame'...");
 
             }
