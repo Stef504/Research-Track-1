@@ -26,20 +26,37 @@ class UserInterface(Node):
 
 
         while not self.valid_input:
+            
             x_input_1 = input("Enter x coordinate: ") 
+
+            
+            if x_input_1.lower() == 'q':
+                self.get_logger().info("Shutting down...")
+                self.publish_.publish(String(data="shutdown")) #publish shutdown message to shut down the node before shutting down
+                rclpy.shutdown()
+                sys.exit(0)
+
             y_input_1 = input("Enter y coordinate: ")
+            
+            
+            if y_input_1.lower() == 'q':
+                self.get_logger().info("Shutting down...")
+                self.publish_.publish(String(data="shutdown")) #publish shutdown message to shut down the node before shutting down
+                rclpy.shutdown()
+                sys.exit(0)
+
             theta_input_1 = input("Enter theta (orientation): ")
 
             if x_input_1.lower() == 'c' or y_input_1.lower() == 'c' or theta_input_1.lower() == 'c':
                 self.get_logger().info("Cancelling target goal...")
                 self.publish_cancel_.publish(String(data="cancel")) #publish cancel message to cancel the goal
-                
-
-            if x_input_1.lower() == 'q' or y_input_1.lower() == 'q' or theta_input_1.lower() == 'q':
+            
+            if theta_input_1.lower() == 'q':
                 self.get_logger().info("Shutting down...")
                 self.publish_.publish(String(data="shutdown")) #publish shutdown message to shut down the node before shutting down
                 rclpy.shutdown()
                 sys.exit(0)
+
 
             try:
 
