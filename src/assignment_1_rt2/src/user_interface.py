@@ -5,6 +5,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 import sys
+import time
 
 
 class UserInterface(Node):
@@ -33,7 +34,10 @@ class UserInterface(Node):
             
             if x_input_1.lower() == 'q':
                 self.get_logger().info("Shutting down...")
+                self.publish_cancel_.publish(String(data="cancel")) #publish cancel message to cancel the goal before shutting down
+                time.sleep(0.1)
                 self.publish_.publish(String(data="shutdown")) #publish shutdown message to shut down the node before shutting down
+                time.sleep(0.01)
                 rclpy.shutdown()
                 sys.exit(0)
 

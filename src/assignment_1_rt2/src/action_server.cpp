@@ -104,6 +104,7 @@ private:
         if (msg->data == "shutdown") {
             RCLCPP_INFO(this->get_logger(), "Shutting down...");
             rclcpp::shutdown(); 
+            return;
         }
         
     }
@@ -291,14 +292,14 @@ private:
                         cmd_vel.angular.z = Kp_angular * error_theta ;
 
                         if (cmd_vel.linear.x > 1.2) { // Limit max linear speed
-                            cmd_vel.linear.x = 1.2; // Limit max linear speed
+                            cmd_vel.linear.x = 1.2; 
                         }
                     }
 
                 }else {
                     
                     //checks when we arrived at the goal position
-                    if (std::abs(error_theta) <0.1){
+                    if (std::abs(error_theta) > 0.1){
                         cmd_vel.linear.x = 0.0; // No linear motion yet
                         cmd_vel.angular.z = Kp_angular * error_theta; // Rotates in place to align with goal position
 

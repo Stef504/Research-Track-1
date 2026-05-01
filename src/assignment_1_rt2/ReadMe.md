@@ -4,21 +4,27 @@
 1. Send a target goal for the robot to reach. The inputs are the x, y co-ordinates and the rotation of the frame (theta).
 2. Be able to cancel the goal. The robot stops in its most up-to-date configuration.
 
+## Tasks Accomplished:
+1. Sets up a visual target frame. 
+2. Cancellation of goal during the robot's execution to the target frame.
+3. Interruption and resetting of a new target frame when new target coordinates are sent by the user.
+4. System shutdown with the robot's execution being cancelled.
+
 ## Nodes Accomplished:
 
 ## Action Server:
 1. Handles the sending of the robot frame with respect to the world. Sets the client's desired target frame with respect to the world. This uses the functions provided by tf2. 
 2. Creates an association between the robot and the target frame. This uses the functions provided by tf2. 
-3. Use a proportional controller for the desired velocities. The proportional controller is calculated using the functions of tf. 2. This includes the calculated translation between the robot and the target. 
+3. Use a proportional controller for the desired velocities. The proportional controller is calculated using the functions of tf2. This includes the calculated translation between the robot and the target. 
 4. With respect to the controller, a tolerance is first applied to the distance and then to the rotational error. Once the distance is lower than the tolerance, an additional tolerance for the rotational error is applied to correctly align the frame of the robot to the target frame. 
 5. Once the target frame is reached, the robot stops all motion. 
 6. It is able to handle the client's request of a sent goal, a preempted goal and a cancelled goal. 
-7. The server code enables the use of multiple threads. This is essential to monitor the odometry information sent by `RVIZ` the robot while moving it in the `execute_callback` function. As well as the client being able to interrupt an execution process (the client requests mentioned in point 6). 
+7. The server code enables the use of multiple threads. This is essential to monitor the odometry information sent by `RVIZ` and when the robot is moving in the `execute_callback` function. As well as being able to listen for interruptions (i.e quitting the game, cancelling the goal or another target coordinate) during its execution process. 
 8. The linear velocity is limited as we are using a proportional controller, and if the error is large, we would have an unrealistic speed of the robot. 
 
 
 ## Action Client:
-1. Handles the sending of the user request. Which is either target coordinates, cancelling the goal, or quitting the game.
+1. Handles the sending of the user's request. Which is either target coordinates, cancelling the goal, or quitting the game.
 2. Ensures that when sending the goal or cancellation, it is asynchronous.
 3. Displays the type of result the server sends back to the client (which is either success, aborted goal (via pre-emption), cancellation, or unknown).
 
@@ -55,21 +61,21 @@ Please be sure to have XLaunch running before executing.
 
 Open your terminal in the `../ros_workspace` folder and run the build script:
 ```bash
-colon build --packages-select action_tutorials_interfaces
-colon build --packages-select assignment_1_rt2
-colon build --packages-select bme_gazebo_sensors
+colcon build --packages-select action_tutorials_interfaces
+colcon build --packages-select bme_gazebo_sensors
+colcon build --packages-select assignment_1_rt2
+
 ```
 Then move to the `../ros_workspace/install` folder and run the build script:
 ```bash
 source local_setup.bash
-ros2 ros2 launch assignment_1_rt2 simulation.launch.py
+ros2 launch assignment_1_rt2 simulation.launch.py
 ```
 
 
 >## ⚖️Comments
 - The controller gains chosen achieved the optimal relation betweeen speed and distance. 
 - Applying limits to the x,y, theta values was to simulate workspace limits
-- The robot first rotates in place to along itself to the general direction of the target, then drives towards it and then repositions itself again to align with the target frame.
+- The robot first rotates in place to align itself to the general direction of the target, then drives towards it and then repositions itself again to align with the target frame.
 - Limits were applied to the linear velocity to adhire to the general speed of 2D planar robots.
-- A visual representation of how tf2 relates the robot, and the target frame to the world frame (Odom) is attached in the package.
-- 
+- A visual representation of how the tf2 package defines the frame relationship between the robot, the target frame and the world frame (Odom) is attached in the package (`frames_.pdf`).
